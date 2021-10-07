@@ -58,6 +58,7 @@
     <Compile Include="Assets/Scripts/Room.cs" />
     <Compile Include="Assets/Scripts/RoomNavigation.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
+    <Compile Include="Assets/Scripts/Exit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
