@@ -67,6 +67,10 @@
     <Compile Include="Assets/Scripts/Interaction.cs" />
     <Compile Include="Assets/Scripts/Examine.cs" />
     <Compile Include="Assets/Scripts/Take.cs" />
+    <Compile Include="Assets/Scripts/Inventory.cs" />
+    <Compile Include="Assets/Scripts/ActionResponse.cs" />
+    <Compile Include="Assets/Scripts/ChangeRoomResponse.cs" />
+    <Compile Include="Assets/Scripts/Use.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
