@@ -283,7 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0afa179a60c564366963341ee6280e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usableItemList: []
+  usableItemList:
+  - {fileID: 11400000, guid: 696bfe010283e45cf8db98a67aca55d7, type: 2}
   nounsInRoom: []
 --- !u!1 &519420028
 GameObject:

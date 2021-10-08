@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: OrbRoom
   m_EditorClassIdentifier: 
-  description: Suddenly there is a shower of dust. The door back to the entrance
-    slams shut behind you.
+  description: 'Suddenly there is a shower of dust. The door back to the entrance
+    slams shut behind you. '
   roomName: orb room
   exits:
   - keyString: west
-    exitDescription: A secret door opens to the west.
+    exitDescription: 'There is a door to south with light coming in it '
     valueRoom: {fileID: 11400000, guid: cda49bf2a3a51452e8e86b8b47d7b898, type: 2}
   interactableObjectsInRoom: []

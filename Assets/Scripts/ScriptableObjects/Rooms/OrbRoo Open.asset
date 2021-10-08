@@ -15,7 +15,7 @@ MonoBehaviour:
   description: You are in a vast dark hall.
   roomName: orb room
   exits:
-  - keyString: south
-    exitDescription: There is a door to south with light coming in it
+  - keyString: west
+    exitDescription: A secret door opens to the west.
     valueRoom: {fileID: 11400000, guid: 36a16cb71bcbd4035bf5ee2c36a8d6da, type: 2}
   interactableObjectsInRoom: []

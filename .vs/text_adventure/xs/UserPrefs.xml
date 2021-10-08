@@ -1,12 +1,9 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Use.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="88" Column="41" />
-      <File FileName="Assets/Scripts/InteractableObject.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="137" Column="10" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="89" Column="10" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="60" Column="22" />
       <File FileName="Assets/Scripts/Interaction.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/ChangeRoomResponse.cs" Line="19" Column="22" />
-      <File FileName="Assets/Scripts/Use.cs" Line="11" Column="67" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +11,7 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Use.cs" selected="True" />
+                <Node name="InteractableItems.cs" selected="True" />
               </Node>
             </Node>
           </Node>

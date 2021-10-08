@@ -56,9 +56,8 @@ public class InteractableItems : MonoBehaviour
                     {
                         continue;
                     }
-                    else if (!useDictionary.ContainsKey(noun))
+                    if (!useDictionary.ContainsKey(noun))
                     {
-                        Debug.Log("hitting :" + noun);
                         useDictionary.Add(noun, interaction.actionResponse);
                     }
                 }
@@ -127,11 +126,11 @@ public class InteractableItems : MonoBehaviour
                 if (!actionResult)
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");
-                }
-                else
-                {
-                    controller.LogStringWithReturn("You can't use the " + nounToUse);
-                }
+                }   
+            }
+            else
+            {
+                controller.LogStringWithReturn("You can't use the " + nounToUse);
             }
         }
         else

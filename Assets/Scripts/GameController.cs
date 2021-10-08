@@ -86,11 +86,8 @@ public class GameController : MonoBehaviour
         if (verbDictionary.ContainsKey(noun))
         {
             return verbDictionary[noun];
-        }
-        else
-        {
-            return "You can't " + verb + " " + noun + ".";
-        }
+        }        
+        return "You can't " + verb + " " + noun + ".";
     }
 
     void ClearCollectionsForNewRoom()
@@ -105,9 +102,4 @@ public class GameController : MonoBehaviour
         actionLog.Add(stringToAdd + "\n");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
