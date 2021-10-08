@@ -3,15 +3,16 @@
     <Files>
       <File FileName="Assets/Scripts/Room.cs" Line="12" Column="58" />
       <File FileName="Assets/Scripts/RoomNavigation.cs" Line="25" Column="12" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="85" Column="18" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="78" Column="42" />
       <File FileName="Assets/Scripts/Exit.cs" Line="12" Column="1" />
       <File FileName="Assets/Scripts/TextInput.cs" Line="32" Column="14" />
       <File FileName="Assets/Scripts/InputAction.cs" Line="5" Column="17" />
       <File FileName="Assets/Scripts/InteractableObject.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="8" Column="92" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="53" Column="25" />
       <File FileName="Assets/Scripts/Interaction.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Examine.cs" Line="5" Column="24" />
-      <File FileName="Assets/Scripts/Go.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Examine.cs" Line="12" Column="6" />
+      <File FileName="Assets/Scripts/Go.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/Take.cs" Line="5" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
