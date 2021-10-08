@@ -62,6 +62,8 @@
     <Compile Include="Assets/Scripts/TextInput.cs" />
     <Compile Include="Assets/Scripts/InputAction.cs" />
     <Compile Include="Assets/Scripts/Go.cs" />
+    <Compile Include="Assets/Scripts/InteractableObject.cs" />
+    <Compile Include="Assets/Scripts/InteractableItems.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
