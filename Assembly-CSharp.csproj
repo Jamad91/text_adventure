@@ -64,6 +64,8 @@
     <Compile Include="Assets/Scripts/Go.cs" />
     <Compile Include="Assets/Scripts/InteractableObject.cs" />
     <Compile Include="Assets/Scripts/InteractableItems.cs" />
+    <Compile Include="Assets/Scripts/Interaction.cs" />
+    <Compile Include="Assets/Scripts/Examine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

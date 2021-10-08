@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: New Interactable Object
+  m_Name: Skull
   m_EditorClassIdentifier: 
-  noun: name
-  description: Description in room
+  noun: skull
+  description: A weathered human skull lies in the corner
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: This skull is blackened and charred. Gross.
