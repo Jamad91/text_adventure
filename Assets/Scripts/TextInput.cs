@@ -19,6 +19,19 @@ public class TextInput : MonoBehaviour
     {
         userInput = userInput.ToLower();
         controller.LogStringWithReturn(userInput);
+
+        char[] delimiterCharacters = { ' ' };
+        string[] serparatedInputWords = userInput.Split(delimiterCharacters);
+
+        for (int i = 0; i < controller.inputActions.Length; i++)
+        {
+            InputAction inputAction = controller.inputActions[i];
+            if (inputAction.keyword == serparatedInputWords[0])
+            {
+                inputAction.RespondToInput(controller, serparatedInputWords);
+            }
+        }
+
         InputComplete();
     }
 

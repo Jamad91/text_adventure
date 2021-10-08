@@ -60,6 +60,8 @@
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/Exit.cs" />
     <Compile Include="Assets/Scripts/TextInput.cs" />
+    <Compile Include="Assets/Scripts/InputAction.cs" />
+    <Compile Include="Assets/Scripts/Go.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
