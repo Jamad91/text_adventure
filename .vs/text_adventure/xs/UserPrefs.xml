@@ -1,18 +1,17 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Take.cs">
     <Files>
       <File FileName="Assets/Scripts/GameController.cs" Line="89" Column="10" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="60" Column="22" />
-      <File FileName="Assets/Scripts/Interaction.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="129" Column="18" />
+      <File FileName="Assets/Scripts/Interaction.cs" />
+      <File FileName="Assets/Scripts/Take.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="text_adventure" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="InteractableItems.cs" selected="True" />
-              </Node>
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -21,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5e2a2c2f-594f-4f08-a27d-6268482b57d8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="238937ed-03d5-4609-9fa6-504264ef5464" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
