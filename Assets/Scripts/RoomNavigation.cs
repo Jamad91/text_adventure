@@ -13,6 +13,11 @@ public class RoomNavigation : MonoBehaviour
         controller = GetComponent<GameController>();
     }
 
+    public Room GetRoom()
+    {
+        return currentRoom;
+    }
+
     public void UnpackExitsInRoom()
     {
         for (int i = 0; i < currentRoom.exits.Length; i++)

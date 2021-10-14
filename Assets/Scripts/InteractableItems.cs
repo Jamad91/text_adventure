@@ -26,6 +26,8 @@ public class InteractableItems : MonoBehaviour
     {
         InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
 
+        Debug.Log("interactable is: " + interactableInRoom.noun + " Contains: " + nounsInInventory.Contains(interactableInRoom.noun));
+
         if (!nounsInInventory.Contains(interactableInRoom.noun))
         {
             nounsInRoom.Add(interactableInRoom.noun);
