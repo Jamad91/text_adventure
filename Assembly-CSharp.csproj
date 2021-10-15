@@ -71,6 +71,7 @@
     <Compile Include="Assets/Scripts/Interaction.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
+    <Compile Include="Assets/Scripts/NPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
