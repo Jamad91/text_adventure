@@ -26,8 +26,6 @@ public class InteractableItems : MonoBehaviour
     {
         InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
 
-        Debug.Log("interactable is: " + interactableInRoom.noun + " Contains: " + nounsInInventory.Contains(interactableInRoom.noun));
-
         if (!nounsInInventory.Contains(interactableInRoom.noun))
         {
             nounsInRoom.Add(interactableInRoom.noun);
@@ -83,10 +81,21 @@ public class InteractableItems : MonoBehaviour
 
     public void DisplayInventory()
     {
-        controller.LogStringWithReturn("You look in your backpack, inside you have: ");
-        for (int i = 0; i < nounsInInventory.Count; i++)
+        if (controller.pickedUpAndHolding.Count == 0 || !controller.pickedUpAndHolding.ContainsValue(true))
         {
-            controller.LogStringWithReturn(nounsInInventory[i]);
+            controller.LogStringWithReturn("Your backpack is empty!");
+        }
+        else
+        {
+            controller.LogStringWithReturn("You look in your backpack, inside you have: ");
+            for (int i = 0; i < nounsInInventory.Count; i++)
+            {
+                if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
+                {
+                    controller.LogStringWithReturn(nounsInInventory[i]);
+                }
+            }
+
         }
     }
 
@@ -136,7 +145,11 @@ public class InteractableItems : MonoBehaviour
                 if (!actionResult)
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");
-                }   
+                }
+                else
+                {
+                    controller.pickedUpAndHolding[nounToUse] = false;
+                }
             }
             else
             {
