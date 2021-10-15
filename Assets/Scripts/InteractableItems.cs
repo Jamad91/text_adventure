@@ -104,16 +104,24 @@ public class InteractableItems : MonoBehaviour
 
         if (nounsInRoom.Contains(noun))
         {
-            nounsInInventory.Add(noun);
-            AddActionResponsesToUseDictionary();
-            nounsInRoom.Add(noun);
-            return takeDictionary;
+            if (!controller.pickedUpAndHolding.ContainsKey(noun))
+            {
+                nounsInInventory.Add(noun);
+                AddActionResponsesToUseDictionary();
+                nounsInRoom.Add(noun);
+                return takeDictionary;
+            }
+            else
+            {
+                controller.LogStringWithReturn("You already picked up the " + noun + "!");
+            }
+
         }
         else
         {
             controller.LogStringWithReturn("There is no " + noun + " here to take.");
-            return null;
         }
+        return null;
     }
 
     public void UseItem(string[] seperatedInputWords)

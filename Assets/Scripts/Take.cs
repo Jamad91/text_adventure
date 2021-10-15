@@ -15,19 +15,12 @@ public class Take : InputAction
         if (takeDictionary != null)
         {
             Debug.Log(takeDictionary.ContainsValue(seperatedInputWords[0]));
-            if (controller.pickedUpItems.ContainsKey(seperatedInputWords[1]))
+            if (!controller.pickedUpAndHolding.ContainsKey(seperatedInputWords[1]))
             {
-                Debug.Log("Picked up " + seperatedInputWords[1] + ": " + controller.pickedUpItems[seperatedInputWords[1]]);
+                controller.pickedUpAndHolding.Add(seperatedInputWords[1], true);
+                
             }
-            else
-            {
-                Debug.Log("Nope, pick up now");
-                controller.pickedUpItems.Add(seperatedInputWords[1], true);
-                controller.LogStringWithReturn(controller.TestVerbDictionaryWithNoun(takeDictionary, seperatedInputWords[0], seperatedInputWords[1]));
-            }
-            
-            //Debug.Log("Taking " + seperatedInputWords[0] + " " + seperatedInputWords[1]);
-            
+            controller.LogStringWithReturn(controller.TestVerbDictionaryWithNoun(takeDictionary, seperatedInputWords[0], seperatedInputWords[1]));
         }
     }
 }

@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     [HideInInspector] public InteractableItems interactableItems;
-    [HideInInspector] public Dictionary<string, bool> pickedUpItems = new Dictionary<string, bool>();
+    [HideInInspector] public Dictionary<string, bool> pickedUpAndHolding = new Dictionary<string, bool>();
 
     List<string> actionLog = new List<string>();
 
@@ -53,16 +53,6 @@ public class GameController : MonoBehaviour
         roomNavigation.UnpackExitsInRoom();
         PrepareObjectsToTakOrExamine(roomNavigation.currentRoom);
     }
-
-    private void Update()
-    {
-        //DetermineIfTaken();
-    }
-
-    //public bool DetermineIfTaken()
-    //{
-        
-    //}
 
     void PrepareObjectsToTakOrExamine(Room currentRoom)
     {
