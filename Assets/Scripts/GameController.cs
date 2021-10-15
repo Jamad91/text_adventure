@@ -48,6 +48,12 @@ public class GameController : MonoBehaviour
         LogStringWithReturn(combinedText);
     }
 
+    public void DisplayHelp()
+    {
+        Debug.Log("need help");
+        LogStringWithReturn("Need some help? You can:\n GO in a dicrection \n TAKE something \n EXAMINE something \n check your INVENTORY \n TALK to someone \n ask for HELP (but no hints!)");
+    }
+
     void UnpackRoom()
     {
         roomNavigation.UnpackExitsInRoom();
@@ -103,4 +109,6 @@ public class GameController : MonoBehaviour
         actionLog.Add(stringToAdd + "\n");
     }
 
+
+    
 }

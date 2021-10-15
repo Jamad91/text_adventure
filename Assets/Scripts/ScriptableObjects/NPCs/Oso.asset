@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Oso
   m_EditorClassIdentifier: 
-  name: name
+  name: oso
   description: Description of person
   interactions: []
