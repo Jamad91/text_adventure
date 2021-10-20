@@ -1,13 +1,20 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="61" Column="66" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="96" Column="6" />
       <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Interaction.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Room.cs" Line="13" Column="35" />
-      <File FileName="Assets/Scripts/NPC.cs" Line="15" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="7" Column="7" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="24" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Room.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/NPC.cs" Line="9" Column="32" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="29" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/TextInput.cs" Line="29" Column="15" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Talk.cs" Line="11" Column="35" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,6 +22,7 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
+                <Node name="Input Action Scripts" expanded="True" />
                 <Node name="InteractableItems.cs" selected="True" />
               </Node>
             </Node>

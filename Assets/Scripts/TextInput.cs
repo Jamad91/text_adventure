@@ -22,10 +22,11 @@ public class TextInput : MonoBehaviour
 
         char[] delimiterCharacters = { ' ' };
         string[] serparatedInputWords = userInput.Split(delimiterCharacters);
-
+  
         for (int i = 0; i < controller.inputActions.Length; i++)
         {
             InputAction inputAction = controller.inputActions[i];
+            //Debug.Log("input action is " + inputAction);
             if (inputAction.keyword == serparatedInputWords[0])
             {
                 inputAction.RespondToInput(controller, serparatedInputWords);

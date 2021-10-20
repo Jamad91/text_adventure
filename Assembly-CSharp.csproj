@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/InteractableObject.cs" />
-    <Compile Include="Assets/Scripts/Use.cs" />
+    <Compile Include="Assets/Scripts/Input Action Scripts/Use.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Go.cs" />
     <Compile Include="Assets/Scripts/RoomNavigation.cs" />
     <Compile Include="Assets/Scripts/Exit.cs" />

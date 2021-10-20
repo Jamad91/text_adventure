@@ -12,6 +12,11 @@ public class InteractableCharacters : MonoBehaviour
 
     GameController controller;
 
+    private void Awake()
+    {
+        controller = GetComponent<GameController>();
+    }
+
     public string GetCharactersInRoom(Room currentRoom, int i)
     {
         NPC characterInRoom = currentRoom.charactersInRoom[i];
@@ -25,5 +30,28 @@ public class InteractableCharacters : MonoBehaviour
         characterDictionary.Clear();
         charactersInRoom.Clear();
     }
+
+    public void TalkToCharacter(string[] seperatedInputWords)
+    {
+        string characterSpokenTo = seperatedInputWords[2];
+        Debug.Log("name is " + characterSpokenTo);
+        if (charactersInRoom.Contains(characterSpokenTo))
+        {
+            Debug.Log("it containts");
+            for (int i = 0; i < charactersList.Count; i++)
+            {
+                Debug.Log(i + " is " + charactersList[i].characterName);
+                if (characterSpokenTo == charactersList[i].characterName)
+                {
+                    controller.LogStringWithReturn("talking to " + characterSpokenTo);
+                }
+            } 
+        }
+        else
+        {
+            controller.LogStringWithReturn("There is no " + characterSpokenTo + " here");
+        }
+    }
+
 
 }
