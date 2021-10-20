@@ -11,15 +11,18 @@ public class GameController : MonoBehaviour
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     [HideInInspector] public InteractableItems interactableItems;
+    [HideInInspector] public InteractableCharacters interactableCharacters;
+    [HideInInspector] public List<string> characterDescriptionsInRoom = new List<string>();
     [HideInInspector] public Dictionary<string, bool> pickedUpAndHolding = new Dictionary<string, bool>();
+    
 
     List<string> actionLog = new List<string>();
 
     void Awake()
     {
         interactableItems = GetComponent<InteractableItems>();
+        interactableCharacters = GetComponent<InteractableCharacters>();
         roomNavigation = GetComponent<RoomNavigation>();
-
     }
 
     public void DisplayLoggedText()
@@ -33,6 +36,7 @@ public class GameController : MonoBehaviour
     {
         DisplayRoomText();
         DisplayLoggedText();
+
     }
 
     public void DisplayRoomText()
@@ -42,8 +46,8 @@ public class GameController : MonoBehaviour
         UnpackRoom();
 
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
-
-        string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
+        string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
+        string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions + "\n" + joinedCharacterDescriptions;
 
         LogStringWithReturn(combinedText);
     }
@@ -51,10 +55,11 @@ public class GameController : MonoBehaviour
     void UnpackRoom()
     {
         roomNavigation.UnpackExitsInRoom();
-        PrepareObjectsToTakOrExamine(roomNavigation.currentRoom);
+        PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+        PrepareCharactersInRoom(roomNavigation.currentRoom);
     }
 
-    void PrepareObjectsToTakOrExamine(Room currentRoom)
+    void PrepareObjectsToTakeOrExamine(Room currentRoom)
     {
         for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
         {
@@ -79,6 +84,14 @@ public class GameController : MonoBehaviour
                     interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
                 }
             }
+        }
+    }
+
+    void PrepareCharactersInRoom(Room currentRoom)
+    {
+        for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
+        {
+            characterDescriptionsInRoom.Add(interactableCharacters.GetCharactersInRoom(currentRoom, i));
         }
     }
 

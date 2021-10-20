@@ -79,6 +79,8 @@ public class InteractableItems : MonoBehaviour
         return null;
     }
 
+
+
     public void DisplayInventory()
     {
         if (controller.pickedUpAndHolding.Count == 0 || !controller.pickedUpAndHolding.ContainsValue(true))

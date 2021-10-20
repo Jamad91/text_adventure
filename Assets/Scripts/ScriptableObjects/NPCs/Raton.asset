@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Raton
   m_EditorClassIdentifier: 
-  name: Raton
-  description: Description of person
-  interactions: []
+  characterName: name
+  description: he's a rat
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: where's the cheez?
+    actionResponse: {fileID: 0}

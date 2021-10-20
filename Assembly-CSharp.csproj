@@ -74,6 +74,7 @@
     <Compile Include="Assets/Scripts/NPC.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Talk.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Help.cs" />
+    <Compile Include="Assets/Scripts/InteractableCharacters.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

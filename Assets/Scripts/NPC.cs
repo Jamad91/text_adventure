@@ -6,7 +6,7 @@ using UnityEngine;
 public class NPC : ScriptableObject
 {
 
-    public string name = "name";
+    public string characterName = "name";
     [TextArea]
     public string description = "Description of person";
     public Interaction[] interactions;
