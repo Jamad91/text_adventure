@@ -18,3 +18,7 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
     textResponse: where's the cheez?
     actionResponse: {fileID: 0}
+  response:
+    holdingItem: 0
+    holdingResponse: I have cheese with me
+    notHoldingResponse: I gave you my cheese!

@@ -303,7 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6012a811d7724d44b811e4002bc3a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charactersList: []
+  charactersList:
+  - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}
   charactersInRoom: []
 --- !u!1 &519420028
 GameObject:

@@ -69,8 +69,10 @@ public class InteractableItems : MonoBehaviour
 
     InteractableObject GetInteractableObjectFromUsableList(string noun)
     {
+        
         for (int i = 0; i < usableItemList.Count; i++)
         {
+            Debug.Log("don't know how");
             if (usableItemList[i].noun == noun)
             {
                 return usableItemList[i];
