@@ -27,11 +27,9 @@ public class InteractableCharacters : MonoBehaviour
 
     public void ClearCollections()
     {
-        Debug.Log("clearing characters");
-        Debug.Log("dictionary count: " + characterDictionary.Count + " characters in room count: " + charactersInRoom.Count + " characters List count: " + charactersList.Count);
         characterDictionary.Clear();
         charactersInRoom.Clear();
-        charactersList.Clear();
+        
     }
 
     public void TalkToCharacter(string[] seperatedInputWords)

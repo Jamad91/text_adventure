@@ -72,7 +72,6 @@ public class InteractableItems : MonoBehaviour
         
         for (int i = 0; i < usableItemList.Count; i++)
         {
-            Debug.Log("don't know how");
             if (usableItemList[i].noun == noun)
             {
                 return usableItemList[i];
@@ -166,13 +165,15 @@ public class InteractableItems : MonoBehaviour
         }
     }
 
-    public void GiveItem(string[] seperatedInputWords)
+    public void GiveItem(string item, string npc)
     {
-        string nounToUse = seperatedInputWords[1];
-
-        if (nounsInInventory.Contains(nounToUse))
+        List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
+        for (int i = 0; i < charactersInRoom.Count; i++)
         {
-
+            if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
+            {
+                Debug.Log("they're here and you have it!");
+            }
         }
     }
 

@@ -48,18 +48,17 @@ public class GameController : MonoBehaviour
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
         string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
         string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions + "\n" + joinedCharacterDescriptions;
-        Debug.Log("current room is "+roomNavigation.currentRoom.name);
         LogStringWithReturn(combinedText);
     }
 
     void UnpackRoom()
     {
         roomNavigation.UnpackExitsInRoom();
-        PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+        PrepareObjectsToAction(roomNavigation.currentRoom);
         PrepareCharactersInRoom(roomNavigation.currentRoom);
     }
 
-    void PrepareObjectsToTakeOrExamine(Room currentRoom)
+    void PrepareObjectsToAction(Room currentRoom)
     {
         for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
         {
@@ -82,6 +81,11 @@ public class GameController : MonoBehaviour
                 else if (interaction.inputAction.keyword == "take")
                 {
                     interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                }
+
+                else if (interaction.inputAction.keyword == "give")
+                {
+                    Debug.Log("giving a thing");
                 }
             }
         }
