@@ -192,7 +192,16 @@ public class InteractableItems : MonoBehaviour
                 {
                     if (charactersList[j].characterName == npc)
                     {
-                        charactersList[j].response.holdingItem = true;
+                        charactersList[j].response.isHoldingGivenItem = true;
+                        
+                        Debug.Log("now holding");
+                        //if (charactersList[j].response.isHoldingItemToGive)
+                        //{
+                        //    Debug.Log("Character is holding " + charactersList[j].response.itemToGive.noun);
+                        //    //nounsInInventory.Add(charactersList[j].response.itemToGive.noun);
+                        //    //AddActionResponsesToUseDictionary();
+                        //}
+
                         return;
                     }
                 }

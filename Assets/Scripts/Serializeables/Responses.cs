@@ -5,9 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class Response
 {
-    public bool holdingItem;
+    public bool isHoldingGivenItem;
     [TextArea]
-    public string holdingResponse;
+    public string isHoldingGivenItemResponse;
     [TextArea]
-    public string notHoldingResponse;
+    public string notHoldingGivenItemResponse;
+
+    public bool isHoldingItemToGive;
+    public InteractableObject itemToGive;
+
 }

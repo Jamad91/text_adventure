@@ -19,6 +19,8 @@ MonoBehaviour:
     textResponse: where's the cheez?
     actionResponse: {fileID: 0}
   response:
-    holdingItem: 1
-    holdingResponse: I have cheese with me
-    notHoldingResponse: I gave you my cheese!
+    isHoldingGivenItem: 1
+    isHoldingGivenItemResponse: there's my cheese!
+    notHoldingGivenItemResponse: where's my cheese!?
+    isHoldingItemToGive: 1
+    itemToGive: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}
