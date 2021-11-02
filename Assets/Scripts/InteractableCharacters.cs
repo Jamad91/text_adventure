@@ -34,6 +34,11 @@ public class InteractableCharacters : MonoBehaviour
 
     public void TalkToCharacter(string[] seperatedInputWords)
     {
+        if (seperatedInputWords.Length != 3)
+        {
+            controller.LogStringWithReturn("TALK TO who? What are you saying? Try again, please.");
+            return;
+        }
         string characterSpokenTo = seperatedInputWords[2];
         if (charactersInRoom.Contains(characterSpokenTo))
         {

@@ -165,10 +165,25 @@ public class InteractableItems : MonoBehaviour
         }
     }
 
-    public void GiveItem(string item, string npc)
+    public void GiveItem(string[] seperatedInputWords)
     {
         List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
         List<NPC> charactersList = controller.interactableCharacters.charactersList;
+
+        if (seperatedInputWords.Length != 4)
+        {
+            controller.LogStringWithReturn("You want to GIVE what TO who? Try again, please.");
+            return;
+        }
+
+        string item = seperatedInputWords[1];
+        string npc = seperatedInputWords[3];
+
+        if (!nounsInInventory.Contains(item))
+        {
+            controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
+        }
+
         for (int i = 0; i < charactersInRoom.Count; i++)
         {
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
@@ -178,7 +193,7 @@ public class InteractableItems : MonoBehaviour
                     if (charactersList[j].characterName == npc)
                     {
                         charactersList[j].response.holdingItem = true;
-                        continue;
+                        return;
                     }
                 }
             }
