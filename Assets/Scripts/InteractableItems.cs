@@ -168,11 +168,19 @@ public class InteractableItems : MonoBehaviour
     public void GiveItem(string item, string npc)
     {
         List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
+        List<NPC> charactersList = controller.interactableCharacters.charactersList;
         for (int i = 0; i < charactersInRoom.Count; i++)
         {
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
             {
-                Debug.Log("they're here and you have it!");
+                for (int j = 0; j < charactersList.Count; j++)
+                {
+                    if (charactersList[j].characterName == npc)
+                    {
+                        charactersList[j].response.holdingItem = true;
+                        continue;
+                    }
+                }
             }
         }
     }
