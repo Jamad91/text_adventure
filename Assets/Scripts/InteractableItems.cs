@@ -37,11 +37,18 @@ public class InteractableItems : MonoBehaviour
 
     public void AddActionResponsesToUseDictionary()
     {
+        
+
         for (int i = 0; i < nounsInInventory.Count; i++)
         {
             string noun = nounsInInventory[i];
 
+            
             InteractableObject interactableObjectinInventory = GetInteractableObjectFromUsableList(noun);
+
+            //Debug.Log("adding " + interactableObjectinInventory + " as an interable object");
+
+
             if (interactableObjectinInventory == null)
             {
                 continue;
@@ -52,12 +59,16 @@ public class InteractableItems : MonoBehaviour
                 {
                     Interaction interaction = interactableObjectinInventory.interactions[j];
 
+                    //Debug.Log("action response is " + interaction.actionResponse);
+
                     if (interaction.actionResponse == null)
                     {
+                        //Debug.Log("null response");
                         continue;
                     }
                     if (!useDictionary.ContainsKey(noun))
                     {
+                        //Debug.Log("add to the dictionary finally");
                         useDictionary.Add(noun, interaction.actionResponse);
                     }
                 }
@@ -93,6 +104,7 @@ public class InteractableItems : MonoBehaviour
             controller.LogStringWithReturn("You look in your backpack, inside you have: ");
             for (int i = 0; i < nounsInInventory.Count; i++)
             {
+                Debug.Log("holding " + nounsInInventory.Count);
                 if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
                 {
                     controller.LogStringWithReturn(nounsInInventory[i]);
@@ -193,14 +205,18 @@ public class InteractableItems : MonoBehaviour
                     if (charactersList[j].characterName == npc)
                     {
                         charactersList[j].response.isHoldingGivenItem = true;
-                        
-                        Debug.Log("now holding");
-                        //if (charactersList[j].response.isHoldingItemToGive)
-                        //{
-                        //    Debug.Log("Character is holding " + charactersList[j].response.itemToGive.noun);
-                        //    //nounsInInventory.Add(charactersList[j].response.itemToGive.noun);
-                        //    //AddActionResponsesToUseDictionary();
-                        //}
+                        controller.pickedUpAndHolding[item] = false;
+
+                        //Debug.Log("now holding " + charactersList[j].response.isHoldingItemToGive);
+                        if (charactersList[j].response.isHoldingItemToGive)
+                        {
+                            //Debug.Log("Character is holding " + charactersList[j].response.itemToGive.noun);
+                            nounsInInventory.Add(charactersList[j].response.itemToGive.noun);
+                            //Debug.Log("Just added " + nounsInInventory[nounsInInventory.Count - 1] + " to inventory");
+                            AddActionResponsesToUseDictionary();
+                            controller.pickedUpAndHolding.Add(charactersList[j].response.itemToGive.noun, true);
+                            charactersList[j].response.isHoldingItemToGive = false;
+                        }
 
                         return;
                     }

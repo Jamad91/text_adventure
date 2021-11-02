@@ -20,3 +20,4 @@ MonoBehaviour:
     exitDescription: A secret door opens to the west.
     valueRoom: {fileID: 11400000, guid: cda49bf2a3a51452e8e86b8b47d7b898, type: 2}
   interactableObjectsInRoom: []
+  charactersInRoom: []

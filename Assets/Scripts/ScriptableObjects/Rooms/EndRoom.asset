@@ -16,3 +16,4 @@ MonoBehaviour:
   roomName: 
   exits: []
   interactableObjectsInRoom: []
+  charactersInRoom: []

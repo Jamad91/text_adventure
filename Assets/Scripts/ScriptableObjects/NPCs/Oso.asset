@@ -15,3 +15,9 @@ MonoBehaviour:
   characterName: name
   description: bareburger
   interactions: []
+  response:
+    isHoldingGivenItem: 0
+    isHoldingGivenItemResponse: 
+    notHoldingGivenItemResponse: 
+    isHoldingItemToGive: 0
+    itemToGive: {fileID: 0}

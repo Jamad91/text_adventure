@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Raton
   m_EditorClassIdentifier: 
   characterName: raton
-  description: he's a rat
+  description: he's a rat he wants some cornflakes
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
     textResponse: where's the cheez?
     actionResponse: {fileID: 0}
   response:
-    isHoldingGivenItem: 1
+    isHoldingGivenItem: 0
     isHoldingGivenItemResponse: there's my cheese!
     notHoldingGivenItemResponse: where's my cheese!?
     isHoldingItemToGive: 1

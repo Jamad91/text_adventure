@@ -15,3 +15,4 @@ MonoBehaviour:
   noun: tootsie pop
   description: so that's how many licks!
   interactions: []
+  heldItem: 0
