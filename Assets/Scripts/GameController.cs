@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
         string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
         string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions + "\n" + joinedCharacterDescriptions;
-
+        Debug.Log("current room is "+roomNavigation.currentRoom.name);
         LogStringWithReturn(combinedText);
     }
 
@@ -107,6 +107,8 @@ public class GameController : MonoBehaviour
     void ClearCollectionsForNewRoom()
     {
         interactableItems.ClearCollections();
+        interactableCharacters.ClearCollections();
+        characterDescriptionsInRoom.Clear();
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
     }

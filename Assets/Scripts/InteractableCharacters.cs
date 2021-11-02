@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,13 +23,15 @@ public class InteractableCharacters : MonoBehaviour
         NPC characterInRoom = currentRoom.charactersInRoom[i];
         charactersInRoom.Add(characterInRoom.characterName);
         return characterInRoom.description;
-
     }
 
     public void ClearCollections()
     {
+        Debug.Log("clearing characters");
+        Debug.Log("dictionary count: " + characterDictionary.Count + " characters in room count: " + charactersInRoom.Count + " characters List count: " + charactersList.Count);
         characterDictionary.Clear();
         charactersInRoom.Clear();
+        charactersList.Clear();
     }
 
     public void TalkToCharacter(string[] seperatedInputWords)
@@ -61,6 +64,5 @@ public class InteractableCharacters : MonoBehaviour
             return characterSpokenTo.response.notHoldingResponse;
         }
     }
-
 
 }

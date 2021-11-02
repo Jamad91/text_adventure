@@ -1,22 +1,10 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Interaction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="75" Column="14" />
-      <File FileName="Assets/Scripts/Room.cs" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Examine.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/NPC.cs" Line="12" Column="39" />
-      <File FileName="Assets/Scripts/Responses.cs" Line="5" Column="23" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="46" Column="111" NotebookId="1" />
-      <File FileName="Assets/Scripts/TextInput.cs" Line="29" Column="15" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Talk.cs" Line="12" Column="80" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="8" Column="51" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Interaction.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="42" Column="34" />
+      <File FileName="Assets/Scripts/RoomNavigation.cs" Line="16" Column="9" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="34" Column="32" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,8 +12,7 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Input Action Scripts" expanded="True" />
-                <Node name="Interaction.cs" selected="True" />
+                <Node name="InteractableItems.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -35,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9760fb97-49b8-4ebb-b741-11db885b7aa8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="477eab0b-d8ff-4b92-8279-20fd25c680c7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

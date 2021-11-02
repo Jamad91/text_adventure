@@ -166,5 +166,15 @@ public class InteractableItems : MonoBehaviour
         }
     }
 
+    public void GiveItem(string[] seperatedInputWords)
+    {
+        string nounToUse = seperatedInputWords[1];
+
+        if (nounsInInventory.Contains(nounToUse))
+        {
+
+        }
+    }
+
 
 }

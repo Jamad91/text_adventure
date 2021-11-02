@@ -19,6 +19,6 @@ MonoBehaviour:
     textResponse: where's the cheez?
     actionResponse: {fileID: 0}
   response:
-    holdingItem: 0
+    holdingItem: 1
     holdingResponse: I have cheese with me
     notHoldingResponse: I gave you my cheese!

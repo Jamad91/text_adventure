@@ -11,4 +11,5 @@ public class NPC : ScriptableObject
     public string description = "Description of person";
     public Interaction[] interactions;
     public Response response;
+
 }

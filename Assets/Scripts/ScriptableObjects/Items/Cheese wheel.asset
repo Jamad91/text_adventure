@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: cheese wheel
   description: cheezy!
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: You give the rat his cheese.
+    actionResponse: {fileID: 0}

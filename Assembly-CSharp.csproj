@@ -62,20 +62,23 @@
     <Compile Include="Assets/Scripts/RoomNavigation.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Talk.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Help.cs" />
-    <Compile Include="Assets/Scripts/Exit.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Examine.cs" />
     <Compile Include="Assets/Scripts/InputAction.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Inventory.cs" />
     <Compile Include="Assets/Scripts/ChangeRoomResponse.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Take.cs" />
     <Compile Include="Assets/Scripts/InteractableItems.cs" />
-    <Compile Include="Assets/Scripts/Input Action Scripts/ActionResponse.cs" />
     <Compile Include="Assets/Scripts/TextInput.cs" />
-    <Compile Include="Assets/Scripts/Interaction.cs" />
     <Compile Include="Assets/Scripts/NPC.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
-    <Compile Include="Assets/Scripts/Responses.cs" />
+    <Compile Include="Assets/Scripts/ActionResponse.cs" />
+    <Compile Include="Assets/Scripts/Serializeables/Exit.cs" />
+    <Compile Include="Assets/Scripts/Serializeables/Interaction.cs" />
+    <Compile Include="Assets/Scripts/Serializeables/Responses.cs" />
+    <Compile Include="Assets/Scripts/GiveItemTo.cs" />
+    <Compile Include="Assets/Scripts/ItemTransfer.cs" />
+    <Compile Include="Assets/Scripts/Input Action Scripts/Give.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
