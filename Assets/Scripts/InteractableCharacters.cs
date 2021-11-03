@@ -10,6 +10,9 @@ public class InteractableCharacters : MonoBehaviour
     public Dictionary<string, string> characterDictionary = new Dictionary<string, string>();
 
     [HideInInspector] public List<string> charactersInRoom = new List<string>();
+    public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsHave = new Dictionary<string, Dictionary<InteractableObject, bool>>();
+    public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsAreGiven = new Dictionary<string, Dictionary<InteractableObject, bool>>();
+
 
     GameController controller;
 
@@ -58,7 +61,8 @@ public class InteractableCharacters : MonoBehaviour
 
     public string CharacterResponse(NPC characterSpokenTo)
     {
-        if (characterSpokenTo.response.isHoldingGivenItem)
+        if (itemsCharsAreGiven[characterSpokenTo.characterName][characterSpokenTo.response.itemToBeGiven])
+//        if (characterSpokenTo.response.isHoldingGivenItem)
         {
             return characterSpokenTo.response.isHoldingGivenItemResponse;
         }

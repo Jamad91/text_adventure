@@ -82,11 +82,6 @@ public class GameController : MonoBehaviour
                 {
                     interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
                 }
-
-                else if (interaction.inputAction.keyword == "give")
-                {
-                    Debug.Log("giving a thing");
-                }
             }
         }
     }
@@ -96,7 +91,28 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
         {
             characterDescriptionsInRoom.Add(interactableCharacters.GetCharactersInRoom(currentRoom, i));
+            NPC characterInRoom = currentRoom.charactersInRoom[i];
+            if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.characterName))
+            {
+                if (characterInRoom.response.itemToBeGiven != null)
+                {
+                    interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.response.itemToBeGiven, false } });
+                }
+            }
+
+            if (!interactableCharacters.itemsCharsHave.ContainsKey(characterInRoom.characterName))
+            {
+                if (characterInRoom.response.itemToGiveAway != null)
+                {
+                    interactableCharacters.itemsCharsHave.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.response.itemToGiveAway, true } });
+                }
+            }
         }
+        for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
+        {
+            Debug.Log(currentRoom.charactersInRoom[i].description);
+        }
+        Debug.Log(interactableCharacters.itemsCharsAreGiven.Count);
     }
 
     public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)

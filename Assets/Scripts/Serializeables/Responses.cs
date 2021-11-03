@@ -12,6 +12,6 @@ public class Response
     public string notHoldingGivenItemResponse;
 
     public bool isHoldingItemToGive;
-    public InteractableObject itemToGive;
-
+    public InteractableObject itemToBeGiven;
+    public InteractableObject itemToGiveAway;
 }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Cornflakes
   m_EditorClassIdentifier: 
   noun: cornflakes
-  description: so american!
+  description: box of cornflakes
   interactions: []
   heldItem: 1

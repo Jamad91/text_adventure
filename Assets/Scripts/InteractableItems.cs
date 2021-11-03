@@ -10,6 +10,7 @@ public class InteractableItems : MonoBehaviour
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
 
+
     [HideInInspector] public List<string> nounsInRoom = new List<string>();
 
     private Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
@@ -181,6 +182,9 @@ public class InteractableItems : MonoBehaviour
     {
         List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
         List<NPC> charactersList = controller.interactableCharacters.charactersList;
+        NPC currentCharacter;
+        InteractableObject currentCharacterItemToGiveAway;
+        InteractableObject currentCharacterItemToBeGiven;
 
         if (seperatedInputWords.Length != 4)
         {
@@ -200,28 +204,89 @@ public class InteractableItems : MonoBehaviour
         {
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
             {
+                Debug.Log("first loop");
                 for (int j = 0; j < charactersList.Count; j++)
                 {
-                    if (charactersList[j].characterName == npc)
-                    {
-                        charactersList[j].response.isHoldingGivenItem = true;
-                        controller.pickedUpAndHolding[item] = false;
+                    currentCharacter = charactersList[j];
+                    Debug.Log("trying to give to " + currentCharacter.characterName);
 
-                        //Debug.Log("now holding " + charactersList[j].response.isHoldingItemToGive);
-                        if (charactersList[j].response.isHoldingItemToGive)
+                    if (currentCharacter.characterName == npc)
+                    {
+                        
+                        currentCharacterItemToBeGiven = currentCharacter.response.itemToBeGiven;
+                        currentCharacterItemToGiveAway = currentCharacter.response.itemToGiveAway;
+                        // charactersList[j].response.isHoldingGivenItem = true;
+                        
+
+                        if (currentCharacterItemToBeGiven.noun == item)
                         {
-                            //Debug.Log("Character is holding " + charactersList[j].response.itemToGive.noun);
-                            nounsInInventory.Add(charactersList[j].response.itemToGive.noun);
-                            //Debug.Log("Just added " + nounsInInventory[nounsInInventory.Count - 1] + " to inventory");
-                            AddActionResponsesToUseDictionary();
-                            controller.pickedUpAndHolding.Add(charactersList[j].response.itemToGive.noun, true);
-                            charactersList[j].response.isHoldingItemToGive = false;
+                            controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.characterName][currentCharacterItemToBeGiven] = true;
+                            controller.pickedUpAndHolding[item] = false;
+                            // if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave)
                         }
+
+                        Debug.Log("Try this "+controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName].Keys.Count);
+
+
+                        //if ()
+                        //{
+                        //    nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
+                        //    AddActionResponsesToUseDictionary();
+                        //    controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
+                        //    Debug.Log(charactersList[j].characterName + " is holding " + currentCharacterItemToGiveAway.noun + "? " + controller.interactableCharacters.itemsCharsHave[charactersList[j].characterName][charactersList[j].response.itemToGiveAway]);
+                        //    controller.interactableCharacters.itemsCharsHave[charactersList[j].characterName][charactersList[j].response.itemToGiveAway] = false;
+                        //    //charactersList[j].response.isHoldingItemToGive = false;
+                        //    //controller.interactableCharacters.itemsCharsHave[charactersList[j]][char]
+                        //}
 
                         return;
                     }
                 }
             }
+
+            //public void GiveItem(string[] seperatedInputWords)
+            //{
+            //    List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
+            //    List<NPC> charactersList = controller.interactableCharacters.charactersList;
+
+            //    if (seperatedInputWords.Length != 4)
+            //    {
+            //        controller.LogStringWithReturn("You want to GIVE what TO who? Try again, please.");
+            //        return;
+            //    }
+
+            //    string item = seperatedInputWords[1];
+            //    string npc = seperatedInputWords[3];
+
+            //    if (!nounsInInventory.Contains(item))
+            //    {
+            //        controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
+            //    }
+
+            //    for (int i = 0; i < charactersInRoom.Count; i++)
+            //    {
+            //        if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
+            //        {
+            //            for (int j = 0; j < charactersList.Count; j++)
+            //            {
+            //                if (charactersList[j].characterName == npc)
+            //                {
+            //                    charactersList[j].response.isHoldingGivenItem = true;
+            //                    controller.pickedUpAndHolding[item] = false;
+            //                    if (charactersList[j].response.isHoldingItemToGive)
+            //                    {
+            //                        nounsInInventory.Add(charactersList[j].response.itemToGive.noun);
+            //                        AddActionResponsesToUseDictionary();
+            //                        controller.pickedUpAndHolding.Add(charactersList[j].response.itemToGive.noun, true);
+            //                        charactersList[j].response.isHoldingItemToGive = false;
+            //                    }
+
+            //                    return;
+            //                }
+            //            }
+            //        }
+            //    }
+            //}
         }
     }
 

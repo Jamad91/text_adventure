@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "TextAdventure/NPC")]
-public class NPC : ScriptableObject
+public class NPC : ScriptableObject// , ISerializationCallbackReceiver
 {
 
     public string characterName = "name";
@@ -11,5 +11,23 @@ public class NPC : ScriptableObject
     public string description = "Description of person";
     public Interaction[] interactions;
     public Response response;
+
+    //[System.NonSerialized]
+    //private Response runtimeResponse;
+
+    //public void OnAfterDeserialize()
+    //{
+    //    runtimeResponse = response;
+    //}
+
+    //public void OnBeforeSerialize()
+    //{
+
+    //}
+
+    //public void HoldGivenItem()
+    //{
+
+    //}
 
 }
