@@ -220,8 +220,6 @@ public class InteractableItems : MonoBehaviour
                                 controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
                                 controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
                                 examineDictionary.Add(currentCharacterItemToGiveAway.noun, GetInteractionDescription(currentCharacterItemToGiveAway, "examine"));
-                                
-
                                 controller.pickedUpExamineDictionary.Add(currentCharacterItemToGiveAway.noun, examineDictionary[currentCharacterItemToGiveAway.noun]);
 
                             }
@@ -294,5 +292,6 @@ public class InteractableItems : MonoBehaviour
 
         return null;
     }
+
 
 }

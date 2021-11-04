@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class TextInput : MonoBehaviour
 {
     public InputField inputField;
+    [HideInInspector] public List<string> previousCommands;
+    [HideInInspector] public int previousMessageIndex;
 
     GameController controller;
 
@@ -13,6 +15,13 @@ public class TextInput : MonoBehaviour
     {
         controller = GetComponent<GameController>();
         inputField.onEndEdit.AddListener(AcceptStringInput);
+        previousCommands = new List<string>();
+        
+    }
+
+    private void Update()
+    {
+        DisplayPreviousCommand();
     }
 
     void AcceptStringInput(string userInput)
@@ -31,7 +40,8 @@ public class TextInput : MonoBehaviour
                 inputAction.RespondToInput(controller, serparatedInputWords);
             }
         }
-
+        previousCommands.Add(userInput);
+        previousMessageIndex = previousCommands.Count;
         InputComplete();
     }
 
@@ -41,5 +51,17 @@ public class TextInput : MonoBehaviour
         controller.DisplayLoggedText();
         inputField.ActivateInputField();
         inputField.text = null;
+    }
+
+    void DisplayPreviousCommand()
+    {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            previousMessageIndex--;
+            if (previousCommands.Count > 0 && previousMessageIndex > -1)
+            {
+                inputField.text = previousCommands[previousMessageIndex];
+            }
+        }
     }
 }
