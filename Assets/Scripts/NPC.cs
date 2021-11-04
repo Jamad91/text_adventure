@@ -11,5 +11,6 @@ public class NPC : ScriptableObject// , ISerializationCallbackReceiver
     public string description = "Description of person";
     public Interaction[] interactions;
     public Response response;
+    public NPC transformsInto;
 
 }

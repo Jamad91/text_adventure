@@ -125,6 +125,7 @@ public class InteractableItems : MonoBehaviour
             {
                 nounsInInventory.Add(noun);
                 AddActionResponsesToUseDictionary();
+                controller.pickedUpExamineDictionary.Add(noun, examineDictionary[noun]);
                 nounsInRoom.Add(noun);
                 return takeDictionary;
             }
@@ -218,6 +219,11 @@ public class InteractableItems : MonoBehaviour
                                 AddActionResponsesToUseDictionary();
                                 controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
                                 controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
+                                examineDictionary.Add(currentCharacterItemToGiveAway.noun, GetInteractionDescription(currentCharacterItemToGiveAway, "examine"));
+                                
+
+                                controller.pickedUpExamineDictionary.Add(currentCharacterItemToGiveAway.noun, examineDictionary[currentCharacterItemToGiveAway.noun]);
+
                             }
                         }
                         else
@@ -234,5 +240,59 @@ public class InteractableItems : MonoBehaviour
         return;
     }
 
+    public void Examine(string[] seperatedInputWords)
+    {
+
+
+        if (seperatedInputWords.Length < 2)
+        {
+            controller.LogStringWithReturn("EXAMINE what exactly? Speak clearly!");
+            return;
+        }
+
+        
+
+        string item = seperatedInputWords[1];
+        if (controller.pickedUpAndHolding.ContainsKey(item) && controller.pickedUpAndHolding[item]) {
+           
+            controller.LogStringWithReturn(controller.pickedUpExamineDictionary[item]);
+            return;
+        }
+
+        if (!nounsInRoom.Contains(item) || (controller.pickedUpAndHolding.ContainsKey(item) && !controller.pickedUpAndHolding[item]))
+        {
+            controller.LogStringWithReturn("There isn't a " + item + " around for you to look at.");
+        }
+        else
+        {
+            controller.LogStringWithReturn(controller.TestVerbDictionaryWithNoun(controller.interactableItems.examineDictionary, seperatedInputWords[0], seperatedInputWords[1]));
+        }
+
+    }
+
+    public InteractableObject GetItem(string item)
+    {
+        for (int i = 0; i < usableItemList.Count; i ++)
+        {
+            if (item == usableItemList[i].noun)
+            {
+                return usableItemList[i];
+            }
+        }
+        return null;
+    }
+
+    public string GetInteractionDescription(InteractableObject interactable, string inputAction)
+    {
+        for (int i = 0; i < interactable.interactions.Length; i++)
+        {
+            if (interactable.interactions[i].inputAction.keyword == inputAction && inputAction == "examine")
+            {
+                return interactable.interactions[i].textResponse;
+            }
+        }
+
+        return null;
+    }
 
 }

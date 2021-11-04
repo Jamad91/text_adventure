@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Oso
   m_EditorClassIdentifier: 
   characterName: oso
-  description: bareburger
+  description: It's some bear
   interactions: []
   response:
-    isHoldingGivenItem: 0
-    isHoldingGivenItemResponse: 
-    notHoldingGivenItemResponse: 
-    isHoldingItemToGive: 0
-    itemToBeGiven: {fileID: 0}
+    notHoldingGivenItemResponse: I'm really fiendin'
+    beingGivenItemResponse: oh dope, that's lit
+    isHoldingGivenItemResponse: ahhhh, feels good
+    doesNotWantItemResponse: get that out of my face
+    itemToBeGiven: {fileID: 11400000, guid: f7aa874cc265c4c25a1fc31d059dfd19, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 803b971fb2ef54f68afbf9d53c151dc4, type: 2}
+  transformsInto: {fileID: 0}

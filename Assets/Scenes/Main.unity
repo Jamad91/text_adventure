@@ -308,6 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charactersList:
   - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}
+  - {fileID: 11400000, guid: 52f97704257bb4f5b9f2eefef2caf1b8, type: 2}
+  - {fileID: 11400000, guid: fd6709c9ba0254ab6be5c128863378c1, type: 2}
   charactersInRoom: []
 --- !u!1 &519420028
 GameObject:

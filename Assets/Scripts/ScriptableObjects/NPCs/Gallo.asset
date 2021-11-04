@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Gallo
   m_EditorClassIdentifier: 
   characterName: name
-  description: Description of person
+  description: some cluckin' birdhead peters around nearby
   interactions: []
   response:
-    isHoldingGivenItem: 0
-    isHoldingGivenItemResponse: 
-    notHoldingGivenItemResponse: 
-    isHoldingItemToGive: 0
-    itemToBeGiven: {fileID: 0}
+    notHoldingGivenItemResponse: I could really go for some cereal.
+    beingGivenItemResponse: eh, I'll take it, I guess
+    isHoldingGivenItemResponse: I've had better
+    doesNotWantItemResponse: cluck off
+    itemToBeGiven: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}
     itemToGiveAway: {fileID: 0}
+  transformsInto: {fileID: 0}

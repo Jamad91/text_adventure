@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Cigarette
   m_EditorClassIdentifier: 
   noun: cigarette
-  description: Smokin'!
+  description: a lone unlit bogie lies on the table
   interactions: []
-  heldItem: 0

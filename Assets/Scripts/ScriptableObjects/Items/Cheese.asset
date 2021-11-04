@@ -21,4 +21,6 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
     textResponse: you pick up the cheese. smelly.
     actionResponse: {fileID: 0}
-  heldItem: 0
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: Looks like mozzarell
+    actionResponse: {fileID: 0}

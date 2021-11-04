@@ -18,5 +18,7 @@ MonoBehaviour:
   - keyString: south
     exitDescription: 'There is a door to south with light coming in it '
     valueRoom: {fileID: 11400000, guid: 36a16cb71bcbd4035bf5ee2c36a8d6da, type: 2}
-  interactableObjectsInRoom: []
-  charactersInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: f7aa874cc265c4c25a1fc31d059dfd19, type: 2}
+  charactersInRoom:
+  - {fileID: 11400000, guid: fd6709c9ba0254ab6be5c128863378c1, type: 2}

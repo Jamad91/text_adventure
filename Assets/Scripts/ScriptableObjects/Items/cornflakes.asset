@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: cornflakes
   description: box of cornflakes
-  interactions: []
-  heldItem: 1
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: it's so american
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}

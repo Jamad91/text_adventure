@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public InteractableCharacters interactableCharacters;
     [HideInInspector] public List<string> characterDescriptionsInRoom = new List<string>();
     [HideInInspector] public Dictionary<string, bool> pickedUpAndHolding = new Dictionary<string, bool>();
-    
+    [HideInInspector] public Dictionary<string, string> pickedUpExamineDictionary = new Dictionary<string, string>();
 
     List<string> actionLog = new List<string>();
 
