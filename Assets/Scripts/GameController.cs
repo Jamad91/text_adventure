@@ -58,6 +58,19 @@ public class GameController : MonoBehaviour
         PrepareCharactersInRoom(roomNavigation.currentRoom);
     }
 
+    public NPC GetNPC(string characterName)
+    {
+        NPC[] characters = roomNavigation.currentRoom.charactersInRoom;
+        for (int i = 0; i < characters.Length; i++)
+        {
+            if (characterName == characters[i].characterName)
+            {
+                return characters[i];
+            }
+        }
+        return null;
+    }
+
     void PrepareObjectsToAction(Room currentRoom)
     {
         for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)

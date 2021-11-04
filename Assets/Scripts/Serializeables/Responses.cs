@@ -11,6 +11,8 @@ public class Response
     public string beingGivenItemResponse;
     [TextArea]
     public string isHoldingGivenItemResponse;
+    [TextArea]
+    public string doesNotWantItemResponse;
     
     public InteractableObject itemToBeGiven;
     public InteractableObject itemToGiveAway;

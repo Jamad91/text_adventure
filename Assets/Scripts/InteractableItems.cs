@@ -199,12 +199,10 @@ public class InteractableItems : MonoBehaviour
                 for (int j = 0; j < charactersList.Count; j++)
                 {
                     currentCharacter = charactersList[j];
-
                     if (currentCharacter.characterName == npc)
                     {
                         currentCharacterItemToBeGiven = currentCharacter.response.itemToBeGiven;
                         currentCharacterItemToGiveAway = currentCharacter.response.itemToGiveAway;
-                        controller.pickedUpAndHolding[item] = false;
 
                         if (currentCharacterItemToBeGiven.noun == item)
                         {
@@ -219,14 +217,21 @@ public class InteractableItems : MonoBehaviour
                                 nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
                                 AddActionResponsesToUseDictionary();
                                 controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
-                                controller.LogStringWithReturn("You received " + item);
+                                controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
                             }
+                        }
+                        else
+                        {
+                            controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.response.doesNotWantItemResponse);
                         }
                         return;
                     }
                 }
+                
             }
         }
+        controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).response.doesNotWantItemResponse);
+        return;
     }
 
 
