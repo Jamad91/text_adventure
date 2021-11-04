@@ -6,10 +6,12 @@ using UnityEngine;
 public class Response
 {
     [TextArea]
-    public string isHoldingGivenItemResponse;
-    [TextArea]
     public string notHoldingGivenItemResponse;
-
+    [TextArea]
+    public string beingGivenItemResponse;
+    [TextArea]
+    public string isHoldingGivenItemResponse;
+    
     public InteractableObject itemToBeGiven;
     public InteractableObject itemToGiveAway;
 }
