@@ -20,4 +20,5 @@ MonoBehaviour:
     isHoldingGivenItemResponse: 
     notHoldingGivenItemResponse: 
     isHoldingItemToGive: 0
-    itemToGive: {fileID: 0}
+    itemToBeGiven: {fileID: 0}
+    itemToGiveAway: {fileID: 0}

@@ -62,7 +62,6 @@ public class InteractableCharacters : MonoBehaviour
     public string CharacterResponse(NPC characterSpokenTo)
     {
         if (itemsCharsAreGiven[characterSpokenTo.characterName][characterSpokenTo.response.itemToBeGiven])
-//        if (characterSpokenTo.response.isHoldingGivenItem)
         {
             return characterSpokenTo.response.isHoldingGivenItemResponse;
         }

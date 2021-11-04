@@ -23,4 +23,5 @@ MonoBehaviour:
     isHoldingGivenItemResponse: there's my cheese!
     notHoldingGivenItemResponse: where's my cheese!?
     isHoldingItemToGive: 1
-    itemToGive: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}
+    itemToBeGiven: {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
+    itemToGiveAway: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}

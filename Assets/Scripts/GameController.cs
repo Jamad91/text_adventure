@@ -108,11 +108,6 @@ public class GameController : MonoBehaviour
                 }
             }
         }
-        for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
-        {
-            Debug.Log(currentRoom.charactersInRoom[i].description);
-        }
-        Debug.Log(interactableCharacters.itemsCharsAreGiven.Count);
     }
 
     public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)

@@ -47,9 +47,6 @@ public class InteractableItems : MonoBehaviour
             
             InteractableObject interactableObjectinInventory = GetInteractableObjectFromUsableList(noun);
 
-            //Debug.Log("adding " + interactableObjectinInventory + " as an interable object");
-
-
             if (interactableObjectinInventory == null)
             {
                 continue;
@@ -60,16 +57,12 @@ public class InteractableItems : MonoBehaviour
                 {
                     Interaction interaction = interactableObjectinInventory.interactions[j];
 
-                    //Debug.Log("action response is " + interaction.actionResponse);
-
                     if (interaction.actionResponse == null)
                     {
-                        //Debug.Log("null response");
                         continue;
                     }
                     if (!useDictionary.ContainsKey(noun))
                     {
-                        //Debug.Log("add to the dictionary finally");
                         useDictionary.Add(noun, interaction.actionResponse);
                     }
                 }
@@ -105,7 +98,6 @@ public class InteractableItems : MonoBehaviour
             controller.LogStringWithReturn("You look in your backpack, inside you have: ");
             for (int i = 0; i < nounsInInventory.Count; i++)
             {
-                Debug.Log("holding " + nounsInInventory.Count);
                 if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
                 {
                     controller.LogStringWithReturn(nounsInInventory[i]);
@@ -195,7 +187,7 @@ public class InteractableItems : MonoBehaviour
         string item = seperatedInputWords[1];
         string npc = seperatedInputWords[3];
 
-        if (!nounsInInventory.Contains(item))
+        if (!nounsInInventory.Contains(item) || !controller.pickedUpAndHolding[item])
         {
             controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
         }
@@ -204,89 +196,33 @@ public class InteractableItems : MonoBehaviour
         {
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
             {
-                Debug.Log("first loop");
                 for (int j = 0; j < charactersList.Count; j++)
                 {
                     currentCharacter = charactersList[j];
-                    Debug.Log("trying to give to " + currentCharacter.characterName);
 
                     if (currentCharacter.characterName == npc)
                     {
                         
                         currentCharacterItemToBeGiven = currentCharacter.response.itemToBeGiven;
                         currentCharacterItemToGiveAway = currentCharacter.response.itemToGiveAway;
-                        // charactersList[j].response.isHoldingGivenItem = true;
-                        
+                        controller.pickedUpAndHolding[item] = false;
 
                         if (currentCharacterItemToBeGiven.noun == item)
                         {
                             controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.characterName][currentCharacterItemToBeGiven] = true;
                             controller.pickedUpAndHolding[item] = false;
-                            // if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave)
+                            if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName][currentCharacterItemToGiveAway])
+                            {
+                                controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName][currentCharacterItemToGiveAway] = false;
+                                nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
+                                AddActionResponsesToUseDictionary();
+                                controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
+                            }
                         }
-
-                        Debug.Log("Try this "+controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName].Keys.Count);
-
-
-                        //if ()
-                        //{
-                        //    nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
-                        //    AddActionResponsesToUseDictionary();
-                        //    controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
-                        //    Debug.Log(charactersList[j].characterName + " is holding " + currentCharacterItemToGiveAway.noun + "? " + controller.interactableCharacters.itemsCharsHave[charactersList[j].characterName][charactersList[j].response.itemToGiveAway]);
-                        //    controller.interactableCharacters.itemsCharsHave[charactersList[j].characterName][charactersList[j].response.itemToGiveAway] = false;
-                        //    //charactersList[j].response.isHoldingItemToGive = false;
-                        //    //controller.interactableCharacters.itemsCharsHave[charactersList[j]][char]
-                        //}
-
                         return;
                     }
                 }
             }
-
-            //public void GiveItem(string[] seperatedInputWords)
-            //{
-            //    List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
-            //    List<NPC> charactersList = controller.interactableCharacters.charactersList;
-
-            //    if (seperatedInputWords.Length != 4)
-            //    {
-            //        controller.LogStringWithReturn("You want to GIVE what TO who? Try again, please.");
-            //        return;
-            //    }
-
-            //    string item = seperatedInputWords[1];
-            //    string npc = seperatedInputWords[3];
-
-            //    if (!nounsInInventory.Contains(item))
-            //    {
-            //        controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
-            //    }
-
-            //    for (int i = 0; i < charactersInRoom.Count; i++)
-            //    {
-            //        if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
-            //        {
-            //            for (int j = 0; j < charactersList.Count; j++)
-            //            {
-            //                if (charactersList[j].characterName == npc)
-            //                {
-            //                    charactersList[j].response.isHoldingGivenItem = true;
-            //                    controller.pickedUpAndHolding[item] = false;
-            //                    if (charactersList[j].response.isHoldingItemToGive)
-            //                    {
-            //                        nounsInInventory.Add(charactersList[j].response.itemToGive.noun);
-            //                        AddActionResponsesToUseDictionary();
-            //                        controller.pickedUpAndHolding.Add(charactersList[j].response.itemToGive.noun, true);
-            //                        charactersList[j].response.isHoldingItemToGive = false;
-            //                    }
-
-            //                    return;
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
         }
     }
 

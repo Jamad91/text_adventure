@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Oso
   m_EditorClassIdentifier: 
-  characterName: name
+  characterName: oso
   description: bareburger
   interactions: []
   response:
@@ -20,4 +20,5 @@ MonoBehaviour:
     isHoldingGivenItemResponse: 
     notHoldingGivenItemResponse: 
     isHoldingItemToGive: 0
-    itemToGive: {fileID: 0}
+    itemToBeGiven: {fileID: 0}
+    itemToGiveAway: {fileID: 11400000, guid: 803b971fb2ef54f68afbf9d53c151dc4, type: 2}
