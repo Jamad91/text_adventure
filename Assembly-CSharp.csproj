@@ -79,7 +79,6 @@
     <Compile Include="Assets/Scripts/NPC.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
-    <Compile Include="Assets/Scripts/ScriptableObjectProtector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

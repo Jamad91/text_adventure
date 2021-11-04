@@ -1,24 +1,15 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
     <Files>
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="63" Column="50" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="65" Column="36" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/InputAction.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Examine.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/RoomNavigation.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ActionResponse.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ChangeRoomResponse.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Serializeables/Responses.cs" Line="8" Column="35" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="196" Column="25" NotebookId="1" />
-      <File FileName="Assets/Scripts/NPC.cs" Line="10" Column="15" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Talk.cs" Line="10" Column="6" NotebookId="1" />
-      <File FileName="Assets/Scripts/Serializeables/Interaction.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableObject.cs" Line="13" Column="33" NotebookId="1" />
-      <File FileName="Assets/Scripts/ScriptableObjectProtector.cs" Line="19" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="36" Column="6" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="17" Column="5" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="15" Column="36" NotebookId="1" />
+      <File FileName="Assets/Scripts/Room.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/NPC.cs" Line="11" Column="32" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="222" Column="88" NotebookId="1" />
+      <File FileName="Assets/Scripts/Serializeables/Responses.cs" Line="17" Column="2" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Talk.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="13" Column="9" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,7 +20,7 @@
                 <Node name="Input Action Scripts" expanded="True" />
                 <Node name="ScriptableObjects" expanded="True" />
                 <Node name="Serializeables" expanded="True" />
-                <Node name="ScriptableObjectProtector.cs" selected="True" />
+                <Node name="InteractableItems.cs" selected="True" />
               </Node>
             </Node>
           </Node>
