@@ -12,22 +12,4 @@ public class NPC : ScriptableObject// , ISerializationCallbackReceiver
     public Interaction[] interactions;
     public Response response;
 
-    //[System.NonSerialized]
-    //private Response runtimeResponse;
-
-    //public void OnAfterDeserialize()
-    //{
-    //    runtimeResponse = response;
-    //}
-
-    //public void OnBeforeSerialize()
-    //{
-
-    //}
-
-    //public void HoldGivenItem()
-    //{
-
-    //}
-
 }
