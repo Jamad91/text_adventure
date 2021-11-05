@@ -193,6 +193,13 @@ public class InteractableItems : MonoBehaviour
             controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
         }
 
+        Debug.Log(npc + " is in the room: " + charactersInRoom.Contains(npc));
+
+        if (!charactersInRoom.Contains(npc))
+        {
+            controller.LogStringWithReturn("Who are you talking about? I don't think they're in this room.");
+        }
+
         for (int i = 0; i < charactersInRoom.Count; i++)
         {
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
@@ -200,24 +207,26 @@ public class InteractableItems : MonoBehaviour
                 for (int j = 0; j < charactersList.Count; j++)
                 {
                     currentCharacter = charactersList[j];
-                    Debug.Log("giving to npc: " + npc + " giving to character: " + currentCharacter.characterName);
                     if (currentCharacter.characterName == npc)
                     {
-                        Debug.Log("same name");
-
-                            currentCharacterItemToBeGiven = currentCharacter.responses.itemToBeGiven;
-               
-                            currentCharacterItemToGiveAway = currentCharacter.responses.itemToGiveAway;
-
-
-
+                        currentCharacterItemToBeGiven = currentCharacter.responses.itemToBeGiven;
+                        currentCharacterItemToGiveAway = currentCharacter.responses.itemToGiveAway;
 
                         if (currentCharacterItemToBeGiven != null && currentCharacterItemToBeGiven.noun == item)
                         {
-                            Debug.Log(currentCharacter.characterName + " is supposed to be given " + item);
                             controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.characterName][currentCharacterItemToBeGiven] = true;
                             controller.pickedUpAndHolding[item] = false;
+
                             controller.LogStringWithReturn("You gave " + currentCharacter.characterName + " the " + item);
+
+                            Debug.Log(currentCharacter.characterName + " has transformed: " + controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.characterName));
+
+                            if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.characterName))
+                            {
+                                Debug.Log(currentCharacter.characterName + " is evolving!");
+                                controller.interactableCharacters.transformCharacter(currentCharacter.characterName);
+                            }
+
                             controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.beingGivenItemResponse);
 
                             if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName][currentCharacterItemToGiveAway])
@@ -226,10 +235,11 @@ public class InteractableItems : MonoBehaviour
                                 nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
                                 controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
                                 AddActionResponsesToUseDictionary();
-                                
-                                controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
                                 examineDictionary.Add(currentCharacterItemToGiveAway.noun, GetInteractionDescription(currentCharacterItemToGiveAway, "examine"));
                                 controller.pickedUpExamineDictionary.Add(currentCharacterItemToGiveAway.noun, examineDictionary[currentCharacterItemToGiveAway.noun]);
+
+                                controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
+                                
                             }
                         }
                         else

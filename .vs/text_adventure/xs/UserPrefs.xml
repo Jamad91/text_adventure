@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Serializeables/Responses.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="120" Column="164" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="25" Column="57" />
       <File FileName="Assets/Scripts/NPC.cs" Line="14" Column="44" />
-      <File FileName="Assets/Scripts/TextInput.cs" Line="77" Column="42" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="70" Column="47" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="214" Column="104" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="27" Column="93" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="13" Column="1" />
       <File FileName="Assets/Scripts/Serializeables/Responses.cs" Line="18" Column="52" />
     </Files>
     <Pads>

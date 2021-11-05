@@ -277,6 +277,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1359698767}
+  previousCommands: []
+  previousMessageIndex: 0
 --- !u!114 &429674496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +312,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}
   - {fileID: 11400000, guid: 52f97704257bb4f5b9f2eefef2caf1b8, type: 2}
   - {fileID: 11400000, guid: fd6709c9ba0254ab6be5c128863378c1, type: 2}
+  transformableCharactersList:
+  - {fileID: 11400000, guid: 25118fe35191e406a9988dbc29a41946, type: 2}
+  - {fileID: 11400000, guid: fd6709c9ba0254ab6be5c128863378c1, type: 2}
+  - {fileID: 11400000, guid: 095c4d2cd5e9349c1adf30250767ebe7, type: 2}
+  - {fileID: 11400000, guid: 52f97704257bb4f5b9f2eefef2caf1b8, type: 2}
+  - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}
   charactersInRoom: []
 --- !u!1 &519420028
 GameObject:
