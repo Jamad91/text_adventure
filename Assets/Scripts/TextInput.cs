@@ -63,5 +63,23 @@ public class TextInput : MonoBehaviour
                 inputField.text = previousCommands[previousMessageIndex];
             }
         }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            previousMessageIndex++;
+            if (previousCommands.Count > 0)
+            {
+                if (previousMessageIndex < previousCommands.Count)
+                {
+                    inputField.text = previousCommands[previousMessageIndex];
+                }
+                else if (previousMessageIndex == previousCommands.Count)
+                {
+                    inputField.text = "";
+                }
+            }
+        }
+        
     }
+
+    
 }
