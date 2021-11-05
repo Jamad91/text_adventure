@@ -14,6 +14,6 @@ public class Response
     [TextArea]
     public string doesNotWantItemResponse;
     
-    public InteractableObject itemToBeGiven;
-    public InteractableObject itemToGiveAway;
+    public InteractableObject itemToBeGiven = null;
+    public InteractableObject itemToGiveAway = null;
 }

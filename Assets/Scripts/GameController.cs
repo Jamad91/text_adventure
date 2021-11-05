@@ -107,17 +107,17 @@ public class GameController : MonoBehaviour
             NPC characterInRoom = currentRoom.charactersInRoom[i];
             if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.characterName))
             {
-                if (characterInRoom.response.itemToBeGiven != null)
+                if (characterInRoom.responses.itemToBeGiven != null)
                 {
-                    interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.response.itemToBeGiven, false } });
+                    interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
                 }
             }
 
             if (!interactableCharacters.itemsCharsHave.ContainsKey(characterInRoom.characterName))
             {
-                if (characterInRoom.response.itemToGiveAway != null)
+                if (characterInRoom.responses.itemToGiveAway != null)
                 {
-                    interactableCharacters.itemsCharsHave.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.response.itemToGiveAway, true } });
+                    interactableCharacters.itemsCharsHave.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToGiveAway, true } });
                 }
             }
         }

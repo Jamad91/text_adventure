@@ -10,16 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: Raton
+  m_Name: Rat
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
-  interactions: []
+  characterName: rat
+  description: he's a rat, he wants some cheese
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: where's the cheez?
+    actionResponse: {fileID: 0}
   response:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
-    itemToBeGiven: {fileID: 0}
-    itemToGiveAway: {fileID: 0}
-  isMember: 0
+    notHoldingGivenItemResponse: where's my cheese!? all I have are these damn cornflakes!
+      ugh, gross!
+    beingGivenItemResponse: my favorite! you can take the cornflakes, I don't want
+      them.
+    isHoldingGivenItemResponse: finally have my cheese!
+    doesNotWantItemResponse: why would I want that? does that look like cheese to
+      you?
+    itemToBeGiven: {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
+    itemToGiveAway: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}
+  transformsInto: {fileID: 0}

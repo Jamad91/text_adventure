@@ -200,33 +200,41 @@ public class InteractableItems : MonoBehaviour
                 for (int j = 0; j < charactersList.Count; j++)
                 {
                     currentCharacter = charactersList[j];
+                    Debug.Log("giving to npc: " + npc + " giving to character: " + currentCharacter.characterName);
                     if (currentCharacter.characterName == npc)
                     {
-                        currentCharacterItemToBeGiven = currentCharacter.response.itemToBeGiven;
-                        currentCharacterItemToGiveAway = currentCharacter.response.itemToGiveAway;
+                        Debug.Log("same name");
 
-                        if (currentCharacterItemToBeGiven.noun == item)
+                            currentCharacterItemToBeGiven = currentCharacter.responses.itemToBeGiven;
+               
+                            currentCharacterItemToGiveAway = currentCharacter.responses.itemToGiveAway;
+
+
+
+
+                        if (currentCharacterItemToBeGiven != null && currentCharacterItemToBeGiven.noun == item)
                         {
+                            Debug.Log(currentCharacter.characterName + " is supposed to be given " + item);
                             controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.characterName][currentCharacterItemToBeGiven] = true;
                             controller.pickedUpAndHolding[item] = false;
                             controller.LogStringWithReturn("You gave " + currentCharacter.characterName + " the " + item);
-                            controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.response.beingGivenItemResponse);
+                            controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.beingGivenItemResponse);
 
                             if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName][currentCharacterItemToGiveAway])
                             {
                                 controller.interactableCharacters.itemsCharsHave[currentCharacter.characterName][currentCharacterItemToGiveAway] = false;
                                 nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
-                                AddActionResponsesToUseDictionary();
                                 controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
+                                AddActionResponsesToUseDictionary();
+                                
                                 controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
                                 examineDictionary.Add(currentCharacterItemToGiveAway.noun, GetInteractionDescription(currentCharacterItemToGiveAway, "examine"));
                                 controller.pickedUpExamineDictionary.Add(currentCharacterItemToGiveAway.noun, examineDictionary[currentCharacterItemToGiveAway.noun]);
-
                             }
                         }
                         else
                         {
-                            controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.response.doesNotWantItemResponse);
+                            controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.doesNotWantItemResponse);
                         }
                         return;
                     }
@@ -234,7 +242,7 @@ public class InteractableItems : MonoBehaviour
                 
             }
         }
-        controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).response.doesNotWantItemResponse);
+        controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).responses.doesNotWantItemResponse);
         return;
     }
 
