@@ -24,7 +24,8 @@ public class InteractableCharacters : MonoBehaviour
         {
             if (charactersList[i].transformableCharacter)
             {
-                charactersTransformedDictionary.Add(charactersList[i].characterName, false);
+                charactersTransformedDictionary.Add(charactersList[i].name, false);
+                Debug.Log("A transformer: " + charactersList[i].name);
             }
         }
     }
@@ -32,9 +33,18 @@ public class InteractableCharacters : MonoBehaviour
     public string GetCharactersInRoom(Room currentRoom, int i)
     {
         NPC characterInRoom = currentRoom.charactersInRoom[i];
-        charactersInRoom.Add(characterInRoom.characterName);
-        Debug.Log(isTransformed(characterInRoom.characterName));
-        return characterInRoom.description;
+        Debug.Log(isTransformed(characterInRoom.name));
+        if (isTransformed(characterInRoom.name))
+        {
+            charactersInRoom.Add(characterInRoom.transformedCharacterName);
+            Debug.Log("Added transformer: " + charactersInRoom[charactersInRoom.Count - 1]);
+            return characterInRoom.transformedDescription;
+        } else
+        {
+            charactersInRoom.Add(characterInRoom.characterName);
+            Debug.Log("Added: " + charactersInRoom[charactersInRoom.Count - 1]);
+            return characterInRoom.description;
+        }
     }
 
     public void ClearCollections()
@@ -46,19 +56,29 @@ public class InteractableCharacters : MonoBehaviour
 
     public void TalkToCharacter(string[] seperatedInputWords)
     {
+        bool hasBeenTransformed;
+
         if (seperatedInputWords.Length != 3)
         {
             controller.LogStringWithReturn("TALK TO who? What are you saying? Try again, please.");
             return;
         }
         string characterSpokenTo = seperatedInputWords[2];
+
+
         if (charactersInRoom.Contains(characterSpokenTo))
         {
+            
             for (int i = 0; i < charactersList.Count; i++)
             {
-                if (characterSpokenTo == charactersList[i].characterName)
+                hasBeenTransformed = isTransformed(charactersList[i].name);
+                if (!hasBeenTransformed && characterSpokenTo == charactersList[i].characterName)
                 {
                     controller.LogStringWithReturn(charactersList[i].characterName + ": " + CharacterResponse(charactersList[i]));
+                }
+                else if (hasBeenTransformed && characterSpokenTo == charactersList[i].transformedCharacterName)
+                {
+                    controller.LogStringWithReturn(charactersList[i].transformedCharacterName + ": " + CharacterResponse(charactersList[i]));
                 }
             }
         }
@@ -91,11 +111,15 @@ public class InteractableCharacters : MonoBehaviour
 
     public void transformCharacter(string name)
     {
+        Debug.Log("Transformed: " + charactersTransformedDictionary[name]);
         charactersTransformedDictionary[name] = true;
+        //Debug.Log("Transformed: " + charactersTransformedDictionary[name]);
+
     }
 
     public bool isTransformed(string name)
     {
+        
         return charactersTransformedDictionary.ContainsKey(name) && charactersTransformedDictionary[name]; 
     }
 

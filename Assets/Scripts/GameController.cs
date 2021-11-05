@@ -58,12 +58,12 @@ public class GameController : MonoBehaviour
         PrepareCharactersInRoom(roomNavigation.currentRoom);
     }
 
-    public NPC GetNPC(string characterName)
+    public NPC GetNPC(string character)
     {
         NPC[] characters = roomNavigation.currentRoom.charactersInRoom;
         for (int i = 0; i < characters.Length; i++)
         {
-            if (characterName == characters[i].characterName)
+            if (character == characters[i].name)
             {
                 return characters[i];
             }
@@ -104,20 +104,21 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
         {
             characterDescriptionsInRoom.Add(interactableCharacters.GetCharactersInRoom(currentRoom, i));
+
             NPC characterInRoom = currentRoom.charactersInRoom[i];
-            if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.characterName))
+            if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.name))
             {
                 if (characterInRoom.responses.itemToBeGiven != null)
                 {
-                    interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
+                    interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
                 }
             }
 
-            if (!interactableCharacters.itemsCharsHave.ContainsKey(characterInRoom.characterName))
+            if (!interactableCharacters.itemsCharsHave.ContainsKey(characterInRoom.name))
             {
                 if (characterInRoom.responses.itemToGiveAway != null)
                 {
-                    interactableCharacters.itemsCharsHave.Add(characterInRoom.characterName, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToGiveAway, true } });
+                    interactableCharacters.itemsCharsHave.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToGiveAway, true } });
                 }
             }
         }
