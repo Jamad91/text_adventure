@@ -173,8 +173,8 @@ public class InteractableItems : MonoBehaviour
         List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
         List<NPC> charactersList = controller.interactableCharacters.charactersList;
         NPC currentCharacter;
-        InteractableObject currentCharacterItemToGiveAway;
-        InteractableObject currentCharacterItemToBeGiven;
+        InteractableObject ItemToGiveAway;
+        InteractableObject ItemToBeGiven;
 
         if (seperatedInputWords.Length != 4)
         {
@@ -205,11 +205,11 @@ public class InteractableItems : MonoBehaviour
 
                     if (currentCharacter.characterName == npc)
                     {
-                        currentCharacterItemToBeGiven = currentCharacter.responses.itemToBeGiven;
-                        currentCharacterItemToGiveAway = currentCharacter.responses.itemToGiveAway;
-                        if (currentCharacterItemToBeGiven != null && currentCharacterItemToBeGiven.noun == item)
+                        ItemToBeGiven = currentCharacter.responses.itemToBeGiven;
+                        ItemToGiveAway = currentCharacter.responses.itemToGiveAway;
+                        if (ItemToBeGiven != null && ItemToBeGiven.noun == item)
                         {
-                            controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.name][currentCharacterItemToBeGiven] = true;
+                            controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.name][ItemToBeGiven] = true;
                             controller.pickedUpAndHolding[item] = false;
                             controller.LogStringWithReturn("You gave " + currentCharacter.characterName + " the " + item);
                             if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.name))
@@ -218,7 +218,8 @@ public class InteractableItems : MonoBehaviour
                                 controller.LogStringWithReturn(currentCharacter.transformedCharacterName + ": " + currentCharacter.responses.beingGivenItemResponse);
                                 if (controller.transformCount == controller.interactableCharacters.transformableCharactersList.Count)
                                 {
-                                    GetHammer();
+                                    GetItem(hammer);
+                                    controller.LogStringWithReturn("You have received the hammer. Now you can free Heavy D.");
                                 }
                             }
                             else
@@ -226,15 +227,11 @@ public class InteractableItems : MonoBehaviour
                                 controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.beingGivenItemResponse);
                             }
 
-                            if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.name][currentCharacterItemToGiveAway])
+                            if (ItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.name][ItemToGiveAway])
                             {
-                                controller.interactableCharacters.itemsCharsHave[currentCharacter.name][currentCharacterItemToGiveAway] = false;
-                                nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
-                                controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
-                                AddActionResponsesToUseDictionary();
-                                examineDictionary.Add(currentCharacterItemToGiveAway.noun, GetInteractionDescription(currentCharacterItemToGiveAway, "examine"));
-                                controller.pickedUpExamineDictionary.Add(currentCharacterItemToGiveAway.noun, examineDictionary[currentCharacterItemToGiveAway.noun]);
-                                controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
+                                controller.interactableCharacters.itemsCharsHave[currentCharacter.name][ItemToGiveAway] = false;
+                                GetItem(ItemToGiveAway);
+                                controller.LogStringWithReturn("You received " + ItemToGiveAway.noun);
                             }
                         }
                         else
@@ -254,19 +251,14 @@ public class InteractableItems : MonoBehaviour
 
     public void Examine(string[] seperatedInputWords)
     {
-
-
         if (seperatedInputWords.Length < 2)
         {
             controller.LogStringWithReturn("EXAMINE what exactly? Speak clearly!");
             return;
         }
 
-        
-
         string item = seperatedInputWords[1];
         if (controller.pickedUpAndHolding.ContainsKey(item) && controller.pickedUpAndHolding[item]) {
-           
             controller.LogStringWithReturn(controller.pickedUpExamineDictionary[item]);
             return;
         }
@@ -307,14 +299,13 @@ public class InteractableItems : MonoBehaviour
         return null;
     }
 
-    public void GetHammer()
+    public void GetItem(InteractableObject item)
     {
-        nounsInInventory.Add(hammer.noun);
-        controller.pickedUpAndHolding.Add(hammer.noun, true);
+        nounsInInventory.Add(item.noun);
+        controller.pickedUpAndHolding.Add(item.noun, true);
         AddActionResponsesToUseDictionary();
-        examineDictionary.Add(hammer.noun, GetInteractionDescription(hammer, "examine"));
-        controller.pickedUpExamineDictionary.Add(hammer.noun, examineDictionary[hammer.noun]);
-        controller.LogStringWithReturn("You have received the hammer. Now you can free Heavy D.");
+        examineDictionary.Add(item.noun, GetInteractionDescription(item, "examine"));
+        controller.pickedUpExamineDictionary.Add(item.noun, examineDictionary[item.noun]);
     }
 
 
