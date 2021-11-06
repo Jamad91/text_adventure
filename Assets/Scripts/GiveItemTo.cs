@@ -10,14 +10,6 @@ public class GiveItemTo : ActionResponse
 
     public override bool DoActionResonse(GameController controller)
     {
-        //List<NPC> characters = controller.interactableCharacters.charactersList;
-        //for (int i = 0; i < characters.Count; i++)
-        //{
-        //    if (characters[i].characterName == requiredString)
-        //    {
-        //        return true;
-        //    }
-        //}
         return false;
     }
 

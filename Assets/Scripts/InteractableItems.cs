@@ -310,6 +310,7 @@ public class InteractableItems : MonoBehaviour
     public void GetHammer()
     {
         nounsInInventory.Add(hammer.noun);
+        controller.pickedUpAndHolding.Add(hammer.noun, true);
         AddActionResponsesToUseDictionary();
         examineDictionary.Add(hammer.noun, GetInteractionDescription(hammer, "examine"));
         controller.pickedUpExamineDictionary.Add(hammer.noun, examineDictionary[hammer.noun]);
