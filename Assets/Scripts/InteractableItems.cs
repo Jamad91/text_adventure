@@ -180,8 +180,6 @@ public class InteractableItems : MonoBehaviour
         InteractableObject currentCharacterItemToGiveAway;
         InteractableObject currentCharacterItemToBeGiven;
 
-
-
         if (seperatedInputWords.Length != 4)
         {
             controller.LogStringWithReturn("You want to GIVE what TO who? Try again, please.");
@@ -195,7 +193,6 @@ public class InteractableItems : MonoBehaviour
         {
             controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
         }
-        //check which name character is going by via transforms
 
         if (!charactersInRoom.Contains(npc))
         {
@@ -204,57 +201,41 @@ public class InteractableItems : MonoBehaviour
 
         for (int i = 0; i < charactersInRoom.Count; i++)
         {
-            Debug.Log(charactersInRoom[i]);
+            Debug.Log("Character in room:" + charactersInRoom[i]);
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
             {
-                Debug.Log("npc: " + npc  + " character in room: " + charactersInRoom[i]);
                 for (int j = 0; j < charactersList.Count; j++)
                 {
                     currentCharacter = charactersList[j];
-                    
 
                     if (currentCharacter.characterName == npc)
                     {
-                        Debug.Log("It's a match!");
                         currentCharacterItemToBeGiven = currentCharacter.responses.itemToBeGiven;
                         currentCharacterItemToGiveAway = currentCharacter.responses.itemToGiveAway;
-                        
                         if (currentCharacterItemToBeGiven != null && currentCharacterItemToBeGiven.noun == item)
                         {
-                            
                             controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.name][currentCharacterItemToBeGiven] = true;
-                            
                             controller.pickedUpAndHolding[item] = false;
-                            
                             controller.LogStringWithReturn("You gave " + currentCharacter.characterName + " the " + item);
-                            Debug.Log("break 1");
                             if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.name))
                             {
-                                Debug.Log("break 2");
-                                controller.interactableCharacters.transformCharacter(currentCharacter.name);
-                                Debug.Log("break 3");
+                                controller.interactableCharacters.transformCharacter(currentCharacter);
+                                controller.LogStringWithReturn(currentCharacter.transformedCharacterName + ": " + currentCharacter.responses.beingGivenItemResponse);
+                            }
+                            else
+                            {
+                                controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.beingGivenItemResponse);
                             }
 
-                            controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.beingGivenItemResponse);
-                            Debug.Log("break 4");
                             if (currentCharacterItemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.name][currentCharacterItemToGiveAway])
                             {
-                                Debug.Log("break 5");
                                 controller.interactableCharacters.itemsCharsHave[currentCharacter.name][currentCharacterItemToGiveAway] = false;
-                                Debug.Log("break 6");
                                 nounsInInventory.Add(currentCharacterItemToGiveAway.noun);
-                                Debug.Log("break 7");
                                 controller.pickedUpAndHolding.Add(currentCharacterItemToGiveAway.noun, true);
-                                Debug.Log("break 8");
                                 AddActionResponsesToUseDictionary();
-                                Debug.Log("break 9");
                                 examineDictionary.Add(currentCharacterItemToGiveAway.noun, GetInteractionDescription(currentCharacterItemToGiveAway, "examine"));
-                                Debug.Log("break 10");
                                 controller.pickedUpExamineDictionary.Add(currentCharacterItemToGiveAway.noun, examineDictionary[currentCharacterItemToGiveAway.noun]);
-                                Debug.Log("break 11");
                                 controller.LogStringWithReturn("You received " + currentCharacterItemToGiveAway.noun);
-                                Debug.Log("break 12");
-
                             }
                         }
                         else
@@ -267,6 +248,7 @@ public class InteractableItems : MonoBehaviour
                 
             }
         }
+
         controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).responses.doesNotWantItemResponse);
         return;
     }

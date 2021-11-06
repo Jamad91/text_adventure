@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableCharacters.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="107" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="65" Column="10" />
       <File FileName="Assets/Scripts/NPC.cs" Line="14" Column="44" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="80" Column="94" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="35" Column="8" />
       <File FileName="Assets/Scripts/Serializeables/Responses.cs" Line="18" Column="52" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="188" Column="20" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="182" Column="1" />
+      <File FileName="Assets/Scripts/GiveItemTo.cs" Line="12" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +17,7 @@
                 <Node name="Input Action Scripts" expanded="True" />
                 <Node name="ScriptableObjects" expanded="True" />
                 <Node name="Serializeables" expanded="True" />
-                <Node name="InteractableItems.cs" selected="True" />
+                <Node name="InteractableCharacters.cs" selected="True" />
               </Node>
             </Node>
           </Node>

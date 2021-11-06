@@ -63,7 +63,7 @@ public class GameController : MonoBehaviour
         NPC[] characters = roomNavigation.currentRoom.charactersInRoom;
         for (int i = 0; i < characters.Length; i++)
         {
-            if (character == characters[i].name)
+            if (character == characters[i].characterName || characters[i].transformedCharacterName != null && character == characters[i].transformedCharacterName)
             {
                 return characters[i];
             }
