@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: rat
   description: he's a rat, he wants some cheese
   transformableCharacter: 1
-  transformedCharacterName: Raton
+  transformedCharacterName: raton
   transformedDescription: A Man with an air of cheese around him
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}

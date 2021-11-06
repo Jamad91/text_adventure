@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
 {
     public Text displayText;
     public InputAction[] inputActions;
+    public int transformCount = 0;
 
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();

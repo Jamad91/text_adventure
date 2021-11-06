@@ -32,7 +32,7 @@ public class InteractableCharacters : MonoBehaviour
     public string GetCharactersInRoom(Room currentRoom, int i)
     {
         NPC characterInRoom = currentRoom.charactersInRoom[i];
-        Debug.Log(isTransformed(characterInRoom.name));
+       
         if (isTransformed(characterInRoom.name))
         {
             charactersInRoom.Add(characterInRoom.transformedCharacterName);
@@ -62,23 +62,18 @@ public class InteractableCharacters : MonoBehaviour
         }
         string characterSpokenTo = seperatedInputWords[2];
 
-        Debug.Log("talking to: " + characterSpokenTo);
         if (charactersInRoom.Contains(characterSpokenTo))
         {
-            Debug.Log("they're here!");
             for (int i = 0; i < charactersList.Count; i++)
             {
-                Debug.Log("have they been transformed?");
                 hasBeenTransformed = isTransformed(charactersList[i].name);
-                Debug.Log("transform status: " + hasBeenTransformed);
-                Debug.Log("matching: " + characterSpokenTo == charactersList[i].transformedCharacterName);
+
                 if (!hasBeenTransformed && characterSpokenTo == charactersList[i].characterName)
                 {
                     controller.LogStringWithReturn(charactersList[i].characterName + ": " + CharacterResponse(charactersList[i]));
                 }
                 else if (hasBeenTransformed && characterSpokenTo == charactersList[i].transformedCharacterName)
                 {
-
                     controller.LogStringWithReturn(charactersList[i].transformedCharacterName + ": " + CharacterResponse(charactersList[i]));
                 }
             }
@@ -115,12 +110,11 @@ public class InteractableCharacters : MonoBehaviour
         charactersTransformedDictionary[character.name] = true;
         charactersInRoom.Remove(character.characterName);
         charactersInRoom.Add(character.transformedCharacterName);
-        //Debug.Log(character.characterName + "aka old: " + charactersInRoom.Contains(character.characterName) + character.transformedCharacterName + " aka new: " + charactersInRoom.Contains(character.transformedCharacterName));
+        controller.transformCount++;
     }
 
     public bool isTransformed(string name)
     {
-        
         return charactersTransformedDictionary.ContainsKey(name) && charactersTransformedDictionary[name]; 
     }
 

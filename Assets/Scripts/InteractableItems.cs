@@ -9,7 +9,7 @@ public class InteractableItems : MonoBehaviour
 
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
-
+    public InteractableObject hammer;
 
     [HideInInspector] public List<string> nounsInRoom = new List<string>();
 
@@ -85,8 +85,6 @@ public class InteractableItems : MonoBehaviour
         return null;
     }
 
-
-
     public void DisplayInventory()
     {
         if (controller.pickedUpAndHolding.Count == 0 || !controller.pickedUpAndHolding.ContainsValue(true))
@@ -106,7 +104,6 @@ public class InteractableItems : MonoBehaviour
 
         }
     }
-
 
     public void ClearCollections()
     {
@@ -176,7 +173,6 @@ public class InteractableItems : MonoBehaviour
         List<string> charactersInRoom = controller.interactableCharacters.charactersInRoom;
         List<NPC> charactersList = controller.interactableCharacters.charactersList;
         NPC currentCharacter;
-        string currentCharacterName;
         InteractableObject currentCharacterItemToGiveAway;
         InteractableObject currentCharacterItemToBeGiven;
 
@@ -201,7 +197,6 @@ public class InteractableItems : MonoBehaviour
 
         for (int i = 0; i < charactersInRoom.Count; i++)
         {
-            Debug.Log("Character in room:" + charactersInRoom[i]);
             if (charactersInRoom[i] == npc && nounsInInventory.Contains(item))
             {
                 for (int j = 0; j < charactersList.Count; j++)
@@ -221,6 +216,10 @@ public class InteractableItems : MonoBehaviour
                             {
                                 controller.interactableCharacters.transformCharacter(currentCharacter);
                                 controller.LogStringWithReturn(currentCharacter.transformedCharacterName + ": " + currentCharacter.responses.beingGivenItemResponse);
+                                if (controller.transformCount == controller.interactableCharacters.transformableCharactersList.Count)
+                                {
+                                    GetHammer();
+                                }
                             }
                             else
                             {
@@ -306,6 +305,15 @@ public class InteractableItems : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void GetHammer()
+    {
+        nounsInInventory.Add(hammer.noun);
+        AddActionResponsesToUseDictionary();
+        examineDictionary.Add(hammer.noun, GetInteractionDescription(hammer, "examine"));
+        controller.pickedUpExamineDictionary.Add(hammer.noun, examineDictionary[hammer.noun]);
+        controller.LogStringWithReturn("You have received the hammer. Now you can free Heavy D.");
     }
 
 
