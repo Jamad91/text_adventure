@@ -25,9 +25,9 @@ MonoBehaviour:
     textResponse: Finally have my cheese!
     actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: hello1
-    beingGivenItemResponse: hello2
-    isHoldingGivenItemResponse: hell03
-    doesNotWantItemResponse: hello4
+    notHoldingGivenItemResponse: squeak squek
+    beingGivenItemResponse: mm..tasty. take these cornflakes
+    isHoldingGivenItemResponse: I don't have anything else
+    doesNotWantItemResponse: get outta here with that businesses
     itemToBeGiven: {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}

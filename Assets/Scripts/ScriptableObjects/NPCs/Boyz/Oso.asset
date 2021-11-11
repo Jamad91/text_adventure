@@ -19,9 +19,9 @@ MonoBehaviour:
   transformedDescription: 
   interactions: []
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
-    itemToBeGiven: {fileID: 0}
+    notHoldingGivenItemResponse: roar
+    beingGivenItemResponse: ah, I needed that
+    isHoldingGivenItemResponse: smokin'
+    doesNotWantItemResponse: fuck no
+    itemToBeGiven: {fileID: 11400000, guid: f7aa874cc265c4c25a1fc31d059dfd19, type: 2}
     itemToGiveAway: {fileID: 0}

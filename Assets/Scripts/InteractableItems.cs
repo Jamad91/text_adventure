@@ -152,10 +152,10 @@ public class InteractableItems : MonoBehaviour
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");
                 }
-                else
-                {
-                    controller.pickedUpAndHolding[nounToUse] = false;
-                }
+                //else
+                //{
+                //    controller.pickedUpAndHolding[nounToUse] = false;
+                //}
             }
             else
             {
@@ -295,7 +295,6 @@ public class InteractableItems : MonoBehaviour
                 return interactable.interactions[i].textResponse;
             }
         }
-
         return null;
     }
 
