@@ -16,8 +16,14 @@ MonoBehaviour:
   description: It's some bear
   transformableCharacter: 1
   transformedCharacterName: Oso
-  transformedDescription: 
-  interactions: []
+  transformedDescription: The bear is now a man
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: grrrrr
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: you gave the bear a cigarette
+    actionResponse: {fileID: 0}
   responses:
     notHoldingGivenItemResponse: roar
     beingGivenItemResponse: ah, I needed that

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: cigarette
   description: a lone unlit bogie lies on the table
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: smells gross
+    actionResponse: {fileID: 0}
