@@ -178,7 +178,7 @@ public class InteractableItems : MonoBehaviour
 
         if (seperatedInputWords.Length != 4)
         {
-            controller.LogStringWithReturn("You want to GIVE what TO who? Try again, please.");
+            controller.LogStringWithReturn("You want to GIVE who  TO who? Try again, please.");
             return;
         }
 
@@ -188,11 +188,13 @@ public class InteractableItems : MonoBehaviour
         if (!nounsInInventory.Contains(item) || !controller.pickedUpAndHolding[item])
         {
             controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
+            return;
         }
 
         if (!charactersInRoom.Contains(npc))
         {
             controller.LogStringWithReturn("Who are you talking about? I don't think they're in this room.");
+            return;
         }
 
         for (int i = 0; i < charactersInRoom.Count; i++)
