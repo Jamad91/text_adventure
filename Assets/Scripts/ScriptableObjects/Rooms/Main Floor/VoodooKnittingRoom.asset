@@ -24,5 +24,6 @@ MonoBehaviour:
   - keyString: south
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: ff7a554d8c9ca4717b1893aa986d4e8f, type: 2}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 0}
   charactersInRoom: []

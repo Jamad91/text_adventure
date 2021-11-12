@@ -25,4 +25,5 @@ MonoBehaviour:
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: ff7a554d8c9ca4717b1893aa986d4e8f, type: 2}
   interactableObjectsInRoom: []
-  charactersInRoom: []
+  charactersInRoom:
+  - {fileID: 11400000, guid: 5c8c94acedf2b43879e08b8d6d9b6f38, type: 2}
