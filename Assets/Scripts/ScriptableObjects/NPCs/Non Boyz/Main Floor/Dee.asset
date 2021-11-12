@@ -19,9 +19,10 @@ MonoBehaviour:
   transformedDescription: 
   interactions: []
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
-    itemToBeGiven: {fileID: 0}
-    itemToGiveAway: {fileID: 0}
+    notHoldingGivenItemResponse: They took my ducks! I want my ducks back!
+    beingGivenItemResponse: My ducks! Dee's ducks! No one else's ducks! I don't need
+      to drown my sorrows anymore.
+    isHoldingGivenItemResponse: Never going to take Dee's Ducks away from her again!
+    doesNotWantItemResponse: Those are not my ducks.
+    itemToBeGiven: {fileID: 11400000, guid: 26500e41780f0498c96d6a390c0ac06a, type: 2}
+    itemToGiveAway: {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}

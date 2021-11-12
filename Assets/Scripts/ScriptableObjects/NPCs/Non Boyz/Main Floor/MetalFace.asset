@@ -23,5 +23,5 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
-    itemToBeGiven: {fileID: 0}
-    itemToGiveAway: {fileID: 0}
+    itemToBeGiven: {fileID: 11400000, guid: 12b4cab4009de49c89238c41d54ed4f7, type: 2}
+    itemToGiveAway: {fileID: 11400000, guid: f0d6b622e8fa64653be58e0b657bc927, type: 2}

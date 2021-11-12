@@ -19,9 +19,11 @@ MonoBehaviour:
   transformedDescription: 
   interactions: []
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
+    notHoldingGivenItemResponse: I need something that'll help my get this car looking
+      nice.
+    beingGivenItemResponse: Ah, just what I needed. This'll fix those hubcaps and
+      get me high too! Here's some PCP I had lying around, for your troubles.
+    isHoldingGivenItemResponse: I LIVE! I DIE! I LIVE AGAIN!
     doesNotWantItemResponse: 
-    itemToBeGiven: {fileID: 0}
-    itemToGiveAway: {fileID: 0}
+    itemToBeGiven: {fileID: 11400000, guid: f0d6b622e8fa64653be58e0b657bc927, type: 2}
+    itemToGiveAway: {fileID: 11400000, guid: 826e00613395f442c8381d228b5da85a, type: 2}
