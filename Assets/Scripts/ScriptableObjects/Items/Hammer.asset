@@ -16,5 +16,5 @@ MonoBehaviour:
   description: behold it's heaviness
   interactions:
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: it is a heavy  hammer
+    textResponse: it is a heavy hammer
     actionResponse: {fileID: 0}
