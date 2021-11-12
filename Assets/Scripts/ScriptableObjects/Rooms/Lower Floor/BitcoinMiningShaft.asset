@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 
   roomName: 
-  exits: []
+  exits:
+  - keyString: north
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: d597715e54f644516a4b2908cc1f8421, type: 2}
+  - keyString: east
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: f520207db8edf4583a20a244e68cf1d8, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []
