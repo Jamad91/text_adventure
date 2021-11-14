@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sledgehammer
   m_EditorClassIdentifier: 
   noun: sledgehammer
-  description: heavy hitter
+  description: 
+  beingGivenDescription: Description of when you are given the item from another
+    character
   interactions: []
-  heldItem: 0

@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: Cow
+  m_Name: Powder
   m_EditorClassIdentifier: 
-  noun: cow
-  description: 
-  beingGivenDescription: You take the COW from the child. No idea where he was hiding
-    it.
+  noun: powder
+  description: A small bottle of baby POWDER is on a shelf next to the sink
+  beingGivenDescription: 
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: 
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: It's a cow, plain and simple.
+    textResponse: 'It''s got that classic talcum smell.
+
+'
     actionResponse: {fileID: 0}

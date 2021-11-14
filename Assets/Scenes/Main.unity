@@ -337,7 +337,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}
   - {fileID: 11400000, guid: ef8da9d9080aa4e76a3873f1e8072fff, type: 2}
   - {fileID: 11400000, guid: a5b186f5d9ed4453cb555f44726fa5b9, type: 2}
-  hammer: {fileID: 11400000, guid: b85ddd2c75a7b4c2f842700b3a7ede21, type: 2}
+  hammer: {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
   nounsInRoom: []
 --- !u!114 &429674497
 MonoBehaviour:

@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
   m_Name: Rum
   m_EditorClassIdentifier: 
-  noun: name
+  noun: rum
   description: Description in room
-  interactions: []
+  beingGivenDescription: this is where the rum went!
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: given rum
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: '
+
+'
+    actionResponse: {fileID: 0}

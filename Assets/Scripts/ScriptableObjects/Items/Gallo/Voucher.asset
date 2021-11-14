@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: TinyUmbrella
+  m_Name: Voucher
   m_EditorClassIdentifier: 
   noun: name
   description: Description in room
+  beingGivenDescription: Description of when you are given the item from another
+    character
   interactions: []

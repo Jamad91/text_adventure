@@ -14,9 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: cheese
   description: There is a wheel of cheese
+  beingGivenDescription: Description of when you are given the item from another
+    character
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
-    textResponse: You give the rat his cheese.
+    textResponse: The rat's nose begins to twitch as you start to take the cheese
+      out of your pocket. As soon as you hand it to him, he grabs it and scurries
+      behind a corner of the sewer. A few seconds later, very well dressed man walks
+      back, stll munching on the cheese
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
     textResponse: you pick up the cheese. smelly.

@@ -33,5 +33,7 @@ MonoBehaviour:
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
   - {fileID: 11400000, guid: 696bfe010283e45cf8db98a67aca55d7, type: 2}
+  - {fileID: 11400000, guid: 26500e41780f0498c96d6a390c0ac06a, type: 2}
   charactersInRoom:
   - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}
+  - {fileID: 11400000, guid: 7044c46f0ecff46a3abd29547240d577, type: 2}

@@ -13,5 +13,13 @@ MonoBehaviour:
   m_Name: MembersOnlyJacket
   m_EditorClassIdentifier: 
   noun: name
-  description: Description in room
-  interactions: []
+  description: There is only one JACKET on the rack. It says in a small label "Member's
+    Only"
+  beingGivenDescription: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: If you put it on, something happens
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: aeaa68d02b67b4237ae22a5432d7e3c7, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}

@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: BouncyBall
   m_EditorClassIdentifier: 
   noun: name
-  description: Description in room
-  interactions: []
+  description: A bright, small orange bouncy BALL is on the floor
+  beingGivenDescription: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: This BALL looks especially bouncy, better hold it tight
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: aeaa68d02b67b4237ae22a5432d7e3c7, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}

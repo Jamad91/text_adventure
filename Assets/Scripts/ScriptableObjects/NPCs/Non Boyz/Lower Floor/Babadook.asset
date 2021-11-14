@@ -27,7 +27,9 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   responses:
     notHoldingGivenItemResponse: ... (makes a heart sign with his hands. Huh.)
-    beingGivenItemResponse: ... (hands you a joint, what a cool guy)
+    beingGivenItemResponse: ... (takes the flag and ties it around his neck, smiling.
+      he picks up his hat, picks up a joint that was resing on his head, and extends
+      it to you)
     isHoldingGivenItemResponse: ...(looks at you either satsified or that he will
       eat your soul)
     doesNotWantItemResponse: ...(looks uninterested)
