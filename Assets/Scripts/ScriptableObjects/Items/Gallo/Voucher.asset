@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
   m_Name: Voucher
   m_EditorClassIdentifier: 
-  noun: name
-  description: Description in room
-  beingGivenDescription: Description of when you are given the item from another
-    character
-  interactions: []
+  noun: voucher
+  description: 
+  beingGivenDescription: You take the VOUCHER. Seems to be useful for trading at
+    some shop
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: It reads "For one exceptionally rare item"
+    actionResponse: {fileID: 0}

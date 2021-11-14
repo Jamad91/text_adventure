@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: Resume
+  m_Name: Taco
   m_EditorClassIdentifier: 
-  noun: resume
+  noun: taco
   description: 
-  beingGivenDescription: You nod your head with fake encouragement as you take the
-    RESUME as you don't have the heart to say that the job market is really tough
-    right now
+  beingGivenDescription: You are handed a carnitas TACO, covered in verde sauce,
+    onions, radish, and cilantro
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: 
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: There's a lot of typos on this
+    textResponse: Your favorite food
     actionResponse: {fileID: 0}

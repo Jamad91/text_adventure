@@ -13,5 +13,15 @@ MonoBehaviour:
   m_Name: Laxative
   m_EditorClassIdentifier: 
   noun: name
-  description: Description in room
-  interactions: []
+  description: 'A small basket is by the door with the sign: "Free LAXATIVE samples"'
+  beingGivenDescription: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: You wish you had this a few days ago. That was a bad day.
+    actionResponse: {fileID: 0}
