@@ -10,6 +10,6 @@ public class Give : InputAction
     {
 
         controller.interactableItems.GiveItem(seperatedInputWords);
-        
+
     }
 }
