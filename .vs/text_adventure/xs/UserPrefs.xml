@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Give.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableObject.cs">
     <Files>
       <File FileName="Assets/Scripts/GameController.cs" Line="9" Column="39" />
       <File FileName="Assets/Scripts/NPC.cs" Line="15" Column="14" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="113" Column="37" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="51" Column="1" />
       <File FileName="Assets/Scripts/Serializeables/Responses.cs" Line="15" Column="42" />
       <File FileName="Assets/Scripts/GiveItemTo.cs" Line="13" Column="22" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="206" Column="30" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="235" Column="34" />
       <File FileName="Assets/Scripts/TypeWriter.cs" />
       <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" />
       <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="13" Column="1" />
       <File FileName="Assets/Scripts/Serializeables/Interaction.cs" Line="13" Column="1" />
       <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="21" Column="147" />
+      <File FileName="Assets/Scripts/InteractableObject.cs" Line="12" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,11 +20,10 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Input Action Scripts" expanded="True">
-                  <Node name="Give.cs" selected="True" />
-                </Node>
+                <Node name="Input Action Scripts" expanded="True" />
                 <Node name="ScriptableObjects" expanded="True" />
                 <Node name="Serializeables" expanded="True" />
+                <Node name="InteractableObject.cs" selected="True" />
               </Node>
             </Node>
           </Node>

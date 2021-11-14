@@ -246,7 +246,7 @@ public class InteractableItems : MonoBehaviour
                             {
                                 controller.interactableCharacters.itemsCharsHave[currentCharacter.name][itemToGiveAway] = false;
                                 GetItem(itemToGiveAway);
-                                controller.LogStringWithReturn("You received " + itemToGiveAway.noun);
+                                controller.LogStringWithReturn(itemToGiveAway.beingGivenDescription);
                             }
                         }
                         else
