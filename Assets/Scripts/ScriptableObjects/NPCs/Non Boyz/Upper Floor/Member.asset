@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Member
   m_EditorClassIdentifier: 
   characterName: member
-  description: 
+  description: Wow, she's definitely a MEMBER. So cool
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I would love to smoke my pipe, but I don't have
+      a way of lighting it up
+    beingGivenItemResponse: Ah thank you. Take this little something I found lying
+      aorund. Could be useful
+    isHoldingGivenItemResponse: You will never be this cool as I am right now
+    doesNotWantItemResponse: Are you sure you're a member?
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 5372e7dc6cbc74dbd9aeddd89e6d3bb8, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: e401a940a84764a5496414b0254ec977, type: 2}

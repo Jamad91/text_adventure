@@ -13,16 +13,28 @@ MonoBehaviour:
   m_Name: Joblin
   m_EditorClassIdentifier: 
   characterName: joblin
-  description: 
+  description: Like all of her kind, the JOBLIN in front of you smells like oppurtunity
+    and rancid meat
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I've got this perfect entry level role, but no one
+      to fill it! I just started, so don't even have anyone to call about it, When
+      I ask for helmp all my boss says is "coffee is for closers". What does that
+      even mean??
+    beingGivenItemResponse: Finally, a candidate! No one can stop this Joblin! Here's
+      a femur from the last candidate I interviewed that lied on his resume
+    isHoldingGivenItemResponse: Ugh, who chooses Comic Sans as the font on their
+      resume!?
+    doesNotWantItemResponse: This does me no good
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 1dff726b2caae43f79b27cf79fcef822, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 5d7b38ca3ff9940b283fb83f35f1ad80, type: 2}

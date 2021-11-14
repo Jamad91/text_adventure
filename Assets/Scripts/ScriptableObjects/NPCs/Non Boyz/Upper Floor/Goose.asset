@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Goose
   m_EditorClassIdentifier: 
   characterName: goose
-  description: 
+  description: Here's a magic GOOSE hanging out because, why not?
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I gotta hide all my eggs before the boss man sees
+      takes all my money!
+    beingGivenItemResponse: Yes! No golden eggs for you, mr. boss man! Thanks pal,
+      you're a lifesaver; I can retire early now. Have an egg for all of your help
+    isHoldingGivenItemResponse: He won't find my eggs now!
+    doesNotWantItemResponse: How am I suppsoed to hide my eggs with this?
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 05dd98bece0b94fbd9e11a175875ac98, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 18c9652d343f9410580914ad299aaded, type: 2}

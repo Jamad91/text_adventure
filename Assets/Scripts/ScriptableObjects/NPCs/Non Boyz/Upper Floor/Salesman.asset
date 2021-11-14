@@ -13,16 +13,29 @@ MonoBehaviour:
   m_Name: Salesman
   m_EditorClassIdentifier: 
   characterName: salesman
-  description: 
+  description: Considering he just sells masks, it's a little odd that this SALESMAN's
+    pack is so enormous.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: My masks are one of a kind and very valuable. Some
+      give you power, some transform you into another creature, some cause a moon
+      to crash down onto the earth, it's a real grab bag. Point is, you better cough
+      up something of value if you want one.
+    beingGivenItemResponse: Yes...yes...this will do. Here is a mask of equal value.
+      Good luck, traveler.
+    isHoldingGivenItemResponse: You have what you came for. You will receive no more
+      from me.
+    doesNotWantItemResponse: Do not suggest such paltry offerings in exchange for
+      my goods.
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 18c9652d343f9410580914ad299aaded, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 12b4cab4009de49c89238c41d54ed4f7, type: 2}

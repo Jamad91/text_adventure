@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Pirate
   m_EditorClassIdentifier: 
   characterName: pirate
-  description: 
+  description: It's a PIRATE. A really sober PIRATE. Huh. Didn't know they made those.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I love being a pirate, but I'm waaaay too sober
+      for this. I need to get trashed and fast.
+    beingGivenItemResponse: Oh this will for sure kill me. Thanks! Take these plane
+      tickets. I don't know why I have them, I'm a pirate, I sail, I don't fly.
+    isHoldingGivenItemResponse: Ahhhh just what the doctor told me not do to
+    doesNotWantItemResponse: Meh
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}

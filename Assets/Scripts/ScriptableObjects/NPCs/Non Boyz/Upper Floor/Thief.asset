@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Thief
   m_EditorClassIdentifier: 
   characterName: thief
-  description: 
+  description: A sneaky THIEF!
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I got a tip there was something I could pawn here,
+      but my fence won't take any of this!
+    beingGivenItemResponse: Yeah, I can sell this. Here, I found this under the bed.
+      Damn, teenagers - always hiding their booze.
+    isHoldingGivenItemResponse: One last score after this, and then I'm out
+    doesNotWantItemResponse: This is worthless
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 6473de57e6a1246d09ea96da31866271, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 803b971fb2ef54f68afbf9d53c151dc4, type: 2}

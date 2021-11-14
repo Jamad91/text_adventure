@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Businessman
   m_EditorClassIdentifier: 
   characterName: businessman
-  description: 
+  description: A BUSINESSMAN in a full suit and tie is glued to his phone
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I'm supposed to fly out to Seattle, but I lost my
+      ticket!
+    beingGivenItemResponse: You're a lifesaver. Here, my card gave me a free pass
+      to this thing, maybe you can use it?
+    isHoldingGivenItemResponse: Wait, these are to Austin!
+    doesNotWantItemResponse: How am I suppsoed to get to my meeting with this!?
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: a396bd2f04f094f1aae0635b52667f0f, type: 2}
