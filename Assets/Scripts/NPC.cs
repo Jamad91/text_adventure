@@ -12,6 +12,7 @@ public class NPC : ScriptableObject// , ISerializationCallbackReceiver
 
     public bool transformableCharacter;
     public string transformedCharacterName;
+    [TextArea]
     public string transformedDescription;
 
     public Interaction[] interactions;

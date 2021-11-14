@@ -13,6 +13,8 @@ public class Response
     public string isHoldingGivenItemResponse;
     [TextArea]
     public string doesNotWantItemResponse;
+    [TextArea]
+    public string transformedDoesNotWantItemResponse;
     
     public InteractableObject itemToBeGiven = null;
     public InteractableObject itemToGiveAway = null;

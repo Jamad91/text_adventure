@@ -238,6 +238,11 @@ public class InteractableItems : MonoBehaviour
                         }
                         else
                         {
+                            if (currentCharacter.transformableCharacter && controller.interactableCharacters.charactersTransformedDictionary[currentCharacter.name])
+                            {
+                                controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.transformedDoesNotWantItemResponse);
+                                return;
+                            }
                             controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.doesNotWantItemResponse);
                         }
                         return;
@@ -246,8 +251,14 @@ public class InteractableItems : MonoBehaviour
                 
             }
         }
-
-        controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).responses.doesNotWantItemResponse);
+        if (controller.GetNPC(npc).transformableCharacter && controller.interactableCharacters.charactersTransformedDictionary[controller.GetNPC(npc).name])
+        {
+            controller.LogStringWithReturn(controller.GetNPC(npc).characterName + ": " + controller.GetNPC(npc).responses.transformedDoesNotWantItemResponse);
+        }
+        else
+        {
+            controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).responses.doesNotWantItemResponse);
+        }
         return;
     }
 
