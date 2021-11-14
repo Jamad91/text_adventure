@@ -13,16 +13,23 @@ MonoBehaviour:
   m_Name: Raccoon
   m_EditorClassIdentifier: 
   characterName: raccoon
-  description: 
+  description: That pesky RACCOON looks like she's up to something again
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Cha cha cha, I want dessert, beech!
+    beingGivenItemResponse: Thanks, beech! Take this. You don't want to know why
+      I have this.
+    isHoldingGivenItemResponse: You got more dessert for me, beech?
+    doesNotWantItemResponse: Beech please!
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 3d6826098e10a4d13b9410c96eb43383, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 05dd98bece0b94fbd9e11a175875ac98, type: 2}

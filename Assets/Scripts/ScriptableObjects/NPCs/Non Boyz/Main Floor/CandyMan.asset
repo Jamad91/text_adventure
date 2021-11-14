@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Candyman
   m_EditorClassIdentifier: 
   characterName: candyman
-  description: 
+  description: The CANDYMAN waves at you from the corner with a big ol' smile. Not
+    sure if he's the Willy Wonka kind or the "say his name five times" kind
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I need something sweet. Something baked.
+    beingGivenItemResponse: Yes. This will suffice for my needs. Have a lolli. You
+      better enjoy it.
+    isHoldingGivenItemResponse: That was good. But I crave more.
+    doesNotWantItemResponse: This will not sate me.
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 25ffafabbaf084adc97918272f537d64, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 6c74f1375d1404ddfb7878aaca49fd7a, type: 2}

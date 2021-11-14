@@ -13,16 +13,25 @@ MonoBehaviour:
   m_Name: Metalface
   m_EditorClassIdentifier: 
   characterName: metalface
-  description: 
+  description: Esteemed hero of the people and villain of the system, METALFACE's
+    might is unmistakable
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Yo, this face is no good anymore. I need a new face
+      to really inspire fear in my enemies
+    beingGivenItemResponse: All will feel the power of Metalface now! Have some spray
+      paint, it'll keep all your masks nice and shiny
+    isHoldingGivenItemResponse: Y'all will face your doom
+    doesNotWantItemResponse: No, this inspires no fear
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 12b4cab4009de49c89238c41d54ed4f7, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: f0d6b622e8fa64653be58e0b657bc927, type: 2}

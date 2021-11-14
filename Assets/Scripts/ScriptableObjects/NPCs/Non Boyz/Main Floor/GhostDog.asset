@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Ghostdog
   m_EditorClassIdentifier: 
   characterName: ghostdog
-  description: 
+  description: You always knew you'd run into GHOSTDOG again, but not here
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: bark bark, son. toss me something to chew on
+    beingGivenItemResponse: nice, just what I wanted. catch you in the next life,
+      fool
+    isHoldingGivenItemResponse: grrrr
+    doesNotWantItemResponse: you trying to give me your trash? name's ghostdog, not
+      ghostgoat
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 5d7b38ca3ff9940b283fb83f35f1ad80, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 338d0eb603c4e4693ac0140b14c2215f, type: 2}

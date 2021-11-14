@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Cosplayer
   m_EditorClassIdentifier: 
   characterName: cosplayer
-  description: 
+  description: 'A COSPLAYER is dressed as...some anime character(??) '
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I wanted to check to con, but I forgot to wake up
+      and get a pass like a n00b! Now they're sold out. RIP me
+    beingGivenItemResponse: OMG!1!! Just what I wanted. I was going to use this as
+      part of my costume before I changed what I wanted to go as. You can have it
+    isHoldingGivenItemResponse: This is a dream come true! :')
+    doesNotWantItemResponse: Gtfo
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: a396bd2f04f094f1aae0635b52667f0f, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: a5b186f5d9ed4453cb555f44726fa5b9, type: 2}

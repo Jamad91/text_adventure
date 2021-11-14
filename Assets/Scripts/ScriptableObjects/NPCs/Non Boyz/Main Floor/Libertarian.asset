@@ -13,16 +13,26 @@ MonoBehaviour:
   m_Name: Libertarian
   m_EditorClassIdentifier: 
   characterName: libertarian
-  description: 
+  description: One of Negativa D's followers, a LIBERTARIAN looks at you rarther
+    smugly as he prepares himself to start lecturing you about the corruption of
+    the FED and the IMF
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I really want some way of showing off to people
+      how much better and smarter I am than everyone else
+    beingGivenItemResponse: This'll show all those sheeple how dumb they all are!
+    isHoldingGivenItemResponse: The sheeple will fall for anything that the lame
+      stream media tells them
+    doesNotWantItemResponse: Do you think me a plebe?
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: c64db22244e73487ba9330ac7db2fdff, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 6473de57e6a1246d09ea96da31866271, type: 2}

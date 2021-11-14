@@ -13,16 +13,27 @@ MonoBehaviour:
   m_Name: Bicyclist
   m_EditorClassIdentifier: 
   characterName: bicyclist
-  description: 
+  description: A really, let's say, "relaxed" BICYCLIST lays down on one of lounge
+    chairs
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Man, I want to bike, but I just can't get up. Maybe
+      if I had something that reminded me of my hero, Lance, I'd get moving again...No,
+      I've been living off the grid for the last 20 years. Did something happen to
+      him?
+    beingGivenItemResponse: Alright, can finally start cycling again! Here, I found
+      this in my pocket, have it
+    isHoldingGivenItemResponse: Lance did WHAT!? I don't buy it!!!!
+    doesNotWantItemResponse: That won't get me up and at'em
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 508b19a8f68ed4709b09c03f3d3c6529, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: ef8da9d9080aa4e76a3873f1e8072fff, type: 2}

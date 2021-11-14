@@ -13,16 +13,27 @@ MonoBehaviour:
   m_Name: Teacher
   m_EditorClassIdentifier: 
   characterName: teacher
-  description: 
+  description: A middle aged middle school TEACHER with an six o clock shadow and
+    blood red eyes glares at you frantically
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I don't know what I'm doing! I just can't reach
+      these kids! I've lost all my chalk! I've missed breakfast for weeks! The most
+      important meal! I miss breakfast so much!
+    beingGivenItemResponse: Oh how I missed you, breakfast! Can you give my resume
+      to someone? I can't do this job anymore if it means no breakfast!
+    isHoldingGivenItemResponse: I don't feel so good....
+    doesNotWantItemResponse: Life is pointless! Why didn't I study anything else
+      in college!?
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 55c81b52b83af4264a92b97983a8c1c4, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 1dff726b2caae43f79b27cf79fcef822, type: 2}

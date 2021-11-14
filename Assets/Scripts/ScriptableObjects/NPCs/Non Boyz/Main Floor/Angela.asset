@@ -13,16 +13,26 @@ MonoBehaviour:
   m_Name: Angela
   m_EditorClassIdentifier: 
   characterName: angela
-  description: Description of person
+  description: ANGELA Lansbury, the greatest acting talent that's ever lived, sits
+    beside a window reading a good book
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: The only thing missing from this perfectly wonderful
+      day is a nice spot of tea
+    beingGivenItemResponse: That's the good stuff. What a gentleman you are. Would
+      you please do me a favor? I found this literary garbage in my library. Could
+      you please get rid of it for me?
+    isHoldingGivenItemResponse: Ahh...
+    doesNotWantItemResponse: No, that's not quite right.
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 0add57847cddd451b9bc316fc0fc7101, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: c64db22244e73487ba9330ac7db2fdff, type: 2}

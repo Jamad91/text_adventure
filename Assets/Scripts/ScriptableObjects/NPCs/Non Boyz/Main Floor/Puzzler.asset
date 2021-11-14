@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Puzzler
   m_EditorClassIdentifier: 
   characterName: puzzler
-  description: 
+  description: Some PUZZLER stares down at a mostly complete jigsaw puzzle
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I only need one more puzzle piece and then it's
+      finally done!
+    beingGivenItemResponse: Now I can finally finish this and get on with my life!
+    isHoldingGivenItemResponse: IT DOESN'T FIT
+    doesNotWantItemResponse: Do you think I can just put anything in this puzzle?
+      What kind of moron are you!?
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: e401a940a84764a5496414b0254ec977, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 6d0ede5613706411aa450fe9e0c65dbc, type: 2}

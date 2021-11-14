@@ -13,16 +13,23 @@ MonoBehaviour:
   m_Name: Waciuma
   m_EditorClassIdentifier: 
   characterName: waciuma
-  description: His voice is deep enough to cause earthquakes
+  description: The perfect man, WACIUMA, is relaxing as he is want to do
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Dude, I feel like I've got nothing good to watch
+    beingGivenItemResponse: This wasn't as good as season 3, but shieeeet, what a
+      good show
+    isHoldingGivenItemResponse: This is no Lovecraft Country, but I still love it
+    doesNotWantItemResponse: Nah, that's pretty boring
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 9dc3a75bd8a15460fa09b20d1466859e, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 25ffafabbaf084adc97918272f537d64, type: 2}

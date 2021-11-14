@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Dee
   m_EditorClassIdentifier: 
   characterName: dee
-  description: 
+  description: DEE, the bird woman who's a regular at your local dive bar sits cross
+    legged with a crazed look in her eyes
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 

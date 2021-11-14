@@ -13,16 +13,22 @@ MonoBehaviour:
   m_Name: Queen
   m_EditorClassIdentifier: 
   characterName: queen
-  description: 
+  description: Her majesty, the QUEEN of Corona, is majestic as always
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Necesito carnitas. Sirve a tu reina.
+    beingGivenItemResponse: "\xA1Delicioso! Aqu\xED est\xE1 el pago por su servicio."
+    isHoldingGivenItemResponse: Puedes seguir con tus asuntos
+    doesNotWantItemResponse: No me molestes con algo tan insignificante
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 27c373c74b9614a969506c87c6bbdcde, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: c35d73db19a9e452e8196384e33a1891, type: 2}

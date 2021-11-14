@@ -13,16 +13,24 @@ MonoBehaviour:
   m_Name: Toyotaro
   m_EditorClassIdentifier: 
   characterName: toyotaro
-  description: 
+  description: The spirit of cross country road trips, TOYOTARO, is even larger and
+    grinnier than you heard
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I'm lonely. I need a pet. A stinky pet.
+    beingGivenItemResponse: Oh hell yeah, the methane that comes off this bad boy
+      is no joke. Here, take this tiny umbrella, it's a little too small for me
+    isHoldingGivenItemResponse: Who's a good cow? You are!
+    doesNotWantItemResponse: This won't keep me company
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: fce5956a654e34fbd8bb45d6982eeb1c, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 9fcd555eaa3cd418798625ec32608779, type: 2}
