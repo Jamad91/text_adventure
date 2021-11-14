@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: QueenOfCorona
+  m_Name: Queen
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: queen
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 27c373c74b9614a969506c87c6bbdcde, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: c35d73db19a9e452e8196384e33a1891, type: 2}

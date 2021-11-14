@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: MagicGoose
+  m_Name: Goose
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: goose
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 05dd98bece0b94fbd9e11a175875ac98, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 18c9652d343f9410580914ad299aaded, type: 2}

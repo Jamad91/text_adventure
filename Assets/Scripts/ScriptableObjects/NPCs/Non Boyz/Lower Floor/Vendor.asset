@@ -10,18 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: LongBreadVendor
+  m_Name: Vendor
   m_EditorClassIdentifier: 
-  characterName: 
-  description: 
+  characterName: vendor
+  description: A VENDOR selling something called "longbread" is trying to peddle
+    his goods
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: No one is buying my longbread! I just don't get
+      it, it's the perfect kind of bread! Maybe I need something to put on top of
+      it
+    beingGivenItemResponse: 'Sales are sure to pick up now. Just for you, have some
+      of my newest product "Longcake"! '
+    isHoldingGivenItemResponse: Once I finish buttering all these, I'll finally get
+      to pay off the debt of buying all these longbreads!
+    doesNotWantItemResponse: I don't think I can sell more longbread with that.
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 44f3b717e8a9140c8afdfb02b5b89cbb, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 3d6826098e10a4d13b9410c96eb43383, type: 2}

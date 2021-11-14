@@ -12,18 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Repairman
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: repairman
+  description: A REPAIRMAN stares at a hubcap of a minivan that's on the lift
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
     notHoldingGivenItemResponse: I need something that'll help my get this car looking
       nice.
     beingGivenItemResponse: Ah, just what I needed. This'll fix those hubcaps and
       get me high too! Here's some PCP I had lying around, for your troubles.
     isHoldingGivenItemResponse: I LIVE! I DIE! I LIVE AGAIN!
-    doesNotWantItemResponse: 
+    doesNotWantItemResponse: Nah, that won't help
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: f0d6b622e8fa64653be58e0b657bc927, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 826e00613395f442c8381d228b5da85a, type: 2}

@@ -12,16 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Botanist
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: botanist
+  description: An older looking BOTANIST is tending to her plants
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: 'Ah man, this uh...giant carnivorous plant hasn''t
+      been eating any fiber and now it can''t go to the bathroom. I need something
+      to help clear out it''s system and fast! '
+    beingGivenItemResponse: Oh thank you I'm going, I mean, my plant, is going to
+      feel so much better after this. Thanks a ton. You can take those matches, fire
+      and plants don't mix.
+    isHoldingGivenItemResponse: Ahhhh...much better
+    doesNotWantItemResponse: Why would I want that?
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: e1033f797336747018b9a37dd66f5341, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 5372e7dc6cbc74dbd9aeddd89e6d3bb8, type: 2}

@@ -12,16 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Conductor
   m_EditorClassIdentifier: 
-  characterName: 
-  description: 
+  characterName: conductor
+  description: Standing at the back of the church is a CONDUCTOR with a furrowed
+    brow
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: First no audience, and now no baton to conduct with!
+      How do they expect me to do my job!
+    beingGivenItemResponse: 'Now I can conduct and protect myself from any tiny tomatoes
+      that get thrown at me! Thank you. One more favor, could you go hang this up
+      somewhere? '
+    isHoldingGivenItemResponse: Still nobody to conduct, am I at the wrong church?
+    doesNotWantItemResponse: This is useless to me. Useless!
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 9fcd555eaa3cd418798625ec32608779, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: e24c3b689c983453197cb6363060fe42, type: 2}

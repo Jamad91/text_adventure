@@ -10,18 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: SecurityGuard
+  m_Name: Guard
   m_EditorClassIdentifier: 
-  characterName: 
-  description: 
+  characterName: guard
+  description: An exhausted security GUARD sits behind a desk
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: This job is so boring, I've been trying nap through
+      my shift, but I just can't sleep. Need something to help me knock out
+    beingGivenItemResponse: Oh that's righteous! I don't need this anymore to kill
+      time anymore, you can take it
+    isHoldingGivenItemResponse: Ugh, I still can't sleep and now I'm paranoid
+    doesNotWantItemResponse: I'm good, my guy
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 8d2df9fa4c8ea4befb7b95244fe4283e, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 9dc3a75bd8a15460fa09b20d1466859e, type: 2}

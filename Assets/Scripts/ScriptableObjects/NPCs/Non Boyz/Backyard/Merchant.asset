@@ -10,18 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: MysteriousMerchant
+  m_Name: Merchant
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: merchant
+  description: 'You can see a mysterious MERCHANT stands behind a counter '
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Welcome! I see you are interested in the mysterious!
+      I also see that you are poor. Maybe come back when you have a million dollars
+      or some kind of coupon.
+    beingGivenItemResponse: Wow, you actually found the one coupon I ever made. Just
+      for that you deserve something really rare. Here's a one of a kind piece of
+      music.
+    isHoldingGivenItemResponse: '*mumbles* I need to stop losing this coupon. It''s
+      impacting sales.'
+    doesNotWantItemResponse: That will get you nowhere with me
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 338d0eb603c4e4693ac0140b14c2215f, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 95f2627d403d44bc18bfd7a1080d9029, type: 2}

@@ -12,16 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Nessie
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: nessie
+  description: NESSIE floats gracefully in the pool. I wonder how she got her from
+    Scotland?
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Gimmie money
+    beingGivenItemResponse: Just what I wanted. You can have this bland cereal
+    isHoldingGivenItemResponse: This actually isn't that much money
+    doesNotWantItemResponse: Who do I look like to you? Bigfoot?
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: c35d73db19a9e452e8196384e33a1891, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}

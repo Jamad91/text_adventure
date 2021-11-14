@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Joblin
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: joblin
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 1dff726b2caae43f79b27cf79fcef822, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 5d7b38ca3ff9940b283fb83f35f1ad80, type: 2}

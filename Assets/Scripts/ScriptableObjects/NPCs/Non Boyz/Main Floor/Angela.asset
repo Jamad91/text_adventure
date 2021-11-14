@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: Angela Lansbury
+  m_Name: Angela
   m_EditorClassIdentifier: 
-  characterName: name
+  characterName: angela
   description: Description of person
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 0add57847cddd451b9bc316fc0fc7101, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: c64db22244e73487ba9330ac7db2fdff, type: 2}

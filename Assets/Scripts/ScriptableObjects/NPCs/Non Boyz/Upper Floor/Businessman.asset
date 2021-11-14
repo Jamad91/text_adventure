@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: BusinessmanDad
+  m_Name: Businessman
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: businessman
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: a396bd2f04f094f1aae0635b52667f0f, type: 2}

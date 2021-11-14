@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Pirate
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: pirate
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}

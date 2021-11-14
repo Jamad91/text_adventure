@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Dee
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: dee
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -30,5 +30,6 @@ MonoBehaviour:
       to drown my sorrows anymore.
     isHoldingGivenItemResponse: Never going to take Dee's Ducks away from her again!
     doesNotWantItemResponse: Those are not my ducks.
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 26500e41780f0498c96d6a390c0ac06a, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}

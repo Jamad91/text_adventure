@@ -12,16 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Chef
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: chef
+  description: A CHEF leans out the opening of his Mexican food truck.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I just can't cook without music, but everything
+      I hear feels stale. Need some really new jams I've never heard before to get
+      back to work
+    beingGivenItemResponse: Whoa, never thought I'd get my hands on this. Just what
+      I needed to get my groove back. Here's a taco on the house.
+    isHoldingGivenItemResponse: Damn, this is fire
+    doesNotWantItemResponse: If it ain't music, I don't want it
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 95f2627d403d44bc18bfd7a1080d9029, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 27c373c74b9614a969506c87c6bbdcde, type: 2}

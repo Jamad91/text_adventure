@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Toyotaro
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: toyotaro
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: fce5956a654e34fbd8bb45d6982eeb1c, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 9fcd555eaa3cd418798625ec32608779, type: 2}

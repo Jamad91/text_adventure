@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Cosplayer
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: cosplayer
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: a396bd2f04f094f1aae0635b52667f0f, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: a5b186f5d9ed4453cb555f44726fa5b9, type: 2}

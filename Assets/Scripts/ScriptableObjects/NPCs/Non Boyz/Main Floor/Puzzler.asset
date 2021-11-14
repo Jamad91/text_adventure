@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Puzzler
   m_EditorClassIdentifier: 
-  characterName: 
+  characterName: puzzler
   description: 
   transformableCharacter: 0
   transformedCharacterName: 
@@ -23,5 +23,6 @@ MonoBehaviour:
     beingGivenItemResponse: 
     isHoldingGivenItemResponse: 
     doesNotWantItemResponse: 
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: e401a940a84764a5496414b0254ec977, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 6d0ede5613706411aa450fe9e0c65dbc, type: 2}

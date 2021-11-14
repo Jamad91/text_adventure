@@ -12,16 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Babadook
   m_EditorClassIdentifier: 
-  characterName: 
-  description: 
+  characterName: babadook
+  description: The BABADOOK hangs from the celing. Just as freaky and unnerving as
+    you heard he was
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: ... (makes a heart sign with his hands. Huh.)
+    beingGivenItemResponse: ... (hands you a joint, what a cool guy)
+    isHoldingGivenItemResponse: ...(looks at you either satsified or that he will
+      eat your soul)
+    doesNotWantItemResponse: ...(looks uninterested)
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: e24c3b689c983453197cb6363060fe42, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 8d2df9fa4c8ea4befb7b95244fe4283e, type: 2}

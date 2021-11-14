@@ -12,16 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
   m_Name: Fisherman
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: fisherman
+  description: A FISHERMAN stands outside the pool with a cast line
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: Man, I swear the fish are biting but they're staying
+      on the line! If only I had something to hook them with.
+    beingGivenItemResponse: Yes! Just what I needed! They're sure to bite now! Here's
+      a bunch of rubber ducks I was using as bait, but they never seemed to work
+    isHoldingGivenItemResponse: Any minute now...
+    doesNotWantItemResponse: If it doesn't help me catch fish, it's no good to me
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: ef8da9d9080aa4e76a3873f1e8072fff, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: 26500e41780f0498c96d6a390c0ac06a, type: 2}

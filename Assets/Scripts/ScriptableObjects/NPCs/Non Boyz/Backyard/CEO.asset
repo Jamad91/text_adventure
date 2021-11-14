@@ -10,18 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
-  m_Name: ChildExecutive
+  m_Name: CEO
   m_EditorClassIdentifier: 
-  characterName: name
-  description: Description of person
+  characterName: ceo
+  description: An adorable little CEO (Child Executive Officer) sits in a high chair
+    typing away on a blackberry, surrounded by toys. These higher ups really do get
+    younger an younger every year, you old fogie.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
-  interactions: []
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: I can't get rid of his rash! I wipe and I wipe and
+      I wipe and it just hurts now!
+    beingGivenItemResponse: Ah, that's the stuff. Here, take this non stop methane
+      production machine; they've been making me millions!
+    isHoldingGivenItemResponse: phew...what a relief
+    doesNotWantItemResponse: Every minute wasted on you is a million I missed out
+      on. We're not getting any younger, you know!
+    transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: e3fc74f11ce49408b9b5d96c8227adcd, type: 2}
     itemToGiveAway: {fileID: 11400000, guid: fce5956a654e34fbd8bb45d6982eeb1c, type: 2}
