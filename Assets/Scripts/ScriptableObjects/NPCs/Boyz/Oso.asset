@@ -13,21 +13,24 @@ MonoBehaviour:
   m_Name: Oso
   m_EditorClassIdentifier: 
   characterName: bear
-  description: It's some bear
+  description: A very much asleep BEAR lies before you. You're really regretting
+    on missing that bear to hand combat class that was offered at the learning annex.
   transformableCharacter: 1
   transformedCharacterName: Oso
-  transformedDescription: The bear is now a man
+  transformedDescription: A very much alseep el OSO is laying down with a cigrette
+    in his mouth
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
-    textResponse: grrrrr
+    textResponse: 
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
-    textResponse: you gave the bear a cigarette
+    textResponse: 
     actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: roar
-    beingGivenItemResponse: ah, I needed that
-    isHoldingGivenItemResponse: smokin'
-    doesNotWantItemResponse: fuck no
+    notHoldingGivenItemResponse: zzzz.....
+    beingGivenItemResponse: '*puff* *puff* mm..that''s good...'
+    isHoldingGivenItemResponse: zzzz....
+    doesNotWantItemResponse: '*annoyed grunt*'
+    transformedDoesNotWantItemResponse: let me sleep
     itemToBeGiven: {fileID: 11400000, guid: f7aa874cc265c4c25a1fc31d059dfd19, type: 2}
     itemToGiveAway: {fileID: 0}

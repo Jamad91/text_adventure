@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Raton
   m_EditorClassIdentifier: 
   characterName: rat
-  description: he's a rat, he wants some cheese
+  description: A small lab RAT scuttles around the a cage on the table
   transformableCharacter: 1
   transformedCharacterName: raton
   transformedDescription: A Man with an air of cheese around him
@@ -25,9 +25,10 @@ MonoBehaviour:
     textResponse: 
     actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: squeak squek
-    beingGivenItemResponse: mm..tasty. take these cornflakes
-    isHoldingGivenItemResponse: I don't have anything else
-    doesNotWantItemResponse: get outta here with that businesses
+    notHoldingGivenItemResponse: '*squeak* *squek*'
+    beingGivenItemResponse: I do love some fine cheese.
+    isHoldingGivenItemResponse: Thank you for the cheese. It has whet my appetite.
+    doesNotWantItemResponse: '*squeak* *squeak*'
+    transformedDoesNotWantItemResponse: No thank you. I don't need that nonsense.
     itemToBeGiven: {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
     itemToGiveAway: {fileID: 0}

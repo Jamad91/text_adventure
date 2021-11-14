@@ -13,15 +13,24 @@ MonoBehaviour:
   m_Name: Gallo
   m_EditorClassIdentifier: 
   characterName: rooster
-  description: some cluckin' birdhead peters around nearby
+  description: A frenetic ROOSTER is pacing back and forth in his pen. No hens around;
+    must be lonely
   transformableCharacter: 1
   transformedCharacterName: Gallo
-  transformedDescription: 
-  interactions: []
+  transformedDescription: el GALLO cleans up some of the mess he made before. Honestly,
+    what a great guy
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: cockadoodle doo!
+    beingGivenItemResponse: That hits the spot
+    isHoldingGivenItemResponse: Rooster life honestly wasn't so bad. Corn galore
+    doesNotWantItemResponse: doo? doo! *turns away*
+    transformedDoesNotWantItemResponse: Nah, I'm alright
     itemToBeGiven: {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}
     itemToGiveAway: {fileID: 0}

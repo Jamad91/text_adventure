@@ -13,15 +13,23 @@ MonoBehaviour:
   m_Name: Halcon
   m_EditorClassIdentifier: 
   characterName: falcon
-  description: Description of person
+  description: A FALCON makes direct eye contact with you and won't break it; it's
+    at least a little unnerving
   transformableCharacter: 1
   transformedCharacterName: Halcon
-  transformedDescription: 
-  interactions: []
+  transformedDescription: el HALCON has larger arms than he has any right to have
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: 
-    beingGivenItemResponse: 
-    isHoldingGivenItemResponse: 
-    doesNotWantItemResponse: 
+    notHoldingGivenItemResponse: '*gazes into your soul*'
+    beingGivenItemResponse: Let's gooooo! Want to watch me shotgun this?
+    isHoldingGivenItemResponse: Gotta love the rocks
+    doesNotWantItemResponse: '*narrows eyes at you*'
+    transformedDoesNotWantItemResponse: All good, my guy. You keep it
     itemToBeGiven: {fileID: 11400000, guid: 803b971fb2ef54f68afbf9d53c151dc4, type: 2}
     itemToGiveAway: {fileID: 0}
