@@ -21,8 +21,8 @@ public class GameController : MonoBehaviour
 
     void Awake()
     {
-        interactableItems = GetComponent<InteractableItems>();
         interactableCharacters = GetComponent<InteractableCharacters>();
+        interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<RoomNavigation>();
     }
 
@@ -46,9 +46,9 @@ public class GameController : MonoBehaviour
 
         UnpackRoom();
 
-        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
         string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
-        string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions + "\n" + joinedCharacterDescriptions;
+        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
+        string combinedText = roomNavigation.currentRoom.description + "\n" + "\n" + joinedCharacterDescriptions + "\n" + "\n" + joinedInteractionDescriptions + "\n \n ----------------------------------------- \n";
         LogStringWithReturn(combinedText);
     }
 

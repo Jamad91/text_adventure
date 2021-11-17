@@ -23,7 +23,7 @@ MonoBehaviour:
     exitDescription: To your east is the opium den.
     valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   - keyString: west
-    exitDescription: To your east is the coat room.
+    exitDescription: To your west is the coat room.
     valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   - keyString: up
     exitDescription: Go up the main staircase to reach the second floor.
@@ -31,10 +31,5 @@ MonoBehaviour:
   - keyString: down
     exitDescription: Go down a set of steps to reach the basement.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
-  interactableObjectsInRoom:
-  - {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
-  - {fileID: 11400000, guid: 696bfe010283e45cf8db98a67aca55d7, type: 2}
-  - {fileID: 11400000, guid: 26500e41780f0498c96d6a390c0ac06a, type: 2}
-  charactersInRoom:
-  - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}
-  - {fileID: 11400000, guid: 7044c46f0ecff46a3abd29547240d577, type: 2}
+  interactableObjectsInRoom: []
+  charactersInRoom: []
