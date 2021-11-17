@@ -18,7 +18,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: south
-    exitDescription: Reluctantly walk to your south to enter the voodoo room.
+    exitDescription: Reluctantly walk to your SOUTH to enter the voodoo room.
     valueRoom: {fileID: 11400000, guid: ef18ece65a979431a88fbed77e1cd8fc, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

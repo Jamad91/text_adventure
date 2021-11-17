@@ -17,13 +17,13 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: To kick back, walk north to the home theater.
+    exitDescription: To kick back, walk NORTH to the home theater.
     valueRoom: {fileID: 11400000, guid: 7222d1f715d1947bf8ee80d0de3cc1b7, type: 2}
   - keyString: east
-    exitDescription: To have a hard time walking, go east into the ballpit.
+    exitDescription: To have a hard time walking, go EAST  into the ballpit.
     valueRoom: {fileID: 11400000, guid: 251d207988d0d4c4a934d958aa89daf5, type: 2}
   - keyString: south
-    exitDescription: To bring da rumpus, go south.
+    exitDescription: To bring da rumpus, go SOUTH.
     valueRoom: {fileID: 11400000, guid: ff7a554d8c9ca4717b1893aa986d4e8f, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 44f3b717e8a9140c8afdfb02b5b89cbb, type: 2}

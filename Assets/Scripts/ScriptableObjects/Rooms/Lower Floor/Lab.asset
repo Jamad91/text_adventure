@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: west
-    exitDescription: Walk west to go back into the room that is the abyss.
+    exitDescription: Walk WEST to go back into the room that is the abyss.
     valueRoom: {fileID: 11400000, guid: 438ebd2b8bb69441c86b7975671362b0, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

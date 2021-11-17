@@ -17,11 +17,11 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: You feel called to walk north on the path and into a inner cavern
+    exitDescription: You feel called to walk NORTH on the path and into a inner cavern
       of the volcano.
     valueRoom: {fileID: 11400000, guid: d2aacaaca36e24ab6b6d462a2660df32, type: 2}
   - keyString: east
-    exitDescription: Walk, quickly, to your east to return to the campground.
+    exitDescription: Walk, quickly, to your EAST to return to the campground.
     valueRoom: {fileID: 11400000, guid: 5ecbe9772528e4ee69a98ea4de00b078, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

@@ -16,14 +16,14 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: To your east is something labelled "Fauci's Ouchie Room".
+    exitDescription: To your EAST is something labelled "Fauci's Ouchie Room".
     valueRoom: {fileID: 11400000, guid: 269d9b54109dd44ed879725464f35b61, type: 2}
   - keyString: south
-    exitDescription: Walk south to a normal looking hallway.
+    exitDescription: Walk SOUTHto a normal looking hallway.
     valueRoom: {fileID: 11400000, guid: bc76234c3748443c6a0d28a017c9742c, type: 2}
   - keyString: west
-    exitDescription: To your west, there is a passage, and at the end of that is
-      a Cathedral.
+    exitDescription: To your WEST there is a passage, and at the end of that is a
+      Cathedral.
     valueRoom: {fileID: 11400000, guid: f520207db8edf4583a20a244e68cf1d8, type: 2}
   - keyString: up
     exitDescription: Go up the stairs to reach the Entrance hall.

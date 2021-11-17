@@ -16,10 +16,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: Even though it frightens you, the voodoo room is to your north.
+    exitDescription: Even though it frightens you, the voodoo room is to your NORTH.
     valueRoom: {fileID: 11400000, guid: ef18ece65a979431a88fbed77e1cd8fc, type: 2}
   - keyString: west
-    exitDescription: To your west is the opium den.
+    exitDescription: To your WEST is the opium den.
     valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

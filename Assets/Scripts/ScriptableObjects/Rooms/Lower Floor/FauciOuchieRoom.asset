@@ -19,11 +19,11 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: To your north, you have a room that looks like the emptiness
+    exitDescription: To your NORTH, you have a room that looks like the emptiness
       of space.
     valueRoom: {fileID: 11400000, guid: 438ebd2b8bb69441c86b7975671362b0, type: 2}
   - keyString: west
-    exitDescription: Walk west to return to the basement landing.
+    exitDescription: Walk WEST to return to the basement landing.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 1bdd126fac0364e429d154bf0694d339, type: 2}

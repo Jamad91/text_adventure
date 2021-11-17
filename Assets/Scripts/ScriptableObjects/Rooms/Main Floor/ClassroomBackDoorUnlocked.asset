@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: classroom
   exits:
   - keyString: north
-    exitDescription: Walk north through the door to enter go outside.
+    exitDescription: Walk NORTH through the door to enter go outside.
     valueRoom: {fileID: 11400000, guid: c1d89325ad357415abeb98d561e74250, type: 2}
   - keyString: south
-    exitDescription: To immerse yourself in some good books, walk south to go back
+    exitDescription: To immerse yourself in some good books, walk SOUTH to go back
       to the library.
     valueRoom: {fileID: 11400000, guid: 6d297c680145f47d589aa4a178fd4c0b, type: 2}
   interactableObjectsInRoom: []

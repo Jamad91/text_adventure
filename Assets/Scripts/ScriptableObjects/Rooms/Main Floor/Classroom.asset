@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: classroom
   exits:
   - keyString: south
-    exitDescription: To immerse yourself in some good books, walk south to go back
+    exitDescription: To immerse yourself in some good books, walk SOUTH to go back
       to the library.
     valueRoom: {fileID: 11400000, guid: 6d297c680145f47d589aa4a178fd4c0b, type: 2}
   interactableObjectsInRoom: []

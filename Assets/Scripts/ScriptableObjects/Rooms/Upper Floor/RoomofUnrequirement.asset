@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: RoomofUnrequirement
   m_EditorClassIdentifier: 
-  description: The only thing they don't mention about owelries in those wizarding
-    book is just how goddamn noisy it is.
+  description: As you expected, this is mostly a room of shit and nobody else needs.
   roomName: 
   exits:
   - keyString: north
-    exitDescription: Walk north to enter the banjo room.
+    exitDescription: Walk NORTH to enter the banjo room.
     valueRoom: {fileID: 11400000, guid: 8a1a595ffcd8d453d9735a20fea1f9af, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

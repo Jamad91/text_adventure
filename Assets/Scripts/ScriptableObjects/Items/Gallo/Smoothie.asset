@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
   m_Name: Smoothie
   m_EditorClassIdentifier: 
-  noun: name
+  noun: smoothie
   description: The kitchen island has an old looking SMOOTHIE Personally, I wouldn't
     drink it
   beingGivenDescription: 

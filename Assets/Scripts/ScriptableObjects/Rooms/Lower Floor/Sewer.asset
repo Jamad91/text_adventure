@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: west
-    exitDescription: Go west to escape the smell.
+    exitDescription: Go WEST to escape the smell.
     valueRoom: {fileID: 11400000, guid: bc76234c3748443c6a0d28a017c9742c, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

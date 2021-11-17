@@ -18,10 +18,10 @@ MonoBehaviour:
   exits:
   - keyString: north
     exitDescription: If you've gotta go or need to refresh yourself the bathroom
-      sauna combo is to your north.
+      sauna combo is to your NORTH.
     valueRoom: {fileID: 11400000, guid: ac5a5af9b7b20420683203412ca78aed, type: 2}
   - keyString: east
-    exitDescription: To your east, is the essential rumpus room.
+    exitDescription: To your EAST, is the essential rumpus room.
     valueRoom: {fileID: 11400000, guid: ff7a554d8c9ca4717b1893aa986d4e8f, type: 2}
   - keyString: west
     exitDescription: Go west to return to the entrance hall.

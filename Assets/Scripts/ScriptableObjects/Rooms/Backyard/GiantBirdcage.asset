@@ -16,7 +16,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Go east to return to the food truck
+    exitDescription: Go EAST to return to the food truck
     valueRoom: {fileID: 11400000, guid: 679f70f3877614455ba6cb0f5e8f619a, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

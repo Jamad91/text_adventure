@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: south
-    exitDescription: Walk south to leave the coldness of the cave and uncomfortable
+    exitDescription: Walk SOUTH to leave the coldness of the cave and uncomfortable
       heat of an unregulated market.
     valueRoom: {fileID: 11400000, guid: 0ef763adab4f94b8d825b42d2efc8b82, type: 2}
   interactableObjectsInRoom: []

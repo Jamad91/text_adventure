@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Go east to return to the attic.
+    exitDescription: Go EAST to return to the attic.
     valueRoom: {fileID: 11400000, guid: 91ee1303efe454535902a51a7b48532b, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

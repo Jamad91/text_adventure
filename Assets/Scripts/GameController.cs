@@ -127,6 +127,7 @@ public class GameController : MonoBehaviour
 
     public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
     {
+        Debug.Log("noun: " + noun + "dictionary: " + verbDictionary.ToString());
         if (verbDictionary.ContainsKey(noun))
         {
             return verbDictionary[noun];
