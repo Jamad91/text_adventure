@@ -17,8 +17,8 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: To your NORTH, you can see what looks like campgrounds and a
-      cabin.
+    exitDescription: To your NORTH, you can see what looks like a row of cabins for
+      some kind of CAMPGROUND.
     valueRoom: {fileID: 11400000, guid: 5ecbe9772528e4ee69a98ea4de00b078, type: 2}
   - keyString: east
     exitDescription: Go EAST to the Olympic sized pool.

@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: To your EAST is what appears to be a large car garage/workshop.
+    exitDescription: To your EAST is what appears to be a large car GARAGE.
     valueRoom: {fileID: 11400000, guid: b51ff99a27ef3433daf0f5421d1f6c5e, type: 2}
   - keyString: west
-    exitDescription: The pumpkin patch is to your WEST.
+    exitDescription: The PUMPKIN PATCH is to your WEST.
     valueRoom: {fileID: 11400000, guid: 89f6bef1c5c51421f9706da31d17dfb8, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

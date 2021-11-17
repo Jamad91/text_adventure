@@ -21,7 +21,7 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: aeaa68d02b67b4237ae22a5432d7e3c7, type: 2}
     textResponse: 
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: 44c2fa6dae8274f58a89e1cc678628c8, type: 2}
   - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
     textResponse: You take the switch because why not?
     actionResponse: {fileID: 0}

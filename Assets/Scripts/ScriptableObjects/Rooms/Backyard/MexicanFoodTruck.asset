@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: south
-    exitDescription: If you go SOUTH, you will be at a strange shack.
+    exitDescription: If you go SOUTH, you will be at a strange SHACK.
     valueRoom: {fileID: 11400000, guid: e1f64257d04df451a97c0d7ad10ce5c2, type: 2}
   - keyString: west
-    exitDescription: To you WEST, you can see what appears to be a giant cage.
+    exitDescription: To you WEST, you can see what appears to be a GIANT CAGE..
     valueRoom: {fileID: 11400000, guid: b99cda5990e254bb682e4c113d91eb08, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

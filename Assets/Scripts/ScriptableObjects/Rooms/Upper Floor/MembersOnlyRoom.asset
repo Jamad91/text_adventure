@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: To your EAST is a petting zoo.
+    exitDescription: To your EAST is a PETTING ZOO.
     valueRoom: {fileID: 11400000, guid: 1c45e3f80929f4d60b0ccad336425ab2, type: 2}
   - keyString: west
-    exitDescription: Walk WEST to go back into the conspiracy room.
+    exitDescription: Walk WEST to go back into the CONSPIRACY ROOM.
     valueRoom: {fileID: 11400000, guid: 113b5b88a4d46423e9cecdad1a3930ea, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

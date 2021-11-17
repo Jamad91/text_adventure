@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Walk EAST to go to return to the top of the main staircase
+    exitDescription: Walk EAST to go to return to the TOP OF THE MAIN STAIRCASE.
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   - keyString: south
-    exitDescription: Go SOUTH to reach the room of unrequirement, whatever that means.
+    exitDescription: Go SOUTH to reach the ROOM OF UNREQUIREMENT, whatever that means.
     valueRoom: {fileID: 11400000, guid: cea62090ae5e1441188e7f5b02664f73, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

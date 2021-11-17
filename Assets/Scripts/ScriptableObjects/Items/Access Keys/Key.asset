@@ -18,7 +18,7 @@ MonoBehaviour:
   interactions:
   - inputAction: {fileID: 11400000, guid: aeaa68d02b67b4237ae22a5432d7e3c7, type: 2}
     textResponse: 
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: 15f6a3b5f89a6435a9bc99ae7f19bbaa, type: 2}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
     textResponse: Attached to it is a tag that says "Backyard"
     actionResponse: {fileID: 0}

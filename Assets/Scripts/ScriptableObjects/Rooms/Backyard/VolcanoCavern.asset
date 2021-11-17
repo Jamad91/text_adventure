@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: south
-    exitDescription: Walk SOUTH to exit the cavern and leave the volcano.
+    exitDescription: Go SOUTH to exit the cavern and leave the VOLCANO.
     valueRoom: {fileID: 11400000, guid: b2b34b1989abe489faba85d806cfd776, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

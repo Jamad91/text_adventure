@@ -19,7 +19,7 @@ MonoBehaviour:
   roomName: conspiracy room
   exits:
   - keyString: south
-    exitDescription: To go back to being a sheeple, go SOUTH into the office.
+    exitDescription: To go back to being a sheeple, go SOUTH into the OFFICE.
     valueRoom: {fileID: 11400000, guid: ac938aeda697a45de9ba3de26139bd56, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

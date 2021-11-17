@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: Walk NORTH to enter the Dining Hall
+    exitDescription: Walk NORTH to enter the DINING HALL.
     valueRoom: {fileID: 11400000, guid: 4bf82f2ad855e45dcb3b3e1d99f72814, type: 2}
   - keyString: east
-    exitDescription: Go EAST to return to the Entrance Hall.
+    exitDescription: Go EAST to return to the ENTRANCE HALL.
     valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
   - keyString: west
     exitDescription: Go WEST to enter the Franklin P. Perdue Memorial Lounge

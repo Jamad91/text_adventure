@@ -17,13 +17,13 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: To your NORTH is the conspiracy room.
+    exitDescription: To your NORTH is the CONSPIRACY ROOM.
     valueRoom: {fileID: 11400000, guid: 113b5b88a4d46423e9cecdad1a3930ea, type: 2}
   - keyString: south
-    exitDescription: Walk SOUTH to enter the Laxative museum.
+    exitDescription: Walk SOUTH to enter the LAXATIVE MUSEUM.
     valueRoom: {fileID: 11400000, guid: 726b7c1fbd99a4641943176ed11ed322, type: 2}
   - keyString: west
-    exitDescription: Go WEST to reach the celebrity bedroom.
+    exitDescription: Go WEST to reach the CELEBRITY BEDROOM.
     valueRoom: {fileID: 11400000, guid: f0d5133554db043119ffee634a8d1e2f, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 4350ae0126f43424f8933fd35419a152, type: 2}

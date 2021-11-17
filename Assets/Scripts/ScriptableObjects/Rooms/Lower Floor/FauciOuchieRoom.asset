@@ -23,7 +23,7 @@ MonoBehaviour:
       of space.
     valueRoom: {fileID: 11400000, guid: 438ebd2b8bb69441c86b7975671362b0, type: 2}
   - keyString: west
-    exitDescription: Walk WEST to return to the basement landing.
+    exitDescription: Walk WEST to return to the BASEMENT LANDING.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 1bdd126fac0364e429d154bf0694d339, type: 2}

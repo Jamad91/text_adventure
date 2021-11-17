@@ -18,10 +18,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: south
-    exitDescription: Go SOUTH to reach the Love Cottage
+    exitDescription: Go SOUTH to reach the LOVE COTTAGE.
     valueRoom: {fileID: 11400000, guid: f36b3ed552ba24dc5a4987d7346ffc1d, type: 2}
   - keyString: west
-    exitDescription: To your WEST you can see a large volcano
+    exitDescription: To your WEST you can see a large VOLCANO.
     valueRoom: {fileID: 11400000, guid: b2b34b1989abe489faba85d806cfd776, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

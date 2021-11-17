@@ -42,33 +42,25 @@ public class InteractableItems : MonoBehaviour
 
         for (int i = 0; i < nounsInInventory.Count; i++)
         {
-            Debug.Log("use 1");
             string noun = nounsInInventory[i];
-            Debug.Log("use 2");
 
             InteractableObject interactableObjectinInventory = GetInteractableObjectFromUsableList(noun);
-            Debug.Log("use 3");
             if (interactableObjectinInventory == null)
             {
-                Debug.Log("use 4");
                 continue;
             }
             else
             {
-                Debug.Log("use 5");
                 for (int j = 0; j < interactableObjectinInventory.interactions.Length; j++)
                 {
-                    Debug.Log("use 6");
                     Interaction interaction = interactableObjectinInventory.interactions[j];
 
                     if (interaction.actionResponse == null)
                     {
-                        Debug.Log("use 7");
                         continue;
                     }
                     if (!useDictionary.ContainsKey(noun))
                     {
-                        Debug.Log("use 8");
                         useDictionary.Add(noun, interaction.actionResponse);
                     }
                 }

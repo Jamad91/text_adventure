@@ -17,19 +17,19 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: To your NORTH is the foyer.
+    exitDescription: To your NORTH is the FOYER.
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
   - keyString: east
-    exitDescription: To your EAST is the opium den.
+    exitDescription: To your EAST is the OPIUM DEN.
     valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   - keyString: west
-    exitDescription: To your WEST is the coat room.
+    exitDescription: To your WEST is the COATROOM.
     valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   - keyString: up
-    exitDescription: Go UP the main staircase to reach the second floor.
+    exitDescription: Go UP the main staircase to reach the SECOND FLOOR.
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   - keyString: down
-    exitDescription: Go DOWN  a set of steps to reach the basement.
+    exitDescription: Go DOWN  a set of steps to reach the BASEMENT.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

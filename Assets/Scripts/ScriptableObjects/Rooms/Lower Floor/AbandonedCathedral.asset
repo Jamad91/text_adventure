@@ -16,10 +16,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Walk EAST to return to the basement landing.
+    exitDescription: Walk EAST to return to the BASEMENT LANDING.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   - keyString: west
-    exitDescription: To your WEST, you can feel a heat coming from the mining shaft.
+    exitDescription: To your WEST, you can feel a heat coming from the MINING SHAFT.
     valueRoom: {fileID: 11400000, guid: 0ef763adab4f94b8d825b42d2efc8b82, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

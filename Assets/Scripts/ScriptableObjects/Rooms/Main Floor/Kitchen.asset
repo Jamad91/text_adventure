@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: To your EAST is the foyer.
+    exitDescription: To your EAST is the FOYER.
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
   - keyString: west
-    exitDescription: To your WEST is the dining hall.
+    exitDescription: To your WEST is the DINING HALL.
     valueRoom: {fileID: 11400000, guid: 4bf82f2ad855e45dcb3b3e1d99f72814, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 55c81b52b83af4264a92b97983a8c1c4, type: 2}

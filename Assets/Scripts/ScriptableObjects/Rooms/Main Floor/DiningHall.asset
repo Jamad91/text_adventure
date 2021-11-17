@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Go EAST the kitchen.
+    exitDescription: Go EAST to enter the KITCHEN.
     valueRoom: {fileID: 11400000, guid: b96643689f84944a090ad6577d9018ae, type: 2}
   - keyString: south
-    exitDescription: Walk SOUTH to enter the coatroom.
+    exitDescription: Walk SOUTH to enter the COATROOM.
     valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

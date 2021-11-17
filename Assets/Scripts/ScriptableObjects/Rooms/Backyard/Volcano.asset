@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: You feel called to walk NORTH on the path and into a inner cavern
+    exitDescription: You feel called to walk NORTH on the path and into a inner CAVERN
       of the volcano.
     valueRoom: {fileID: 11400000, guid: d2aacaaca36e24ab6b6d462a2660df32, type: 2}
   - keyString: east

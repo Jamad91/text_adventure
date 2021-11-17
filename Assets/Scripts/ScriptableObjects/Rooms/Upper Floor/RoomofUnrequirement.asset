@@ -16,7 +16,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: Walk NORTH to enter the banjo room.
+    exitDescription: Walk NORTH to enter the BANJO DISPLAY.
     valueRoom: {fileID: 11400000, guid: 8a1a595ffcd8d453d9735a20fea1f9af, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

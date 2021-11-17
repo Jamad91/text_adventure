@@ -12,16 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Bathroom
   m_EditorClassIdentifier: 
-  description: 'You are in what appears to be a combo sauna/locker room/bathroom.
-    It''s enourmous, octagonal, and each wall is a mirror, which all in all, is very
-    disorienting. '
+  description: 'You are in what appears to be a full spa. It''s enourmous, octagonal,
+    and each wall is a mirror, which all in all, is very disorienting. '
   roomName: 
   exits:
   - keyString: south
-    exitDescription: The way SOUTH leads you to the opium den.
+    exitDescription: The way SOUTH leads you to the OPIUM DEN.
     valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   - keyString: west
-    exitDescription: Walk WEST to enter the foyer.
+    exitDescription: Walk WEST to enter the FOYER.
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: e3fc74f11ce49408b9b5d96c8227adcd, type: 2}

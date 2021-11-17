@@ -16,16 +16,16 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Walk EAST to enter the celebrity bedroom.
+    exitDescription: Walk EAST to enter the CELEBRITY BEDROOM.
     valueRoom: {fileID: 11400000, guid: f0d5133554db043119ffee634a8d1e2f, type: 2}
   - keyString: west
-    exitDescription: Go WEST to enter the banjo room.
+    exitDescription: Go WEST to enter the BANJO DISPLAY.
     valueRoom: {fileID: 11400000, guid: 8a1a595ffcd8d453d9735a20fea1f9af, type: 2}
   - keyString: up
-    exitDescription: Climp UP a ladder to reach the attic.
+    exitDescription: Climp UP a ladder to reach the ATTIC.
     valueRoom: {fileID: 11400000, guid: 91ee1303efe454535902a51a7b48532b, type: 2}
   - keyString: down
-    exitDescription: Go down the staircase to return to the entrance hall.
+    exitDescription: Go down the staircase to return to the ENTRANCE HALL.
     valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

@@ -22,7 +22,7 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: aeaa68d02b67b4237ae22a5432d7e3c7, type: 2}
     textResponse: 
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: a3ddae87d41f24aa8b2752d63a734219, type: 2}
   - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
     textResponse: You take the jacket. Feels very cool.
     actionResponse: {fileID: 0}

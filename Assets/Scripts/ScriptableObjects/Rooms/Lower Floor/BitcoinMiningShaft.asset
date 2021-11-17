@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: To the NORTH, past all the computers is a cold, dark cave.
+    exitDescription: To the NORTH, past all the computers is a cold, dark CAVE.
     valueRoom: {fileID: 11400000, guid: d597715e54f644516a4b2908cc1f8421, type: 2}
   - keyString: east
-    exitDescription: The cathedral is to your EAST.
+    exitDescription: The CATHEDRAL is to your EAST.
     valueRoom: {fileID: 11400000, guid: f520207db8edf4583a20a244e68cf1d8, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

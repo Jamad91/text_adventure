@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
   m_Name: Laxative
   m_EditorClassIdentifier: 
-  noun: name
+  noun: laxative
   description: 'A small basket is by the door with the sign: "Free LAXATIVE samples"'
   beingGivenDescription: 
   interactions:
