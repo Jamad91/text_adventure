@@ -16,10 +16,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: 
+    exitDescription: Go east to see a white cottage.
     valueRoom: {fileID: 11400000, guid: f36b3ed552ba24dc5a4987d7346ffc1d, type: 2}
   - keyString: west
-    exitDescription: 
+    exitDescription: To your west is the patio.
     valueRoom: {fileID: 11400000, guid: c1d89325ad357415abeb98d561e74250, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

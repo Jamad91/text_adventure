@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: Volcano
   m_EditorClassIdentifier: 
   description: A large volcano is at the end of the woods. It's not active, but it's
-    not worth getting any closer than you need to.
+    still a little terrifying.
   roomName: 
   exits:
+  - keyString: north
+    exitDescription: You feel called to walk north on the path and into a inner cavern
+      of the volcano.
+    valueRoom: {fileID: 11400000, guid: d2aacaaca36e24ab6b6d462a2660df32, type: 2}
   - keyString: east
-    exitDescription: 
+    exitDescription: Walk, quickly, to your east to return to the campground.
     valueRoom: {fileID: 11400000, guid: 5ecbe9772528e4ee69a98ea4de00b078, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

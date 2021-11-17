@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
+  m_Name: VolcanoCavern
+  m_EditorClassIdentifier: 
+  description: As you reach the end of the cavern you are very much inside the volcano.
+    There is a lake of lava beneath you that emanates power.
+  roomName: 
+  exits:
+  - keyString: south
+    exitDescription: Walk south to exit the cavern and leave the volcano.
+    valueRoom: {fileID: 11400000, guid: b2b34b1989abe489faba85d806cfd776, type: 2}
+  interactableObjectsInRoom: []
+  charactersInRoom: []

@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: To your north is a perfectly normal looking room.
     valueRoom: {fileID: 11400000, guid: bc76234c3748443c6a0d28a017c9742c, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

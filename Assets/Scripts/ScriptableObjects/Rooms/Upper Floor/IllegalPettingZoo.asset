@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: west
-    exitDescription: 
+    exitDescription: Walk back west to return to the Member's Only room.
     valueRoom: {fileID: 11400000, guid: 4c3601eeb8a9746f3abe505d4140eecb, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

@@ -19,10 +19,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: 
+    exitDescription: Walk east to enter the office.
     valueRoom: {fileID: 11400000, guid: ac938aeda697a45de9ba3de26139bd56, type: 2}
   - keyString: west
-    exitDescription: 
+    exitDescription: Go west to reach the top of the main staircase.
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

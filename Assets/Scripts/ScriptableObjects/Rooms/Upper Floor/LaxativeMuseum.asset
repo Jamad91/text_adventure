@@ -17,7 +17,8 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: To feel like you actually contribue to society in some way,
+      walk north to enter Negativa D's poor excuse for an office.
     valueRoom: {fileID: 11400000, guid: ac938aeda697a45de9ba3de26139bd56, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: e1033f797336747018b9a37dd66f5341, type: 2}

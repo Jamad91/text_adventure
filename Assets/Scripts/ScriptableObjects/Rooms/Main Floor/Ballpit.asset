@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: west
-    exitDescription: 
+    exitDescription: Go west to get the heebie jeebies in the voodoo room.
     valueRoom: {fileID: 11400000, guid: ef18ece65a979431a88fbed77e1cd8fc, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

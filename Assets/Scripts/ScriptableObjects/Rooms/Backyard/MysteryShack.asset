@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: You can smell something delicious to your north.
     valueRoom: {fileID: 11400000, guid: 679f70f3877614455ba6cb0f5e8f619a, type: 2}
   - keyString: south
-    exitDescription: 
+    exitDescription: Go south to see the pumpkin patch.
     valueRoom: {fileID: 11400000, guid: 89f6bef1c5c51421f9706da31d17dfb8, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

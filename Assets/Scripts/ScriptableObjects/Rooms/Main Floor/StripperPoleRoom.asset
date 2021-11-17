@@ -17,12 +17,13 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: 
+    exitDescription: To leave this super weird atmosphere behind and immerse yourself
+      in culture, go north to the Angela Lansbury Library.
     valueRoom: {fileID: 11400000, guid: 6d297c680145f47d589aa4a178fd4c0b, type: 2}
   - keyString: south
-    exitDescription: 
+    exitDescription: To be confused, go south into the Franklin P. Perdue Memorial
+      Lounge.
     valueRoom: {fileID: 11400000, guid: 6097152b33c4241019b3a53bb5b27d88, type: 2}
-  interactableObjectsInRoom:
-  - {fileID: 11400000, guid: 7505df7087e004558b97f5cbda778449, type: 2}
+  interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: 27a423a5219b74330a9e321492f213a2, type: 2}

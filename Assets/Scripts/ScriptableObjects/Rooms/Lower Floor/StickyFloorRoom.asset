@@ -17,13 +17,14 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: Return to the north to reach the basement landing.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   - keyString: east
-    exitDescription: 
+    exitDescription: Go to your east to enter the sewers.
     valueRoom: {fileID: 11400000, guid: a5050afea51f64c45904e68051abc794, type: 2}
   - keyString: south
-    exitDescription: 
+    exitDescription: To your south is what appears to be a nightclub with the giant
+      neon sign that reads "Genie's Lamp".
     valueRoom: {fileID: 11400000, guid: 3fdec8f4e23f8417584fd3c2b66f7ae2, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

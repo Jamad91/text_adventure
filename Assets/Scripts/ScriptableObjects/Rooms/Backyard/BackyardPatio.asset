@@ -17,13 +17,13 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: east
-    exitDescription: 
+    exitDescription: To your east you see a pumpkin patch.
     valueRoom: {fileID: 11400000, guid: 89f6bef1c5c51421f9706da31d17dfb8, type: 2}
   - keyString: south
-    exitDescription: 
+    exitDescription: The classroom is to your south.
     valueRoom: {fileID: 11400000, guid: f158f09684b8945a8b390ea17b017abf, type: 2}
   - keyString: west
-    exitDescription: 
+    exitDescription: To the west there is an olympic sized swimming pool.
     valueRoom: {fileID: 11400000, guid: 6d9016b4ecd7c46d9b2c77891249892a, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

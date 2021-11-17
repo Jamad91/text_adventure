@@ -16,10 +16,10 @@ MonoBehaviour:
     in pictures of people, newspaper clippings, and random blueprints with strings
     connecting everything. On the other side is a door with a big sticker that says
     "Member's Only".
-  roomName: 
+  roomName: conspiracy room
   exits:
   - keyString: south
-    exitDescription: 
+    exitDescription: To go back to being a sheeple, go south into the office.
     valueRoom: {fileID: 11400000, guid: ac938aeda697a45de9ba3de26139bd56, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

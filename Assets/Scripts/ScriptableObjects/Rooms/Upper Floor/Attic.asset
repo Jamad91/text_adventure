@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: west
-    exitDescription: 
+    exitDescription: Walk west to enter the owlery.
     valueRoom: {fileID: 11400000, guid: 58dd6c5cd374a4f45ab6e65caef5cb8c, type: 2}
   - keyString: down
-    exitDescription: 
+    exitDescription: Go down to return to the top of the main staircase.
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

@@ -17,13 +17,13 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: To the north is a mysterious looking shack.
     valueRoom: {fileID: 11400000, guid: e1f64257d04df451a97c0d7ad10ce5c2, type: 2}
   - keyString: east
-    exitDescription: 
+    exitDescription: Walk east to reach a greenhouse.
     valueRoom: {fileID: 11400000, guid: 414a4263b5cfd4dae80c5d0729ca5afc, type: 2}
   - keyString: west
-    exitDescription: 
+    exitDescription: Go west to return to the patio.
     valueRoom: {fileID: 11400000, guid: c1d89325ad357415abeb98d561e74250, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

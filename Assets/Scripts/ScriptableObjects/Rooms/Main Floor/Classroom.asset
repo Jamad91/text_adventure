@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: You walk into a classroom with a door to the outside locked. Reminds
     you of being in elementary school.
-  roomName: 
+  roomName: classroom
   exits:
   - keyString: south
-    exitDescription: 
+    exitDescription: To immerse yourself in some good books, walk south to go back
+      to the library.
     valueRoom: {fileID: 11400000, guid: 6d297c680145f47d589aa4a178fd4c0b, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

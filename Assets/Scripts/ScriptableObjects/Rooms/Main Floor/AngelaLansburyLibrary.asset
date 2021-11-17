@@ -18,13 +18,14 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: To your north is a classroom.
     valueRoom: {fileID: 11400000, guid: f158f09684b8945a8b390ea17b017abf, type: 2}
   - keyString: south
-    exitDescription: 
+    exitDescription: Walk south to enter the foyer.
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
   - keyString: west
-    exitDescription: 
+    exitDescription: The placement is confusing, but go west to enter what appears
+      to be a strip club.
     valueRoom: {fileID: 11400000, guid: 4fa02c2977fe54f20bf3040e381e2d41, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

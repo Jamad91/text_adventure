@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
+  m_Name: Win Message
+  m_EditorClassIdentifier: 
+  description: 'You hold the hammer out and feel it drawn to the lake of lava. You
+    throw it in. Moments pass and you hear a rumble. Your race out and exit the volcano.
+    Moments later, Heavy D emerges from the top with a hammer in hand. He is 12 stories
+    tall and emanates radiation. He looks at you directly with a soul piercing gaze
+    and speaks.
+
+
+    "Thank you for freeing me and all of the Boyz. Without you
+    this day would be lost, but there is hope once again. We shall stop Negativa
+    D from summoning the Gobba Ghoul and save the world, all thanks to your cunning
+    brain and valiant effort. Consider yourself a friend to Heavy D and the Boyz.
+    Should you ever require our help, we will be there. Until then."
+
+
+    With that
+    he looks up at the sky and flys off. You look around and see all of the Boyz
+    are following suit. You feel a great sense of relief. Negativa D will not win
+    this day. You give yourself a moment to sit and appreciate what you were able
+    to do for the world before it hits you "Wait, seriously, who the fuck is Franklin
+    P. Perdue?"
+
+
+    THE END'
+  roomName: 
+  exits: []
+  interactableObjectsInRoom: []
+  charactersInRoom: []

@@ -17,10 +17,10 @@ MonoBehaviour:
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: Walk north to enter what appears to be a strip club.
     valueRoom: {fileID: 11400000, guid: 4fa02c2977fe54f20bf3040e381e2d41, type: 2}
   - keyString: east
-    exitDescription: 
+    exitDescription: Go east to enter the coatroom.
     valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:

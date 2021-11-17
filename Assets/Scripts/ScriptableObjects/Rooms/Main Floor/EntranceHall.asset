@@ -12,23 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: EntranceHall
   m_EditorClassIdentifier: 
-  description: You find yourself in a room filled to the brim with mahogany.
+  description: You find yourself in a room filled to the brim with mahogany and oddly
+    shaped vases.
   roomName: 
   exits:
   - keyString: north
-    exitDescription: 
+    exitDescription: To your north is the foyer.
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
   - keyString: east
-    exitDescription: 
+    exitDescription: To your east is the opium den.
     valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   - keyString: west
-    exitDescription: 
+    exitDescription: To your east is the coat room.
     valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   - keyString: up
-    exitDescription: 
+    exitDescription: Go up the main staircase to reach the second floor.
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   - keyString: down
-    exitDescription: 
+    exitDescription: Go down a set of steps to reach the basement.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
