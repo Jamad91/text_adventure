@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: PumpkinPatch
   m_EditorClassIdentifier: 
-  description: 
+  description: You walk upon a lengthy pumpkin patch. Some real big ones are growing
+    this year.
   roomName: 
   exits:
   - keyString: north

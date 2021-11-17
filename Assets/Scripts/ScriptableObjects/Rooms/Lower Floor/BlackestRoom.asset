@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: BlackestRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: You find yourself walking into a room that is so dark, it can only
+    be described as the abyss. The only thing you can see is the way back.
   roomName: 
   exits:
   - keyString: south

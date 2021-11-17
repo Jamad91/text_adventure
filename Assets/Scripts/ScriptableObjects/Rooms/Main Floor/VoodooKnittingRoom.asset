@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: VoodooKnittingRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: You clench up as you walk into this room of black magic. You better
+    not leave behind any locks of hair to be used against you.
   roomName: 
   exits:
   - keyString: north

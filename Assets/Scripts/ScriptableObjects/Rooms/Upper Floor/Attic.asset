@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Attic
   m_EditorClassIdentifier: 
-  description: 
+  description: The attic is dusty and filled with boxes that say stuff like "Dress
+    shoes" and "Extra Digeridoos"
   roomName: 
   exits:
   - keyString: west
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 58dd6c5cd374a4f45ab6e65caef5cb8c, type: 2}
-  - keyString: south
+  - keyString: down
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   interactableObjectsInRoom: []

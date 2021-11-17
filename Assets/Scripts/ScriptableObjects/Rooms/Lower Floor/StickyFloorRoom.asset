@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: StickyFloorRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: You walk into what appears to be standard hallway, but everything
+    is so sticky. Especially the floors. It's all very gross.
   roomName: 
   exits:
+  - keyString: north
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: a5050afea51f64c45904e68051abc794, type: 2}
   - keyString: south
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 3fdec8f4e23f8417584fd3c2b66f7ae2, type: 2}
-  - keyString: north
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

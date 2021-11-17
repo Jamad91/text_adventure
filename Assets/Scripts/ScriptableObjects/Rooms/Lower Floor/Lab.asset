@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Lab
   m_EditorClassIdentifier: 
-  description: 
+  description: Everything around you feels like someone was trying to recreate the
+    biology and chemistry lab rooms from high school.
   roomName: 
   exits:
   - keyString: west

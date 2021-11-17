@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: FauciOuchieRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: Even as you start to cross the doorway, you begin to see operating
+    tables, lab equipment, and a giant picture of Dr. Fauci, but as the subject of
+    the patient for the game "Operation". You're...not really sure what's going on
+    here.
   roomName: 
   exits:
   - keyString: north

@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: StripperPoleRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: There is an atmosphere of sadness that hits you as you walk into this
+    room of a single stripper pole in the middle and no other furniture.
   roomName: 
   exits:
-  - keyString: south
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 6097152b33c4241019b3a53bb5b27d88, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 6d297c680145f47d589aa4a178fd4c0b, type: 2}
+  - keyString: south
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 6097152b33c4241019b3a53bb5b27d88, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 7505df7087e004558b97f5cbda778449, type: 2}
   charactersInRoom:

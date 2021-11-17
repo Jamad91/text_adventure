@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: BanjoRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: 'As you walk in, you realize the objective truth that is such a thing
+    as too many banjos. '
   roomName: 
   exits:
-  - keyString: south
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: cea62090ae5e1441188e7f5b02664f73, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
+  - keyString: south
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: cea62090ae5e1441188e7f5b02664f73, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: 1db84817ed436404f91ccb94fae97233, type: 2}

@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: BlackestRoomLitUp
   m_EditorClassIdentifier: 
-  description: 
+  description: The abyss looks lit up and yet it's still pretty empty, except now
+    you can see a door on the other side of the room.
   roomName: 
   exits:
-  - keyString: south
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 269d9b54109dd44ed879725464f35b61, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: a1b06d837934c4f27808630d5e8e1a6f, type: 2}
+  - keyString: south
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 269d9b54109dd44ed879725464f35b61, type: 2}
   interactableObjectsInRoom:
   - {fileID: 0}
   charactersInRoom: []

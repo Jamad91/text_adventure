@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: IllegalPettingZoo
   m_EditorClassIdentifier: 
-  description: 
+  description: The farm smell overwhelms you. You can't tell if this is up here because
+    it's illegal or Negativa D is just that much of a nonsensical weirdo.
   roomName: 
   exits:
   - keyString: west

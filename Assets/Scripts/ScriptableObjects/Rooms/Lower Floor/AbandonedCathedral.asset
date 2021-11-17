@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: AbandonedCathedral
   m_EditorClassIdentifier: 
-  description: 
+  description: You exit the passage to find yourself in a large, decaying cathedral.
   roomName: 
   exits:
-  - keyString: west
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 0ef763adab4f94b8d825b42d2efc8b82, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 0ef763adab4f94b8d825b42d2efc8b82, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: 269f0ef86fa7640959131f1408edf2a0, type: 2}

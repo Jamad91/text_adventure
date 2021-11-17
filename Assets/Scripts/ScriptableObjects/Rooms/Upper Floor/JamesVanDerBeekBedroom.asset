@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: JamesVanDerBeekBedroom
   m_EditorClassIdentifier: 
-  description: 
+  description: This looks like a normal bedroom, at least for a 90's teenager. As
+    you look around, you start to see photos of a young man with his family, at school,
+    etc. You immediately realize this is an exact replica of actor James Van Der
+    Beek's teenage bedroom.
   roomName: 
   exits:
   - keyString: east

@@ -12,15 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: CampAyahuasca
   m_EditorClassIdentifier: 
-  description: 
+  description: You come onto a large clearing in the woods where multiple cabins
+    surround a firepit. There's a posted wooden sign that reads "Welcome to Camp
+    Ayahuasca".
   roomName: 
   exits:
-  - keyString: west
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: b2b34b1989abe489faba85d806cfd776, type: 2}
   - keyString: south
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: f36b3ed552ba24dc5a4987d7346ffc1d, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: b2b34b1989abe489faba85d806cfd776, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: b94b016d9295c4ec39ab931c736bef7c, type: 2}

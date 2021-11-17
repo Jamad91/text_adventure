@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
   m_Name: Butter
   m_EditorClassIdentifier: 
-  noun: name
-  description: Description in room
-  interactions: []
+  noun: butter
+  description: A lone stick of BUTTER is on a work table. Better not ask what it's
+    doing here.
+  beingGivenDescription: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
+    textResponse: You take the BUTTER. Butta makes everything betta.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: Slightly melted
+    actionResponse: {fileID: 0}

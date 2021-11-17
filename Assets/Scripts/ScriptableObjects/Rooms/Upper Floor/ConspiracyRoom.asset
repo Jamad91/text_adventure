@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: ConspiracyRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: You've never seen anything like it. Every square centimeter is covered
+    in pictures of people, newspaper clippings, and random blueprints with strings
+    connecting everything. On the other side is a door with a big sticker that says
+    "Member's Only".
   roomName: 
   exits:
   - keyString: south

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: MysteryShack
   m_EditorClassIdentifier: 
-  description: 
+  description: A small open hut with a giant question mark has a bunch of oddities
+    on display such as a "Unicorn Horn" and "OJ's Glove".
   roomName: 
   exits:
   - keyString: north

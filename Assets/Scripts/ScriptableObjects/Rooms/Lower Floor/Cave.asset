@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Cave
   m_EditorClassIdentifier: 
-  description: 
+  description: You walk into a cave that is as damp and echoing as you expected it
+    to be.
   roomName: 
   exits:
   - keyString: south

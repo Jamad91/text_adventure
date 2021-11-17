@@ -10,20 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: RubberDucks
+  m_Name: Ducks
   m_EditorClassIdentifier: 
   noun: ducks
-  description: ducks
-  beingGivenDescription: Description of when you are given the item from another
-    character
+  description: 
+  beingGivenDescription: You are handed a bag of DUCKS. They'd make from some crazy
+    bubble bath naval battles
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: 
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
-    textResponse: You are handed a bag of ducks. They'd make from some crazy bubble
-      bath naval battles
-    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: 
+    textResponse: Does anyone really need this many DUCKS?
     actionResponse: {fileID: 0}

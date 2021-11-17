@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: BitcoinMiningShaft
   m_EditorClassIdentifier: 
-  description: 
+  description: You step into what must have been an old mine shaft, except now it's
+    filled with computers mining for bitcoin. It is sweltering in here.
   roomName: 
   exits:
   - keyString: north

@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Cigarette
   m_EditorClassIdentifier: 
   noun: cigarette
-  description: a lone unlit bogie lies on the table
+  description: 
+  beingGivenDescription: You take the CIGARETTE from the puppet. You think to yourself,
+    "are these bad for him"?
   interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: You give the bear the cigarette. He takes one puff, and changes
+      from sleeping bear to sleeping man in the blink of an eye.
+    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: smells gross
+    textResponse: Reminds you of high school
     actionResponse: {fileID: 0}

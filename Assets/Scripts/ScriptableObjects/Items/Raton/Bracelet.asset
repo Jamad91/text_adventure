@@ -10,8 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: LivestrongBracelet
+  m_Name: Bracelet
   m_EditorClassIdentifier: 
-  noun: name
-  description: Description in room
-  interactions: []
+  noun: bracelet
+  description: On the coffee table there's a yellow BRACELET with some familar black
+    text on it.
+  beingGivenDescription: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
+    textResponse: You take the BRACELET but you're definitely not wearing it.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: It reads "Livestrong". It's amazing how quickly these went out
+      of fashion
+    actionResponse: {fileID: 0}

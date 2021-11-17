@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Unused office
   m_EditorClassIdentifier: 
-  description: 
+  description: This has all the makings of a nice office, but as expected by Negativa
+    D's unwillingness to work, it just sits and collects dust.
   roomName: 
   exits:
   - keyString: north

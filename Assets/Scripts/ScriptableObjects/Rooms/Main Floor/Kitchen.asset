@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Kitchen
   m_EditorClassIdentifier: 
-  description: 
+  description: The kitchen is clean, large, and spotless which blows you away until
+    you notice all the pickled jars of things labeled beaks, bladders, and ballgladders.
   roomName: 
   exits:
   - keyString: east

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Classroom
   m_EditorClassIdentifier: 
-  description: 
+  description: You walk into a classroom with a door to the outside locked. Reminds
+    you of being in elementary school.
   roomName: 
   exits:
   - keyString: south

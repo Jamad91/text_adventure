@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Cheese
   m_EditorClassIdentifier: 
   noun: cheese
-  description: There is a wheel of cheese
-  beingGivenDescription: Description of when you are given the item from another
-    character
+  description: cheese
+  beingGivenDescription: You take the plastic wrapped CHEESE from those big purple
+    hands
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: The rat's nose begins to twitch as you start to take the cheese
@@ -23,9 +23,6 @@ MonoBehaviour:
       behind a corner of the sewer. A few seconds later, very well dressed man walks
       back, stll munching on the cheese
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
-    textResponse: you pick up the cheese. smelly.
-    actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: Looks like mozzarell
+    textResponse: Has a strong smell
     actionResponse: {fileID: 0}

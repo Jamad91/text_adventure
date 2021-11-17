@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: LaxativeMuseum
   m_EditorClassIdentifier: 
-  description: 
+  description: Wow, you never knew there was so much to learn about laxatives. You
+    could learn a lot here, but you won't.
   roomName: 
   exits:
   - keyString: north

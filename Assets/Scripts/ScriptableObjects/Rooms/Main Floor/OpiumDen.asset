@@ -12,18 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: OpiumDen
   m_EditorClassIdentifier: 
-  description: 
+  description: Clouds of smoke waft around you as you step through the room. It can't
+    be good to stay in here for too long.
   roomName: 
   exits:
-  - keyString: west
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
   - keyString: north
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: ac5a5af9b7b20420683203412ca78aed, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: ff7a554d8c9ca4717b1893aa986d4e8f, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: 5c8c94acedf2b43879e08b8d6d9b6f38, type: 2}

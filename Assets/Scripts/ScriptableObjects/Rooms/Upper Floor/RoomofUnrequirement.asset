@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: RoomofUnrequirement
   m_EditorClassIdentifier: 
-  description: 
+  description: The only thing they don't mention about owelries in those wizarding
+    book is just how goddamn noisy it is.
   roomName: 
   exits:
   - keyString: north

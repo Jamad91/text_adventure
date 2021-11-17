@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: HomeTheater
   m_EditorClassIdentifier: 
-  description: 
+  description: You walk into the room and are blown away by the size of the screen
+    and are reminded that you will never have enough money to live in this amount
+    of luxury.
   roomName: 
   exits:
   - keyString: south

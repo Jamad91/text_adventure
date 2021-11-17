@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: MembersOnlyRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: Between the recliners, pool table, hunting trophies, and full bar,
+    this room feels incredibly exclusive in the coolest way possible.
   roomName: 
   exits:
   - keyString: east

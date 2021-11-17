@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: RumpusRoom
   m_EditorClassIdentifier: 
-  description: 
+  description: Within a second of stepping inside, you are ready to bring da rumpus.
   roomName: 
   exits:
-  - keyString: west
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   - keyString: north
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: ef18ece65a979431a88fbed77e1cd8fc, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: fca93b3efea0e4f2ab568b1de04d6ffd, type: 2}

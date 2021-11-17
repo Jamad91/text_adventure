@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: EntranceHall
   m_EditorClassIdentifier: 
-  description: 
+  description: You find yourself in a room filled to the brim with mahogany.
   roomName: 
   exits:
-  - keyString: west
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   - keyString: north
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: e6aa3cb10b4b2475f985b1c53724db63, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   - keyString: up
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}

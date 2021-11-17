@@ -10,8 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
-  m_Name: YellowLatexGlove
+  m_Name: Glove
   m_EditorClassIdentifier: 
-  noun: name
-  description: Description in room
-  interactions: []
+  noun: glove
+  description: 
+  beingGivenDescription: You're given a bright yellow latex GLOVE with six different
+    colored ring pops glued onto it.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: Fits like a GLOVE. The ring pops on it taste pretty good too
+    actionResponse: {fileID: 0}

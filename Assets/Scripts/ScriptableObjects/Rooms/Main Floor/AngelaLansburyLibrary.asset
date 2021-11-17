@@ -12,18 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: AngelaLansburyLibrary
   m_EditorClassIdentifier: 
-  description: 
+  description: The moment you step into the Library, see a painting of Angela Lansbury.
+    You feel immediately at peace. There's a lot of things wrong in this world, but
+    there's also Ms. Lansbury.
   roomName: 
   exits:
   - keyString: north
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: f158f09684b8945a8b390ea17b017abf, type: 2}
-  - keyString: west
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 4fa02c2977fe54f20bf3040e381e2d41, type: 2}
   - keyString: south
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 4954b7fd11ead431cb5dbf959a11de6f, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 4fa02c2977fe54f20bf3040e381e2d41, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: 59f0bc9251f094c4891ade7a0aa3a4c3, type: 2}

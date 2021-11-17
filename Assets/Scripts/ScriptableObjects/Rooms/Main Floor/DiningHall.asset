@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: DiningHall
   m_EditorClassIdentifier: 
-  description: 
+  description: You enter an incredibly large dining hall meant to host a party of
+    easily 200 people.
   roomName: 
   exits:
   - keyString: east

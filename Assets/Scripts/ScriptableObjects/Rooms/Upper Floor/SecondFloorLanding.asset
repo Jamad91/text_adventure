@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: SecondFloorLanding
   m_EditorClassIdentifier: 
-  description: 
+  description: You climb stairs to reach the second floor landing.
   roomName: 
   exits:
-  - keyString: West
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 8a1a595ffcd8d453d9735a20fea1f9af, type: 2}
-  - keyString: north
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 91ee1303efe454535902a51a7b48532b, type: 2}
   - keyString: east
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: f0d5133554db043119ffee634a8d1e2f, type: 2}
+  - keyString: west
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 8a1a595ffcd8d453d9735a20fea1f9af, type: 2}
+  - keyString: up
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 91ee1303efe454535902a51a7b48532b, type: 2}
   - keyString: down
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Basement Landing
   m_EditorClassIdentifier: 
-  description: 
+  description: You are at the bottom of the stairs in what must be the basement.
   roomName: 
   exits:
   - keyString: east

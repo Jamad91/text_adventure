@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
-  m_Name: MemorialLounge
+  m_Name: FranklinPPerdueMemorialLounge
   m_EditorClassIdentifier: 
-  description: 
+  description: You walk into the Franklin P. Perdue memorial lounge and think, "Am
+    I supposed to know who that is?"
   roomName: 
   exits:
-  - keyString: east
-    exitDescription: 
-    valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   - keyString: north
     exitDescription: 
     valueRoom: {fileID: 11400000, guid: 4fa02c2977fe54f20bf3040e381e2d41, type: 2}
+  - keyString: east
+    exitDescription: 
+    valueRoom: {fileID: 11400000, guid: 15f3da2177785419091ee0328302a12b, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: 6427dadd6f9b24f54ac1ddd94f209cdc, type: 2}

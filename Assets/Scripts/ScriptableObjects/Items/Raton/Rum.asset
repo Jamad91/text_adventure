@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: Rum
   m_EditorClassIdentifier: 
   noun: rum
-  description: Description in room
-  beingGivenDescription: this is where the rum went!
+  description: 
+  beingGivenDescription: You're given a bottle of dark RUM. So that's where the RUM
+    went!
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
-    textResponse: given rum
+    textResponse: 
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: '
-
-'
+    textResponse: 720 Proof. Could probably strip away concrete with this
     actionResponse: {fileID: 0}

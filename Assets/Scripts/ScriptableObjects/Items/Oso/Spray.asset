@@ -12,8 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793679617599d49cba37080cb98facdd, type: 3}
   m_Name: Spray
   m_EditorClassIdentifier: 
-  noun: name
-  description: Description in room
-  beingGivenDescription: Description of when you are given the item from another
-    character
-  interactions: []
+  noun: spray
+  description: 
+  beingGivenDescription: You take the SPRAY can. Has a good, full sound to it when
+    you shake it.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: Label says it's color is "Moonlight silver". Smells pretty toxic
+      even from inside the can
+    actionResponse: {fileID: 0}
