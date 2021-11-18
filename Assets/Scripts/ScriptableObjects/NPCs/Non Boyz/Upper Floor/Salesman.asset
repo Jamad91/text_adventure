@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Salesman
   m_EditorClassIdentifier: 
   characterName: salesman
-  description: Considering he just sells masks, it's a little odd that this SALESMAN's
-    pack is so enormous.
+  description: A mask SALESMAN's sack of goods is enormous, you assume becuase the
+    demand is far less than the supply.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 

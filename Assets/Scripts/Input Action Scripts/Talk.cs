@@ -8,6 +8,8 @@ public class Talk : InputAction
 {
     public override void RespondToInput(GameController controller, string[] seperatedInputWords)
     {
+        controller.LogStringWithBreakLine();
+
         controller.interactableCharacters.TalkToCharacter(seperatedInputWords);
     }
 }

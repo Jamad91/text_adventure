@@ -8,6 +8,8 @@ public class Examine : InputAction
 {
     public override void RespondToInput(GameController controller, string[] seperatedInputWords)
     {
+        controller.LogStringWithBreakLine();
+
         controller.interactableItems.Examine(seperatedInputWords);
     }
 }

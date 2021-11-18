@@ -1,19 +1,20 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RoomNavigation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="16" Column="70" />
-      <File FileName="Assets/Scripts/NPC.cs" Line="15" Column="14" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="51" Column="1" />
-      <File FileName="Assets/Scripts/Serializeables/Responses.cs" Line="15" Column="42" />
-      <File FileName="Assets/Scripts/GiveItemTo.cs" Line="13" Column="22" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="236" Column="53" />
-      <File FileName="Assets/Scripts/TypeWriter.cs" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/Serializeables/Interaction.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="11" Column="108" />
-      <File FileName="Assets/Scripts/InteractableObject.cs" Line="13" Column="111" />
-      <File FileName="Assets/Scripts/RoomNavigation.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="56" Column="33" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="336" Column="6" />
+      <File FileName="Assets/Scripts/RoomNavigation.cs" Line="64" Column="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="23" Column="1" />
+      <File FileName="Assets/Scripts/ActionResponse.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ChangeRoomResponse.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="51" Column="78" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="11" Column="45" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Look.cs" Line="12" Column="45" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="12" Column="45" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Examine.cs" Line="11" Column="45" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="13" Column="45" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Talk.cs" Line="11" Column="45" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" Line="11" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,7 +25,7 @@
                 <Node name="Input Action Scripts" expanded="True" />
                 <Node name="ScriptableObjects" expanded="True" />
                 <Node name="Serializeables" expanded="True" />
-                <Node name="RoomNavigation.cs" selected="True" />
+                <Node name="InteractableItems.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -29,7 +29,7 @@ public class InteractableCharacters : MonoBehaviour
         }
     }
 
-    public string GetCharactersInRoom(Room currentRoom, int i)
+    public string GetCharacterInRoom(Room currentRoom, int i)
     {
         NPC characterInRoom = currentRoom.charactersInRoom[i];
        
@@ -82,6 +82,7 @@ public class InteractableCharacters : MonoBehaviour
         {
             controller.LogStringWithReturn("There is no " + characterSpokenTo + " here");
         }
+
     }
 
     public string CharacterResponse(NPC characterSpokenTo)
@@ -116,6 +117,22 @@ public class InteractableCharacters : MonoBehaviour
     public bool isTransformed(string name)
     {
         return charactersTransformedDictionary.ContainsKey(name) && charactersTransformedDictionary[name]; 
+    }
+
+    public void LookAtCharacters()
+    {
+
+        if (charactersInRoom.Count < 1)
+        {
+            controller.LogStringWithReturn("There are none in this room.");
+            return;
+        }
+
+        for (int i = 0; i < charactersInRoom.Count; i++)
+        {
+            controller.LogStringWithoutReturn(charactersInRoom[i].ToUpper());
+        }
+
     }
 
 }

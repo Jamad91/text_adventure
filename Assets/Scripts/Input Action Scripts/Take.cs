@@ -10,6 +10,8 @@ public class Take : InputAction
     {
         Dictionary<string, string> takeDictionary = controller.interactableItems.Take(seperatedInputWords);
 
+        controller.LogStringWithBreakLine();
+
         if (takeDictionary != null)
         {
             if (!controller.pickedUpAndHolding.ContainsKey(seperatedInputWords[1]))

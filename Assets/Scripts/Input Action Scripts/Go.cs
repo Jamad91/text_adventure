@@ -9,6 +9,8 @@ public class Go : InputAction
 
     public override void RespondToInput(GameController controller, string[] seperatedInputWords)
     {
+        controller.LogStringWithBreakLine();
+
         controller.roomNavigation.AttemptToChangeRooms(seperatedInputWords[1]);
     }
 

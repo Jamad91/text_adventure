@@ -78,8 +78,9 @@
     <Compile Include="Assets/Scripts/Input Action Scripts/Give.cs" />
     <Compile Include="Assets/Scripts/NPC.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
-    <Compile Include="Assets/Scripts/Room.cs" />
     <Compile Include="Assets/Scripts/TypeWriter.cs" />
+    <Compile Include="Assets/Scripts/Room.cs" />
+    <Compile Include="Assets/Scripts/Input Action Scripts/Look.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

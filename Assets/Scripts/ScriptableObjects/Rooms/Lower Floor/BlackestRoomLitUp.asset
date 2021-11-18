@@ -23,6 +23,5 @@ MonoBehaviour:
     exitDescription: FAUCI'S OUCHIE ROOM is to your SOUTH, if you dare return to
       it.
     valueRoom: {fileID: 11400000, guid: 269d9b54109dd44ed879725464f35b61, type: 2}
-  interactableObjectsInRoom:
-  - {fileID: 0}
+  interactableObjectsInRoom: []
   charactersInRoom: []

@@ -29,6 +29,7 @@ public class RoomNavigation : MonoBehaviour
 
     public void AttemptToChangeRooms(string directionNoun)
     {
+
         if (exitDictionary.ContainsKey(directionNoun))
         {
             currentRoom = exitDictionary[directionNoun];
@@ -39,10 +40,24 @@ public class RoomNavigation : MonoBehaviour
         {
             controller.LogStringWithReturn("There is no path to the " + directionNoun);
         }
+        
     }
 
     public void ClearExits()
     {
         exitDictionary.Clear();
+    }
+
+    public void LookAtRoom()
+    {
+        controller.LogStringWithReturn(currentRoom.description);
+    }
+
+    public void LookAtExits()
+    {
+        for (int i = 0; i < currentRoom.exits.Length; i++)
+        {
+            controller.LogStringWithoutReturn(currentRoom.exits[i].exitDescription);
+        }
     }
 }

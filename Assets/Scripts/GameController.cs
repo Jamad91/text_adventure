@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
 
         string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
-        string combinedText = roomNavigation.currentRoom.description + "\n" + "\n" + joinedCharacterDescriptions + "\n" + "\n" + joinedInteractionDescriptions + "\n \n ----------------------------------------- \n";
+        string combinedText = roomNavigation.currentRoom.description + "\n \n" + joinedCharacterDescriptions +  " \n \n" + joinedInteractionDescriptions + " \n \n";
         LogStringWithReturn(combinedText);
     }
 
@@ -104,7 +104,7 @@ public class GameController : MonoBehaviour
     {
         for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
         {
-            characterDescriptionsInRoom.Add(interactableCharacters.GetCharactersInRoom(currentRoom, i));
+            characterDescriptionsInRoom.Add(interactableCharacters.GetCharacterInRoom(currentRoom, i));
 
             NPC characterInRoom = currentRoom.charactersInRoom[i];
             if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.name))
@@ -127,7 +127,6 @@ public class GameController : MonoBehaviour
 
     public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
     {
-        Debug.Log("noun: " + noun + "dictionary: " + verbDictionary.ToString());
         if (verbDictionary.ContainsKey(noun))
         {
             return verbDictionary[noun];
@@ -146,9 +145,17 @@ public class GameController : MonoBehaviour
 
     public void LogStringWithReturn(string stringToAdd)
     {
-        actionLog.Add(stringToAdd + "\n");
+        actionLog.Add(stringToAdd + "\n" );
     }
 
+    public void LogStringWithoutReturn(string stringToAdd)
+    {
+        actionLog.Add(stringToAdd);
+    }
 
+    public void LogStringWithBreakLine()
+    {
+        actionLog.Add("---------------------------------------------- \n");
+    }
     
 }

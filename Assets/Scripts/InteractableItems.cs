@@ -26,7 +26,6 @@ public class InteractableItems : MonoBehaviour
     public string GetObjectsNotInInventory(Room currentRoom, int i)
     {
         InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
-
         if (!nounsInInventory.Contains(interactableInRoom.noun))
         {
             nounsInRoom.Add(interactableInRoom.noun);
@@ -85,6 +84,7 @@ public class InteractableItems : MonoBehaviour
 
     public void DisplayInventory()
     {
+
         if (controller.pickedUpAndHolding.Count == 0 || !controller.pickedUpAndHolding.ContainsValue(true))
         {
             controller.LogStringWithReturn("Your backpack is empty!");
@@ -96,9 +96,10 @@ public class InteractableItems : MonoBehaviour
             {
                 if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
                 {
-                    controller.LogStringWithReturn(nounsInInventory[i]);
+                    controller.LogStringWithoutReturn(nounsInInventory[i]);
                 }
             }
+            controller.LogStringWithReturn("\n");
 
         }
     }
@@ -134,6 +135,7 @@ public class InteractableItems : MonoBehaviour
         {
             controller.LogStringWithReturn("There is no " + noun + " here to take.");
         }
+
         return null;
     }
 
@@ -150,10 +152,6 @@ public class InteractableItems : MonoBehaviour
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");
                 }
-                //else
-                //{
-                //    controller.pickedUpAndHolding[nounToUse] = false;
-                //}
             }
             else
             {
@@ -164,6 +162,7 @@ public class InteractableItems : MonoBehaviour
         {
             controller.LogStringWithReturn("There is no " + nounToUse + " in your inventory to use");
         }
+
     }
 
     public void GiveItem(string[] seperatedInputWords)
@@ -270,11 +269,13 @@ public class InteractableItems : MonoBehaviour
         {
             controller.LogStringWithReturn(npc + ": " + controller.GetNPC(npc).responses.doesNotWantItemResponse);
         }
+
         return;
     }
 
     public void Examine(string[] seperatedInputWords)
     {
+
         if (seperatedInputWords.Length < 2)
         {
             controller.LogStringWithReturn("EXAMINE what exactly? Speak clearly!");
@@ -329,6 +330,22 @@ public class InteractableItems : MonoBehaviour
         AddActionResponsesToUseDictionary();
         examineDictionary.Add(item.noun, GetInteractionDescription(item, "examine"));
         controller.pickedUpExamineDictionary.Add(item.noun, examineDictionary[item.noun]);
+    }
+
+    public void LookAtItems()
+    {
+
+        if (nounsInRoom.Count < 1)
+        {
+            controller.LogStringWithReturn("There are none in this room.");
+            return;
+        }
+
+        for (int i = 0; i < nounsInRoom.Count; i++)
+        {
+            controller.LogStringWithoutReturn(nounsInRoom[i].ToUpper());
+        }
+        
     }
 
 
