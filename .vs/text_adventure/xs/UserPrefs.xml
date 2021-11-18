@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RoomNavigation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TypeWriter.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="52" Column="103" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="56" Column="33" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="336" Column="6" NotebookId="1" />
-      <File FileName="Assets/Scripts/RoomNavigation.cs" Line="64" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="12" Column="23" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="17" Column="42" />
+      <File FileName="Assets/Scripts/TypeWriter.cs" Line="26" Column="49" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="61" Column="20" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/RoomNavigation.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +14,7 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Input Action Scripts" expanded="True" />
-                <Node name="ScriptableObjects" expanded="True" />
-                <Node name="Serializeables" expanded="True" />
-                <Node name="RoomNavigation.cs" selected="True" />
+                <Node name="TypeWriter.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="32984445-9f2e-4096-82cc-8c6e663a8e56" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f3d68836-f2d2-4bf4-8c3f-78b97fd4178b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

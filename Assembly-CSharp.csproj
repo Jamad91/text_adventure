@@ -61,6 +61,7 @@
     <Compile Include="Assets/Scripts/Input Action Scripts/Use.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Go.cs" />
     <Compile Include="Assets/Scripts/Serializeables/Interaction.cs" />
+    <Compile Include="Assets/Scripts/Input Action Scripts/Look.cs" />
     <Compile Include="Assets/Scripts/RoomNavigation.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Talk.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Help.cs" />
@@ -80,7 +81,7 @@
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/TypeWriter.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
-    <Compile Include="Assets/Scripts/Input Action Scripts/Look.cs" />
+    <Compile Include="Assets/Scripts/SceneLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

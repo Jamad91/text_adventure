@@ -9,6 +9,9 @@ public class GameController : MonoBehaviour
     public InputAction[] inputActions;
     public int transformCount = 0;
 
+    [TextArea (15, 20)]
+    public string startText;
+
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     [HideInInspector] public List<string> directionDescriptionsInRoom = new List<string>();
@@ -25,6 +28,8 @@ public class GameController : MonoBehaviour
         interactableCharacters = GetComponent<InteractableCharacters>();
         interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<RoomNavigation>();
+
+        
     }
 
     public void DisplayLoggedText()
@@ -36,6 +41,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        LogStringWithReturn(startText);
+
         DisplayRoomText();
         DisplayLoggedText();
 
