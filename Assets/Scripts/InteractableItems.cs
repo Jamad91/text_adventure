@@ -96,7 +96,7 @@ public class InteractableItems : MonoBehaviour
             {
                 if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
                 {
-                    controller.LogStringWithoutReturn(nounsInInventory[i]);
+                    controller.LogStringWithoutReturn(nounsInInventory[i].ToUpper());
                 }
             }
             controller.LogStringWithReturn("\n");
@@ -176,7 +176,7 @@ public class InteractableItems : MonoBehaviour
 
         if (seperatedInputWords.Length != 4)
         {
-            controller.LogStringWithReturn("You want to GIVE who  TO who? Try again, please.");
+            controller.LogStringWithReturn("You want to GIVE what TO who? Try again, please.");
             return;
         }
 
@@ -185,7 +185,7 @@ public class InteractableItems : MonoBehaviour
 
         if (!nounsInInventory.Contains(item) || !controller.pickedUpAndHolding[item])
         {
-            controller.LogStringWithReturn("You sure you're carrying " + item + "? Check your INVENTORY to see what you have.");
+            controller.LogStringWithReturn("You sure you're carrying " + item.ToUpper() + "? Check your INVENTORY to see what you have.");
             return;
         }
 
@@ -221,13 +221,13 @@ public class InteractableItems : MonoBehaviour
                             }
                             else
                             {
-                                controller.LogStringWithReturn("You gave " + currentCharacter.characterName + " the " + item);
+                                controller.LogStringWithReturn("You gave " + currentCharacter.characterName.ToUpper() + " the " + item.ToUpper());
                             }
 
                             if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.name))
                             {
                                 controller.interactableCharacters.transformCharacter(currentCharacter);
-                                controller.LogStringWithReturn(currentCharacter.transformedCharacterName + ": " + currentCharacter.responses.beingGivenItemResponse);
+                                controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
                                 if (controller.transformCount == controller.interactableCharacters.transformableCharactersList.Count)
                                 {
                                     GetItem(hammer);

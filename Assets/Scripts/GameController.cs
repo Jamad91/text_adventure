@@ -63,9 +63,9 @@ public class GameController : MonoBehaviour
 
         UnpackRoom();
 
-        string joinedCharacterDescriptions; //= string.Join("\n", characterDescriptionsInRoom.ToArray());
-        string joinedInteractionDescriptions; //= string.Join("\n", interactionDescriptionsInRoom.ToArray());
-        string joinedDirectionDescriptions; // = string.Join("\n", directionDescriptionsInRoom.ToArray());
+        string joinedCharacterDescriptions; 
+        string joinedInteractionDescriptions;
+        string joinedDirectionDescriptions; 
 
         if (characterDescriptionsInRoom.Count > 0)
         {

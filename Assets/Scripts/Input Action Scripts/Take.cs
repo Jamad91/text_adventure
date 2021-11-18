@@ -18,7 +18,7 @@ public class Take : InputAction
             {
                 controller.pickedUpAndHolding.Add(seperatedInputWords[1], true);
             }
-            controller.LogStringWithReturn(controller.TestVerbDictionaryWithNoun(takeDictionary, seperatedInputWords[0], seperatedInputWords[1]));
+            controller.LogStringWithReturn(controller.TestVerbDictionaryWithNoun(takeDictionary, seperatedInputWords[0], seperatedInputWords[1]) + "\n");
         }
     }
 }

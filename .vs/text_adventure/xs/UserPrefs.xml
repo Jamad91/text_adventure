@@ -1,13 +1,17 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TextInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Take.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="49" Column="6" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="68" Column="45" />
       <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/InputAction.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/TextInput.cs" Line="45" Column="25" />
+      <File FileName="Assets/Scripts/GiveItemTo.cs" Line="16" Column="4" />
+      <File FileName="Assets/Scripts/ItemTransfer.cs" Line="9" Column="22" />
       <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="70" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="136" Column="91" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="125" Column="39" NotebookId="1" />
       <File FileName="Assets/Scripts/RoomNavigation.cs" Line="60" Column="40" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Look.cs" Line="16" Column="24" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="22" Column="10" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +19,9 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="TextInput.cs" selected="True" />
+                <Node name="Input Action Scripts" expanded="True">
+                  <Node name="Take.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

@@ -34,5 +34,6 @@ public class Look : InputAction
         {
             controller.LogStringWithReturn("What do you want to LOOK AT? The ROOM, the EXITS, the CHARACTERS, or the ITEMS?");
         }
+        controller.LogStringWithReturn("");
     }
 }
