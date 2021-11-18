@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
 
     [HideInInspector] public RoomNavigation roomNavigation;
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
+    [HideInInspector] public List<string> directionDescriptionsInRoom = new List<string>();
     [HideInInspector] public InteractableItems interactableItems;
     [HideInInspector] public InteractableCharacters interactableCharacters;
     [HideInInspector] public List<string> characterDescriptionsInRoom = new List<string>();
@@ -48,7 +49,8 @@ public class GameController : MonoBehaviour
 
         string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
-        string combinedText = roomNavigation.currentRoom.description + "\n \n" + joinedCharacterDescriptions +  " \n \n" + joinedInteractionDescriptions + " \n \n";
+        string joinedDirectionDescriptions = string.Join("\n", directionDescriptionsInRoom.ToArray());
+        string combinedText = roomNavigation.currentRoom.description + "\n \n" + joinedCharacterDescriptions +  " \n \n" + joinedInteractionDescriptions + " \n \n" + joinedDirectionDescriptions + "\n \n";
         LogStringWithReturn(combinedText);
     }
 
@@ -138,6 +140,7 @@ public class GameController : MonoBehaviour
     {
         interactableItems.ClearCollections();
         interactableCharacters.ClearCollections();
+        directionDescriptionsInRoom.Clear();
         characterDescriptionsInRoom.Clear();
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
