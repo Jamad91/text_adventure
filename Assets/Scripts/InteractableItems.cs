@@ -127,13 +127,13 @@ public class InteractableItems : MonoBehaviour
             }
             else
             {
-                controller.LogStringWithReturn("You already picked up the " + noun + "!");
+                controller.LogStringWithReturn("You already picked up the " + noun + "!" + "\n");
             }
 
         }
         else
         {
-            controller.LogStringWithReturn("There is no " + noun + " here to take.");
+            controller.LogStringWithReturn("There is no " + noun + " here to take." + "\n");
         }
 
         return null;

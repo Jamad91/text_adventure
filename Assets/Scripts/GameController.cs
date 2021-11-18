@@ -48,6 +48,15 @@ public class GameController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        Debug.Log(displayText.text.Length);
+        if (displayText.text.Length > 2000)
+        {
+            displayText.text = displayText.text.Substring(displayText.text.Length - 1000, 1000);
+        }
+    }
+
     public void DisplayRoomText()
     {
         ClearCollectionsForNewRoom();
@@ -85,8 +94,8 @@ public class GameController : MonoBehaviour
             joinedDirectionDescriptions = "";
         }
 
-        string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions + "\n \n";
-        LogStringWithReturn(combinedText);
+        string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions;
+        LogStringWithoutReturn(combinedText);
     }
 
     void UnpackRoom()

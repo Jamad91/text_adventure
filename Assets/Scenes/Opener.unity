@@ -1039,30 +1039,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'The world is in danger!
-
-
-    Negativa D, the evil, Italian, libertarian
+  m_Text: "The world is in danger!\n\nNegativa D, the evil, Italian, libertarian
     shaman, and archenemy of Heavy D and the Boyz, has managed to capture them! They
-    are a positive force for social good, which he can not abide by, as it threatens
-    his hedonistic way of life. And with them out of the way, Negativa D can finally
-    summon the Gobba Ghoul, which spells doom for us all.
-
-
-    You have uncovered
-    that they have been imprisoned at his magical manor. Through some connections,
-    you were able to obtain its location as well as a rough map of the place. You
-    were also able to find out that the Boyz, el Raton, el Halcon, el Oso, el Gallo,
-    and el Buho, were each transformed into their animal namesakes. You''re not sure
-    what happened to Heavy D. However, if you manage to transfrom all the Boyz back
-    to their human forms, they will know what to do.
-
-
-    You enter the manor with
-    nothing but your wits. You must rescue Heavy D and the Boyz. Only they can stop
-    Negativa D from summoning the Gobba Ghoul. The fate of the world depends on you!
-
-'
+    are a positive force for social good, which threatens his hedonistic lifestyle.
+    And now that they are out of Negativa D's way, he can finally summon the Gobba
+    Ghoul, which spells doom for us all.\n\nYou have uncovered that they have been
+    imprisoned at his magical manor. Through some connections, you were able to obtain
+    its location as well as a rough map of the place. You were also able to find
+    out that the Boyz, el Raton, el Halcon, el Oso, el Gallo, and el Buho, were each
+    transformed into their animal namesakes. You're not sure what happened to Heavy
+    D. However, if you manage to transfrom all the Boyz back to their human forms,
+    they will know what to do.\n\nYou must rescue Heavy D and the Boyz. Only they
+    can stop Negativa D from summoning the Gobba Ghoul. \n\nYou enter the manor with
+    nothing but your wits. However, if at any point you need HELP (hint hint), do
+    not hesitate to ask. \n\nThe fate of the world depends on you!\n"
 --- !u!222 &2106181575
 CanvasRenderer:
   m_ObjectHideFlags: 0
