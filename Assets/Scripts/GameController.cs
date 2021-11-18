@@ -47,10 +47,38 @@ public class GameController : MonoBehaviour
 
         UnpackRoom();
 
-        string joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray());
-        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
-        string joinedDirectionDescriptions = string.Join("\n", directionDescriptionsInRoom.ToArray());
-        string combinedText = roomNavigation.currentRoom.description + "\n \n" + joinedCharacterDescriptions +  " \n \n" + joinedInteractionDescriptions + " \n \n" + joinedDirectionDescriptions + "\n \n";
+        string joinedCharacterDescriptions; //= string.Join("\n", characterDescriptionsInRoom.ToArray());
+        string joinedInteractionDescriptions; //= string.Join("\n", interactionDescriptionsInRoom.ToArray());
+        string joinedDirectionDescriptions; // = string.Join("\n", directionDescriptionsInRoom.ToArray());
+
+        if (characterDescriptionsInRoom.Count > 0)
+        {
+            joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray()) + "\n\n";
+        }
+        else
+        {
+            joinedCharacterDescriptions = "";
+        }
+
+        if (interactionDescriptionsInRoom.Count > 0)
+        {
+            joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray()) + "\n\n";
+        }
+        else
+        {
+            joinedInteractionDescriptions = "";
+        }
+
+        if (directionDescriptionsInRoom.Count > 0)
+        {
+            joinedDirectionDescriptions = string.Join("\n", directionDescriptionsInRoom.ToArray()) + "\n\n";
+        }
+        else
+        {
+            joinedDirectionDescriptions = "";
+        }
+
+        string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions + "\n \n";
         LogStringWithReturn(combinedText);
     }
 

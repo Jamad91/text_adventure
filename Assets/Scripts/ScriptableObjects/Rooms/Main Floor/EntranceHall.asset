@@ -29,7 +29,7 @@ MonoBehaviour:
     exitDescription: Go UP the main staircase to reach the SECOND FLOOR.
     valueRoom: {fileID: 11400000, guid: 0a3c930053de0438bbb74ecf97d8aad2, type: 2}
   - keyString: down
-    exitDescription: Go DOWN  a set of steps to reach the BASEMENT.
+    exitDescription: Go DOWN a set of steps to reach the BASEMENT.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []
