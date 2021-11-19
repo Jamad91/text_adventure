@@ -208,6 +208,8 @@ public class InteractableItems : MonoBehaviour
                         itemToBeGiven = currentCharacter.responses.itemToBeGiven;
                         itemToGiveAway = currentCharacter.responses.itemToGiveAway;
 
+                        Debug.Log("character: " + currentCharacter.characterName + " item to be given: " + itemToBeGiven + " item to give away: " + itemToGiveAway);
+
                         if (itemToBeGiven != null && itemToBeGiven.noun == item)
                         {
                             givingItemInteraction = itemToBeGiven.interactions[0];

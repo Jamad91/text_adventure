@@ -50,7 +50,6 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(displayText.text.Length);
         if (displayText.text.Length > 2000)
         {
             displayText.text = displayText.text.Substring(displayText.text.Length - 1000, 1000);

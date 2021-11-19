@@ -55,9 +55,16 @@ public class TextInput : MonoBehaviour
 
     void DisplayPreviousCommand()
     {
+        Debug.Log(previousMessageIndex);
+
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            previousMessageIndex--;
+            Debug.Log("hitting");
+            if (previousMessageIndex >= 0)
+            {
+                previousMessageIndex--;
+            }
+
             if (previousCommands.Count > 0 && previousMessageIndex > -1)
             {
                 inputField.text = previousCommands[previousMessageIndex];
@@ -65,7 +72,11 @@ public class TextInput : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            previousMessageIndex++;
+            if (previousMessageIndex < previousCommands.Count)
+            {
+                previousMessageIndex++;
+            }
+
             if (previousCommands.Count > 0)
             {
                 if (previousMessageIndex < previousCommands.Count)
