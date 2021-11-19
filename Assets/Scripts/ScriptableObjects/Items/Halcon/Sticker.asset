@@ -20,6 +20,6 @@ MonoBehaviour:
     textResponse: 
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: You don't like to jude a book by it's cover, but anyone who puts
-      this on their car is making it way too easy to do so.
+    textResponse: You don't like to jude a book by it's cover, but anyone who displays
+      a "Whol is John Galt" sticker is making it way too easy to do so.
     actionResponse: {fileID: 0}

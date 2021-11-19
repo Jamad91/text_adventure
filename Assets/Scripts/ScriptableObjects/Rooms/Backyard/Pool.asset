@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: Pool
   m_EditorClassIdentifier: 
-  description: A pool! If you weren't busy, this would be a great day for a swim.
+  description: 'A pool! If you weren''t busy, this would be a great day for a swim.
+
+
+'
   roomName: 
   exits:
   - keyString: east
-    exitDescription: Go EAST to see the LOVE COTTAGE.
-    valueRoom: {fileID: 11400000, guid: f36b3ed552ba24dc5a4987d7346ffc1d, type: 2}
-  - keyString: west
-    exitDescription: To your WEST is the PATIO.
+    exitDescription: To your EAST is the PATIO.
     valueRoom: {fileID: 11400000, guid: c1d89325ad357415abeb98d561e74250, type: 2}
+  - keyString: west
+    exitDescription: Go WEST to see the LOVE COTTAGE.
+    valueRoom: {fileID: 11400000, guid: f36b3ed552ba24dc5a4987d7346ffc1d, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom:
   - {fileID: 11400000, guid: a6f11a2c838af4a43955536703ad3e52, type: 2}

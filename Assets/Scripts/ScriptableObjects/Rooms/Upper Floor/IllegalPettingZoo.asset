@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: IllegalPettingZoo
   m_EditorClassIdentifier: 
   description: The farm smell overwhelms you. You can't tell if this is up here because
-    it's illegal or Negativa D is just that much of a nonsensical weirdo.
+    it's illegal or Negativa D is just that much of a nonsensical weirdo. A sign
+    reads "We feed our birds lunch and dinner. They do not eat breakfast, please
+    don't feed them any!"
   roomName: 
   exits:
   - keyString: west

@@ -393,6 +393,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b20755d0ad6f74450ac4d395731ccc16, type: 2}
   - {fileID: 11400000, guid: 1db84817ed436404f91ccb94fae97233, type: 2}
   - {fileID: 11400000, guid: 7abb72ca75c974b869604f667b4e19b1, type: 2}
+  - {fileID: 11400000, guid: 7abb72ca75c974b869604f667b4e19b1, type: 2}
   transformableCharactersList:
   - {fileID: 11400000, guid: 25118fe35191e406a9988dbc29a41946, type: 2}
   - {fileID: 11400000, guid: fd6709c9ba0254ab6be5c128863378c1, type: 2}

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: GiantBirdcage
   m_EditorClassIdentifier: 
-  description: A 30 foot tall bidcage stands before you.
+  description: A 30 foot tall bidcage stands before you. There is a sign that says
+    "Please do not give animals anything to drink! It is not good for them!"
   roomName: 
   exits:
   - keyString: east

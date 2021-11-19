@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Attic
   m_EditorClassIdentifier: 
   description: The attic is dusty and filled with boxes that say stuff like "Dress
-    shoes" and "Extra Digeridoos"
+    shoes" and "Extra Digeridoos".
   roomName: 
   exits:
   - keyString: west

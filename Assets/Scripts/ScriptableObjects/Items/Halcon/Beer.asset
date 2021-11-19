@@ -23,5 +23,5 @@ MonoBehaviour:
       your eyes
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: 
+    textResponse: It's green and has a horse on it.
     actionResponse: {fileID: 0}

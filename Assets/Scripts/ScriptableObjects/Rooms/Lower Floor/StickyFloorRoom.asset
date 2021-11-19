@@ -23,7 +23,7 @@ MonoBehaviour:
     exitDescription: Go to your EAST to enter the SEWERS.
     valueRoom: {fileID: 11400000, guid: a5050afea51f64c45904e68051abc794, type: 2}
   - keyString: south
-    exitDescription: To your south is what appears to be a nightclub with the giant
+    exitDescription: To your SOUTH is what appears to be a nightclub with the giant
       neon sign that reads "GENIE'S LAMP".
     valueRoom: {fileID: 11400000, guid: 3fdec8f4e23f8417584fd3c2b66f7ae2, type: 2}
   interactableObjectsInRoom: []

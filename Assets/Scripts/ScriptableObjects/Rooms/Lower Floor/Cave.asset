@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Cave
   m_EditorClassIdentifier: 
   description: You walk into a cave that is as damp and echoing as you expected it
-    to be.
+    to be. You see a sign posted that reads "Caves are filled with flamable gas,
+    please do not smoke!"
   roomName: 
   exits:
   - keyString: south

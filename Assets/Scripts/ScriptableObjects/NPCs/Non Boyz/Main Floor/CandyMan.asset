@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: candyman
   description: The CANDYMAN waves at you from the corner with a big ol' smile. Not
-    sure if he's the Willy Wonka kind or the "say his name five times" kind
+    sure if he's the Willy Wonka kind or the "say his name five times" kind.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 

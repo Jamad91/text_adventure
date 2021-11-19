@@ -16,7 +16,7 @@ MonoBehaviour:
   description: A FALCON makes direct eye contact with you and won't break it; it's
     at least a little unnerving
   transformableCharacter: 1
-  transformedCharacterName: Halcon
+  transformedCharacterName: halcon
   transformedDescription: el HALCON has larger arms than he has any right to have
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}

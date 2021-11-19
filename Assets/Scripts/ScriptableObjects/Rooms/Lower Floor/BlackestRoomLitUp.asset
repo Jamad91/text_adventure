@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: abyss room
   exits:
   - keyString: east
-    exitDescription: Walk EASTto enter some kind of LAB.
+    exitDescription: Walk EAST to enter some kind of LAB.
     valueRoom: {fileID: 11400000, guid: a1b06d837934c4f27808630d5e8e1a6f, type: 2}
   - keyString: south
     exitDescription: FAUCI'S OUCHIE ROOM is to your SOUTH, if you dare return to

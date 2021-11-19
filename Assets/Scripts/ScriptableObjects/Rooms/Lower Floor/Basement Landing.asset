@@ -26,7 +26,7 @@ MonoBehaviour:
       CATEHDRAL.
     valueRoom: {fileID: 11400000, guid: f520207db8edf4583a20a244e68cf1d8, type: 2}
   - keyString: up
-    exitDescription: Go up the stairs to reach the Entrance hall.
+    exitDescription: Go UP the stairs to reach the Entrance hall.
     valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
   interactableObjectsInRoom: []
   charactersInRoom: []

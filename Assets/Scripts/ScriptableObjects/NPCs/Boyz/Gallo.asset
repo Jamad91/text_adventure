@@ -16,7 +16,7 @@ MonoBehaviour:
   description: A frenetic ROOSTER is pacing back and forth in his pen. No hens around;
     must be lonely
   transformableCharacter: 1
-  transformedCharacterName: Gallo
+  transformedCharacterName: gallo
   transformedDescription: el GALLO cleans up some of the mess he made before. Honestly,
     what a great guy
   interactions:

@@ -18,7 +18,7 @@ MonoBehaviour:
   exits:
   - keyString: east
     exitDescription: To leave this super weird atmosphere behind and immerse yourself
-      in culture, go EASTto the ANGELA LANSBURY LIBRARY.
+      in culture, go EAST to the ANGELA LANSBURY LIBRARY.
     valueRoom: {fileID: 11400000, guid: 6d297c680145f47d589aa4a178fd4c0b, type: 2}
   - keyString: south
     exitDescription: To be confused, go SOUTH into the FRANKLIN P. PERDUE MEMORIAL

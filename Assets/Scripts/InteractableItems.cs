@@ -336,6 +336,8 @@ public class InteractableItems : MonoBehaviour
 
     public void LookAtItems()
     {
+        List<string> itemsBeingLookedAt = new List<string>();
+        string noun;
 
         if (nounsInRoom.Count < 1)
         {
@@ -345,7 +347,12 @@ public class InteractableItems : MonoBehaviour
 
         for (int i = 0; i < nounsInRoom.Count; i++)
         {
-            controller.LogStringWithoutReturn(nounsInRoom[i].ToUpper());
+            noun = nounsInRoom[i].ToUpper();
+            if (!itemsBeingLookedAt.Contains(noun))
+            {
+                controller.LogStringWithoutReturn(nounsInRoom[i].ToUpper());
+                itemsBeingLookedAt.Add(noun);
+            }    
         }
         
     }

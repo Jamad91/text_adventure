@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Sewer
   m_EditorClassIdentifier: 
   description: You make a point of not walking too deep in, as the smell only grows
-    stronger with each step.
+    stronger with each step. A sign on the wall reads "Feeding the pests is unsanitary,
+    please refrain!"
   roomName: 
   exits:
   - keyString: west

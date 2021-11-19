@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Thief
   m_EditorClassIdentifier: 
   characterName: thief
-  description: There's a theif in here! You can tell because he's wearing a burglar
+  description: There's a THIEF in here! You can tell because he's wearing a burglar
     mask and standsgo like Swiper the fox.
   transformableCharacter: 0
   transformedCharacterName: 

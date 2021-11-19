@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: owl
   description: An inquisitive OWL stands on a tree branch before you.
   transformableCharacter: 1
-  transformedCharacterName: Buho
+  transformedCharacterName: buho
   transformedDescription: el BUHO is very immersed in some Japanese pulp sci fi novel.
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}

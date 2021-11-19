@@ -16,7 +16,7 @@ MonoBehaviour:
   description: A very much asleep BEAR lies before you. You're really regretting
     on missing that bear to hand combat class that was offered at the learning annex.
   transformableCharacter: 1
-  transformedCharacterName: Oso
+  transformedCharacterName: oso
   transformedDescription: A very much alseep el OSO is laying down with a cigrette
     in his mouth
   interactions:

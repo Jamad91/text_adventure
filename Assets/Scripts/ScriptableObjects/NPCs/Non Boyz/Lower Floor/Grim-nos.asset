@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Grim-nos
   m_EditorClassIdentifier: 
   characterName: grim-nos
-  description: The Mad McTitan GRIM-NOS eats a 1/2 lbs. big mac
+  description: The Mad McTitan GRIM-NOS eats a 1/2 lb. big mac
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 

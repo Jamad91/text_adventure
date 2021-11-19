@@ -68,13 +68,13 @@ public class InteractableCharacters : MonoBehaviour
             {
                 hasBeenTransformed = isTransformed(charactersList[i].name);
 
-                if (!hasBeenTransformed && characterSpokenTo == charactersList[i].characterName)
+                if (!hasBeenTransformed && characterSpokenTo.ToLower() == charactersList[i].characterName.ToLower())
                 {
-                    controller.LogStringWithReturn(charactersList[i].characterName + ": " + CharacterResponse(charactersList[i]));
+                    controller.LogStringWithReturn(charactersList[i].characterName.ToUpper() + ": " + CharacterResponse(charactersList[i]));
                 }
-                else if (hasBeenTransformed && characterSpokenTo == charactersList[i].transformedCharacterName)
+                else if (hasBeenTransformed && characterSpokenTo.ToLower() == charactersList[i].transformedCharacterName.ToLower())
                 {
-                    controller.LogStringWithReturn(charactersList[i].transformedCharacterName + ": " + CharacterResponse(charactersList[i]));
+                    controller.LogStringWithReturn(charactersList[i].transformedCharacterName.ToUpper() + ": " + CharacterResponse(charactersList[i]));
                 }
             }
         }
