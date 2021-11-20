@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour
 
         DisplayRoomText();
         DisplayLoggedText();
-
+        
     }
 
     private void Update()
@@ -95,6 +95,7 @@ public class GameController : MonoBehaviour
 
         string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions;
         LogStringWithoutReturn(combinedText);
+        Debug.Log(roomNavigation.currentRoom.name + " " + roomNavigation.winRoom.name);
     }
 
     void UnpackRoom()
@@ -202,6 +203,11 @@ public class GameController : MonoBehaviour
     public void LogStringWithBreakLine()
     {
         actionLog.Add("---------------------------------------------- \n");
+    }
+
+    public void LoadEndScene()
+    {
+
     }
     
 }

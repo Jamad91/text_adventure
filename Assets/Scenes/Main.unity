@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
+  winRoom: {fileID: 11400000, guid: 54086f004cf6f4864bdff00714bf2501, type: 2}
 --- !u!114 &429674493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,7 +247,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
   - {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
   - {fileID: 11400000, guid: 3dc2d6bdf2ba74a7faf8e07e6dabf830, type: 2}
-  transformCount: 0
+  transformCount: 4
   startText: 
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
@@ -339,6 +340,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a396bd2f04f094f1aae0635b52667f0f, type: 2}
   - {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}
   - {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}
+  - {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
   hammer: {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
   nounsInRoom: []
 --- !u!114 &429674497

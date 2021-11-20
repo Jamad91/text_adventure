@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: As you reach the end of the cavern you are very much inside the volcano.
     There is a lake of lava beneath you that emanates power.
-  roomName: 
+  roomName: cavern
   exits:
   - keyString: south
     exitDescription: Go SOUTH to exit the cavern and leave the VOLCANO.

@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    
+    Scene currentScene;
+
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene();
+        Debug.Log(currentScene.name);
         StartCoroutine("LoadGame");
     }
 

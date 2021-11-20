@@ -23,7 +23,7 @@ MonoBehaviour:
     valueRoom: {fileID: 11400000, guid: bc76234c3748443c6a0d28a017c9742c, type: 2}
   - keyString: west
     exitDescription: To your WEST there is a passage, and at the end of that is a
-      CATEHDRAL.
+      CATHEDRAL.
     valueRoom: {fileID: 11400000, guid: f520207db8edf4583a20a244e68cf1d8, type: 2}
   - keyString: up
     exitDescription: Go UP the stairs to reach the Entrance hall.

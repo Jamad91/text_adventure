@@ -37,21 +37,24 @@ public class InteractableItems : MonoBehaviour
 
     public void AddActionResponsesToUseDictionary()
     {
-        
 
         for (int i = 0; i < nounsInInventory.Count; i++)
         {
             string noun = nounsInInventory[i];
-
+            
             InteractableObject interactableObjectinInventory = GetInteractableObjectFromUsableList(noun);
             if (interactableObjectinInventory == null)
             {
+                Debug.Log("null: " + noun);
                 continue;
             }
             else
             {
+                Debug.Log("not null " + noun);
                 for (int j = 0; j < interactableObjectinInventory.interactions.Length; j++)
                 {
+                    
+
                     Interaction interaction = interactableObjectinInventory.interactions[j];
 
                     if (interaction.actionResponse == null)
@@ -208,8 +211,6 @@ public class InteractableItems : MonoBehaviour
                         itemToBeGiven = currentCharacter.responses.itemToBeGiven;
                         itemToGiveAway = currentCharacter.responses.itemToGiveAway;
 
-                        Debug.Log("character: " + currentCharacter.characterName + " item to be given: " + itemToBeGiven + " item to give away: " + itemToGiveAway);
-
                         if (itemToBeGiven != null && itemToBeGiven.noun == item)
                         {
                             givingItemInteraction = itemToBeGiven.interactions[0];
@@ -233,7 +234,7 @@ public class InteractableItems : MonoBehaviour
                                 if (controller.transformCount == controller.interactableCharacters.transformableCharactersList.Count)
                                 {
                                     GetItem(hammer);
-                                    controller.LogStringWithReturn("You have received the hammer. Now you can free Heavy D.");
+                                    controller.LogStringWithReturn("You have received the SLEDGEHAMMER. Now you can free Heavy D.");
                                 }
                             }
                             else

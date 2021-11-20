@@ -55,11 +55,9 @@ public class TextInput : MonoBehaviour
 
     void DisplayPreviousCommand()
     {
-        Debug.Log(previousMessageIndex);
-
+ 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("hitting");
             if (previousMessageIndex >= 0)
             {
                 previousMessageIndex--;

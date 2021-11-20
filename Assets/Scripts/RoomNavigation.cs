@@ -5,6 +5,7 @@ using UnityEngine;
 public class RoomNavigation : MonoBehaviour
 {
     public Room currentRoom;
+    public Room winRoom;
     Dictionary<string, Room> exitDictionary = new Dictionary<string, Room>();
     GameController controller;
 

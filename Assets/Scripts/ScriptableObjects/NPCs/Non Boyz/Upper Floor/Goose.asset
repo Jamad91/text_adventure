@@ -25,8 +25,8 @@ MonoBehaviour:
     textResponse: 
     actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: I gotta hide all my eggs before the boss man sees
-      takes all my money!
+    notHoldingGivenItemResponse: I gotta hide all my eggs before the boss man takes
+      all my valuables!
     beingGivenItemResponse: Yes! No golden eggs for you, mr. boss man! Thanks pal,
       you're a lifesaver; I can retire early now. Have an egg for all of your help
     isHoldingGivenItemResponse: He won't find my eggs now!

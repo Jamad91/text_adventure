@@ -14,6 +14,10 @@ public class ChangeRoomResponse : ActionResponse
         {
             controller.roomNavigation.currentRoom = roomToChangeTo;
             controller.DisplayRoomText();
+            if (controller.roomNavigation.currentRoom.name == controller.roomNavigation.winRoom.name)
+            {
+                controller.LoadEndScene();
+            }
             return true;
         }
         return false;
