@@ -26,7 +26,8 @@ MonoBehaviour:
     textResponse: 
     actionResponse: {fileID: 0}
   responses:
-    notHoldingGivenItemResponse: I need something sweet. Something baked.
+    notHoldingGivenItemResponse: I need something sweet. Something baked. But not
+      anything big, like a pie. Just a lil' morsel.
     beingGivenItemResponse: Yes. This will suffice for my needs. Have a lolli. You
       better enjoy it.
     isHoldingGivenItemResponse: That was good. But I crave more.

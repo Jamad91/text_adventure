@@ -21,6 +21,6 @@ MonoBehaviour:
     textResponse: 
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: Perfect for a mixed drink or if someone pours out the contents
-      of a watering can on you
+    textResponse: 'Perfect for a mixed drink or for pointing at someone (that may
+      or may or may not be dressed as a bat) menacingly '
     actionResponse: {fileID: 0}

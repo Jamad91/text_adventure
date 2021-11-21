@@ -5,17 +5,24 @@ using UnityEngine.UI;
 
 public class TextInput : MonoBehaviour
 {
+    [SerializeField]
+    public Text displayText;
+
     public InputField inputField;
     [HideInInspector] public List<string> previousCommands;
     [HideInInspector] public int previousMessageIndex;
 
+    SceneLoader sceneLoader;
     GameController controller;
 
     private void Awake()
     {
         controller = GetComponent<GameController>();
+        sceneLoader = GetComponent<SceneLoader>();
+
         inputField.onEndEdit.AddListener(AcceptStringInput);
         previousCommands = new List<string>();
+        
         
     }
 
@@ -26,23 +33,47 @@ public class TextInput : MonoBehaviour
 
     void AcceptStringInput(string userInput)
     {
-        userInput = userInput.ToLower();
-        controller.LogStringWithReturn(userInput);
 
-        char[] delimiterCharacters = { ' ' };
-        string[] serparatedInputWords = userInput.Split(delimiterCharacters);
-  
-        for (int i = 0; i < controller.inputActions.Length; i++)
+        userInput = userInput.ToLower();
+        if (controller != null)
         {
-            InputAction inputAction = controller.inputActions[i];
-            if (inputAction.keyword == serparatedInputWords[0])
+            controller.LogStringWithReturn(userInput);
+
+            char[] delimiterCharacters = { ' ' };
+            string[] serparatedInputWords = userInput.Split(delimiterCharacters);
+
+            for (int i = 0; i < controller.inputActions.Length; i++)
             {
-                inputAction.RespondToInput(controller, serparatedInputWords);
+                InputAction inputAction = controller.inputActions[i];
+                if (inputAction.keyword == serparatedInputWords[0])
+                {
+                    inputAction.RespondToInput(controller, serparatedInputWords);
+                }
+            }
+            previousCommands.Add(userInput);
+            previousMessageIndex = previousCommands.Count;
+            InputComplete();
+
+        }
+
+
+        if (sceneLoader.GetScene() == 0)
+        {
+            if (userInput.ToLower() == "begin")
+            {
+                sceneLoader.LoadScene(1);
+            }
+            else
+            {
+                displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
             }
         }
-        previousCommands.Add(userInput);
-        previousMessageIndex = previousCommands.Count;
-        InputComplete();
+        else if (sceneLoader.GetScene() == 1)
+        {
+            previousCommands.Add(userInput);
+            previousMessageIndex = previousCommands.Count;
+            InputComplete();
+        }
     }
 
 

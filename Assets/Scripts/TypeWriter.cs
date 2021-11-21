@@ -23,7 +23,7 @@ public class TypeWriter : MonoBehaviour
         foreach (char c in story)
         {
             txt.text += c;
-            yield return new WaitForSeconds(0.04f);
+            yield return new WaitForSeconds(0.001f);
         }
     }
 

@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour
     [HideInInspector] public List<string> characterDescriptionsInRoom = new List<string>();
     [HideInInspector] public Dictionary<string, bool> pickedUpAndHolding = new Dictionary<string, bool>();
     [HideInInspector] public Dictionary<string, string> pickedUpExamineDictionary = new Dictionary<string, string>();
+    [HideInInspector] public SceneLoader sceneLoader;
 
     List<string> actionLog = new List<string>();
 
@@ -28,24 +29,20 @@ public class GameController : MonoBehaviour
         interactableCharacters = GetComponent<InteractableCharacters>();
         interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<RoomNavigation>();
-
-        
+        sceneLoader = GetComponent<SceneLoader>();   
     }
 
     public void DisplayLoggedText()
     {
         string logAsText = string.Join("\n", actionLog.ToArray());
-
         displayText.text = logAsText;
     }
 
     void Start()
     {
         LogStringWithReturn(startText);
-
         DisplayRoomText();
         DisplayLoggedText();
-        
     }
 
     private void Update()
@@ -95,7 +92,7 @@ public class GameController : MonoBehaviour
 
         string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions;
         LogStringWithoutReturn(combinedText);
-        Debug.Log(roomNavigation.currentRoom.name + " " + roomNavigation.winRoom.name);
+        
     }
 
     void UnpackRoom()
@@ -205,9 +202,21 @@ public class GameController : MonoBehaviour
         actionLog.Add("---------------------------------------------- \n");
     }
 
+    public void LoadGame()
+    {
+        //if (sceneLoader )
+        //Debug.Log(sceneLoader.GetScene());
+        if (sceneLoader != null && sceneLoader.GetScene() == 0)
+        {
+            Debug.Log("hitting");
+            sceneLoader.LoadScene(1);
+            Debug.Log(sceneLoader.GetScene());
+        }
+    }
+
     public void LoadEndScene()
     {
-
+        
     }
     
 }
