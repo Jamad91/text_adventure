@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Go.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TitleScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/TextInput.cs" Line="62" Column="29" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="34" Column="42" />
-      <File FileName="Assets/Scripts/TypeWriter.cs" Line="26" Column="49" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="46" Column="40" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/TextInput.cs" Line="58" Column="1" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="49" Column="35" />
+      <File FileName="Assets/Scripts/TypeWriter.cs" Line="31" Column="27" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="219" Column="31" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/ChangeRoomResponse.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TitleScript.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +15,7 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Input Action Scripts" expanded="True">
-                  <Node name="Go.cs" selected="True" />
-                </Node>
+                <Node name="TitleScript.cs" selected="True" />
               </Node>
             </Node>
           </Node>

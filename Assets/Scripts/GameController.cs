@@ -216,7 +216,7 @@ public class GameController : MonoBehaviour
 
     public void LoadEndScene()
     {
-        
+        sceneLoader.EndGame();
     }
     
 }

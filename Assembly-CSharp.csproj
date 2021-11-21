@@ -82,6 +82,7 @@
     <Compile Include="Assets/Scripts/TypeWriter.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
     <Compile Include="Assets/Scripts/SceneLoader.cs" />
+    <Compile Include="Assets/Scripts/TitleScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

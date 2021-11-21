@@ -31,7 +31,7 @@ public class SceneLoader : MonoBehaviour
 
     private IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(108f);
         if (inputfield != null)
         {
             inputfield.SetActive(true);

@@ -250,36 +250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputfield: {fileID: 1359698765}
---- !u!1 &492304921
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 492304922}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &492304922
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492304921}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.11151, y: 112.40144, z: -112.92908}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +785,7 @@ RectTransform:
   m_Children:
   - {fileID: 2131637318}
   - {fileID: 1359698766}
+  - {fileID: 1827919311}
   - {fileID: 2106181576}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -824,6 +795,145 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1827919310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1827919311}
+  - component: {fileID: 1827919314}
+  - component: {fileID: 1827919313}
+  - component: {fileID: 1827919312}
+  - component: {fileID: 1827919315}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1827919311
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827919310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1705484976}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 19.8}
+  m_SizeDelta: {x: 758.187, y: 346.69022}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1827919312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827919310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6340cfdc5844daaa984427586e30af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1e-45
+--- !u!114 &1827919313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827919310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3201476, g: 0.7137255, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 661f99ee007e147d285ed69acd1a29b3, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 165
+    m_Alignment: 6
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.7
+  m_Text: "  _    _ _____     _____          __  __ ______  _____ \n | |  | |  __
+    \\   / ____|   /\\   |  \\/  |  ____|/ ____|\n | |__| | |  | | | |  __   /  \\ 
+    | \\  / | |__  | (___  \n |  __  | |  | | | | |_ | / /\\ \\ | |\\/| |  __|  \\___
+    \\ \n | |  | | |__| | | |__| |/ ____ \\| |  | | |____ ____) |\n |_|  |_|_____/  
+    \\_____/_/    \\_|_|  |_|______|_____/ \n                     \n  _____                        
+    _       \n |  __ \\                       | |      \n | |__) _ __ ___ ___  ___
+    _ __ | |_ ___ \n |  ___| '__/ _ / __|/ _ | '_ \\| __/ __|\n | |   | | |  __\\__
+    |  __| | | | |_\\__ \\\n |_|   |_|  \\___|___/\\___|_| |_|\\__|___/\n                    
+    \n                     \n___  ___  ___   _   _  _____ ______  ___  ___  ___ 
+    ______  _   _  _____  _____  _____ \n|  \\/  | / _ \\ | \\ | ||  _  || ___ \\
+    |  \\/  | / _ \\ |  _  \\| \\ | ||  ___|/  ___|/  ___|\n| .  . |/ /_\\ \\|  \\|
+    || | | || |_/ / | .  . |/ /_\\ \\| | | ||  \\| || |__  \\ `--. \\ `--. \n| |\\/|
+    ||  _  || . ` || | | ||    /  | |\\/| ||  _  || | | || . ` ||  __|  `--. \\ `--.
+    \\\n| |  | || | | || |\\  |\\ \\_/ /| |\\ \\  | |  | || | | || |/ / | |\\  ||
+    |___ /\\__/ //\\__/ /\n\\_|  |_/\\_| |_/\\_| \\_/ \\___/ \\_| \\_| \\_|  |_/\\_|
+    |_/|___/  \\_| \\_/\\____/ \\____/ \\____/ \n                                                       
+    \n                     \n                     \n  ___    _____         _    ______                   
+    _ \n / _ \\  |_   _|       | |   | ___ \\                  | |\n/ /_\\ \\   |
+    | _____  _| |_  | |_/ / __ _ ___  ___  __| |\n|  _  |   | |/ _ \\ \\/ / __| |
+    ___ \\/ _` / __|/ _ \\/ _` |\n| | | |   | |  __/>  <| |_  | |_/ / (_| \\__ \\ 
+    __/ (_| |\n\\_| |_/   \\_/\\___/_/\\_\\\\__| \\____/ \\__,_|___/\\___|\\__,_|\n                                                       
+    \n______        _   _            _                  \n|  _  \\      | | | |         
+    | |                 \n| | | |______| | | | ___ _ __ | |_ _   _ _ __ ___ \n| |
+    | |______| | | |/ _ \\ '_ \\| __| | | | '__/ _ \\\n| |/ /       \\ \\_/ /  __/
+    | | | |_| |_| | | |  __/\n|___/         \\___/ \\___|_| |_|\\__|\\__,_|_|  \\___|\n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n"
+--- !u!222 &1827919314
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827919310}
+  m_CullTransparentMesh: 0
+--- !u!114 &1827919315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827919310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdae6cf9679a844a6b9be1c910d9c44c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 2106181573}
 --- !u!1 &1981909886
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +976,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106181573
 GameObject:
@@ -886,7 +996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2106181574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,7 +1019,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 661f99ee007e147d285ed69acd1a29b3, type: 3}
-    m_FontSize: 20
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -930,12 +1040,12 @@ MonoBehaviour:
     out that the Boyz, el Raton, el Halcon, el Oso, el Gallo, and el Buho, were each
     transformed into their animal namesakes. You're not sure what happened to Heavy
     D. However, if you manage to transfrom all the Boyz back to their human forms,
-    they will know what to do.\n\nYou must rescue Heavy D and the Boyz. Only they
-    can stop Negativa D from summoning the Gobba Ghoul. \n\nYou enter the manor with
-    nothing but your wits. You will have to GO around the house, TALK TO the beings
-    within it, TAKE items you find lying around, USE items, and GIVE items to people
-    who might need them. However, if at any point you need HELP, do not hesitate
-    to ask. \n\nOnce you're ready to begin, type \"BEGIN\" and hit ENTER. The fate
+    they will know what to do.\n\nYou enter the manor with nothing but your wits.
+    You will have to GO around the house, TALK TO the beings within it, TAKE items
+    you find lying around, USE items, and GIVE items to people who might need them.
+    However, if at any point you need HELP, do not hesitate to ask. \n\nOnce you're
+    ready to begin, type \"BEGIN\" and hit ENTER. \nYou must rescue Heavy D and the
+    Boyz. Only they can stop Negativa D from summoning the Gobba Ghoul. The fate
     of the world depends on you!\n\n\n"
 --- !u!222 &2106181575
 CanvasRenderer:
@@ -957,7 +1067,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1705484976}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -976,6 +1086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6340cfdc5844daaa984427586e30af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 0.04
 --- !u!1 &2131637317
 GameObject:
   m_ObjectHideFlags: 0
