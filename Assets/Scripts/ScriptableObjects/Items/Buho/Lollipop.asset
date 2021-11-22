@@ -22,5 +22,6 @@ MonoBehaviour:
       man stands before you with a half eaten lollipop.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: A little too sweet for you these days
+    textResponse: You wonder how many licks it would take to get to the chocolate
+      center.
     actionResponse: {fileID: 0}

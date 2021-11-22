@@ -45,16 +45,12 @@ public class InteractableItems : MonoBehaviour
             InteractableObject interactableObjectinInventory = GetInteractableObjectFromUsableList(noun);
             if (interactableObjectinInventory == null)
             {
-                Debug.Log("null: " + noun);
                 continue;
             }
             else
             {
-                Debug.Log("not null " + noun);
                 for (int j = 0; j < interactableObjectinInventory.interactions.Length; j++)
                 {
-                    
-
                     Interaction interaction = interactableObjectinInventory.interactions[j];
 
                     if (interaction.actionResponse == null)
@@ -230,10 +226,20 @@ public class InteractableItems : MonoBehaviour
                             if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.name))
                             {
                                 controller.interactableCharacters.transformCharacter(currentCharacter);
-                                controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
-                                if (controller.transformCount == controller.interactableCharacters.transformableCharactersList.Count)
+                                if (controller.transformCount != controller.interactableCharacters.transformableCharactersList.Count)
+                                {
+                                    controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
+                                }
+                                else
                                 {
                                     GetItem(hammer);
+
+                                    controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() +
+                                        ": You have freed the last member of the Boyz. " +
+                                        "We now ask you one remaining favor as we prepare to stop the summoning of the Gobba Ghoul. " +
+                                        "Please take this. If you USE it wisely in the correct place, you will free Heavy D from his prison. " +
+                                        "We're not sure where he resides, but I imagine it is a place of great power. Good luck.");
+
                                     controller.LogStringWithReturn("You have received the SLEDGEHAMMER. Now you can free Heavy D.");
                                 }
                             }

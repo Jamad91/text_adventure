@@ -28,9 +28,9 @@ MonoBehaviour:
   responses:
     notHoldingGivenItemResponse: I need something sweet. Something baked. But not
       anything big, like a pie. Just a lil' morsel.
-    beingGivenItemResponse: Yes. This will suffice for my needs. Have a lolli. You
-      better enjoy it.
-    isHoldingGivenItemResponse: That was good. But I crave more.
+    beingGivenItemResponse: Yes. This will suffice for my needs. Have a lollipop.
+      You better enjoy it.
+    isHoldingGivenItemResponse: That was good. But I crave more cookies.
     doesNotWantItemResponse: This will not sate me.
     transformedDoesNotWantItemResponse: 
     itemToBeGiven: {fileID: 11400000, guid: 25ffafabbaf084adc97918272f537d64, type: 2}

@@ -831,7 +831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19.8}
+  m_AnchoredPosition: {x: 0, y: -126.65}
   m_SizeDelta: {x: 758.187, y: 346.69022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827919312
@@ -912,7 +912,9 @@ MonoBehaviour:
     \n                     \n                     \n                     \n                    
     \n                     \n                     \n                     \n                    
     \n                     \n                     \n                     \n                    
-    \n"
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     "
 --- !u!222 &1827919314
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1030,23 +1032,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "The world is in danger!\n\nNegativa D, the evil, libertarian, Italian
+  m_Text: "The world is in danger!\n     \nNegativa D, the evil, libertarian, Italian
     shaman, and archenemy of Heavy D and the Boyz, has managed to capture them! They
     are a positive force for social good, which threatens his hedonistic lifestyle.
     And now that they are out of Negativa D's way, he can finally summon the Gobba
-    Ghoul, which spells doom for us all.\n\nYou have uncovered that they have been
-    imprisoned at his magical manor. Through some connections, you were able to obtain
-    its location as well as a rough map of the place. You were also able to find
-    out that the Boyz, el Raton, el Halcon, el Oso, el Gallo, and el Buho, were each
-    transformed into their animal namesakes. You're not sure what happened to Heavy
-    D. However, if you manage to transfrom all the Boyz back to their human forms,
-    they will know what to do.\n\nYou enter the manor with nothing but your wits.
-    You will have to GO around the house, TALK TO the beings within it, TAKE items
-    you find lying around, USE items, and GIVE items to people who might need them.
-    However, if at any point you need HELP, do not hesitate to ask. \n\nOnce you're
-    ready to begin, type \"BEGIN\" and hit ENTER. \nYou must rescue Heavy D and the
-    Boyz. Only they can stop Negativa D from summoning the Gobba Ghoul. The fate
-    of the world depends on you!\n\n\n"
+    Ghoul, which spells doom for us all.\n     \nYou have uncovered that they have
+    been imprisoned at his magical manor. Through some connections, you were able
+    to obtain its location as well as a rough map of the place. You were also able
+    to find out that the Boyz, el Raton, el Halcon, el Oso, el Gallo, and el Buho,
+    were each transformed into their animal namesakes. You're not sure what happened
+    to Heavy D. However, if you manage to transfrom all the Boyz back to their human
+    forms, they will know what to do.\n     \nYou enter the manor with nothing but
+    your wits. You will have to GO around the house, TALK TO the beings within it,
+    TAKE items you find lying around, USE items, and GIVE items TO people who might
+    need them. However, if at any point you need HELP, do not hesitate to ask. \n    
+    \nOnce you're ready to begin, type \"BEGIN\" and hit ENTER. \nYou must rescue
+    Heavy D and the Boyz. Only they can stop Negativa D from summoning the Gobba
+    Ghoul. The fate of the world depends on you!\n     \n     \n"
 --- !u!222 &2106181575
 CanvasRenderer:
   m_ObjectHideFlags: 0

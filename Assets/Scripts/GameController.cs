@@ -204,13 +204,9 @@ public class GameController : MonoBehaviour
 
     public void LoadGame()
     {
-        //if (sceneLoader )
-        //Debug.Log(sceneLoader.GetScene());
         if (sceneLoader != null && sceneLoader.GetScene() == 0)
         {
-            Debug.Log("hitting");
             sceneLoader.LoadScene(1);
-            Debug.Log(sceneLoader.GetScene());
         }
     }
 

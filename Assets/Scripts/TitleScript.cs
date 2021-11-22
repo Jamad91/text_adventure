@@ -14,7 +14,7 @@ public class TitleScript : MonoBehaviour
 
     IEnumerator LoadOpeningText()
     {
-        yield return new WaitForSeconds(42f);
+        yield return new WaitForSeconds(65f);
         displayText.SetActive(true);
     }
 }
