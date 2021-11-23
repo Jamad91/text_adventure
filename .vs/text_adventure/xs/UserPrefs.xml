@@ -1,35 +1,21 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Help.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InputAction.cs">
     <Files>
       <File FileName="Assets/Scripts/TextInput.cs" Line="50" Column="11" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="48" Column="42" />
-      <File FileName="Assets/Scripts/TypeWriter.cs" Line="27" Column="27" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="219" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" />
+      <File FileName="Assets/Scripts/TypeWriter.cs" />
+      <File FileName="Assets/Scripts/GameController.cs" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" />
       <File FileName="Assets/Scripts/ChangeRoomResponse.cs" />
-      <File FileName="Assets/Scripts/TitleScript.cs" Line="17" Column="42" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="237" Column="37" />
+      <File FileName="Assets/Scripts/TitleScript.cs" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" />
       <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="21" Column="31" />
+      <File FileName="Assets/Scripts/InputAction.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="text_adventure" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Input Action Scripts" expanded="True">
-                  <Node name="Help.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12c43574-9d94-4908-a3cf-f2d391fe479a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="687e8b9a-b2e0-4eed-97c0-d12371af4155" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
