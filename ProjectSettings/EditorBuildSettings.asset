@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Opener.unity
     guid: e1dcbb557e1994e2298b9b7b7456071b
@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: c48b5984c4e7e48409d2019d6376651a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MobileDetection.unity
     guid: cc9c606d5c55b403083e6762979d0821
   m_configObjects: {}

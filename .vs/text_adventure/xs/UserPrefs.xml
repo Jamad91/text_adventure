@@ -1,10 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneLoader.cs">
     <Files>
-      <File FileName="Assets/Scripts/TypeWriter.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="11" Column="39" />
-      <File FileName="Assets/Scripts/DisplayPCOrMobile.cs" Line="8" Column="45" />
+      <File FileName="Assets/Scripts/TypeWriter.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="24" Column="10" />
+      <File FileName="Assets/Scripts/DisplayPCOrMobile.cs" Line="40" Column="14" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="text_adventure" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="DisplayPCOrMobile.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

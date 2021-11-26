@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
     Scene currentScene;
+    TypeWriter typeWriter;
 
     [SerializeField]
     CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile displayPCOrMobile;
@@ -16,30 +18,28 @@ public class SceneLoader : MonoBehaviour
     [SerializeField]
     GameObject phoneText;
 
-    //private void Start()
-    //{
-    //    //displayPCOrMobile = GetComponent<CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile>();
+    private void Awake()
+    {
+        if (titleText != null && titleText.GetComponent<TypeWriter>() != null)
+        {
+            typeWriter = titleText.GetComponent<TypeWriter>();
+        }
+    }
 
-    //    currentScene = SceneManager.GetActiveScene();
-    //    if (currentScene.buildIndex == 0)
-    //    {
-    //        Debug.Log("Is mobile: " + displayPCOrMobile.GetIsMobile());
-    //        if (displayPCOrMobile.GetIsMobile() == true)
-    //        {
-    //            phoneText.SetActive(true);
-    //        }
-    //        else
-    //        {
-    //            titleText.SetActive(true);
-    //            StartCoroutine("StartGame");
-    //        }
-    //    }
-    //}
+    private void Update()
+    {
+        if (typeWriter != null && typeWriter.IsTextRendered() == true)
+        {
+            if (inputfield != null)
+            {
+                inputfield.SetActive(true);
+            }
+        }
+    }
 
     public void LoadStart()
     {
         titleText.SetActive(true);
-        StartCoroutine("StartGame");
     }
 
     public void LoadMobileScreen()
@@ -55,15 +55,6 @@ public class SceneLoader : MonoBehaviour
     public void LoadScene(int i)
     {
         SceneManager.LoadScene(i);
-    }
-
-    private IEnumerator StartGame()
-    {
-        yield return new WaitForSeconds(115f);
-        if (inputfield != null)
-        {
-            inputfield.SetActive(true);
-        }
     }
 
     public void EndGame()

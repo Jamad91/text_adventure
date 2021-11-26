@@ -71,7 +71,6 @@
      <Compile Include="Assets\Scripts\InputAction.cs" />
      <Compile Include="Assets\Scripts\Input Action Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\ChangeRoomResponse.cs" />
-     <Compile Include="Assets\Scripts\TitleScript.cs" />
      <Compile Include="Assets\Scripts\Input Action Scripts\Take.cs" />
      <Compile Include="Assets\Scripts\Serializeables\Exit.cs" />
      <Compile Include="Assets\Scripts\InteractableItems.cs" />

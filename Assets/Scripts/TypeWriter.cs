@@ -11,6 +11,7 @@ public class TypeWriter : MonoBehaviour
 
     Text txt;
     string story;
+    public bool textFullyRendered = false;
 
     void Awake()
     {
@@ -27,7 +28,14 @@ public class TypeWriter : MonoBehaviour
         {
             txt.text += c;
             yield return new WaitForSeconds(delay);
+
         }
+        textFullyRendered = true;
+    }
+
+    public bool IsTextRendered()
+    {
+        return textFullyRendered;
     }
 
 }
