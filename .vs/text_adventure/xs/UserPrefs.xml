@@ -1,21 +1,14 @@
-﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InputAction.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SceneLoader.cs">
     <Files>
-      <File FileName="Assets/Scripts/TextInput.cs" Line="50" Column="11" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" />
-      <File FileName="Assets/Scripts/TypeWriter.cs" />
-      <File FileName="Assets/Scripts/GameController.cs" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" />
-      <File FileName="Assets/Scripts/ChangeRoomResponse.cs" />
-      <File FileName="Assets/Scripts/TitleScript.cs" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="21" Column="31" />
-      <File FileName="Assets/Scripts/InputAction.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TypeWriter.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="11" Column="39" />
+      <File FileName="Assets/Scripts/DisplayPCOrMobile.cs" Line="8" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="687e8b9a-b2e0-4eed-97c0-d12371af4155" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1f0867d9-5279-4033-988c-16f79cf56d99" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

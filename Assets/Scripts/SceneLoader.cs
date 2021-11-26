@@ -8,15 +8,43 @@ public class SceneLoader : MonoBehaviour
     Scene currentScene;
 
     [SerializeField]
+    CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile displayPCOrMobile;
+    [SerializeField]
     GameObject inputfield;
+    [SerializeField]
+    GameObject titleText;
+    [SerializeField]
+    GameObject phoneText;
 
-    private void Start()
+    //private void Start()
+    //{
+    //    //displayPCOrMobile = GetComponent<CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile>();
+
+    //    currentScene = SceneManager.GetActiveScene();
+    //    if (currentScene.buildIndex == 0)
+    //    {
+    //        Debug.Log("Is mobile: " + displayPCOrMobile.GetIsMobile());
+    //        if (displayPCOrMobile.GetIsMobile() == true)
+    //        {
+    //            phoneText.SetActive(true);
+    //        }
+    //        else
+    //        {
+    //            titleText.SetActive(true);
+    //            StartCoroutine("StartGame");
+    //        }
+    //    }
+    //}
+
+    public void LoadStart()
     {
-        currentScene = SceneManager.GetActiveScene();
-        if (currentScene.buildIndex == 0)
-        {
-            StartCoroutine("StartGame");
-        }
+        titleText.SetActive(true);
+        StartCoroutine("StartGame");
+    }
+
+    public void LoadMobileScreen()
+    {
+        phoneText.SetActive(true);
     }
 
     public int GetScene()

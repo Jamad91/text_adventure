@@ -377,3 +377,5 @@
 /Users/jimmy/Desktop/text_adventure/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/jimmy/Desktop/text_adventure/obj/Debug/Assembly-CSharp.dll
 /Users/jimmy/Desktop/text_adventure/obj/Debug/Assembly-CSharp.pdb
+/Users/jimmy/Desktop/text_adventure/Temp/bin/Debug/UnityEngine.WebGLModule.dll
+/Users/jimmy/Desktop/text_adventure/Temp/bin/Debug/UnityEngine.WebGLModule.pdb

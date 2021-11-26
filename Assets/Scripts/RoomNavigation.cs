@@ -34,7 +34,14 @@ public class RoomNavigation : MonoBehaviour
         if (exitDictionary.ContainsKey(directionNoun))
         {
             currentRoom = exitDictionary[directionNoun];
-            controller.LogStringWithReturn("You head off to the " + directionNoun);
+            if (directionNoun == "up" || directionNoun == "down")
+            {
+                controller.LogStringWithReturn("You go " + directionNoun);
+            }
+            else
+            {
+                controller.LogStringWithReturn("You head off to the " + directionNoun);
+            }
             controller.DisplayRoomText();
         }
         else

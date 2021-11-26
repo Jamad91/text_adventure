@@ -18,9 +18,6 @@ public class TypeWriter : MonoBehaviour
         story = txt.text;
         txt.text = "";
 
-        
-
-        // TODO: add optional delay when to start
         StartCoroutine("PlayText");
     }
 

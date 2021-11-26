@@ -1,4 +1,5 @@
 Unity.Collections.LowLevel.Unsafe.UnsafeUtility::Free
+Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy
 Unity.Jobs.JobHandle::ScheduleBatchedJobs
 UnityEngine.AnimationCurve::Internal_Equals
 UnityEngine.AnimationCurve::Internal_Create
@@ -235,6 +236,8 @@ UnityEngine.PlayerConnectionInternal::PollInternal
 UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
+UnityEngine.Profiling.Profiler::BeginSampleImpl
+UnityEngine.Profiling.Profiler::EndSample
 UnityEngine.QualitySettings::get_activeColorSpace
 UnityEngine.Quaternion::Inverse_Injected
 UnityEngine.RectOffset::get_bottom

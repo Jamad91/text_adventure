@@ -37,6 +37,7 @@
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="ChangeRoomResponse" preserve="nothing"/>
+		<type fullname="CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile" preserve="nothing"/>
 		<type fullname="Examine" preserve="nothing"/>
 		<type fullname="GameController" preserve="nothing"/>
 		<type fullname="Give" preserve="nothing"/>

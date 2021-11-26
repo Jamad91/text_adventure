@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ChangeRoomResponse
+    - CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile
     - Examine
     - GameController
     - Give
@@ -229,6 +230,57 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
+    Assets/Scenes/MobileDetection.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11740}
+    - Class: 114
+      Script: {instanceID: 12052}
+    - Class: 114
+      Script: {instanceID: 12106}
+    - Class: 114
+      Script: {instanceID: 12826}
+    - Class: 114
+      Script: {instanceID: 13366}
+    - Class: 114
+      Script: {instanceID: 13920}
+    - Class: 114
+      Script: {instanceID: 14446}
+    - Class: 114
+      Script: {instanceID: 15084}
+    - Class: 114
+      Script: {instanceID: 15166}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
     Assets/Scenes/Opener.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -268,6 +320,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15084}
     - Class: 114
       Script: {instanceID: 15166}
+    - Class: 114
+      Script: {instanceID: 19306}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -589,7 +643,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: 8b69411702b1c603d273df5970e14a59
+      Hash: afa5f24b5df17326bd61c6b83d39d7a1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneLoader
@@ -893,9 +947,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 0df91eb785324977cdc9b31f3fff542e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CheckIfMobileForUnityWebGL.Samples
+    className: DisplayPCOrMobile
   platform: 20
   scenePathNames:
   - Assets/Scenes/Opener.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Ending.unity
+  - Assets/Scenes/MobileDetection.unity
   playerPath: /Users/jimmy/Desktop/Madness_Manor

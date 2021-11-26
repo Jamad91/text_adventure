@@ -22,7 +22,7 @@ MonoBehaviour:
     exitDescription: Go WEST to enter the BANJO DISPLAY.
     valueRoom: {fileID: 11400000, guid: 8a1a595ffcd8d453d9735a20fea1f9af, type: 2}
   - keyString: up
-    exitDescription: Climp UP a ladder to reach the ATTIC.
+    exitDescription: Climb UP a ladder to reach the ATTIC.
     valueRoom: {fileID: 11400000, guid: 91ee1303efe454535902a51a7b48532b, type: 2}
   - keyString: down
     exitDescription: Go DOWN the staircase to return to the ENTRANCE HALL.
