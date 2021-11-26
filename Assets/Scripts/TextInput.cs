@@ -19,11 +19,11 @@ public class TextInput : MonoBehaviour
     {
         controller = GetComponent<GameController>();
         sceneLoader = GetComponent<SceneLoader>();
-
-        inputField.onEndEdit.AddListener(AcceptStringInput);
-        previousCommands = new List<string>();
-        
-        
+        if (inputField != null)
+        {
+            inputField.onEndEdit.AddListener(AcceptStringInput);
+            previousCommands = new List<string>();
+        }
     }
 
     private void Update()

@@ -55,7 +55,6 @@
 		<type fullname="Take" preserve="nothing"/>
 		<type fullname="Talk" preserve="nothing"/>
 		<type fullname="TextInput" preserve="nothing"/>
-		<type fullname="TitleScript" preserve="nothing"/>
 		<type fullname="TypeWriter" preserve="nothing"/>
 		<type fullname="Use" preserve="nothing"/>
 	</assembly>

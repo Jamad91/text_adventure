@@ -20,7 +20,6 @@ ScriptsOnlyBuild:
     - Take
     - Talk
     - TextInput
-    - TitleScript
     - TypeWriter
     - Use
     Unity.2D.Animation.Editor.dll:
@@ -102,8 +101,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13604}
     - Class: 114
-      Script: {instanceID: 13934}
-    - Class: 114
       Script: {instanceID: 13940}
     - Class: 114
       Script: {instanceID: 14060}
@@ -130,8 +127,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -230,57 +225,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
-    Assets/Scenes/MobileDetection.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 11740}
-    - Class: 114
-      Script: {instanceID: 12052}
-    - Class: 114
-      Script: {instanceID: 12106}
-    - Class: 114
-      Script: {instanceID: 12826}
-    - Class: 114
-      Script: {instanceID: 13366}
-    - Class: 114
-      Script: {instanceID: 13920}
-    - Class: 114
-      Script: {instanceID: 14446}
-    - Class: 114
-      Script: {instanceID: 15084}
-    - Class: 114
-      Script: {instanceID: 15166}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 850595691
-      Script: {instanceID: 0}
     Assets/Scenes/Opener.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -308,8 +252,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12826}
     - Class: 114
       Script: {instanceID: 13366}
-    - Class: 114
-      Script: {instanceID: 13920}
     - Class: 114
       Script: {instanceID: 13934}
     - Class: 114
@@ -709,12 +651,6 @@ ScriptsOnlyBuild:
     className: SpriteSkin
   - hash:
       serializedVersion: 2
-      Hash: 701017254f3f54b47005c57e66e0675a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TitleScript
-  - hash:
-      serializedVersion: 2
       Hash: f7bb6096199e0cf058d5d69878184cf4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -925,7 +861,7 @@ ScriptsOnlyBuild:
     className: GameController
   - hash:
       serializedVersion: 2
-      Hash: 20c9a74d659b6895cfdb5f4624ba8daa
+      Hash: 05c71db425c998d05857be1a7769c5d3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TypeWriter
@@ -958,5 +894,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Opener.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Ending.unity
-  - Assets/Scenes/MobileDetection.unity
   playerPath: /Users/jimmy/Desktop/Madness_Manor

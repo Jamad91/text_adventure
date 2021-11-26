@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: umbrella
   description: 
-  beingGivenDescription: The spirit hands you this rather small UMBRELLA. It was
-    definitely way too small for him.
+  beingGivenDescription: The spirit hands you this rather small, but very pointed,
+    UMBRELLA. It was definitely way too small for him.
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: 

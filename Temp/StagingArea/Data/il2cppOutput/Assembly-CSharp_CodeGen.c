@@ -169,111 +169,85 @@ extern void RoomNavigation_LookAtRoom_m948166B6D30BBDC4008775B069FA46C99F4C3E8A 
 extern void RoomNavigation_LookAtExits_mD4B36537E3E215D3FB6CD69CC7A079210097073C ();
 // 0x0000004C System.Void RoomNavigation::.ctor()
 extern void RoomNavigation__ctor_m46C5606824D4C258161D9B93F43342AAC31EB552 ();
-// 0x0000004D System.Void SceneLoader::LoadStart()
+// 0x0000004D System.Void SceneLoader::Awake()
+extern void SceneLoader_Awake_m0618C263DDE94B4607D9D5148F87247B506A337C ();
+// 0x0000004E System.Void SceneLoader::Update()
+extern void SceneLoader_Update_m699D11504401E3060B887E522518E26ED63CD5D0 ();
+// 0x0000004F System.Void SceneLoader::LoadStart()
 extern void SceneLoader_LoadStart_m629B6227BB0D060EDAB53B4404982DACA77DC8D9 ();
-// 0x0000004E System.Void SceneLoader::LoadMobileScreen()
+// 0x00000050 System.Void SceneLoader::LoadMobileScreen()
 extern void SceneLoader_LoadMobileScreen_m5E93910B62816333840209A40B8E2CE9655A44DD ();
-// 0x0000004F System.Int32 SceneLoader::GetScene()
+// 0x00000051 System.Int32 SceneLoader::GetScene()
 extern void SceneLoader_GetScene_m093C2A9DD0E26EE507B6C91BB7CCA11FFD4959D0 ();
-// 0x00000050 System.Void SceneLoader::LoadScene(System.Int32)
+// 0x00000052 System.Void SceneLoader::LoadScene(System.Int32)
 extern void SceneLoader_LoadScene_mE757D2B5CE716ECE35E1E4451259987245A13EC7 ();
-// 0x00000051 System.Collections.IEnumerator SceneLoader::StartGame()
-extern void SceneLoader_StartGame_mA81ADDCA9B69A3134F3E3462F98E84BA24167F2F ();
-// 0x00000052 System.Void SceneLoader::EndGame()
+// 0x00000053 System.Void SceneLoader::EndGame()
 extern void SceneLoader_EndGame_m1D616D3B26A700FD768462B2B70A458FDEC2D865 ();
-// 0x00000053 System.Collections.IEnumerator SceneLoader::LoadEnd()
+// 0x00000054 System.Collections.IEnumerator SceneLoader::LoadEnd()
 extern void SceneLoader_LoadEnd_m87F5838AD3D94BF0A0E55B32B00891223F98C51B ();
-// 0x00000054 System.Void SceneLoader::.ctor()
+// 0x00000055 System.Void SceneLoader::.ctor()
 extern void SceneLoader__ctor_m8708D080848349110CEA260D8779F30BD5823912 ();
-// 0x00000055 System.Void SceneLoader_<StartGame>d__9::.ctor(System.Int32)
-extern void U3CStartGameU3Ed__9__ctor_mEE8152311E8B62875CCB6D93F1520ABAEF8B8EE2 ();
-// 0x00000056 System.Void SceneLoader_<StartGame>d__9::System.IDisposable.Dispose()
-extern void U3CStartGameU3Ed__9_System_IDisposable_Dispose_m1712DA6566F6F041159156A8B2CC7F1F01A3471E ();
-// 0x00000057 System.Boolean SceneLoader_<StartGame>d__9::MoveNext()
-extern void U3CStartGameU3Ed__9_MoveNext_m0E8021FCC0952D6255BA1FEB0F022FBF05167B87 ();
-// 0x00000058 System.Object SceneLoader_<StartGame>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CStartGameU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8FFCEAFF4BC93319B66A48D92CDFD6F39CED8000 ();
-// 0x00000059 System.Void SceneLoader_<StartGame>d__9::System.Collections.IEnumerator.Reset()
-extern void U3CStartGameU3Ed__9_System_Collections_IEnumerator_Reset_m805A33C0DABF45DA90EABF665B06DB6ECDC03582 ();
-// 0x0000005A System.Object SceneLoader_<StartGame>d__9::System.Collections.IEnumerator.get_Current()
-extern void U3CStartGameU3Ed__9_System_Collections_IEnumerator_get_Current_mBD0CD8BA5415457707D6F148B2736D9F6DEFD630 ();
-// 0x0000005B System.Void SceneLoader_<LoadEnd>d__11::.ctor(System.Int32)
-extern void U3CLoadEndU3Ed__11__ctor_m9BA2F698763B5C6E163D49FECBD4B9BEA938C1F3 ();
-// 0x0000005C System.Void SceneLoader_<LoadEnd>d__11::System.IDisposable.Dispose()
-extern void U3CLoadEndU3Ed__11_System_IDisposable_Dispose_m034E1BB1E734CD0967190B1A331FBE01688A14DC ();
-// 0x0000005D System.Boolean SceneLoader_<LoadEnd>d__11::MoveNext()
-extern void U3CLoadEndU3Ed__11_MoveNext_mE6E37557FDF4D6D4A6B8090633267795321100C8 ();
-// 0x0000005E System.Object SceneLoader_<LoadEnd>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CLoadEndU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8A8FF99A7D2141F32E72323BF025DC679DDED5D8 ();
-// 0x0000005F System.Void SceneLoader_<LoadEnd>d__11::System.Collections.IEnumerator.Reset()
-extern void U3CLoadEndU3Ed__11_System_Collections_IEnumerator_Reset_mD1C8CA5478804852DEE1CD9FA301FFCE0EBD9B99 ();
-// 0x00000060 System.Object SceneLoader_<LoadEnd>d__11::System.Collections.IEnumerator.get_Current()
-extern void U3CLoadEndU3Ed__11_System_Collections_IEnumerator_get_Current_m62AE6FE8D6EC0CD66CE0C262A57B9F0BF718BD0F ();
-// 0x00000061 System.Void Exit::.ctor()
+// 0x00000056 System.Void SceneLoader_<LoadEnd>d__13::.ctor(System.Int32)
+extern void U3CLoadEndU3Ed__13__ctor_m979A46DA20C02A62AD4D93F9701927F5DDC770E6 ();
+// 0x00000057 System.Void SceneLoader_<LoadEnd>d__13::System.IDisposable.Dispose()
+extern void U3CLoadEndU3Ed__13_System_IDisposable_Dispose_m5D1C6B4CBB06D64F1518979525C2ECE1995560C8 ();
+// 0x00000058 System.Boolean SceneLoader_<LoadEnd>d__13::MoveNext()
+extern void U3CLoadEndU3Ed__13_MoveNext_mACB93D1C98008F717BFFDC13DF393602C3CDA1CF ();
+// 0x00000059 System.Object SceneLoader_<LoadEnd>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLoadEndU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m27888C6D26F931A067297AE07CE35CAC64C11297 ();
+// 0x0000005A System.Void SceneLoader_<LoadEnd>d__13::System.Collections.IEnumerator.Reset()
+extern void U3CLoadEndU3Ed__13_System_Collections_IEnumerator_Reset_mA78663245DF1746C23A85E776F5135261136217D ();
+// 0x0000005B System.Object SceneLoader_<LoadEnd>d__13::System.Collections.IEnumerator.get_Current()
+extern void U3CLoadEndU3Ed__13_System_Collections_IEnumerator_get_Current_m01574F1F02382FA5530EE475197A6D07B243E558 ();
+// 0x0000005C System.Void Exit::.ctor()
 extern void Exit__ctor_m88392E2576E2D0334060517D7F10051AE96737CE ();
-// 0x00000062 System.Void Interaction::.ctor()
+// 0x0000005D System.Void Interaction::.ctor()
 extern void Interaction__ctor_m70406E11A94FE15ADD18C51085F78B5463FACEB8 ();
-// 0x00000063 System.Void Response::.ctor()
+// 0x0000005E System.Void Response::.ctor()
 extern void Response__ctor_m10E2B2D5A58994E84306EBBE41F311A320C7233C ();
-// 0x00000064 System.Void TextInput::Awake()
+// 0x0000005F System.Void TextInput::Awake()
 extern void TextInput_Awake_m52F5A38167DAE009214DD798274AFBEF34281240 ();
-// 0x00000065 System.Void TextInput::Update()
+// 0x00000060 System.Void TextInput::Update()
 extern void TextInput_Update_m6E85030DB35B49FFBF3FED612D1F1AB2E6694416 ();
-// 0x00000066 System.Void TextInput::AcceptStringInput(System.String)
+// 0x00000061 System.Void TextInput::AcceptStringInput(System.String)
 extern void TextInput_AcceptStringInput_mFAACFD388EA5B7B34C39D10BCF7CDD093D019AF6 ();
-// 0x00000067 System.Void TextInput::InputComplete()
+// 0x00000062 System.Void TextInput::InputComplete()
 extern void TextInput_InputComplete_m3CA5F0BBF8CE61E7D6B559C40747529E24C6F51E ();
-// 0x00000068 System.Void TextInput::DisplayPreviousCommand()
+// 0x00000063 System.Void TextInput::DisplayPreviousCommand()
 extern void TextInput_DisplayPreviousCommand_m4DB9370B1C896A96A463268BED2FB1F4EE679B5E ();
-// 0x00000069 System.Void TextInput::.ctor()
+// 0x00000064 System.Void TextInput::.ctor()
 extern void TextInput__ctor_m19A57B38E9274874948ED5A379D636A17D4AAB7C ();
-// 0x0000006A System.Void TitleScript::Awake()
-extern void TitleScript_Awake_mB71880B9274D02DFABF9217B1941E18B06726C6F ();
-// 0x0000006B System.Collections.IEnumerator TitleScript::LoadOpeningText()
-extern void TitleScript_LoadOpeningText_m86054D46C64017C07AF46AEBE1BCE2A9A9DB1966 ();
-// 0x0000006C System.Void TitleScript::.ctor()
-extern void TitleScript__ctor_m50E5965ECB917F585F4932963F0F83529ACCB0F1 ();
-// 0x0000006D System.Void TitleScript_<LoadOpeningText>d__2::.ctor(System.Int32)
-extern void U3CLoadOpeningTextU3Ed__2__ctor_mEE1AE5F2345E72DE9990A7B3D429EE26B723CB00 ();
-// 0x0000006E System.Void TitleScript_<LoadOpeningText>d__2::System.IDisposable.Dispose()
-extern void U3CLoadOpeningTextU3Ed__2_System_IDisposable_Dispose_m6FFF1E862AE685E54EF9EA9E0AAD0E6D24A4652B ();
-// 0x0000006F System.Boolean TitleScript_<LoadOpeningText>d__2::MoveNext()
-extern void U3CLoadOpeningTextU3Ed__2_MoveNext_m1649C2775AB7BCF2FE3576A9CFA02A4EDCB79938 ();
-// 0x00000070 System.Object TitleScript_<LoadOpeningText>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CLoadOpeningTextU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDFF916ECA6F1112D8E283A765D13B558F81D1004 ();
-// 0x00000071 System.Void TitleScript_<LoadOpeningText>d__2::System.Collections.IEnumerator.Reset()
-extern void U3CLoadOpeningTextU3Ed__2_System_Collections_IEnumerator_Reset_mAD0D07D47363AF5752B4716FBE3E7DA36E427D2C ();
-// 0x00000072 System.Object TitleScript_<LoadOpeningText>d__2::System.Collections.IEnumerator.get_Current()
-extern void U3CLoadOpeningTextU3Ed__2_System_Collections_IEnumerator_get_Current_m838ADE9A2E80098C05DF1778C240929ED62439BF ();
-// 0x00000073 System.Void TypeWriter::Awake()
+// 0x00000065 System.Void TypeWriter::Awake()
 extern void TypeWriter_Awake_m4B3D789F744F661C00F061376381E0439D9B5EFC ();
-// 0x00000074 System.Collections.IEnumerator TypeWriter::PlayText()
+// 0x00000066 System.Collections.IEnumerator TypeWriter::PlayText()
 extern void TypeWriter_PlayText_m91E8C2D9E0C8C38A009861DA26DF603D32A93C63 ();
-// 0x00000075 System.Void TypeWriter::.ctor()
+// 0x00000067 System.Boolean TypeWriter::IsTextRendered()
+extern void TypeWriter_IsTextRendered_m80F62A2B91D664758897D5FF1B71DC0DA11947AF ();
+// 0x00000068 System.Void TypeWriter::.ctor()
 extern void TypeWriter__ctor_mED603BF3156B63B609129774338C7964507212D1 ();
-// 0x00000076 System.Void TypeWriter_<PlayText>d__4::.ctor(System.Int32)
-extern void U3CPlayTextU3Ed__4__ctor_mBEC7F8CC6E5E4A6248832AF75B3B252ADEF9F4E4 ();
-// 0x00000077 System.Void TypeWriter_<PlayText>d__4::System.IDisposable.Dispose()
-extern void U3CPlayTextU3Ed__4_System_IDisposable_Dispose_m9F16885D23192B49A0BBAA7530959398F417DE69 ();
-// 0x00000078 System.Boolean TypeWriter_<PlayText>d__4::MoveNext()
-extern void U3CPlayTextU3Ed__4_MoveNext_mB6941D406C3654118A07821BAEA13836D80C63A7 ();
-// 0x00000079 System.Object TypeWriter_<PlayText>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CPlayTextU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9F75EE7EA38A121CD560DF84CE4E969FDD9A8ED4 ();
-// 0x0000007A System.Void TypeWriter_<PlayText>d__4::System.Collections.IEnumerator.Reset()
-extern void U3CPlayTextU3Ed__4_System_Collections_IEnumerator_Reset_m36AF23DE2AE5CFECAAB9ACDF88C3B783B9E0BE35 ();
-// 0x0000007B System.Object TypeWriter_<PlayText>d__4::System.Collections.IEnumerator.get_Current()
-extern void U3CPlayTextU3Ed__4_System_Collections_IEnumerator_get_Current_m7225FD78CA29861AE74A6BF4D4DF5D570148ADC3 ();
-// 0x0000007C System.Void CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::Awake()
+// 0x00000069 System.Void TypeWriter_<PlayText>d__5::.ctor(System.Int32)
+extern void U3CPlayTextU3Ed__5__ctor_mE92AD804BE88DFD13975DDB731F5711B27C4F2C1 ();
+// 0x0000006A System.Void TypeWriter_<PlayText>d__5::System.IDisposable.Dispose()
+extern void U3CPlayTextU3Ed__5_System_IDisposable_Dispose_mFC12C29DA2DBF7813F78D9F746D2A2D9971F82F6 ();
+// 0x0000006B System.Boolean TypeWriter_<PlayText>d__5::MoveNext()
+extern void U3CPlayTextU3Ed__5_MoveNext_m00703E93C55ACC8636C061C21C1AD8D03D92B06A ();
+// 0x0000006C System.Object TypeWriter_<PlayText>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CPlayTextU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0983FF19900E30CD3EEFCD7327222F18D620CD73 ();
+// 0x0000006D System.Void TypeWriter_<PlayText>d__5::System.Collections.IEnumerator.Reset()
+extern void U3CPlayTextU3Ed__5_System_Collections_IEnumerator_Reset_mBEFC49394ABC66E6662DDD0B4DC6A6D36282A6DD ();
+// 0x0000006E System.Object TypeWriter_<PlayText>d__5::System.Collections.IEnumerator.get_Current()
+extern void U3CPlayTextU3Ed__5_System_Collections_IEnumerator_get_Current_m11553FE459344B2506F7D30BD46C861734E28CF5 ();
+// 0x0000006F System.Void CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::Awake()
 extern void DisplayPCOrMobile_Awake_m86EF6AC69298491D77ACA47B271818698B598F23 ();
-// 0x0000007D System.Void CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::Start()
+// 0x00000070 System.Void CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::Start()
 extern void DisplayPCOrMobile_Start_m6FEFFF456B6502744C570AAEC4A4E139400AC4BE ();
-// 0x0000007E System.Boolean CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::GetIsMobile()
+// 0x00000071 System.Boolean CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::GetIsMobile()
 extern void DisplayPCOrMobile_GetIsMobile_m4B273D17090D18E363077ACD90BA603F8B562379 ();
-// 0x0000007F System.Boolean CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::IsMobile()
+// 0x00000072 System.Boolean CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::IsMobile()
 extern void DisplayPCOrMobile_IsMobile_mE2B8C6708160C72819C0B822FD7F71B22CAFB6FB ();
-// 0x00000080 System.Void CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::.ctor()
+// 0x00000073 System.Void CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile::.ctor()
 extern void DisplayPCOrMobile__ctor_m57872F9FF6C1D30D8FB74E2559072095224496A2 ();
-static Il2CppMethodPointer s_methodPointers[128] = 
+static Il2CppMethodPointer s_methodPointers[115] = 
 {
 	NULL,
 	ActionResponse__ctor_m49C8C7C48913B9F59AD9F266B77C504E6A6F159F,
@@ -351,26 +325,21 @@ static Il2CppMethodPointer s_methodPointers[128] =
 	RoomNavigation_LookAtRoom_m948166B6D30BBDC4008775B069FA46C99F4C3E8A,
 	RoomNavigation_LookAtExits_mD4B36537E3E215D3FB6CD69CC7A079210097073C,
 	RoomNavigation__ctor_m46C5606824D4C258161D9B93F43342AAC31EB552,
+	SceneLoader_Awake_m0618C263DDE94B4607D9D5148F87247B506A337C,
+	SceneLoader_Update_m699D11504401E3060B887E522518E26ED63CD5D0,
 	SceneLoader_LoadStart_m629B6227BB0D060EDAB53B4404982DACA77DC8D9,
 	SceneLoader_LoadMobileScreen_m5E93910B62816333840209A40B8E2CE9655A44DD,
 	SceneLoader_GetScene_m093C2A9DD0E26EE507B6C91BB7CCA11FFD4959D0,
 	SceneLoader_LoadScene_mE757D2B5CE716ECE35E1E4451259987245A13EC7,
-	SceneLoader_StartGame_mA81ADDCA9B69A3134F3E3462F98E84BA24167F2F,
 	SceneLoader_EndGame_m1D616D3B26A700FD768462B2B70A458FDEC2D865,
 	SceneLoader_LoadEnd_m87F5838AD3D94BF0A0E55B32B00891223F98C51B,
 	SceneLoader__ctor_m8708D080848349110CEA260D8779F30BD5823912,
-	U3CStartGameU3Ed__9__ctor_mEE8152311E8B62875CCB6D93F1520ABAEF8B8EE2,
-	U3CStartGameU3Ed__9_System_IDisposable_Dispose_m1712DA6566F6F041159156A8B2CC7F1F01A3471E,
-	U3CStartGameU3Ed__9_MoveNext_m0E8021FCC0952D6255BA1FEB0F022FBF05167B87,
-	U3CStartGameU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8FFCEAFF4BC93319B66A48D92CDFD6F39CED8000,
-	U3CStartGameU3Ed__9_System_Collections_IEnumerator_Reset_m805A33C0DABF45DA90EABF665B06DB6ECDC03582,
-	U3CStartGameU3Ed__9_System_Collections_IEnumerator_get_Current_mBD0CD8BA5415457707D6F148B2736D9F6DEFD630,
-	U3CLoadEndU3Ed__11__ctor_m9BA2F698763B5C6E163D49FECBD4B9BEA938C1F3,
-	U3CLoadEndU3Ed__11_System_IDisposable_Dispose_m034E1BB1E734CD0967190B1A331FBE01688A14DC,
-	U3CLoadEndU3Ed__11_MoveNext_mE6E37557FDF4D6D4A6B8090633267795321100C8,
-	U3CLoadEndU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8A8FF99A7D2141F32E72323BF025DC679DDED5D8,
-	U3CLoadEndU3Ed__11_System_Collections_IEnumerator_Reset_mD1C8CA5478804852DEE1CD9FA301FFCE0EBD9B99,
-	U3CLoadEndU3Ed__11_System_Collections_IEnumerator_get_Current_m62AE6FE8D6EC0CD66CE0C262A57B9F0BF718BD0F,
+	U3CLoadEndU3Ed__13__ctor_m979A46DA20C02A62AD4D93F9701927F5DDC770E6,
+	U3CLoadEndU3Ed__13_System_IDisposable_Dispose_m5D1C6B4CBB06D64F1518979525C2ECE1995560C8,
+	U3CLoadEndU3Ed__13_MoveNext_mACB93D1C98008F717BFFDC13DF393602C3CDA1CF,
+	U3CLoadEndU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m27888C6D26F931A067297AE07CE35CAC64C11297,
+	U3CLoadEndU3Ed__13_System_Collections_IEnumerator_Reset_mA78663245DF1746C23A85E776F5135261136217D,
+	U3CLoadEndU3Ed__13_System_Collections_IEnumerator_get_Current_m01574F1F02382FA5530EE475197A6D07B243E558,
 	Exit__ctor_m88392E2576E2D0334060517D7F10051AE96737CE,
 	Interaction__ctor_m70406E11A94FE15ADD18C51085F78B5463FACEB8,
 	Response__ctor_m10E2B2D5A58994E84306EBBE41F311A320C7233C,
@@ -380,31 +349,23 @@ static Il2CppMethodPointer s_methodPointers[128] =
 	TextInput_InputComplete_m3CA5F0BBF8CE61E7D6B559C40747529E24C6F51E,
 	TextInput_DisplayPreviousCommand_m4DB9370B1C896A96A463268BED2FB1F4EE679B5E,
 	TextInput__ctor_m19A57B38E9274874948ED5A379D636A17D4AAB7C,
-	TitleScript_Awake_mB71880B9274D02DFABF9217B1941E18B06726C6F,
-	TitleScript_LoadOpeningText_m86054D46C64017C07AF46AEBE1BCE2A9A9DB1966,
-	TitleScript__ctor_m50E5965ECB917F585F4932963F0F83529ACCB0F1,
-	U3CLoadOpeningTextU3Ed__2__ctor_mEE1AE5F2345E72DE9990A7B3D429EE26B723CB00,
-	U3CLoadOpeningTextU3Ed__2_System_IDisposable_Dispose_m6FFF1E862AE685E54EF9EA9E0AAD0E6D24A4652B,
-	U3CLoadOpeningTextU3Ed__2_MoveNext_m1649C2775AB7BCF2FE3576A9CFA02A4EDCB79938,
-	U3CLoadOpeningTextU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDFF916ECA6F1112D8E283A765D13B558F81D1004,
-	U3CLoadOpeningTextU3Ed__2_System_Collections_IEnumerator_Reset_mAD0D07D47363AF5752B4716FBE3E7DA36E427D2C,
-	U3CLoadOpeningTextU3Ed__2_System_Collections_IEnumerator_get_Current_m838ADE9A2E80098C05DF1778C240929ED62439BF,
 	TypeWriter_Awake_m4B3D789F744F661C00F061376381E0439D9B5EFC,
 	TypeWriter_PlayText_m91E8C2D9E0C8C38A009861DA26DF603D32A93C63,
+	TypeWriter_IsTextRendered_m80F62A2B91D664758897D5FF1B71DC0DA11947AF,
 	TypeWriter__ctor_mED603BF3156B63B609129774338C7964507212D1,
-	U3CPlayTextU3Ed__4__ctor_mBEC7F8CC6E5E4A6248832AF75B3B252ADEF9F4E4,
-	U3CPlayTextU3Ed__4_System_IDisposable_Dispose_m9F16885D23192B49A0BBAA7530959398F417DE69,
-	U3CPlayTextU3Ed__4_MoveNext_mB6941D406C3654118A07821BAEA13836D80C63A7,
-	U3CPlayTextU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m9F75EE7EA38A121CD560DF84CE4E969FDD9A8ED4,
-	U3CPlayTextU3Ed__4_System_Collections_IEnumerator_Reset_m36AF23DE2AE5CFECAAB9ACDF88C3B783B9E0BE35,
-	U3CPlayTextU3Ed__4_System_Collections_IEnumerator_get_Current_m7225FD78CA29861AE74A6BF4D4DF5D570148ADC3,
+	U3CPlayTextU3Ed__5__ctor_mE92AD804BE88DFD13975DDB731F5711B27C4F2C1,
+	U3CPlayTextU3Ed__5_System_IDisposable_Dispose_mFC12C29DA2DBF7813F78D9F746D2A2D9971F82F6,
+	U3CPlayTextU3Ed__5_MoveNext_m00703E93C55ACC8636C061C21C1AD8D03D92B06A,
+	U3CPlayTextU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0983FF19900E30CD3EEFCD7327222F18D620CD73,
+	U3CPlayTextU3Ed__5_System_Collections_IEnumerator_Reset_mBEFC49394ABC66E6662DDD0B4DC6A6D36282A6DD,
+	U3CPlayTextU3Ed__5_System_Collections_IEnumerator_get_Current_m11553FE459344B2506F7D30BD46C861734E28CF5,
 	DisplayPCOrMobile_Awake_m86EF6AC69298491D77ACA47B271818698B598F23,
 	DisplayPCOrMobile_Start_m6FEFFF456B6502744C570AAEC4A4E139400AC4BE,
 	DisplayPCOrMobile_GetIsMobile_m4B273D17090D18E363077ACD90BA603F8B562379,
 	DisplayPCOrMobile_IsMobile_mE2B8C6708160C72819C0B822FD7F71B22CAFB6FB,
 	DisplayPCOrMobile__ctor_m57872F9FF6C1D30D8FB74E2559072095224496A2,
 };
-static const int32_t s_InvokerIndices[128] = 
+static const int32_t s_InvokerIndices[115] = 
 {
 	9,
 	23,
@@ -484,18 +445,13 @@ static const int32_t s_InvokerIndices[128] =
 	23,
 	23,
 	23,
+	23,
+	23,
 	10,
 	32,
-	14,
 	23,
 	14,
 	23,
-	32,
-	23,
-	102,
-	14,
-	23,
-	14,
 	32,
 	23,
 	102,
@@ -513,15 +469,7 @@ static const int32_t s_InvokerIndices[128] =
 	23,
 	23,
 	14,
-	23,
-	32,
-	23,
 	102,
-	14,
-	23,
-	14,
-	23,
-	14,
 	23,
 	32,
 	23,
@@ -539,7 +487,7 @@ extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	128,
+	115,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

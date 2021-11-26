@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nessie
   m_EditorClassIdentifier: 
   characterName: nessie
-  description: NESSIE floats gracefully in the pool. I wonder how she got her from
+  description: NESSIE floats gracefully in the pool. I wonder how she got here from
     Scotland?
   transformableCharacter: 0
   transformedCharacterName: 

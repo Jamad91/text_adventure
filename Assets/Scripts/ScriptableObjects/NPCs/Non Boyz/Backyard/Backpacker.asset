@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Backpacker
   m_EditorClassIdentifier: 
   characterName: backpacker
-  description: A weary BACKPACKER sits down on a log
+  description: A weary BACKPACKER sits down on a log.
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
@@ -26,7 +26,7 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   responses:
     notHoldingGivenItemResponse: Travelling around really takes a lot out of me.
-      I need something strong to keep me up
+      I need something strong to keep me up.
     beingGivenItemResponse: This'll do the trick. You can have this cuppa tea, not
       enough caffiene for me right now
     isHoldingGivenItemResponse: 'Damn, why do I still feel so tired? '

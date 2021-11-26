@@ -235,7 +235,7 @@ public class InteractableItems : MonoBehaviour
                                     GetItem(hammer);
 
                                     controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() +
-                                        ": You have freed the last member of the Boyz. " +
+                                        ": You have freed the last of the Boyz. " +
                                         "We now ask you one remaining favor as we prepare to stop the summoning of the Gobba Ghoul. " +
                                         "Please take this. If you USE it wisely in the correct place, you will free Heavy D from his prison. " +
                                         "We're not sure where he resides, but I imagine it is a place of great power. Good luck.");

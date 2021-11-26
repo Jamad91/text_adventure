@@ -22,8 +22,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -69,8 +68,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -109,8 +107,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -128,8 +125,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -147,8 +143,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -159,8 +154,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -171,8 +165,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -204,8 +197,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -237,8 +229,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -249,8 +240,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -261,8 +251,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -273,8 +262,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -285,8 +273,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -296,8 +283,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
-                "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity"
+                "Assets/Scenes/Game.unity"
             ]
         },
         {
@@ -308,8 +294,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -320,8 +305,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -332,8 +316,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -344,8 +327,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -356,8 +338,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -368,8 +349,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -380,8 +360,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -392,8 +371,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -404,8 +382,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -416,8 +393,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -428,8 +404,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -440,8 +415,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -452,8 +426,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -464,8 +437,7 @@
             "usedInScenes": [
                 "Assets/Scenes/Opener.unity",
                 "Assets/Scenes/Game.unity",
-                "Assets/Scenes/Ending.unity",
-                "Assets/Scenes/MobileDetection.unity"
+                "Assets/Scenes/Ending.unity"
             ]
         },
         {
@@ -598,13 +570,6 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "TextInput",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "TitleScript",
             "moduleName": "",
             "usedInScenes": []
         },

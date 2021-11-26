@@ -25,7 +25,7 @@ MonoBehaviour:
     exitDescription: Go SOUTH to return to the ENTRANCE HALL.
     valueRoom: {fileID: 11400000, guid: 98b4c925c69f74aa5b0577353a98cb6f, type: 2}
   - keyString: west
-    exitDescription: Walk west to enter the KITCHEN.
+    exitDescription: Walk WEST to enter the KITCHEN.
     valueRoom: {fileID: 11400000, guid: b96643689f84944a090ad6577d9018ae, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 508b19a8f68ed4709b09c03f3d3c6529, type: 2}
