@@ -48,6 +48,12 @@ public class TextInput : MonoBehaviour
                 if (inputAction.keyword == serparatedInputWords[0])
                 {
                     inputAction.RespondToInput(controller, serparatedInputWords);
+                    
+                }
+                else
+                {
+                    controller.LogStringWithReturn("That is not an available action. Please type HELP if you need assistance.");
+                    break;
                 }
             }
             previousCommands.Add(userInput);
