@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cigarette
   m_EditorClassIdentifier: 
   noun: cigarette
-  description: 
+  description: cigarette
   beingGivenDescription: You take the CIGARETTE from the puppet. You think to yourself,
     "are these bad for him"?
   interactions:

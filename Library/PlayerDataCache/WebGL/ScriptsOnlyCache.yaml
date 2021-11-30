@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ChangeRoomResponse
     - CheckIfMobileForUnityWebGL.Samples.DisplayPCOrMobile
+    - DataManagement
     - Examine
     - GameController
     - Give
@@ -207,6 +208,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15170}
     - Class: 114
       Script: {instanceID: 15176}
+    - Class: 114
+      Script: {instanceID: 20506}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -861,7 +864,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: b34d2f0674dd7166eda0c15a6fcd903b
+      Hash: a9dc80f0a9ff0d2e65edc2ba9b34e49c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -889,6 +892,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: fbc18bfc3ff30e349ad7d20a12222110
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataManagement
+  - hash:
+      serializedVersion: 2
+      Hash: 17cdf2e446da6ad8c86725dd0a428db8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataManager
   platform: 20
   scenePathNames:
   - Assets/Scenes/Opener.unity

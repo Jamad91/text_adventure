@@ -170,6 +170,7 @@ UnityEngine.Input::get_mouseScrollDelta_Injected
 UnityEngine.Input::set_compositionCursorPos_Injected
 UnityEngine.Input::set_imeCompositionMode
 UnityEngine.Input::get_imeCompositionMode
+UnityEngine.JsonUtility::ToJsonInternal
 UnityEngine.Light::get_bounceIntensity
 UnityEngine.Light::get_cookieSize
 UnityEngine.Light::get_intensity
@@ -226,6 +227,7 @@ UnityEngine.Object::SetName
 UnityEngine.Object::set_hideFlags
 UnityEngine.Object::FindObjectFromInstanceID
 UnityEngine.Object::Internal_CloneSingle
+UnityEngine.Object::FindObjectsOfType
 UnityEngine.Playables.PlayableHandle::IsValid_Injected
 UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected
 UnityEngine.PlayerConnectionInternal::IsConnected

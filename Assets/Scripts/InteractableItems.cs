@@ -17,10 +17,13 @@ public class InteractableItems : MonoBehaviour
 
     List<string> nounsInInventory = new List<string>();
     GameController controller;
+    DataManager dataManager;
+
 
     private void Awake()
     {
         controller = GetComponent<GameController>();
+        dataManager = FindObjectOfType<DataManager>();
     }
 
     public string GetObjectsNotInInventory(Room currentRoom, int i)
@@ -225,10 +228,11 @@ public class InteractableItems : MonoBehaviour
 
                             if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.name))
                             {
-                                controller.interactableCharacters.transformCharacter(currentCharacter);
+                                controller.interactableCharacters.TransformCharacter(currentCharacter);
                                 if (controller.transformCount != controller.interactableCharacters.transformableCharactersList.Count)
                                 {
                                     controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
+                                    //dataManagement.transformedCharacters.Add(currentCharacter.name);
                                 }
                                 else
                                 {
@@ -254,6 +258,11 @@ public class InteractableItems : MonoBehaviour
                                 GetItem(itemToGiveAway);
                                 controller.LogStringWithReturn(itemToGiveAway.beingGivenDescription);
                             }
+                            //Debug.Log("pre" + dataManagement.charactersThatHaveBeenGivenItem.Count);
+                            //dataManager.charactersThatHaveBeenGivenItem.Add(currentCharacter.name);
+                            //dataManager.Save();
+                            //dataManager.Load();
+                            //Debug.Log("post" + dataManagement.charactersThatHaveBeenGivenItem.Count);
                         }
                         else
                         {

@@ -33,7 +33,7 @@ public class TextInput : MonoBehaviour
 
     void AcceptStringInput(string userInput)
     {
-
+        bool actionTaken = false;
         userInput = userInput.ToLower();
         if (controller != null)
         {
@@ -48,18 +48,16 @@ public class TextInput : MonoBehaviour
                 if (inputAction.keyword == serparatedInputWords[0])
                 {
                     inputAction.RespondToInput(controller, serparatedInputWords);
-                    
-                }
-                else
-                {
-                    controller.LogStringWithReturn("That is not an available action. Please type HELP if you need assistance.");
-                    break;
+                    actionTaken = true;
                 }
             }
             previousCommands.Add(userInput);
             previousMessageIndex = previousCommands.Count;
             InputComplete();
-
+            if (actionTaken == false)
+            {
+                controller.LogStringWithReturn("That is not an available action. Please type HELP if you need assistance.");
+            }
         }
 
 

@@ -15,6 +15,8 @@ public class InteractableCharacters : MonoBehaviour
     public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsHave = new Dictionary<string, Dictionary<InteractableObject, bool>>();
     public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsAreGiven = new Dictionary<string, Dictionary<InteractableObject, bool>>();
 
+    
+
     GameController controller;
 
     private void Awake()
@@ -33,7 +35,7 @@ public class InteractableCharacters : MonoBehaviour
     {
         NPC characterInRoom = currentRoom.charactersInRoom[i];
        
-        if (isTransformed(characterInRoom.name))
+        if (IsTransformed(characterInRoom.name))
         {
             charactersInRoom.Add(characterInRoom.transformedCharacterName);
             return characterInRoom.transformedDescription;
@@ -66,7 +68,7 @@ public class InteractableCharacters : MonoBehaviour
         {
             for (int i = 0; i < charactersList.Count; i++)
             {
-                hasBeenTransformed = isTransformed(charactersList[i].name);
+                hasBeenTransformed = IsTransformed(charactersList[i].name);
 
                 if (!hasBeenTransformed && characterSpokenTo.ToLower() == charactersList[i].characterName.ToLower())
                 {
@@ -106,7 +108,7 @@ public class InteractableCharacters : MonoBehaviour
         }
     }
 
-    public void transformCharacter(NPC character)
+    public void TransformCharacter(NPC character)
     {
         charactersTransformedDictionary[character.name] = true;
         charactersInRoom.Remove(character.characterName);
@@ -114,7 +116,7 @@ public class InteractableCharacters : MonoBehaviour
         controller.transformCount++;
     }
 
-    public bool isTransformed(string name)
+    public bool IsTransformed(string name)
     {
         return charactersTransformedDictionary.ContainsKey(name) && charactersTransformedDictionary[name]; 
     }

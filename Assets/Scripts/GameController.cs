@@ -22,6 +22,8 @@ public class GameController : MonoBehaviour
     [HideInInspector] public Dictionary<string, string> pickedUpExamineDictionary = new Dictionary<string, string>();
     [HideInInspector] public SceneLoader sceneLoader;
 
+    public List<string> charactersThatHaveBeenGivenItems = new List<string>();
+
     List<string> actionLog = new List<string>();
 
     void Awake()
