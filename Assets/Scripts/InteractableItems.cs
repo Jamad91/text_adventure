@@ -373,5 +373,10 @@ public class InteractableItems : MonoBehaviour
         
     }
 
+    public void LoadItemsToInventory(List<string> itemsToBeAdded)
+    {
+        nounsInInventory = itemsToBeAdded;
+    }
+
 
 }

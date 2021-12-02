@@ -33,26 +33,57 @@ public class DataManager : MonoBehaviour
         invDb = addToInventoryDb(itemsList, holdingItemCurrentlyList);
         Debug.Log("Length of new db: " + invDb.list.Count);
         XmlSerializer serializer = new XmlSerializer(typeof(InventoryDatabase));
-
         FileStream stream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
         serializer.Serialize(stream, invDb);
         stream.Close();
     }
 
-    public void Load()
+    public Dictionary<string, bool> Load()
     {
-        //    string test = null;
 
-        //    using (var stream = File.OpenRead("my_player.xml"))
-        //    {
-        //        if (stream.Position > 0)
-        //        {
-        //            stream.Position = 0;
-        //        }
+        XmlSerializer serializer = new XmlSerializer(typeof(InventoryDatabase));
+        if (System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml"))
+        {
+            FileStream stream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Open);
+            invDb = serializer.Deserialize(stream) as InventoryDatabase;
+            stream.Close();
+        }
 
-        //        test = xmls.Deserialize(stream) as string;
-        //    }
-        //    Debug.Log(test);
+        List<string> loadedItemsList = LoadItemNames();
+        List<bool> loadedHoldingItemsList = LoadHoldingItems();
+        Dictionary<string, bool> tempPickedUpAndHoldingDict = new Dictionary<string, bool>();
+
+        for (int i = 0; i < loadedItemsList.Count; i++)
+        {
+            tempPickedUpAndHoldingDict.Add(loadedItemsList[i], loadedHoldingItemsList[i]);
+        }
+
+        return tempPickedUpAndHoldingDict;
+
+    }
+
+    public List<string> LoadItemNames()
+    {
+        List<string> itemsList = new List<string>();
+
+        for (int i = 0; i < invDb.list.Count; i++)
+        {
+            itemsList.Add(invDb.list[i].GetItemName());
+        }
+
+        return itemsList;
+    }
+
+    public List<bool> LoadHoldingItems()
+    {
+        List<bool> holdingItemsList = new List<bool>();
+
+        for (int i = 0; i < invDb.list.Count; i++)
+        {
+            holdingItemsList.Add(invDb.list[i].GetHolding());
+        }
+
+        return holdingItemsList;
     }
 
     public InventoryDatabase addToInventoryDb (List<string> itemsList, List<bool> holdintItemCurrentlyList)

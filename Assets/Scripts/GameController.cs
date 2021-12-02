@@ -226,5 +226,15 @@ public class GameController : MonoBehaviour
         List<bool> holdingItemCurrentlyList = new List<bool>(pickedUpAndHolding.Values);
         dataManager.Save(itemsList, holdingItemCurrentlyList);
     }
+
+    public void Load()
+    {
+        Debug.Log("controller loading");
+
+        pickedUpAndHolding = dataManager.Load();
+
+        interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
+        
+    }
     
 }
