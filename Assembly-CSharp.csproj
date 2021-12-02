@@ -91,6 +91,7 @@
   <ItemGroup>
      <None Include="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" />
      <None Include="Assets/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml" />
+     <None Include="Assets/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

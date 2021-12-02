@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InteractableItems.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml">
     <Files>
       <File FileName="Assets/Scripts/DataManagement.cs" Line="7" Column="1" />
       <File FileName="Assets/Scripts/XML_Guide/ItemBlock.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/XML_Guide/ItemDisplay.cs" Line="24" Column="1" />
       <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DataManager.cs" Line="17" Column="36" />
+      <File FileName="Assets/Scripts/DataManager.cs" Line="29" Column="33" />
+      <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml" Line="1" Column="1" />
       <File FileName="Assets/Scripts/XML_Guide/XMLManager.cs" Line="29" Column="32" NotebookId="1" />
-      <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" Line="11" Column="19" NotebookId="1" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="25" Column="21" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" Line="4" Column="21" NotebookId="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="234" Column="17" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="170" Column="55" NotebookId="1" />
       <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="90" Column="6" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="95" Column="31" NotebookId="1" />
       <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
@@ -20,9 +21,15 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DataManagement" expanded="True" />
+                <Node name="DataManagement" expanded="True">
+                  <Node name="StreamingFiles" expanded="True">
+                    <Node name="XML" expanded="True">
+                      <Node name="transform_data.xml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
                 <Node name="Input Action Scripts" expanded="True" />
-                <Node name="InteractableItems.cs" selected="True" />
+                <Node name="XML_Guide" expanded="True" />
               </Node>
             </Node>
           </Node>

@@ -15,14 +15,20 @@ public class DataManager : MonoBehaviour
     }
 
     public InventoryDatabase invDb;
+    public TransformDatabase transformDb;
 
-    public void Save(List<string> itemsList, List<bool> holdingItemCurrentlyList)
+    public void Save(List<string> itemsList, List<bool> holdingItemCurrentlyList, int transformCount)
     {
-        invDb = addToInventoryDb(itemsList, holdingItemCurrentlyList);   
-        XmlSerializer serializer = new XmlSerializer(typeof(InventoryDatabase));
-        FileStream stream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
-        serializer.Serialize(stream, invDb);
-        stream.Close();
+        invDb = AddToInventoryDb(itemsList, holdingItemCurrentlyList);
+        transformDb = AddToTransformDb(transformCount);
+        XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
+        XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
+        FileStream inventoryStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
+        FileStream transfromStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml", FileMode.Create);
+        inventorySerializer.Serialize(inventoryStream, invDb);
+        transformSerializer.Serialize(transfromStream, transformDb);
+        inventoryStream.Close();
+        transfromStream.Close();
     }
 
     public Dictionary<string, bool> Load()
@@ -73,7 +79,7 @@ public class DataManager : MonoBehaviour
         return holdingItemsList;
     }
 
-    public InventoryDatabase addToInventoryDb (List<string> itemsList, List<bool> holdintItemCurrentlyList)
+    public InventoryDatabase AddToInventoryDb (List<string> itemsList, List<bool> holdintItemCurrentlyList)
     {
         InventoryDatabase tempDb = new InventoryDatabase();
         InventoryItem newItem; 
@@ -86,6 +92,13 @@ public class DataManager : MonoBehaviour
             tempDb.list.Add(newItem);
         }
 
+        return tempDb;
+    }
+
+    public TransformDatabase AddToTransformDb (int transformNum)
+    {
+        TransformDatabase tempDb = new TransformDatabase();
+        tempDb.transformCount = transformNum;
         return tempDb;
     }
 
@@ -121,5 +134,12 @@ public class DataManager : MonoBehaviour
     {
         [XmlArray("InventoryItems")]
         public List<InventoryItem> list = new List<InventoryItem>();
+    }
+
+    [System.Serializable]
+    public class TransformDatabase
+    {
+        [XmlElement("TransformCount")]
+        public int transformCount;
     }
 }

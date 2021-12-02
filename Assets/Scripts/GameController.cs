@@ -232,7 +232,7 @@ public class GameController : MonoBehaviour
     {
         List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
         List<bool> holdingItemCurrentlyList = new List<bool>(pickedUpAndHolding.Values);
-        dataManager.Save(itemsList, holdingItemCurrentlyList);
+        dataManager.Save(itemsList, holdingItemCurrentlyList, transformCount);
     }
 
     public void Load()
