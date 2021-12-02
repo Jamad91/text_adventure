@@ -87,6 +87,8 @@ public class InteractableCharacters : MonoBehaviour
 
     }
 
+    //public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsAreGiven = new Dictionary<string, Dictionary<InteractableObject, bool>>();
+
     public string CharacterResponse(NPC characterSpokenTo)
     {
         bool holdingItem;

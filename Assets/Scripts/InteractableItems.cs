@@ -232,7 +232,6 @@ public class InteractableItems : MonoBehaviour
                                 if (controller.transformCount != controller.interactableCharacters.transformableCharactersList.Count)
                                 {
                                     controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
-                                    //dataManagement.transformedCharacters.Add(currentCharacter.name);
                                 }
                                 else
                                 {

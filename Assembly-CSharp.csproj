@@ -58,7 +58,6 @@
     <Compile Include="Assets/Scripts/DataManagement/DataManager.cs" />
     <Compile Include="Assets/Scripts/InteractableObject.cs" />
     <Compile Include="Assets/Scripts/InteractableCharacters.cs" />
-    <Compile Include="Assets/Scripts/GiveItemTo.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Use.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Go.cs" />
     <Compile Include="Assets/Scripts/Serializeables/Interaction.cs" />
@@ -67,7 +66,6 @@
     <Compile Include="Assets/Scripts/Input Action Scripts/Talk.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Help.cs" />
     <Compile Include="Assets/Scripts/SceneLoader.cs" />
-    <Compile Include="Assets/Scripts/ItemTransfer.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Examine.cs" />
     <Compile Include="Assets/Scripts/InputAction.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Inventory.cs" />

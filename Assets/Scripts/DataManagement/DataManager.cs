@@ -16,22 +16,9 @@ public class DataManager : MonoBehaviour
 
     public InventoryDatabase invDb;
 
-    //XmlSerializer xmls = new XmlSerializer(typeof(string));
-    //StringWriter sw = new StringWriter();
-
-    // Start is called before the first frame update
-
     public void Save(List<string> itemsList, List<bool> holdingItemCurrentlyList)
     {
-        Debug.Log("hitting the new save function");
-
-        for (int i = 0; i < itemsList.Count; i++)
-        {
-            Debug.Log("In the list, the index is " + i + " and the item is " + itemsList[i]);
-        }
-
-        invDb = addToInventoryDb(itemsList, holdingItemCurrentlyList);
-        Debug.Log("Length of new db: " + invDb.list.Count);
+        invDb = addToInventoryDb(itemsList, holdingItemCurrentlyList);   
         XmlSerializer serializer = new XmlSerializer(typeof(InventoryDatabase));
         FileStream stream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
         serializer.Serialize(stream, invDb);

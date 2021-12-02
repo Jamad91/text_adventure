@@ -150,6 +150,7 @@ public class GameController : MonoBehaviour
 
     void PrepareCharactersInRoom(Room currentRoom)
     {
+        List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
         for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
         {
             characterDescriptionsInRoom.Add(interactableCharacters.GetCharacterInRoom(currentRoom, i));
@@ -159,7 +160,14 @@ public class GameController : MonoBehaviour
             {
                 if (characterInRoom.responses.itemToBeGiven != null)
                 {
-                    interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
+                    if (itemsList.Contains(characterInRoom.responses.itemToBeGiven.noun))
+                    {
+                        interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, true } });
+                    }
+                    else
+                    {
+                        interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
+                    }
                 }
             }
 

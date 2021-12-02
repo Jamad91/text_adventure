@@ -15,12 +15,6 @@ public class Go : InputAction
 
         List<string> itemsList = new List<string>(controller.pickedUpAndHolding.Keys);
 
-        Debug.Log("hitting go");
-
-        for (int i = 0; i < itemsList.Count; i++)
-        {
-            Debug.Log("Index: " + i + " Item: " + itemsList[i] + " Holding: " + controller.pickedUpAndHolding[itemsList[i]]);
-        }
     }
 
 }

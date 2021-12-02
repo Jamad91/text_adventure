@@ -5,13 +5,14 @@
       <File FileName="Assets/Scripts/XML_Guide/ItemBlock.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/XML_Guide/ItemDisplay.cs" Line="24" Column="1" />
       <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DataManager.cs" Line="61" Column="43" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="130" Column="17" />
-      <File FileName="Assets/Scripts/XML_Guide/XMLManager.cs" Line="44" Column="9" NotebookId="1" />
+      <File FileName="Assets/Scripts/DataManager.cs" Line="17" Column="36" />
+      <File FileName="Assets/Scripts/XML_Guide/XMLManager.cs" Line="29" Column="32" NotebookId="1" />
       <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" Line="11" Column="19" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Go.cs" Line="18" Column="33" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="11" Column="45" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="376" Column="15" NotebookId="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="25" Column="21" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="90" Column="6" NotebookId="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,13 +20,8 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DataManagement" expanded="True">
-                  <Node name="StreamingFiles" expanded="True">
-                    <Node name="XML" expanded="True" />
-                  </Node>
-                </Node>
+                <Node name="DataManagement" expanded="True" />
                 <Node name="Input Action Scripts" expanded="True" />
-                <Node name="XML_Guide" expanded="True" />
                 <Node name="InteractableItems.cs" selected="True" />
               </Node>
             </Node>
@@ -38,9 +34,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fd662711-0394-42ae-bf9d-a2c6c26bce79" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/jimmy/Desktop/text_adventure/Assets/Scripts/XML_Guide/XMLManager.cs" relfile="Assets/Scripts/XML_Guide/XMLManager.cs" line="28" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
