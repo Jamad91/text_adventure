@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<InventoryDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <InventoryItems>
+    <InventoryItem>
+      <itemNoun>bracelet</itemNoun>
+      <holding>false</holding>
+    </InventoryItem>
+    <InventoryItem>
+      <itemNoun>smoothie</itemNoun>
+      <holding>true</holding>
+    </InventoryItem>
+    <InventoryItem>
+      <itemNoun>hook</itemNoun>
+      <holding>true</holding>
+    </InventoryItem>
+  </InventoryItems>
+</InventoryDatabase>

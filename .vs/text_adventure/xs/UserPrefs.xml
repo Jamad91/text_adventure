@@ -1,20 +1,35 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/XML_Guide/XMLManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
     <Files>
-      <File FileName="Assets/Scripts/TypeWriter.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/SceneLoader.cs" />
-      <File FileName="Assets/Scripts/DisplayPCOrMobile.cs" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" />
-      <File FileName="Assets/Scripts/TextInput.cs" />
-      <File FileName="Assets/Scripts/ActionResponse.cs" />
-      <File FileName="Assets/Scripts/GameController.cs" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="19" Column="1" />
       <File FileName="Assets/Scripts/DataManagement.cs" Line="7" Column="1" />
-      <File FileName="Assets/Scripts/DataManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/XML_Guide/ItemDisplay.cs" Line="20" Column="38" />
       <File FileName="Assets/Scripts/XML_Guide/ItemBlock.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/XML_Guide/XMLManager.cs" Line="26" Column="53" />
+      <File FileName="Assets/Scripts/XML_Guide/ItemDisplay.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DataManager.cs" Line="68" Column="126" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="226" Column="76" />
+      <File FileName="Assets/Scripts/XML_Guide/XMLManager.cs" Line="55" Column="23" NotebookId="1" />
+      <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" Line="7" Column="19" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="text_adventure" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="DataManagement" expanded="True">
+                  <Node name="StreamingFiles" expanded="True">
+                    <Node name="XML" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Input Action Scripts" expanded="True" />
+                <Node name="XML_Guide" expanded="True" />
+                <Node name="GameController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

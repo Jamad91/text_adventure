@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     public InputAction[] inputActions;
     public int transformCount = 0;
 
-    [TextArea (15, 20)]
+    //[TextArea (15, 20)]
     public string startText;
 
     [HideInInspector] public RoomNavigation roomNavigation;
@@ -21,6 +21,9 @@ public class GameController : MonoBehaviour
     [HideInInspector] public Dictionary<string, bool> pickedUpAndHolding = new Dictionary<string, bool>();
     [HideInInspector] public Dictionary<string, string> pickedUpExamineDictionary = new Dictionary<string, string>();
     [HideInInspector] public SceneLoader sceneLoader;
+
+    [SerializeField]
+    public DataManager dataManager;
 
     public List<string> charactersThatHaveBeenGivenItems = new List<string>();
 
@@ -215,6 +218,13 @@ public class GameController : MonoBehaviour
     public void LoadEndScene()
     {
         sceneLoader.EndGame();
+    }
+
+    public void Save()
+    {
+        List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
+        List<bool> holdingItemCurrentlyList = new List<bool>(pickedUpAndHolding.Values);
+        dataManager.Save(itemsList, holdingItemCurrentlyList);
     }
     
 }
