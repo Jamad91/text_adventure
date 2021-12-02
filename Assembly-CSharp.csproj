@@ -55,6 +55,7 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/DataManager.cs" />
     <Compile Include="Assets/Scripts/InteractableObject.cs" />
     <Compile Include="Assets/Scripts/InteractableCharacters.cs" />
     <Compile Include="Assets/Scripts/GiveItemTo.cs" />
@@ -84,9 +85,12 @@
     <Compile Include="Assets/Scripts/TypeWriter.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
     <Compile Include="Assets/Scripts/DataManagement.cs" />
-    <Compile Include="Assets/Scripts/DataManager.cs" />
+    <Compile Include="Assets/Scripts/XML_Guide/XMLManager.cs" />
+    <Compile Include="Assets/Scripts/XML_Guide/ItemDisplay.cs" />
+    <Compile Include="Assets/Scripts/XML_Guide/ItemBlock.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

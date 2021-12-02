@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ItemDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CombatEquipment>
+    <ItemEntry>
+      <itemName>sword</itemName>
+      <material>Wood</material>
+      <value>4</value>
+    </ItemEntry>
+    <ItemEntry>
+      <itemName>lance</itemName>
+      <material>Iron</material>
+      <value>3</value>
+    </ItemEntry>
+  </CombatEquipment>
+</ItemDatabase>
