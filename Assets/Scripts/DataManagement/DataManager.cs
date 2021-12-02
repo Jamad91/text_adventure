@@ -31,15 +31,15 @@ public class DataManager : MonoBehaviour
         transfromStream.Close();
     }
 
-    public Dictionary<string, bool> Load()
+    public Dictionary<string, bool> LoadPickedUpAndHolding()
     {
 
-        XmlSerializer serializer = new XmlSerializer(typeof(InventoryDatabase));
+        XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
         if (System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml"))
         {
-            FileStream stream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Open);
-            invDb = serializer.Deserialize(stream) as InventoryDatabase;
-            stream.Close();
+            FileStream inventoryStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Open);
+            invDb = inventorySerializer.Deserialize(inventoryStream) as InventoryDatabase;
+            inventoryStream.Close();
         }
 
         List<string> loadedItemsList = LoadItemNames();
@@ -54,6 +54,21 @@ public class DataManager : MonoBehaviour
         return tempPickedUpAndHoldingDict;
 
     }
+
+    public int LoadTransformCount()
+    {
+        XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
+        if (System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+        {
+            FileStream transformStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml", FileMode.Open);
+            transformDb = transformSerializer.Deserialize(transformStream) as TransformDatabase;
+            transformStream.Close();
+        }
+
+        return transformDb.transformCount;
+    }
+
+
 
     public List<string> LoadItemNames()
     {

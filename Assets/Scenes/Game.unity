@@ -713,6 +713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invDb:
     list: []
+  transformDb:
+    transformCount: 0
 --- !u!1 &1160357886
 GameObject:
   m_ObjectHideFlags: 0

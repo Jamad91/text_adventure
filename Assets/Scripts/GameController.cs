@@ -239,7 +239,8 @@ public class GameController : MonoBehaviour
     {
         Debug.Log("controller loading");
 
-        pickedUpAndHolding = dataManager.Load();
+        pickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
+        transformCount = dataManager.LoadTransformCount();
 
         interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
         
