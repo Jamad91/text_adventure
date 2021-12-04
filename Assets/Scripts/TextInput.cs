@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -54,31 +55,53 @@ public class TextInput : MonoBehaviour
             previousCommands.Add(userInput);
             previousMessageIndex = previousCommands.Count;
             InputComplete();
-            if (actionTaken == false)
+            if (actionTaken == false && userInput.Length > 0)
             {
                 controller.LogStringWithReturn("That is not an available action. Please type HELP if you need assistance.");
             }
         }
 
-
         if (sceneLoader.GetScene() == 0)
+        {
+            if (userInput.ToLower() == "new")
+            {
+                controller.dataManager.SetLoadedFile(false);
+                sceneLoader.LoadScene(1);
+            }
+            else if (userInput.ToLower() == "load")
+            {
+                if (!System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml") && !System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+                {
+                    controller.dataManager.SetLoadedFile(false);
+                    sceneLoader.LoadScene(1);
+                } else
+                {
+                    controller.dataManager.SetLoadedFile(true);
+                    displayText.text += "\n\nGame Loading...";
+                    controller.Load();
+                }
+            }
+        }
+        else if (sceneLoader.GetScene() == 1)
         {
             if (userInput.ToLower() == "begin")
             {
-                sceneLoader.LoadScene(1);
+                sceneLoader.LoadScene(2);
             }
             else
             {
                 displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
             }
         }
-        else if (sceneLoader.GetScene() == 1)
+        else if (sceneLoader.GetScene() == 2)
         {
             previousCommands.Add(userInput);
             previousMessageIndex = previousCommands.Count;
             InputComplete();
         }
     }
+
+    
 
 
     void InputComplete()

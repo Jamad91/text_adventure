@@ -12,7 +12,11 @@ public class InteractableCharacters : MonoBehaviour
     public Dictionary<string, bool> charactersTransformedDictionary = new Dictionary<string, bool>();
 
     [HideInInspector] public List<string> charactersInRoom = new List<string>();
+
+    //items to be give away to player
     public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsHave = new Dictionary<string, Dictionary<InteractableObject, bool>>();
+
+    //item to be given to NPC from player
     public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsAreGiven = new Dictionary<string, Dictionary<InteractableObject, bool>>();
 
     
@@ -76,6 +80,7 @@ public class InteractableCharacters : MonoBehaviour
                 }
                 else if (hasBeenTransformed && characterSpokenTo.ToLower() == charactersList[i].transformedCharacterName.ToLower())
                 {
+                    
                     controller.LogStringWithReturn(charactersList[i].transformedCharacterName.ToUpper() + ": " + CharacterResponse(charactersList[i]));
                 }
             }
@@ -87,12 +92,12 @@ public class InteractableCharacters : MonoBehaviour
 
     }
 
-    //public Dictionary<string, Dictionary<InteractableObject, bool>> itemsCharsAreGiven = new Dictionary<string, Dictionary<InteractableObject, bool>>();
-
     public string CharacterResponse(NPC characterSpokenTo)
     {
         bool holdingItem;
-        if (itemsCharsAreGiven.ContainsKey(characterSpokenTo.name) == true && itemsCharsAreGiven[characterSpokenTo.name].ContainsKey(characterSpokenTo.responses.itemToBeGiven) == true)
+
+        if (itemsCharsAreGiven.ContainsKey(characterSpokenTo.name) == true
+            && itemsCharsAreGiven[characterSpokenTo.name].ContainsKey(characterSpokenTo.responses.itemToBeGiven) == true)
         {
             holdingItem = itemsCharsAreGiven[characterSpokenTo.name][characterSpokenTo.responses.itemToBeGiven];
         } else
@@ -100,7 +105,7 @@ public class InteractableCharacters : MonoBehaviour
             holdingItem = false;
         }
 
-        if (holdingItem)
+        if (holdingItem != false)
         {
             return characterSpokenTo.responses.isHoldingGivenItemResponse;
         }
@@ -137,6 +142,18 @@ public class InteractableCharacters : MonoBehaviour
             controller.LogStringWithoutReturn(charactersInRoom[i].ToUpper());
         }
 
+    }
+
+    public NPC GetNPC(string name)
+    {
+        for (int i = 0; i < charactersList.Count; i++)
+        {
+            if (name == charactersList[i].name)
+            {
+                return charactersList[i];
+            }
+        }
+        return null;
     }
 
 }

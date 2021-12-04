@@ -21,11 +21,16 @@ public class RoomNavigation : MonoBehaviour
 
     public void UnpackExitsInRoom()
     {
-        for (int i = 0; i < currentRoom.exits.Length; i++)
+        if (currentRoom != null)
         {
-            exitDictionary.Add(currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
-            controller.directionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
+            for (int i = 0; i < currentRoom.exits.Length; i++)
+            {
+                exitDictionary.Add(currentRoom.exits[i].keyString, currentRoom.exits[i].valueRoom);
+                controller.directionDescriptionsInRoom.Add(currentRoom.exits[i].exitDescription);
+            }
+
         }
+
     }
 
     public void AttemptToChangeRooms(string directionNoun)

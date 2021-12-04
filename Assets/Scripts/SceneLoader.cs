@@ -65,7 +65,7 @@ public class SceneLoader : MonoBehaviour
     private IEnumerator LoadEnd()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
 

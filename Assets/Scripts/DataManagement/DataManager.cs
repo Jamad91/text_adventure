@@ -4,6 +4,7 @@ using System.Xml;                   //basic xml attributes
 using System.Xml.Serialization;     //access to xml serializer
 using System.IO;                    //file management
 using UnityEngine;
+using System;
 
 public class DataManager : MonoBehaviour
 {
@@ -11,16 +12,31 @@ public class DataManager : MonoBehaviour
 
     private void Awake()
     {
-        ins = this;   
+        ins = this;
+        DontDestroyOnLoad(this);
     }
 
     public InventoryDatabase invDb;
     public TransformDatabase transformDb;
+    public GameController controller;
 
-    public void Save(List<string> itemsList, List<bool> holdingItemCurrentlyList, int transformCount)
+    private bool loadedFile;
+
+    public bool GetLoadedFile()
+    {
+        return loadedFile;
+    }
+
+    public void SetLoadedFile(bool value)
+    {
+        loadedFile = value;
+    }
+
+
+    public void Save(List<string> itemsList, List<bool> holdingItemCurrentlyList, List<string> transformableCharactersList, List<bool> isTransformedList)
     {
         invDb = AddToInventoryDb(itemsList, holdingItemCurrentlyList);
-        transformDb = AddToTransformDb(transformCount);
+        transformDb = AddToTransformDb(transformableCharactersList, isTransformedList);
         XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
         XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
         FileStream inventoryStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
@@ -48,14 +64,17 @@ public class DataManager : MonoBehaviour
 
         for (int i = 0; i < loadedItemsList.Count; i++)
         {
+            
             tempPickedUpAndHoldingDict.Add(loadedItemsList[i], loadedHoldingItemsList[i]);
         }
+
+        controller.dataPersistenceOnLoad.IsLoaded = true;
 
         return tempPickedUpAndHoldingDict;
 
     }
 
-    public int LoadTransformCount()
+    public Dictionary<string,bool> LoadTransformedCharacters()
     {
         XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
         if (System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
@@ -65,10 +84,17 @@ public class DataManager : MonoBehaviour
             transformStream.Close();
         }
 
-        return transformDb.transformCount;
+        List<string> loadedTransformableCharactersList = LoadTransformableCharacterNames();
+        List<bool> loadedIsTransformedList = LoadIsTransformed();
+        Dictionary<string, bool> tempTransformableCharactersDict = new Dictionary<string, bool>();
+
+        for (int i = 0; i < loadedTransformableCharactersList.Count; i++)
+        {
+            tempTransformableCharactersDict.Add(loadedTransformableCharactersList[i], loadedIsTransformedList[i]);
+        }
+
+        return tempTransformableCharactersDict;
     }
-
-
 
     public List<string> LoadItemNames()
     {
@@ -94,6 +120,29 @@ public class DataManager : MonoBehaviour
         return holdingItemsList;
     }
 
+    public List<string> LoadTransformableCharacterNames()
+    {
+        List<string> transformableCharactersList = new List<string>();
+
+        for (int i = 0; i < transformDb.list.Count; i++)
+        {
+            transformableCharactersList.Add(transformDb.list[i].GetCharacterName());
+        }
+        return transformableCharactersList;
+    }
+
+    private List<bool> LoadIsTransformed()
+    {
+        List<bool> isTransformedList = new List<bool>();
+
+        for (int i = 0; i < transformDb.list.Count; i++)
+        {
+            isTransformedList.Add(transformDb.list[i].GetTransformed());
+        }
+
+        return isTransformedList;
+    }
+
     public InventoryDatabase AddToInventoryDb (List<string> itemsList, List<bool> holdintItemCurrentlyList)
     {
         InventoryDatabase tempDb = new InventoryDatabase();
@@ -110,10 +159,18 @@ public class DataManager : MonoBehaviour
         return tempDb;
     }
 
-    public TransformDatabase AddToTransformDb (int transformNum)
+    public TransformDatabase AddToTransformDb (List<string> transformableCharactersList, List<bool> isTransformedList)
     {
         TransformDatabase tempDb = new TransformDatabase();
-        tempDb.transformCount = transformNum;
+        TransformableCharacter newCharacter;
+
+        for (int i = 0; i < transformableCharactersList.Count; i++)
+        {
+            newCharacter = new TransformableCharacter();
+            newCharacter.SetCharacterName(transformableCharactersList[i]);
+            newCharacter.SetTransformed(isTransformedList[i]);
+            tempDb.list.Add(newCharacter);
+        }
         return tempDb;
     }
 
@@ -145,6 +202,33 @@ public class DataManager : MonoBehaviour
     }
 
     [System.Serializable]
+    public class TransformableCharacter
+    {
+        public string characterName;
+        public bool transformed;
+
+        public string GetCharacterName()
+        {
+            return characterName;
+        }
+
+        public bool GetTransformed()
+        {
+            return transformed;
+        }
+
+        public void SetCharacterName(string name)
+        {
+            characterName = name;
+        }
+
+        public void SetTransformed(bool isTransformed)
+        {
+            transformed = isTransformed;
+        }
+    }
+
+    [System.Serializable]
     public class InventoryDatabase
     {
         [XmlArray("InventoryItems")]
@@ -154,7 +238,9 @@ public class DataManager : MonoBehaviour
     [System.Serializable]
     public class TransformDatabase
     {
-        [XmlElement("TransformCount")]
-        public int transformCount;
+        [XmlArray("TransformedCharacters")]
+        public List<TransformableCharacter> list = new List<TransformableCharacter>();
     }
+
+
 }

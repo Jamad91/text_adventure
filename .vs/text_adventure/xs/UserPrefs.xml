@@ -1,19 +1,13 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
     <Files>
-      <File FileName="Assets/Scripts/DataManagement.cs" Line="7" Column="1" />
-      <File FileName="Assets/Scripts/XML_Guide/ItemBlock.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/XML_Guide/ItemDisplay.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DataManager.cs" Line="29" Column="33" />
-      <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/XML_Guide/XMLManager.cs" Line="29" Column="32" NotebookId="1" />
-      <File FileName="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" Line="4" Column="21" NotebookId="1" />
-      <File FileName="Assets/Scripts/GameController.cs" Line="234" Column="17" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="170" Column="55" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableObject.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="95" Column="31" NotebookId="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Give.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="27" Column="49" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="59" Column="10" />
+      <File FileName="Assets/Scripts/TextInput.cs" Line="76" Column="61" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="373" Column="37" />
+      <File FileName="Assets/Scripts/DataManagement/DataPersistenceOnLoad.cs" Line="10" Column="26" />
+      <File FileName="Assets/Scripts/XML_Guide/ItemDisplay.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="13" Column="57" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,14 +16,13 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="DataManagement" expanded="True">
-                  <Node name="StreamingFiles" expanded="True">
-                    <Node name="XML" expanded="True">
-                      <Node name="transform_data.xml" selected="True" />
-                    </Node>
-                  </Node>
+                  <Node name="StreamingFiles" expanded="True" />
                 </Node>
                 <Node name="Input Action Scripts" expanded="True" />
+                <Node name="ScriptableObjects" expanded="True" />
+                <Node name="Serializeables" expanded="True" />
                 <Node name="XML_Guide" expanded="True" />
+                <Node name="GameController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -39,7 +32,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fd662711-0394-42ae-bf9d-a2c6c26bce79" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5f9f04b0-f1e3-484d-9d80-233f7238eda1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

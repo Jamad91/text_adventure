@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public Text displayText;
     public InputAction[] inputActions;
     public int transformCount = 0;
+    public DataPersistenceOnLoad dataPersistenceOnLoad;
 
     //[TextArea (15, 20)]
     public string startText;
@@ -22,29 +23,57 @@ public class GameController : MonoBehaviour
     [HideInInspector] public Dictionary<string, string> pickedUpExamineDictionary = new Dictionary<string, string>();
     [HideInInspector] public SceneLoader sceneLoader;
 
-    [SerializeField]
-    public DataManager dataManager;
+    public Dictionary<string, bool> tempHolding;
+
+
+    [HideInInspector]public DataManager dataManager;
 
     public List<string> charactersThatHaveBeenGivenItems = new List<string>();
 
     List<string> actionLog = new List<string>();
+
+    private bool isLoadedGame;
 
     void Awake()
     {
         interactableCharacters = GetComponent<InteractableCharacters>();
         interactableItems = GetComponent<InteractableItems>();
         roomNavigation = GetComponent<RoomNavigation>();
-        sceneLoader = GetComponent<SceneLoader>();   
+        sceneLoader = GetComponent<SceneLoader>();
+        dataManager = FindObjectOfType<DataManager>();
     }
 
     public void DisplayLoggedText()
     {
-        string logAsText = string.Join("\n", actionLog.ToArray());
-        displayText.text = logAsText;
+        if (displayText != null)
+        {
+            string logAsText = string.Join("\n", actionLog.ToArray());
+            displayText.text = logAsText;
+        }
     }
 
     void Start()
     {
+        if (dataManager.GetLoadedFile() == true)
+        {
+            pickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
+            interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
+            interactableCharacters.charactersTransformedDictionary = dataManager.LoadTransformedCharacters();
+            
+            //dataPersistenceOnLoad.persistingPickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
+            //dataPersistenceOnLoad.persistingTransformedCharacters = dataManager.LoadTransformedCharacters();
+            //interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
+            //if (dataPersistenceOnLoad.persistingPickedUpAndHolding != null)
+            //{
+            //    List<string> temp = new List<string>(pickedUpAndHolding.Keys);
+            //    pickedUpAndHolding = dataPersistenceOnLoad.persistingPickedUpAndHolding;
+            //if (dataPersistenceOnLoad.persistingTransformedCharacters != null)
+            //{
+            //    interactableCharacters.charactersTransformedDictionary = dataPersistenceOnLoad.persistingTransformedCharacters;
+            //}
+        }
+
+       
         LogStringWithReturn(startText);
         DisplayRoomText();
         DisplayLoggedText();
@@ -52,7 +81,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (displayText.text.Length > 2000)
+        if (displayText != null && displayText.text.Length > 2000)
         {
             displayText.text = displayText.text.Substring(displayText.text.Length - 1000, 1000);
         }
@@ -60,43 +89,46 @@ public class GameController : MonoBehaviour
 
     public void DisplayRoomText()
     {
-        ClearCollectionsForNewRoom();
-
-        UnpackRoom();
-
-        string joinedCharacterDescriptions; 
-        string joinedInteractionDescriptions;
-        string joinedDirectionDescriptions; 
-
-        if (characterDescriptionsInRoom.Count > 0)
+        if (roomNavigation.currentRoom != null)
         {
-            joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray()) + "\n\n";
-        }
-        else
-        {
-            joinedCharacterDescriptions = "";
-        }
+            ClearCollectionsForNewRoom();
 
-        if (interactionDescriptionsInRoom.Count > 0)
-        {
-            joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray()) + "\n\n";
-        }
-        else
-        {
-            joinedInteractionDescriptions = "";
-        }
+            UnpackRoom();
 
-        if (directionDescriptionsInRoom.Count > 0)
-        {
-            joinedDirectionDescriptions = string.Join("\n", directionDescriptionsInRoom.ToArray()) + "\n\n";
-        }
-        else
-        {
-            joinedDirectionDescriptions = "";
-        }
+            string joinedCharacterDescriptions;
+            string joinedInteractionDescriptions;
+            string joinedDirectionDescriptions;
 
-        string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions;
-        LogStringWithoutReturn(combinedText);
+            if (characterDescriptionsInRoom.Count > 0)
+            {
+                joinedCharacterDescriptions = string.Join("\n", characterDescriptionsInRoom.ToArray()) + "\n\n";
+            }
+            else
+            {
+                joinedCharacterDescriptions = "";
+            }
+
+            if (interactionDescriptionsInRoom.Count > 0)
+            {
+                joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray()) + "\n\n";
+            }
+            else
+            {
+                joinedInteractionDescriptions = "";
+            }
+
+            if (directionDescriptionsInRoom.Count > 0)
+            {
+                joinedDirectionDescriptions = string.Join("\n", directionDescriptionsInRoom.ToArray()) + "\n\n";
+            }
+            else
+            {
+                joinedDirectionDescriptions = "";
+            }
+
+            string combinedText = roomNavigation.currentRoom.description + "\n\n" + joinedCharacterDescriptions + joinedInteractionDescriptions + joinedDirectionDescriptions;
+            LogStringWithoutReturn(combinedText);
+        }
         
     }
 
@@ -122,27 +154,31 @@ public class GameController : MonoBehaviour
 
     void PrepareObjectsToAction(Room currentRoom)
     {
-        for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
+        if (currentRoom != null)
         {
-            string descriptionNotInInventory = interactableItems.GetObjectsNotInInventory(currentRoom, i);
-            if (descriptionNotInInventory != null)
-            {
-                interactionDescriptionsInRoom.Add(descriptionNotInInventory);
-            }
 
-            InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
-
-            for (int j = 0; j < interactableInRoom.interactions.Length; j++)
+            for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
             {
-                Interaction interaction = interactableInRoom.interactions[j];
-                if (interaction.inputAction.keyword == "examine")
+                string descriptionNotInInventory = interactableItems.GetObjectsNotInInventory(currentRoom, i);
+                if (descriptionNotInInventory != null)
                 {
-                    interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                    interactionDescriptionsInRoom.Add(descriptionNotInInventory);
                 }
 
-                else if (interaction.inputAction.keyword == "take")
+                InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
+
+                for (int j = 0; j < interactableInRoom.interactions.Length; j++)
                 {
-                    interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                    Interaction interaction = interactableInRoom.interactions[j];
+                    if (interaction.inputAction.keyword == "examine")
+                    {
+                        interactableItems.examineDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                    }
+
+                    else if (interaction.inputAction.keyword == "take")
+                    {
+                        interactableItems.takeDictionary.Add(interactableInRoom.noun, interaction.textResponse);
+                    }
                 }
             }
         }
@@ -150,32 +186,38 @@ public class GameController : MonoBehaviour
 
     void PrepareCharactersInRoom(Room currentRoom)
     {
-        List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
-        for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
+        if (currentRoom != null && pickedUpAndHolding != null)
         {
-            characterDescriptionsInRoom.Add(interactableCharacters.GetCharacterInRoom(currentRoom, i));
+            List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
 
-            NPC characterInRoom = currentRoom.charactersInRoom[i];
-            if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.name))
+            for (int i = 0; i < currentRoom.charactersInRoom.Length; i++)
             {
-                if (characterInRoom.responses.itemToBeGiven != null)
+                characterDescriptionsInRoom.Add(interactableCharacters.GetCharacterInRoom(currentRoom, i));
+
+                NPC characterInRoom = currentRoom.charactersInRoom[i];
+                if (!interactableCharacters.itemsCharsAreGiven.ContainsKey(characterInRoom.name))
                 {
-                    if (itemsList.Contains(characterInRoom.responses.itemToBeGiven.noun))
+                    if (characterInRoom.responses.itemToBeGiven != null)
                     {
-                        interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, true } });
-                    }
-                    else
-                    {
-                        interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
+                        if (itemsList.Contains(characterInRoom.responses.itemToBeGiven.noun))
+                        {
+
+                            interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, true } });
+                        }
+                        else
+                        {
+                            interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, false } });
+                        }
                     }
                 }
-            }
 
-            if (!interactableCharacters.itemsCharsHave.ContainsKey(characterInRoom.name))
-            {
-                if (characterInRoom.responses.itemToGiveAway != null)
+                if (!interactableCharacters.itemsCharsHave.ContainsKey(characterInRoom.name))
                 {
-                    interactableCharacters.itemsCharsHave.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToGiveAway, true } });
+                    if (characterInRoom.responses.itemToGiveAway != null)
+                    {
+                        interactableCharacters.itemsCharsHave.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToGiveAway, true } });
+
+                    }
                 }
             }
         }
@@ -215,11 +257,11 @@ public class GameController : MonoBehaviour
         actionLog.Add("---------------------------------------------- \n");
     }
 
-    public void LoadGame()
+    public void LoadAdventure()
     {
-        if (sceneLoader != null && sceneLoader.GetScene() == 0)
+        if (sceneLoader != null && sceneLoader.GetScene() < 2)
         {
-            sceneLoader.LoadScene(1);
+            sceneLoader.LoadScene(2);
         }
     }
 
@@ -232,18 +274,32 @@ public class GameController : MonoBehaviour
     {
         List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
         List<bool> holdingItemCurrentlyList = new List<bool>(pickedUpAndHolding.Values);
-        dataManager.Save(itemsList, holdingItemCurrentlyList, transformCount);
+        List<string> transformedCharactersList = new List<string>(interactableCharacters.charactersTransformedDictionary.Keys);
+        List<bool> isTransformedList = new List<bool>(interactableCharacters.charactersTransformedDictionary.Values);
+        dataManager.Save(itemsList, holdingItemCurrentlyList, transformedCharactersList, isTransformedList);
     }
 
     public void Load()
     {
-        Debug.Log("controller loading");
-
-        pickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
-        transformCount = dataManager.LoadTransformCount();
-
-        interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
-        
+        //pickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
+        //interactableCharacters.charactersTransformedDictionary = dataManager.LoadTransformedCharacters();
+        //interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
+        StartCoroutine("DelayedLoad");
+        // isLoadedGame = true;
     }
-    
+
+    private IEnumerator DelayedLoad()
+    {
+        yield return new WaitForSeconds(3f);
+        if (sceneLoader.GetScene() == 0)
+        {
+            sceneLoader.LoadScene(2);
+            //dataPersistenceOnLoad.persistingPickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
+            //dataPersistenceOnLoad.persistingTransformedCharacters = dataManager.LoadTransformedCharacters();
+            //interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
+
+            
+        }
+    }
+
 }

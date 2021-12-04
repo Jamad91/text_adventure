@@ -21,31 +21,20 @@ public class XMLManager : MonoBehaviour
     public void SaveItems()
     {
         //open a new xml file
-        Debug.Log("save function");
         XmlSerializer serializer = new XmlSerializer(typeof(ItemDatabase));
-        Debug.Log("save serializer: " + serializer);
         FileStream stream = new FileStream(Application.dataPath + "/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml", FileMode.Create);
-        Debug.Log("save stream: " + stream);
         serializer.Serialize(stream, itemDb);
-        Debug.Log("save serialized");
         stream.Close();
-        Debug.Log("save closed");
     }
 
     //load function
     public void LoadItems()
     {
-        Debug.Log("load function");
         XmlSerializer serializer = new XmlSerializer(typeof(ItemDatabase));
-        Debug.Log("load serializer: " + serializer);
         //add check to make sure there is a file to be loaded
         FileStream stream = new FileStream(Application.dataPath + "/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml", FileMode.Open);
-        Debug.Log("load stream");
         itemDb = serializer.Deserialize(stream) as ItemDatabase;
-        Debug.Log("load deserializer");
         stream.Close();
-        Debug.Log("close");
-
     }
 }
 

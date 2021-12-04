@@ -316,7 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayPCOrMobile: {fileID: 0}
   inputfield: {fileID: 1359698765}
-  titleText: {fileID: 1827919310}
+  titleText: {fileID: 1556888427}
   phoneText: {fileID: 1543476288}
 --- !u!1 &519420028
 GameObject:
@@ -795,6 +795,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543476288}
   m_CullTransparentMesh: 0
+--- !u!1 &1556888427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556888428}
+  - component: {fileID: 1556888431}
+  - component: {fileID: 1556888430}
+  - component: {fileID: 1556888429}
+  m_Layer: 5
+  m_Name: Title Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1556888428
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556888427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1705484976}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0.60166675}
+  m_AnchoredPosition: {x: 400, y: -7.149994}
+  m_SizeDelta: {x: 758.187, y: -14.309784}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1556888429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556888427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6340cfdc5844daaa984427586e30af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.003
+  textFullyRendered: 0
+--- !u!114 &1556888430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556888427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3201476, g: 0.7137255, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 661f99ee007e147d285ed69acd1a29b3, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 165
+    m_Alignment: 6
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 0.85
+  m_Text: "         ___     ___                          \n  /\\  /\\/   \\   / _
+    \\__ _ _ __ ___   ___  ___ \n / /_/ / /\\ /  / /_\\/ _` | '_ ` _ \\ / _ \\/ __|\n/
+    __  / /_//  / /_\\\\ (_| | | | | | |  __/\\__ \\\n\\/ /_/___,'   \\____/\\__,_|_|
+    |_| |_|\\___||___/                                                                  
+    \n   ___                          _ \n  / _ \\_ __ ___  ___  ___ _ __ | |_ ___
+    \n / /_)/ '__/ _ \\/ __|/ _ \\ '_ \\| __/ __|\n/ ___/| | |  __/\\__ \\  __/ |
+    | | |_\\__ \\\n\\/    |_|  \\___||___/\\___|_| |_|\\__|___/\n                    
+    \n                     \n___  ___  ___   _   _  _____ ______  ___  ___  ___ 
+    ______  _   _  _____  _____  _____ \n|  \\/  | / _ \\ | \\ | ||  _  || ___ \\
+    |  \\/  | / _ \\ |  _  \\| \\ | ||  ___|/  ___|/  ___|\n| .  . |/ /_\\ \\|  \\|
+    || | | || |_/ / | .  . |/ /_\\ \\| | | ||  \\| || |__  \\ `--. \\ `--. \n| |\\/|
+    ||  _  || . ` || | | ||    /  | |\\/| ||  _  || | | || . ` ||  __|  `--. \\ `--.
+    \\\n| |  | || | | || |\\  |\\ \\_/ /| |\\ \\  | |  | || | | || |/ / | |\\  ||
+    |___ /\\__/ //\\__/ /\n\\_|  |_/\\_| |_/\\_| \\_/ \\___/ \\_| \\_| \\_|  |_/\\_|
+    |_/|___/  \\_| \\_/\\____/ \\____/ \\____/ \n                     \n                    
+    \n   _     _____          _       ___                    _ \n  /_\\   /__   \\_____ 
+    _| |_    / __\\ __ _ ___  ___  __| |\n //_\\\\    / /\\/ _ \\ \\/ / __|  /__\\///
+    _` / __|/ _ \\/ _` |\n/  _  \\  / / |  __/>  <| |_  / \\/  \\ (_| \\__ \\  __/
+    (_| |\n\\_/ \\_/  \\/   \\___/_/\\_\\\\__| \\_____/\\__,_|___/\\___|\\__,_|\n   
+    ___                     _ \n   /   \\   /\\   /\\___ _ __ | |_ _   _ _ __ ___
+    \n  / /\\ /___\\ \\ / / _ \\ '_ \\| __| | | | '__/ _ \\\n / /_//_____\\ V / 
+    __/ | | | |_| |_| | | |  __/\n/___,'       \\_/ \\___|_| |_|\\__|\\__,_|_|  \\___|\n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \n                    \n                   
+    \n                    \n                    \n                    \n                    
+    \n                     \n                     \n                     \n                    
+    \n                     \n                     \nThe world is in danger!\n                    
+    \nNegativa D, the evil, libertarian, Italian shaman, and archenemy of Heavy D
+    and the Boyz, has managed to capture them! They are a positive force for social
+    good, which threatens his hedonistic lifestyle. And now that they are out of
+    Negativa D's way, he can finally summon the Gobba Ghoul, which spells doom for
+    us all.\n                     \nYou have uncovered that they have been imprisoned
+    at his magical manor. Through some connections, you were able to obtain its location
+    as well as a rough map of the place. You were also able to find out that the
+    Boyz, el Raton, el Halcon, el Oso, el Gallo, and el Buho, were each transformed
+    into their animal namesakes. You're not sure what happened to Heavy D. However,
+    if you manage to transfrom all the Boyz back to their human forms, they will
+    know what to do.\n                     \nYou enter the manor with nothing but
+    your wits. You will have to GO around the house, TALK TO the beings within it,
+    TAKE items you find lying around, USE items, and GIVE items TO people who might
+    need them. However, if at any point you need HELP, do not hesitate to ask. \n                    
+    \nYou must rescue Heavy D and the Boyz. Only they can stop Negativa D from summoning
+    the Gobba Ghoul. The fate of the world depends on you!\n                    
+    \nOnce you're ready to begin, type \"BEGIN\" and hit ENTER. \n                    
+    \n                     \n                     \n                     "
+--- !u!222 &1556888431
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556888427}
+  m_CullTransparentMesh: 0
 --- !u!850595691 &1630403359
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -948,8 +1089,9 @@ RectTransform:
   m_Children:
   - {fileID: 2131637318}
   - {fileID: 1359698766}
-  - {fileID: 1827919311}
+  - {fileID: 1556888428}
   - {fileID: 1543476289}
+  - {fileID: 1827919311}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -989,7 +1131,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1705484976}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0.60166675}

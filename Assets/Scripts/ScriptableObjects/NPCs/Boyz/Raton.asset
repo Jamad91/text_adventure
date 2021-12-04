@@ -29,7 +29,7 @@ MonoBehaviour:
     notHoldingGivenItemResponse: '*squeak* *squek*'
     beingGivenItemResponse: I do love some fine cheese.
     isHoldingGivenItemResponse: Thank you for the cheese. It has whet my appetite.
-    doesNotWantItemResponse: '*squeak* *squeak*'
+    doesNotWantItemResponse: '*squeak*'
     transformedDoesNotWantItemResponse: No thank you. I don't need that nonsense.
     itemToBeGiven: {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
     itemToGiveAway: {fileID: 0}

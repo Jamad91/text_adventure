@@ -331,6 +331,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3dc2d6bdf2ba74a7faf8e07e6dabf830, type: 2}
   - {fileID: 11400000, guid: 65b28fbce793b416aab19f39e901189b, type: 2}
   transformCount: 0
+  dataPersistenceOnLoad: {fileID: 11400000, guid: 5363d8abfb3fc4544b8e84fd20e33b2e, type: 2}
   startText: 
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
@@ -339,7 +340,7 @@ MonoBehaviour:
   interactableCharacters: {fileID: 0}
   characterDescriptionsInRoom: []
   sceneLoader: {fileID: 0}
-  dataManager: {fileID: 580935399}
+  dataManager: {fileID: 0}
   charactersThatHaveBeenGivenItems: []
 --- !u!4 &429674494
 Transform:
@@ -668,53 +669,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564013386}
   m_CullTransparentMesh: 0
---- !u!1 &580935397
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 580935398}
-  - component: {fileID: 580935399}
-  m_Layer: 0
-  m_Name: Data Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &580935398
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580935397}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &580935399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580935397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8cdd370adfc243fc96301967c73090d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invDb:
-    list: []
-  transformDb:
-    transformCount: 0
 --- !u!1 &1160357886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1464813538
 RectTransform:
   m_ObjectHideFlags: 0

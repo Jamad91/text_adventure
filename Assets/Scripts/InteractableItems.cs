@@ -86,23 +86,25 @@ public class InteractableItems : MonoBehaviour
 
     public void DisplayInventory()
     {
-
-        if (controller.pickedUpAndHolding.Count == 0 || !controller.pickedUpAndHolding.ContainsValue(true))
+        if (controller.pickedUpAndHolding != null)
         {
-            controller.LogStringWithReturn("Your backpack is empty!");
-        }
-        else
-        {
-            controller.LogStringWithReturn("You look in your backpack, inside you have: ");
-            for (int i = 0; i < nounsInInventory.Count; i++)
+            if (controller.pickedUpAndHolding.Count == 0 || !controller.pickedUpAndHolding.ContainsValue(true))
             {
-                if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
-                {
-                    controller.LogStringWithoutReturn(nounsInInventory[i].ToUpper());
-                }
+                controller.LogStringWithReturn("Your backpack is empty!");
             }
-            controller.LogStringWithReturn("\n");
+            else
+            {
+                controller.LogStringWithReturn("You look in your backpack, inside you have: ");
+                for (int i = 0; i < nounsInInventory.Count; i++)
+                {
+                    if (controller.pickedUpAndHolding.ContainsKey(nounsInInventory[i]) && controller.pickedUpAndHolding[nounsInInventory[i]])
+                    {
+                        controller.LogStringWithoutReturn(nounsInInventory[i].ToUpper());
+                    }
+                }
+                controller.LogStringWithReturn("\n");
 
+            }
         }
     }
 
@@ -257,11 +259,6 @@ public class InteractableItems : MonoBehaviour
                                 GetItem(itemToGiveAway);
                                 controller.LogStringWithReturn(itemToGiveAway.beingGivenDescription);
                             }
-                            //Debug.Log("pre" + dataManagement.charactersThatHaveBeenGivenItem.Count);
-                            //dataManager.charactersThatHaveBeenGivenItem.Add(currentCharacter.name);
-                            //dataManager.Save();
-                            //dataManager.Load();
-                            //Debug.Log("post" + dataManagement.charactersThatHaveBeenGivenItem.Count);
                         }
                         else
                         {
@@ -377,5 +374,17 @@ public class InteractableItems : MonoBehaviour
         nounsInInventory = itemsToBeAdded;
     }
 
+    public InteractableObject GetInteractableObject(string itemName)
+    {
+        for (int i = 0; i < usableItemList.Count; i++)
+        {
+            if (usableItemList[i].name == itemName)
+            {
+                return usableItemList[i];
+            }
+        }
+
+        return null;
+    }
 
 }
