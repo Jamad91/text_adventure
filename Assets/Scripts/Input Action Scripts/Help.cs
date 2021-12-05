@@ -20,7 +20,9 @@ public class Help : InputAction
             "\n GIVE an item TO someone" +
             "\n USE an item" +
             "\n LOOK AT either the ROOM you're in, the EXITS you can use, the ITEMS in the room, or the CHARACTERS in the room" +
-            "\n Use the UP and DOWN keys to scroll through previous commands");
-
+            "\n SAVE your progress" +
+            "\n Use the UP and DOWN keys to scroll through previous commands"
+            );
+            
     }
 }

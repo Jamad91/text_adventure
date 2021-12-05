@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<TransformDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TransformedCharacters>
+    <TransformableCharacter>
+      <characterName>Buho</characterName>
+      <transformed>false</transformed>
+    </TransformableCharacter>
+    <TransformableCharacter>
+      <characterName>Gallo</characterName>
+      <transformed>false</transformed>
+    </TransformableCharacter>
+    <TransformableCharacter>
+      <characterName>Halcon</characterName>
+      <transformed>false</transformed>
+    </TransformableCharacter>
+    <TransformableCharacter>
+      <characterName>Oso</characterName>
+      <transformed>false</transformed>
+    </TransformableCharacter>
+    <TransformableCharacter>
+      <characterName>Raton</characterName>
+      <transformed>false</transformed>
+    </TransformableCharacter>
+  </TransformedCharacters>
+</TransformDatabase>

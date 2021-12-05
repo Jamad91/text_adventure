@@ -56,8 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/DataManagement/DataManager.cs" />
+    <Compile Include="Assets/Scripts/XML_Guide/ItemDisplay.cs" />
     <Compile Include="Assets/Scripts/InteractableObject.cs" />
     <Compile Include="Assets/Scripts/InteractableCharacters.cs" />
+    <Compile Include="Assets/Scripts/DataManagement/DataPersistenceOnLoad.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Use.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Go.cs" />
     <Compile Include="Assets/Scripts/Serializeables/Interaction.cs" />
@@ -70,27 +72,27 @@
     <Compile Include="Assets/Scripts/InputAction.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Inventory.cs" />
     <Compile Include="Assets/Scripts/ChangeRoomResponse.cs" />
+    <Compile Include="Assets/Scripts/XML_Guide/XMLManager.cs" />
     <Compile Include="Assets/Scripts/DisplayPCOrMobile.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Take.cs" />
     <Compile Include="Assets/Scripts/Serializeables/Exit.cs" />
     <Compile Include="Assets/Scripts/InteractableItems.cs" />
     <Compile Include="Assets/Scripts/ActionResponse.cs" />
+    <Compile Include="Assets/Scripts/XML_Guide/ItemBlock.cs" />
     <Compile Include="Assets/Scripts/TextInput.cs" />
     <Compile Include="Assets/Scripts/Serializeables/Responses.cs" />
     <Compile Include="Assets/Scripts/Input Action Scripts/Give.cs" />
     <Compile Include="Assets/Scripts/NPC.cs" />
+    <Compile Include="Assets/Scripts/Input Action Scripts/Save.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/Scripts/TypeWriter.cs" />
     <Compile Include="Assets/Scripts/Room.cs" />
     <Compile Include="Assets/Scripts/DataManagement/DataManagement.cs" />
-    <Compile Include="Assets/Scripts/XML_Guide/XMLManager.cs" />
-    <Compile Include="Assets/Scripts/XML_Guide/ItemDisplay.cs" />
-    <Compile Include="Assets/Scripts/XML_Guide/ItemBlock.cs" />
-    <Compile Include="Assets/Scripts/Input Action Scripts/Save.cs" />
-    <Compile Include="Assets/Scripts/DataManagement/DataPersistenceOnLoad.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml" />
      <None Include="Assets/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml" />
+     <None Include="Assets/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2020.1.4f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

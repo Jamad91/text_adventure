@@ -70,7 +70,8 @@ public class TextInput : MonoBehaviour
             }
             else if (userInput.ToLower() == "load")
             {
-                if (!System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml") && !System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+//                if (!System.IO.File.Exists(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml") && !System.IO.File.Exists(Application.persistentDataPath+ "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+                if (PlayerPrefs.GetString(controller.dataManager.inventoryDbName).Length == 0 && PlayerPrefs.GetString(controller.dataManager.transformDbName).Length == 0) 
                 {
                     controller.dataManager.SetLoadedFile(false);
                     sceneLoader.LoadScene(1);

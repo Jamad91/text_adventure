@@ -290,7 +290,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator DelayedLoad()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         if (sceneLoader.GetScene() == 0)
         {
             sceneLoader.LoadScene(2);

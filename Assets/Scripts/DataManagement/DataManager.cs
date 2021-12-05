@@ -9,18 +9,20 @@ using System;
 public class DataManager : MonoBehaviour
 {
     public static DataManager ins;
+    public InventoryDatabase invDb;
+    public TransformDatabase transformDb;
+    public GameController controller;
+
+    private bool loadedFile;
+
+    public string inventoryDbName = "inventoryDb";
+    public string transformDbName = "transformDb";
 
     private void Awake()
     {
         ins = this;
         DontDestroyOnLoad(this);
     }
-
-    public InventoryDatabase invDb;
-    public TransformDatabase transformDb;
-    public GameController controller;
-
-    private bool loadedFile;
 
     public bool GetLoadedFile()
     {
@@ -39,23 +41,52 @@ public class DataManager : MonoBehaviour
         transformDb = AddToTransformDb(transformableCharactersList, isTransformedList);
         XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
         XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
-        FileStream inventoryStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
-        FileStream transfromStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml", FileMode.Create);
-        inventorySerializer.Serialize(inventoryStream, invDb);
-        transformSerializer.Serialize(transfromStream, transformDb);
-        inventoryStream.Close();
-        transfromStream.Close();
+
+        //NB: the below lines work if I'm building a standalone, but it doesn't look this method is supported by WebGL builds
+        //FileStream inventoryStream = new FileStream(Application.persistentDataPath+ "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Create);
+        //FileStream transfromStream = new FileStream(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml", FileMode.Create);
+        //inventorySerializer.Serialize(inventoryStream, invDb);
+        //transformSerializer.Serialize(transfromStream, transformDb);
+        //inventoryStream.Close();
+        //transfromStream.Close();
+
+        using (StringWriter sw = new StringWriter())
+        {
+            inventorySerializer.Serialize(sw, invDb);
+            PlayerPrefs.SetString(inventoryDbName, sw.ToString());
+        }
+
+        using (StringWriter sw = new StringWriter())
+        {
+            transformSerializer.Serialize(sw, transformDb);
+            PlayerPrefs.SetString(transformDbName, sw.ToString());
+        }
     }
 
     public Dictionary<string, bool> LoadPickedUpAndHolding()
     {
 
         XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
-        if (System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml"))
+
+        //NB: the below lines work if I'm building a standalone, but it doesn't look this method is supported by WebGL builds
+        //if (System.IO.File.Exists(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml"))
+        //{
+        //    FileStream inventoryStream = new FileStream(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Open);
+        //    invDb = inventorySerializer.Deserialize(inventoryStream) as InventoryDatabase;
+        //    inventoryStream.Close();
+        //}
+
+        string text = PlayerPrefs.GetString(inventoryDbName);
+        if (text.Length == 0)
         {
-            FileStream inventoryStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml", FileMode.Open);
-            invDb = inventorySerializer.Deserialize(inventoryStream) as InventoryDatabase;
-            inventoryStream.Close();
+            invDb = new InventoryDatabase();
+        }
+        else
+        {
+            using(var reader = new System.IO.StringReader(text))
+            {
+                invDb = inventorySerializer.Deserialize(reader) as InventoryDatabase;
+            }
         }
 
         List<string> loadedItemsList = LoadItemNames();
@@ -77,11 +108,26 @@ public class DataManager : MonoBehaviour
     public Dictionary<string,bool> LoadTransformedCharacters()
     {
         XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
-        if (System.IO.File.Exists(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+
+        //NB: the below lines work if I'm building a standalone, but it doesn't look this method is supported by WebGL builds
+        //if (System.IO.File.Exists(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+        //{
+        //    FileStream transformStream = new FileStream(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml", FileMode.Open);
+        //    transformDb = transformSerializer.Deserialize(transformStream) as TransformDatabase;
+        //    transformStream.Close();
+        //}
+
+        string text = PlayerPrefs.GetString(transformDbName);
+        if (text.Length == 0)
         {
-            FileStream transformStream = new FileStream(Application.dataPath + "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml", FileMode.Open);
-            transformDb = transformSerializer.Deserialize(transformStream) as TransformDatabase;
-            transformStream.Close();
+            transformDb = new TransformDatabase();
+        }
+        else
+        {
+            using(var reader = new System.IO.StringReader(text))
+            {
+                transformDb = transformSerializer.Deserialize(reader) as TransformDatabase;
+            }
         }
 
         List<string> loadedTransformableCharactersList = LoadTransformableCharacterNames();

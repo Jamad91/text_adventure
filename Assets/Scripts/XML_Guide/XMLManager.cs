@@ -22,7 +22,7 @@ public class XMLManager : MonoBehaviour
     {
         //open a new xml file
         XmlSerializer serializer = new XmlSerializer(typeof(ItemDatabase));
-        FileStream stream = new FileStream(Application.dataPath + "/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml", FileMode.Create);
+        FileStream stream = new FileStream(Application.persistentDataPath + "/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml", FileMode.Create);
         serializer.Serialize(stream, itemDb);
         stream.Close();
     }
@@ -32,7 +32,7 @@ public class XMLManager : MonoBehaviour
     {
         XmlSerializer serializer = new XmlSerializer(typeof(ItemDatabase));
         //add check to make sure there is a file to be loaded
-        FileStream stream = new FileStream(Application.dataPath + "/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml", FileMode.Open);
+        FileStream stream = new FileStream(Application.persistentDataPath + "/Scripts/XML_Guide/StreamingFiles/XML/item_data.xml", FileMode.Open);
         itemDb = serializer.Deserialize(stream) as ItemDatabase;
         stream.Close();
     }
