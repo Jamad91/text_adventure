@@ -34,71 +34,77 @@ public class TextInput : MonoBehaviour
 
     void AcceptStringInput(string userInput)
     {
-        bool actionTaken = false;
-        userInput = userInput.ToLower();
-        if (controller != null)
+        if (!Input.GetMouseButton(0) && !Input.GetMouseButton(1) && !Input.GetMouseButton(2))
         {
-            controller.LogStringWithReturn(userInput);
-
-            char[] delimiterCharacters = { ' ' };
-            string[] serparatedInputWords = userInput.Split(delimiterCharacters);
-
-            for (int i = 0; i < controller.inputActions.Length; i++)
+            bool actionTaken = false;
+            userInput = userInput.ToLower();
+            if (controller != null)
             {
-                InputAction inputAction = controller.inputActions[i];
-                if (inputAction.keyword == serparatedInputWords[0])
+
+
+                controller.LogStringWithReturn(userInput);
+
+                char[] delimiterCharacters = { ' ' };
+                string[] serparatedInputWords = userInput.Split(delimiterCharacters);
+
+                for (int i = 0; i < controller.inputActions.Length; i++)
                 {
-                    inputAction.RespondToInput(controller, serparatedInputWords);
-                    actionTaken = true;
+                    InputAction inputAction = controller.inputActions[i];
+                    if (inputAction.keyword == serparatedInputWords[0])
+                    {
+                        inputAction.RespondToInput(controller, serparatedInputWords);
+                        actionTaken = true;
+                    }
+                }
+                //previousCommands.Add(userInput);
+                previousMessageIndex = previousCommands.Count;
+                InputComplete();
+                if (actionTaken == false && userInput.Length > 0)
+                {
+                    controller.LogStringWithReturn("That is not an available action. Please type HELP if you need assistance.");
                 }
             }
-            previousCommands.Add(userInput);
-            previousMessageIndex = previousCommands.Count;
-            InputComplete();
-            if (actionTaken == false && userInput.Length > 0)
-            {
-                controller.LogStringWithReturn("That is not an available action. Please type HELP if you need assistance.");
-            }
-        }
 
-        if (sceneLoader.GetScene() == 0)
-        {
-            if (userInput.ToLower() == "new")
+            if (sceneLoader.GetScene() == 0)
             {
-                controller.dataManager.SetLoadedFile(false);
-                sceneLoader.LoadScene(1);
-            }
-            else if (userInput.ToLower() == "load")
-            {
-//                if (!System.IO.File.Exists(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml") && !System.IO.File.Exists(Application.persistentDataPath+ "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
-                if (PlayerPrefs.GetString(controller.dataManager.inventoryDbName).Length == 0 && PlayerPrefs.GetString(controller.dataManager.transformDbName).Length == 0) 
+                if (userInput.ToLower() == "new")
                 {
                     controller.dataManager.SetLoadedFile(false);
                     sceneLoader.LoadScene(1);
-                } else
+                }
+                else if (userInput.ToLower() == "load")
                 {
-                    controller.dataManager.SetLoadedFile(true);
-                    displayText.text += "\n\nGame Loading...";
-                    controller.Load();
+                    //                if (!System.IO.File.Exists(Application.persistentDataPath + "/Scripts/DataManagement/StreamingFiles/XML/inventory_data.xml") && !System.IO.File.Exists(Application.persistentDataPath+ "/Scripts/DataManagement/StreamingFiles/XML/transform_data.xml"))
+                    if (PlayerPrefs.GetString(controller.dataManager.inventoryDbName).Length == 0 && PlayerPrefs.GetString(controller.dataManager.transformDbName).Length == 0)
+                    {
+                        controller.dataManager.SetLoadedFile(false);
+                        sceneLoader.LoadScene(1);
+                    }
+                    else
+                    {
+                        controller.dataManager.SetLoadedFile(true);
+                        displayText.text += "\n\nGame Loading...";
+                        controller.Load();
+                    }
                 }
             }
-        }
-        else if (sceneLoader.GetScene() == 1)
-        {
-            if (userInput.ToLower() == "begin")
+            else if (sceneLoader.GetScene() == 1)
             {
-                sceneLoader.LoadScene(2);
+                if (userInput.ToLower() == "begin")
+                {
+                    sceneLoader.LoadScene(2);
+                }
+                else
+                {
+                    displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
+                }
             }
-            else
+            else if (sceneLoader.GetScene() == 2)
             {
-                displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
+                previousCommands.Add(userInput);
+                previousMessageIndex = previousCommands.Count;
+                InputComplete();
             }
-        }
-        else if (sceneLoader.GetScene() == 2)
-        {
-            previousCommands.Add(userInput);
-            previousMessageIndex = previousCommands.Count;
-            InputComplete();
         }
     }
 
@@ -114,9 +120,10 @@ public class TextInput : MonoBehaviour
 
     void DisplayPreviousCommand()
     {
- 
+        
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
+            Debug.Log("hitting up key");
             if (previousMessageIndex >= 0)
             {
                 previousMessageIndex--;

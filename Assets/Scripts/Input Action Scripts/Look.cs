@@ -11,7 +11,12 @@ public class Look : InputAction
     {
         controller.LogStringWithBreakLine();
 
-        if (seperatedInputWords.Length == 3 || seperatedInputWords[1] == "at")
+        if (seperatedInputWords.Length == 2 && seperatedInputWords[1] == "around")
+        {
+            controller.DisplayRoomText();
+        }
+
+        else if (seperatedInputWords.Length == 3 || seperatedInputWords[1] == "at")
         {
             if (seperatedInputWords[2] == "room")
             {
