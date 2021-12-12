@@ -14,7 +14,7 @@ public class Help : InputAction
             "Need some help? You can:" +
             "\n GO in a direction " +
             "\n TAKE something " +
-            "\n EXAMINE something " +
+            "\n EXAMINE something or someone" +
             "\n check your INVENTORY " +
             "\n TALK TO someone " +
             "\n GIVE an item TO someone" +

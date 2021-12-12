@@ -156,4 +156,37 @@ public class InteractableCharacters : MonoBehaviour
         return null;
     }
 
+    public void Examine(string[] seperatedInputWords)
+    {
+        string characterName = seperatedInputWords[1];
+        bool hasBeenTransformed;
+
+        for (int i = 0; i < charactersList.Count; i++)
+        {
+            hasBeenTransformed = IsTransformed(charactersList[i].name);
+
+            if (!hasBeenTransformed && characterName.ToLower() == charactersList[i].characterName.ToLower())
+            {
+                controller.LogStringWithReturn(charactersList[i].description);
+            }
+            else if (hasBeenTransformed && characterName.ToLower() == charactersList[i].transformedCharacterName.ToLower())
+            {
+                controller.LogStringWithReturn(charactersList[i].transformedDescription);
+            }
+        }
+
+    }
+
+    public bool isCharacterInCurrentRoom(string characterName)
+    {
+        if (charactersInRoom.Contains(characterName))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
