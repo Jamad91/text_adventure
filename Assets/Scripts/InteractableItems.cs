@@ -152,7 +152,6 @@ public class InteractableItems : MonoBehaviour
             if (useDictionary.ContainsKey(nounToUse))
             {
                 bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
-                Debug.Log("hitting here 3");
                 if (!actionResult)
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");

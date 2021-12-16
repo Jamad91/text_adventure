@@ -8,11 +8,18 @@ public class Save : InputAction
 {
     public override void RespondToInput(GameController controller, string[] seperatedInputWords)
     {
-        controller.Save();
+        if (controller.sceneLoader.GetScene() == 1)
+        {
+            controller.LogStringWithReturn("You cannot save in the tutorial!");
+        }
+        else if (controller.sceneLoader.GetScene() == 3)
+        {
+            controller.Save();
 
-        controller.LogStringWithBreakLine();
+            controller.LogStringWithBreakLine();
 
-        controller.LogStringWithReturn("Save successful!");
+            controller.LogStringWithReturn("Save successful!");
+        }
            
 
     }

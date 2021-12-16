@@ -274,8 +274,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 0.85
-  m_Text: Type NEW to start a new game or LOAD to continue where you last left off
-    and hit ENTER.
+  m_Text: "Type:\nNEW to start a new game\nLOAD to continue where you last left off
+    \nTUTORIAL to play through a brief tutorial\n  \nHit ENTER when done."
 --- !u!222 &215998255
 CanvasRenderer:
   m_ObjectHideFlags: 0

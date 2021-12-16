@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentRoom: {fileID: 11400000, guid: fa1e7b4635a9445ecbb3a99c4cc20757, type: 2}
-  winRoom: {fileID: 0}
+  winRoom: {fileID: 11400000, guid: c33863ee2473148ad9e319488b09afc3, type: 2}
 --- !u!114 &429674493
 MonoBehaviour:
   m_ObjectHideFlags: 0

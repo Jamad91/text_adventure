@@ -20,8 +20,15 @@ public class DataManager : MonoBehaviour
 
     private void Awake()
     {
-        ins = this;
-        DontDestroyOnLoad(this);
+        if (ins == null)
+        {
+            ins = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public bool GetLoadedFile()

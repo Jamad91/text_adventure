@@ -20,11 +20,11 @@ public class ChangeRoomResponse : ActionResponse
                 {
                     if (controller.sceneLoader.GetScene() == 3)
                     {
-                        controller.LoadEndScene();
+                        controller.sceneLoader.EndGame();
                     }
                     else if (controller.sceneLoader.GetScene() == 1)
                     {
-                        controller.sceneLoader.LoadScene(0);
+                        controller.sceneLoader.StartMenu();
                     }
                 }
             }

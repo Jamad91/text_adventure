@@ -87,6 +87,10 @@ public class TextInput : MonoBehaviour
                         controller.Load();
                     }
                 }
+                else if (userInput.ToLower() == "tutorial")
+                {
+                    sceneLoader.LoadScene(1);
+                }
             }
             else if (sceneLoader.GetScene() == 2)
             {
@@ -99,7 +103,7 @@ public class TextInput : MonoBehaviour
                     displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
                 }
             }
-            else if (sceneLoader.GetScene() == 3)
+            else if (sceneLoader.GetScene() == 1 || sceneLoader.GetScene() == 3)
             {
                 previousCommands.Add(userInput);
                 previousMessageIndex = previousCommands.Count;
@@ -123,7 +127,6 @@ public class TextInput : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            Debug.Log("hitting up key");
             if (previousMessageIndex >= 0)
             {
                 previousMessageIndex--;

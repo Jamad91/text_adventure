@@ -65,8 +65,19 @@ public class SceneLoader : MonoBehaviour
     private IEnumerator LoadEnd()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 
+
+    public void StartMenu()
+    {
+        StartCoroutine("LoadMainMenu");
+    }
+
+    private IEnumerator LoadMainMenu()
+    {
+        yield return new WaitForSeconds(12f);
+        SceneManager.LoadScene(0);
+    }
 
 }
