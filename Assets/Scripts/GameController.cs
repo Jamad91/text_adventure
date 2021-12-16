@@ -259,9 +259,9 @@ public class GameController : MonoBehaviour
 
     public void LoadAdventure()
     {
-        if (sceneLoader != null && sceneLoader.GetScene() < 2)
+        if (sceneLoader != null && sceneLoader.GetScene() < 3)
         {
-            sceneLoader.LoadScene(2);
+            sceneLoader.LoadScene(3);
         }
     }
 
@@ -293,7 +293,7 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         if (sceneLoader.GetScene() == 0)
         {
-            sceneLoader.LoadScene(2);
+            sceneLoader.LoadScene(3);
             //dataPersistenceOnLoad.persistingPickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
             //dataPersistenceOnLoad.persistingTransformedCharacters = dataManager.LoadTransformedCharacters();
             //interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));

@@ -61,7 +61,7 @@ public class InteractableItems : MonoBehaviour
                         continue;
                     }
                     if (!useDictionary.ContainsKey(noun))
-                    {
+                    {                       
                         useDictionary.Add(noun, interaction.actionResponse);
                     }
                 }
@@ -151,7 +151,8 @@ public class InteractableItems : MonoBehaviour
         {
             if (useDictionary.ContainsKey(nounToUse))
             {
-                bool actionResult = useDictionary[nounToUse].DoActionResonse(controller);
+                bool actionResult = useDictionary[nounToUse].DoActionResponse(controller);
+                Debug.Log("hitting here 3");
                 if (!actionResult)
                 {
                     controller.LogStringWithReturn("Hmm. Nothing happens.");
@@ -211,7 +212,6 @@ public class InteractableItems : MonoBehaviour
                     {
                         itemToBeGiven = currentCharacter.responses.itemToBeGiven;
                         itemToGiveAway = currentCharacter.responses.itemToGiveAway;
-
                         if (itemToBeGiven != null && itemToBeGiven.noun == item)
                         {
                             givingItemInteraction = itemToBeGiven.interactions[0];
@@ -250,7 +250,7 @@ public class InteractableItems : MonoBehaviour
                             }
                             else
                             {
-                                controller.LogStringWithReturn(currentCharacter.characterName + ": " + currentCharacter.responses.beingGivenItemResponse);
+                                controller.LogStringWithReturn(currentCharacter.characterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
                             }
 
                             if (itemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.name][itemToGiveAway])

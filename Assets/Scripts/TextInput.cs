@@ -70,7 +70,7 @@ public class TextInput : MonoBehaviour
                 if (userInput.ToLower() == "new")
                 {
                     controller.dataManager.SetLoadedFile(false);
-                    sceneLoader.LoadScene(1);
+                    sceneLoader.LoadScene(2);
                 }
                 else if (userInput.ToLower() == "load")
                 {
@@ -78,7 +78,7 @@ public class TextInput : MonoBehaviour
                     if (PlayerPrefs.GetString(controller.dataManager.inventoryDbName).Length == 0 && PlayerPrefs.GetString(controller.dataManager.transformDbName).Length == 0)
                     {
                         controller.dataManager.SetLoadedFile(false);
-                        sceneLoader.LoadScene(1);
+                        sceneLoader.LoadScene(2);
                     }
                     else
                     {
@@ -88,18 +88,18 @@ public class TextInput : MonoBehaviour
                     }
                 }
             }
-            else if (sceneLoader.GetScene() == 1)
+            else if (sceneLoader.GetScene() == 2)
             {
                 if (userInput.ToLower() == "begin")
                 {
-                    sceneLoader.LoadScene(2);
+                    sceneLoader.LoadScene(3);
                 }
                 else
                 {
                     displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
                 }
             }
-            else if (sceneLoader.GetScene() == 2)
+            else if (sceneLoader.GetScene() == 3)
             {
                 previousCommands.Add(userInput);
                 previousMessageIndex = previousCommands.Count;

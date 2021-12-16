@@ -30,6 +30,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -1043,4 +1045,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Opener.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Ending.unity
-  playerPath: /Users/jimmy/Desktop/Madness Manor
+  playerPath: /Users/jimmy/Desktop/Manor Madness
