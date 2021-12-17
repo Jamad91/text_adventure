@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: OutsideLockedDoor
   m_EditorClassIdentifier: 
   description: You stand outside a manor. At the door in front of you, there are
-    no knobs, handles, or levers, only tiny slot like you'd see in a vending machine.
+    no knobs, handles, or levers, only a single tiny slot like you'd see in a vending
+    machine. Ask for HELP if you feel lost.
   roomName: front door
   exits: []
   interactableObjectsInRoom:

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: coin
   description: Description in room
-  beingGivenDescription: It is a run of the mill 1973, U.S. issued quarter.
+  beingGivenDescription: You are given a run of the mill 1969, U.S. issued quarter.
+    You should try to USE it.
   interactions:
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: It is a run of the mill 1973, U.S. issued quarter.
+    textResponse: It is a run of the mill 1969, U.S. issued quarter.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: aeaa68d02b67b4237ae22a5432d7e3c7, type: 2}
     textResponse: You insert the coin into the slot.

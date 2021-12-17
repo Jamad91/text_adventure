@@ -25,5 +25,5 @@ MonoBehaviour:
     textResponse: You gave the MAGICIAN the RABBIT.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: It is a docile white rabbit. You may be able to GIVE it TO someone.
+    textResponse: It is a docile white RABBIT. You may be able to GIVE it TO someone.
     actionResponse: {fileID: 0}

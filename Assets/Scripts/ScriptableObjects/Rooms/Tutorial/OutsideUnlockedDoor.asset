@@ -12,11 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba782ccf15195421fba436b0c4a77ecf, type: 3}
   m_Name: OutsideUnlockedDoor
   m_EditorClassIdentifier: 
-  description: 'You slip the coin through the slot and the manor doors open.
+  description: 'You slip the coin through the slot and the manor doors open. You
+    are ready for whatever lies ahead. At least you hope so.
 
+    ~
+
+    ~
+
+    ~
 
     You
-    have completed the tutorial. Returning you to main menu screen now.'
+    have completed the tutorial! Good job!
+
+
+    Loading the main menu....'
   roomName: front door
   exits: []
   interactableObjectsInRoom: []
