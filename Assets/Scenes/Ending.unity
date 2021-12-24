@@ -249,6 +249,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
   - {fileID: 11400000, guid: 3dc2d6bdf2ba74a7faf8e07e6dabf830, type: 2}
   transformCount: 0
+  dataPersistenceOnLoad: {fileID: 0}
   startText: 
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
@@ -257,6 +258,8 @@ MonoBehaviour:
   interactableCharacters: {fileID: 0}
   characterDescriptionsInRoom: []
   sceneLoader: {fileID: 0}
+  dataManager: {fileID: 0}
+  charactersThatHaveBeenGivenItems: []
 --- !u!4 &429674494
 Transform:
   m_ObjectHideFlags: 0
@@ -420,36 +423,6 @@ MonoBehaviour:
   inputfield: {fileID: 0}
   titleText: {fileID: 0}
   phoneText: {fileID: 0}
---- !u!1 &492304921
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 492304922}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &492304922
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492304921}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.11151, y: 112.40144, z: -112.92908}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -751,7 +724,7 @@ MonoBehaviour:
     race to get outside. As soon as you are, Heavy D emerges from the volcano, 12
     stories tall and made of radiation. He looks at you directly with a soul piercing
     gaze and speaks.\n                                          \n\"Thank you for
-    freeing me and all of the Boyz. Without you this day would be lost, but there
+    freeing me and all of the Boyz. Without you, this day would be lost, but there
     is hope once again. We shall stop Negativa D from summoning the Gobba Ghoul and
     save the world, all thanks to your cunning brain and valiant effort. Consider
     yourself a friend to Heavy D and the Boyz. Should you ever require our help,
@@ -761,6 +734,54 @@ MonoBehaviour:
     win this day. You give yourself a moment to sit and appreciate what you were
     able to do for the world before it hits you \"Wait, seriously, who the fuck is
     Franklin P. Perdue?\"\n                                          \nTHE END            
+    \n                         \n                         \n                        
+    \n                         \n                         \n                        
+    \n                         \n                         \n                        
+    \n                         \n                         \n                        
+    \n                         \n                         \n                        
+    \n                         \n                         \n                        
+    \n                         \n                         \n   ___                        
+    ___               _           _     ___\n  / _ \\__ _ _ __ ___   ___    / __\\
+    __ ___  __ _| |_ ___  __| |   / __\\_   _ \n / /_\\/ _` | '_ ` _ \\ / _ \\  /
+    / | '__/ _ \\/ _` | __/ _ \\/ _` |  /__\\// | | |\n/ /_\\\\ (_| | | | | | | 
+    __/ / /__| | |  __/ (_| | ||  __/ (_| | / \\/  \\ |_| |\n\\____/\\__,_|_| |_|
+    |_|\\___| \\____/_|  \\___|\\__,_|\\__\\___|\\__,_| \\_____/\\__, |\n                                                                      
+    |___/                 \n         ___     ___                          \n  /\\ 
+    /\\/   \\   / _ \\__ _ _ __ ___   ___  ___ \n / /_/ / /\\ /  / /_\\/ _` | '_
+    ` _ \\ / _ \\/ __|\n/ __  / /_//  / /_\\\\ (_| | | | | | |  __/\\__ \\\n\\/ /_/___,'  
+    \\____/\\__,_|_| |_| |_|\\___||___/\n                                         
+    \n                                          \n                                         
+    \n    ___               _                      _     ___       \n   /   \\_____  
+    _____| | ___  _ __   ___  __| |   / __\\_   _ \n  / /\\ / _ \\ \\ / / _ \\ |/
+    _ \\| '_ \\ / _ \\/ _` |  /__\\// | | |\n / /_//  __/\\ V /  __/ | (_) | |_)
+    |  __/ (_| | / \\/  \\ |_| |\n/___,' \\___| \\_/ \\___|_|\\___/| .__/ \\___|\\__,_|
+    \\_____/\\__, |\n                             |_|                       |___/
+    \n   __  _                                ___                  \n   \\ \\(_)_
+    __ ___  _ __ ___  _   _     /   \\                 \n    \\ \\ | '_ ` _ \\| '_
+    ` _ \\| | | |   / /\\ /                 \n /\\_/ / | | | | | | | | | | | |_|
+    |  / /_//                  \n \\___/|_|_| |_| |_|_| |_| |_|\\__, | /___,'                  
+    \n                             |___/                           \n                                         
+    \n                                          \n                                         
+    \n __                 _       _   _____ _                 _          _\n/ _\\_
+    __   ___  ___(_) __ _| | /__   \\ |__   __ _ _ __ | | _____  | |_ ___  \n\\ \\|
+    '_ \\ / _ \\/ __| |/ _` | |   / /\\/ '_ \\ / _` | '_ \\| |/ / __| | __/ _ \\
+    \n_\\ \\ |_) |  __/ (__| | (_| | |  / /  | | | | (_| | | | |   <\\__ \\ | ||
+    (_) |\n\\__/ .__/ \\___|\\___|_|\\__,_|_|  \\/   |_| |_|\\__,_|_| |_|_|\\_\\___/ 
+    \\__\\___/ \n   |_|\n _____ _              ___                 \n/__   \\ |__  
+    ___    / __\\ ___  _   _ ____\n  / /\\/ '_ \\ / _ \\  /__\\/// _ \\| | | |_ 
+    /\n / /  | | | |  __/ / \\/  \\ (_) | |_| |/ / \n \\/   |_| |_|\\___| \\_____/\\___/
+    \\__, /___|\n                                |___/\n  ___\n ( _ )     /\\ /\\
+    /\\ /\\\n / _ \\/\\  / //_// //_/\n| (_>  < / __ \\/ __ \\ \n \\___/\\/ \\/ 
+    \\/\\/  \\/ \n                                          \n                                         
+    \n                                          \n _____ _                 _\n/__  
+    \\ |__   __ _ _ __ | | __  _   _  ___  _   _ \n  / /\\/ '_ \\ / _` | '_ \\| |/
+    / | | | |/ _ \\| | | |\n / /  | | | | (_| | | | |   <  | |_| | (_) | |_| |\n\\/  
+    |_| |_|\\__,_|_| |_|_|\\_\\  \\__, |\\___/ \\__,_|\n                               
+    |___/\n   ___              ___ _             _               _  _\n  / __\\__ 
+    _ __    / _ \\ | __ _ _   _(_)_ __   __ _  / \\/ \\\n / _\\/ _ \\| '__|  / /_)/
+    |/ _` | | | | | '_ \\ / _` |/  /  /\n/ / | (_) | |    / ___/| | (_| | |_| | |
+    | | | (_| /\\_/\\_/\n\\/   \\___/|_|    \\/    |_|\\__,_|\\__, |_|_| |_|\\__,
+    \\/ \\/\n                                |___/         |___/\n                                         
     \n                                          \n                                         
     \n                                          \n                                         
     \n                                          \n                                         
@@ -768,36 +789,7 @@ MonoBehaviour:
     \n                                          \n                                         
     \n                                          \n                                         
     \n                                          \n                                         
-    \n                                          \n                                         
-    \n   ___                         ___               _           _     ___\n  /
-    _ \\__ _ _ __ ___   ___    / __\\ __ ___  __ _| |_ ___  __| |   / __\\_   _ \n
-    / /_\\/ _` | '_ ` _ \\ / _ \\  / / | '__/ _ \\/ _` | __/ _ \\/ _` |  /__\\//
-    | | |\n/ /_\\\\ (_| | | | | | |  __/ / /__| | |  __/ (_| | ||  __/ (_| | / \\/ 
-    \\ |_| |\n\\____/\\__,_|_| |_| |_|\\___| \\____/_|  \\___|\\__,_|\\__\\___|\\__,_|
-    \\_____/\\__, |\n                                                                      
-    |___/\n         ___     ___                          \n  /\\  /\\/   \\   / _
-    \\__ _ _ __ ___   ___  ___ \n / /_/ / /\\ /  / /_\\/ _` | '_ ` _ \\ / _ \\/ __|\n/
-    __  / /_//  / /_\\\\ (_| | | | | | |  __/\\__ \\\n\\/ /_/___,'   \\____/\\__,_|_|
-    |_| |_|\\___||___/\n                 \n                 \n __                
-    _       _   _____ _                 _          _\n/ _\\_ __   ___  ___(_) __
-    _| | /__   \\ |__   __ _ _ __ | | _____  | |_ ___  \n\\ \\| '_ \\ / _ \\/ __|
-    |/ _` | |   / /\\/ '_ \\ / _` | '_ \\| |/ / __| | __/ _ \\ \n_\\ \\ |_) |  __/
-    (__| | (_| | |  / /  | | | | (_| | | | |   <\\__ \\ | || (_) |\n\\__/ .__/ \\___|\\___|_|\\__,_|_| 
-    \\/   |_| |_|\\__,_|_| |_|_|\\_\\___/  \\__\\___/ \n   |_|\n _____ _             
-    ___                 \n/__   \\ |__   ___    / __\\ ___  _   _ ____\n  / /\\/
-    '_ \\ / _ \\  /__\\/// _ \\| | | |_  /\n / /  | | | |  __/ / \\/  \\ (_) | |_|
-    |/ / \n \\/   |_| |_|\\___| \\_____/\\___/ \\__, /___|\n                               
-    |___/\n  ___\n ( _ )     /\\ /\\ /\\ /\\\n / _ \\/\\  / //_// //_/\n| (_>  <
-    / __ \\/ __ \\ \n \\___/\\/ \\/  \\/\\/  \\/ \n                 \n                
-    \n                 \n _____ _                 _\n/__   \\ |__   __ _ _ __ | |
-    __  _   _  ___  _   _ \n  / /\\/ '_ \\ / _` | '_ \\| |/ / | | | |/ _ \\| | |
-    |\n / /  | | | | (_| | | | |   <  | |_| | (_) | |_| |\n \\/   |_| |_|\\__,_|_|
-    |_|_|\\_\\  \\__, |\\___/ \\__,_|\n                                |___/\n  
-    ___              ___ _             _               _  _\n  / __\\__  _ __   
-    / _ \\ | __ _ _   _(_)_ __   __ _  / \\/ \\\n / _\\/ _ \\| '__|  / /_)/ |/ _`
-    | | | | | '_ \\ / _` |/  /  /\n/ / | (_) | |    / ___/| | (_| | |_| | | | | |
-    (_| /\\_/\\_/\n\\/   \\___/|_|    \\/    |_|\\__,_|\\__, |_|_| |_|\\__, \\/ \\/\n                               
-    |___/         |___/\n                 \n                 "
+    \n                                          \n"
 --- !u!222 &2106181575
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -837,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6340cfdc5844daaa984427586e30af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.005
+  delay: 0.02
   textFullyRendered: 0
 --- !u!1 &2131637317
 GameObject:
@@ -914,3 +906,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131637317}
   m_CullTransparentMesh: 0
+--- !u!1001 &8036393535413784547
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8036393535869711864, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ab18232f7a2542be82e54ffb26d4314, type: 3}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711865, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8036393535869711866, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
+      propertyPath: m_Name
+      value: Audio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6cd1d5abf2344498bac12f48670cff2, type: 3}
