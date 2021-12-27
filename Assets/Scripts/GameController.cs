@@ -57,7 +57,9 @@ public class GameController : MonoBehaviour
         if (dataManager.GetLoadedFile() == true)
         {
             pickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
+            pickedUpExamineDictionary = dataManager.LoadHeldExamineDescriptions();
             interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
+            interactableItems.AddActionResponsesToUseDictionary();
             interactableCharacters.charactersTransformedDictionary = dataManager.LoadTransformedCharacters();
             
             //dataPersistenceOnLoad.persistingPickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
@@ -274,9 +276,11 @@ public class GameController : MonoBehaviour
     {
         List<string> itemsList = new List<string>(pickedUpAndHolding.Keys);
         List<bool> holdingItemCurrentlyList = new List<bool>(pickedUpAndHolding.Values);
+        List<string> heldToExamineDescriptionsList = new List<string>(pickedUpExamineDictionary.Values);
         List<string> transformedCharactersList = new List<string>(interactableCharacters.charactersTransformedDictionary.Keys);
         List<bool> isTransformedList = new List<bool>(interactableCharacters.charactersTransformedDictionary.Values);
-        dataManager.Save(itemsList, holdingItemCurrentlyList, transformedCharactersList, isTransformedList);
+  
+        dataManager.Save(itemsList, holdingItemCurrentlyList, heldToExamineDescriptionsList, transformedCharactersList, isTransformedList);
     }
 
     public void Load()

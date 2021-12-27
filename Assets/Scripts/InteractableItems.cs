@@ -298,6 +298,7 @@ public class InteractableItems : MonoBehaviour
         string item = seperatedInputWords[1];
         if (controller.pickedUpAndHolding.ContainsKey(item) && controller.pickedUpAndHolding[item]) {
             controller.LogStringWithReturn(controller.pickedUpExamineDictionary[item]);
+
             return;
         }
 

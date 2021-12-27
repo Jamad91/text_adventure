@@ -42,9 +42,15 @@ public class DataManager : MonoBehaviour
     }
 
 
-    public void Save(List<string> itemsList, List<bool> holdingItemCurrentlyList, List<string> transformableCharactersList, List<bool> isTransformedList)
+    public void Save(
+        List<string> itemsList,
+        List<bool> holdingItemCurrentlyList,
+        List<string> heldToExamineDescriptionsList,
+        List<string> transformableCharactersList,
+        List<bool> isTransformedList
+        )
     {
-        invDb = AddToInventoryDb(itemsList, holdingItemCurrentlyList);
+        invDb = AddToInventoryDb(itemsList, holdingItemCurrentlyList, heldToExamineDescriptionsList);
         transformDb = AddToTransformDb(transformableCharactersList, isTransformedList);
         XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
         XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
@@ -98,17 +104,55 @@ public class DataManager : MonoBehaviour
 
         List<string> loadedItemsList = LoadItemNames();
         List<bool> loadedHoldingItemsList = LoadHoldingItems();
+        List<string> loadedExamineDescriptionsList = LoadExamineDescriptions();
+
         Dictionary<string, bool> tempPickedUpAndHoldingDict = new Dictionary<string, bool>();
+        Dictionary<string, string> tempExamineDescriptionDict = new Dictionary<string, string>();
 
         for (int i = 0; i < loadedItemsList.Count; i++)
         {
             
             tempPickedUpAndHoldingDict.Add(loadedItemsList[i], loadedHoldingItemsList[i]);
+            tempExamineDescriptionDict.Add(loadedItemsList[i], loadedExamineDescriptionsList[i]);
         }
 
         controller.dataPersistenceOnLoad.IsLoaded = true;
 
         return tempPickedUpAndHoldingDict;
+
+    }
+
+    public Dictionary<string, string> LoadHeldExamineDescriptions()
+    {
+
+        XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
+
+        string text = PlayerPrefs.GetString(inventoryDbName);
+        if (text.Length == 0)
+        {
+            invDb = new InventoryDatabase();
+        }
+        else
+        {
+            using (var reader = new System.IO.StringReader(text))
+            {
+                invDb = inventorySerializer.Deserialize(reader) as InventoryDatabase;
+            }
+        }
+
+        List<string> loadedItemsList = LoadItemNames();
+        List<string> loadedExamineDescriptionsList = LoadExamineDescriptions();
+
+        Dictionary<string, string> tempExamineDescriptionDict = new Dictionary<string, string>();
+
+        for (int i = 0; i < loadedItemsList.Count; i++)
+        {
+            tempExamineDescriptionDict.Add(loadedItemsList[i], loadedExamineDescriptionsList[i]);
+        }
+
+        controller.dataPersistenceOnLoad.IsLoaded = true;
+
+        return tempExamineDescriptionDict;
 
     }
 
@@ -173,6 +217,18 @@ public class DataManager : MonoBehaviour
         return holdingItemsList;
     }
 
+    public List<string> LoadExamineDescriptions()
+    {
+        List<string> heldItemExamineList = new List<string>();
+
+        for (int i = 0; i < invDb.list.Count; i++)
+        {
+            heldItemExamineList.Add(invDb.list[i].GetExamineDescription());
+        }
+
+        return heldItemExamineList;
+    }
+
     public List<string> LoadTransformableCharacterNames()
     {
         List<string> transformableCharactersList = new List<string>();
@@ -196,7 +252,7 @@ public class DataManager : MonoBehaviour
         return isTransformedList;
     }
 
-    public InventoryDatabase AddToInventoryDb (List<string> itemsList, List<bool> holdintItemCurrentlyList)
+    public InventoryDatabase AddToInventoryDb (List<string> itemsList, List<bool> holdintItemCurrentlyList, List<string> heldToExamineDescriptionsList)
     {
         InventoryDatabase tempDb = new InventoryDatabase();
         InventoryItem newItem; 
@@ -206,6 +262,7 @@ public class DataManager : MonoBehaviour
             newItem = new InventoryItem();
             newItem.SetItemName(itemsList[i]);
             newItem.SetHolding(holdintItemCurrentlyList[i]);
+            newItem.SetExamineDescription(heldToExamineDescriptionsList[i]);
             tempDb.list.Add(newItem);
         }
 
@@ -232,6 +289,7 @@ public class DataManager : MonoBehaviour
     {
         public string itemNoun;
         public bool holding;
+        public string description;
 
         public string GetItemName()
         {
@@ -243,6 +301,11 @@ public class DataManager : MonoBehaviour
             return holding;
         }
 
+        public string GetExamineDescription()
+        {
+            return description;
+        }
+
         public void SetItemName(string itemName)
         {
             itemNoun = itemName;
@@ -251,6 +314,11 @@ public class DataManager : MonoBehaviour
         public void SetHolding(bool holdingItem)
         {
             holding = holdingItem;
+        }
+
+        public void SetExamineDescription(string examineDescription)
+        {
+            description = examineDescription;
         }
     }
 

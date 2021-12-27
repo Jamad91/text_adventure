@@ -1,31 +1,22 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TextInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Use.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneLoader.cs" Line="79" Column="8" />
-      <File FileName="Assets/Scripts/TextInput.cs" Line="129" Column="10" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="154" Column="91" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Help.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Save.cs" Line="13" Column="77" />
-      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="23" Column="9" />
-      <File FileName="Assets/Mirror/Examples/AdditiveScenes/Scripts/AdditiveNetworkManager.cs" Line="41" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="280" Column="118" />
+      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="150" Column="98" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Save.cs" Line="17" Column="24" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="345" Column="1" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Mirror" expanded="True">
-                <Node name="Examples" expanded="True">
-                  <Node name="AdditiveScenes" expanded="True">
-                    <Node name="Scripts" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
               <Node name="Scripts" expanded="True">
                 <Node name="DataManagement" expanded="True" />
-                <Node name="Input Action Scripts" expanded="True" />
-                <Node name="TextInput.cs" selected="True" />
+                <Node name="Input Action Scripts" expanded="True">
+                  <Node name="Use.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -35,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2049f28d-1d1e-401b-81f6-58d30b6080bf" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="406e8038-23e8-4879-9442-f55c2c8af27a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
