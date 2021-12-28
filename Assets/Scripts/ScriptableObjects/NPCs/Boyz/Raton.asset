@@ -16,8 +16,8 @@ MonoBehaviour:
   description: A small lab RAT scuttles around the a cage on the table
   transformableCharacter: 1
   transformedCharacterName: raton
-  transformedDescription: RATON, a man with an air of cheese around him looks at
-    you unwaveringly.
+  transformedDescription: El RATON, a man with an air of cheese around him looks
+    at you unwaveringly.
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
     textResponse: 

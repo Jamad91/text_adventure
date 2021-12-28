@@ -967,7 +967,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 6deb13fafbaa48cc53c00f9403fa9bce
+      Hash: e28383e1a80bc0e1740b7e8d9531fda0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InteractableItems
@@ -1129,7 +1129,7 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: ab269db03cf8311117a803adfa9ef6dc
+      Hash: 4646a46cb5db416a2ed0c1cae243e6d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController

@@ -17,7 +17,7 @@ MonoBehaviour:
     must be lonely
   transformableCharacter: 1
   transformedCharacterName: gallo
-  transformedDescription: el GALLO cleans up some of the mess he made before. Honestly,
+  transformedDescription: El GALLO cleans up some of the mess he made before. Honestly,
     what a great guy
   interactions:
   - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
