@@ -52,6 +52,7 @@ public class DataManager : MonoBehaviour
     {
         invDb = AddToInventoryDb(itemsList, holdingItemCurrentlyList, heldToExamineDescriptionsList);
         transformDb = AddToTransformDb(transformableCharactersList, isTransformedList);
+
         XmlSerializer inventorySerializer = new XmlSerializer(typeof(InventoryDatabase));
         XmlSerializer transformSerializer = new XmlSerializer(typeof(TransformDatabase));
 
@@ -188,6 +189,10 @@ public class DataManager : MonoBehaviour
         for (int i = 0; i < loadedTransformableCharactersList.Count; i++)
         {
             tempTransformableCharactersDict.Add(loadedTransformableCharactersList[i], loadedIsTransformedList[i]);
+            //if (loadedIsTransformedList[i])
+            //{
+            //    controller.transformCount++;
+            //}
         }
 
         return tempTransformableCharactersDict;

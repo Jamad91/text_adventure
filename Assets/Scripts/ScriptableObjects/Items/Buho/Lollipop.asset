@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lollipop
   m_EditorClassIdentifier: 
   noun: lollipop
-  description: 
+  description: lollipop
   beingGivenDescription: A childhood favorite. You can see it has a chocolate center
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
@@ -22,6 +22,10 @@ MonoBehaviour:
       man stands before you with a half eaten lollipop.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: You wonder how many licks it would take to get to the chocolate
+      center.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
     textResponse: You wonder how many licks it would take to get to the chocolate
       center.
     actionResponse: {fileID: 0}

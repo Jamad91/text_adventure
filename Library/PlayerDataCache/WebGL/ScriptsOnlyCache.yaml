@@ -541,7 +541,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: d575788d0a2e8153a1f77796feb9f0dc
+      Hash: 829c61409d05adbff899f182bbcd2a2e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DataManager

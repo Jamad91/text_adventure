@@ -9,7 +9,9 @@ public class InteractableItems : MonoBehaviour
 
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
-    public InteractableObject hammer;
+
+    [SerializeField]
+    public InteractableObject sledgehammer;
 
     [HideInInspector] public List<string> nounsInRoom = new List<string>();
 
@@ -24,6 +26,11 @@ public class InteractableItems : MonoBehaviour
     {
         controller = GetComponent<GameController>();
         dataManager = FindObjectOfType<DataManager>();
+    }
+
+    public List<string> GetItemsInInventory()
+    {
+        return nounsInInventory;
     }
 
     public string GetObjectsNotInInventory(Room currentRoom, int i)
@@ -230,15 +237,15 @@ public class InteractableItems : MonoBehaviour
                             if (controller.interactableCharacters.charactersTransformedDictionary.ContainsKey(currentCharacter.name))
                             {
                                 controller.interactableCharacters.TransformCharacter(currentCharacter);
-                                if (controller.transformCount != controller.interactableCharacters.transformableCharactersList.Count)
+                                if (controller.interactableCharacters.GetTransformedTotal() != controller.interactableCharacters.transformableCharactersList.Count)
                                 {
-                                    controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
+                                    controller.LogStringWithReturn("el " + currentCharacter.transformedCharacterName.ToUpper() + ": " + currentCharacter.responses.beingGivenItemResponse);
                                 }
                                 else
                                 {
-                                    GetItem(hammer);
+                                    SetItemAsBeingHeld(sledgehammer);
 
-                                    controller.LogStringWithReturn(currentCharacter.transformedCharacterName.ToUpper() +
+                                    controller.LogStringWithReturn("el " + currentCharacter.transformedCharacterName.ToUpper() +
                                         ": You have freed the last of the Boyz. " +
                                         "We now ask you one remaining favor as we prepare to stop the summoning of the Gobba Ghoul. " +
                                         "Please take this. If you USE it wisely in the correct place, you will free Heavy D from his prison. " +
@@ -255,7 +262,7 @@ public class InteractableItems : MonoBehaviour
                             if (itemToGiveAway != null && controller.interactableCharacters.itemsCharsHave[currentCharacter.name][itemToGiveAway])
                             {
                                 controller.interactableCharacters.itemsCharsHave[currentCharacter.name][itemToGiveAway] = false;
-                                GetItem(itemToGiveAway);
+                                SetItemAsBeingHeld(itemToGiveAway);
                                 controller.LogStringWithReturn(itemToGiveAway.beingGivenDescription);
                             }
                         }
@@ -337,7 +344,7 @@ public class InteractableItems : MonoBehaviour
         return null;
     }
 
-    public void GetItem(InteractableObject item)
+    public void SetItemAsBeingHeld(InteractableObject item)
     {
         nounsInInventory.Add(item.noun);
         controller.pickedUpAndHolding.Add(item.noun, true);

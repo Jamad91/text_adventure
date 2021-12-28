@@ -347,7 +347,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
   - {fileID: 11400000, guid: 3dc2d6bdf2ba74a7faf8e07e6dabf830, type: 2}
   - {fileID: 11400000, guid: 65b28fbce793b416aab19f39e901189b, type: 2}
-  transformCount: 0
   dataPersistenceOnLoad: {fileID: 11400000, guid: 5363d8abfb3fc4544b8e84fd20e33b2e, type: 2}
   startText: 
   roomNavigation: {fileID: 0}
@@ -447,7 +446,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}
   - {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}
   - {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
-  hammer: {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
+  sledgehammer: {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
   nounsInRoom: []
 --- !u!114 &429674497
 MonoBehaviour:
@@ -970,7 +969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.09833334}
-  m_AnchoredPosition: {x: -144.20001, y: 9.299927}
+  m_AnchoredPosition: {x: -144.2002, y: 9.299805}
   m_SizeDelta: {x: -306.89, y: -29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359698767

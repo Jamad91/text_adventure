@@ -31,5 +31,15 @@ MonoBehaviour:
   - keyString: down
     exitDescription: Go DOWN a set of steps to reach the BASEMENT.
     valueRoom: {fileID: 11400000, guid: dbbc9f67db1b3412cb2e1bd6d8df7f63, type: 2}
-  interactableObjectsInRoom: []
-  charactersInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 6c74f1375d1404ddfb7878aaca49fd7a, type: 2}
+  - {fileID: 11400000, guid: 65482d925464e4dbfab1d5dfbebe1f32, type: 2}
+  - {fileID: 11400000, guid: 803b971fb2ef54f68afbf9d53c151dc4, type: 2}
+  - {fileID: 11400000, guid: f7aa874cc265c4c25a1fc31d059dfd19, type: 2}
+  - {fileID: 11400000, guid: c8021f25a72b241e2babbcc74d14ab75, type: 2}
+  charactersInRoom:
+  - {fileID: 11400000, guid: 25118fe35191e406a9988dbc29a41946, type: 2}
+  - {fileID: 11400000, guid: fd6709c9ba0254ab6be5c128863378c1, type: 2}
+  - {fileID: 11400000, guid: 095c4d2cd5e9349c1adf30250767ebe7, type: 2}
+  - {fileID: 11400000, guid: 52f97704257bb4f5b9f2eefef2caf1b8, type: 2}
+  - {fileID: 11400000, guid: 03a4bb0e078be4530a9c874d89a7ff17, type: 2}

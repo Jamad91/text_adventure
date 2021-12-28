@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Use.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DataManagement/DataManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="280" Column="118" />
-      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="150" Column="98" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="63" Column="107" />
+      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="327" Column="40" />
       <File FileName="Assets/Scripts/Input Action Scripts/Save.cs" Line="17" Column="24" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="345" Column="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="31" Column="33" />
       <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" />
+      <File FileName="Assets/Scripts/DataManagement/DataPersistenceOnLoad.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +15,10 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DataManagement" expanded="True" />
-                <Node name="Input Action Scripts" expanded="True">
-                  <Node name="Use.cs" selected="True" />
+                <Node name="DataManagement" expanded="True">
+                  <Node name="DataManager.cs" selected="True" />
                 </Node>
+                <Node name="Input Action Scripts" expanded="True" />
               </Node>
             </Node>
           </Node>

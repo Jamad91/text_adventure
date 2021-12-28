@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     public Text displayText;
     public InputAction[] inputActions;
-    public int transformCount = 0;
+    //public int transformCount = 0;
     public DataPersistenceOnLoad dataPersistenceOnLoad;
 
     //[TextArea (15, 20)]
@@ -61,6 +61,17 @@ public class GameController : MonoBehaviour
             interactableItems.LoadItemsToInventory(new List<string>(pickedUpAndHolding.Keys));
             interactableItems.AddActionResponsesToUseDictionary();
             interactableCharacters.charactersTransformedDictionary = dataManager.LoadTransformedCharacters();
+
+            List<string> transformKeys = new List<string>(interactableCharacters.charactersTransformedDictionary.Keys);
+            List<bool> transformValues = new List<bool>(interactableCharacters.charactersTransformedDictionary.Values);
+
+            if (interactableCharacters.charactersTransformedDictionary.Values.Count == 5)
+            {
+                if (!transformValues.Contains(false) && !interactableItems.GetItemsInInventory().Contains("sledgehammer"))
+                {
+                    interactableItems.SetItemAsBeingHeld(interactableItems.sledgehammer);
+                }
+            }
             
             //dataPersistenceOnLoad.persistingPickedUpAndHolding = dataManager.LoadPickedUpAndHolding();
             //dataPersistenceOnLoad.persistingTransformedCharacters = dataManager.LoadTransformedCharacters();
@@ -279,7 +290,7 @@ public class GameController : MonoBehaviour
         List<string> heldToExamineDescriptionsList = new List<string>(pickedUpExamineDictionary.Values);
         List<string> transformedCharactersList = new List<string>(interactableCharacters.charactersTransformedDictionary.Keys);
         List<bool> isTransformedList = new List<bool>(interactableCharacters.charactersTransformedDictionary.Values);
-  
+
         dataManager.Save(itemsList, holdingItemCurrentlyList, heldToExamineDescriptionsList, transformedCharactersList, isTransformedList);
     }
 

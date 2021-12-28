@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cornflakes
   m_EditorClassIdentifier: 
   noun: cornflakes
-  description: 
+  description: cornflakes
   beingGivenDescription: You receive a box of CORNFLAKES. Personally, you prefer
     Rice Krispies, but to each their own.
   interactions:
@@ -22,5 +22,8 @@ MonoBehaviour:
       pecks away at them. Suddenly a man appears before, but the pecking continues
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
+    textResponse: So american
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: c3e202dc319f1464397405d549d6d997, type: 2}
     textResponse: So american
     actionResponse: {fileID: 0}

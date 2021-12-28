@@ -81,7 +81,7 @@ public class InteractableCharacters : MonoBehaviour
                 else if (hasBeenTransformed && characterSpokenTo.ToLower() == charactersList[i].transformedCharacterName.ToLower())
                 {
                     
-                    controller.LogStringWithReturn(charactersList[i].transformedCharacterName.ToUpper() + ": " + CharacterResponse(charactersList[i]));
+                    controller.LogStringWithReturn("el " + charactersList[i].transformedCharacterName.ToUpper() + ": " + CharacterResponse(charactersList[i]));
                 }
             }
         }
@@ -120,12 +120,27 @@ public class InteractableCharacters : MonoBehaviour
         charactersTransformedDictionary[character.name] = true;
         charactersInRoom.Remove(character.characterName);
         charactersInRoom.Add(character.transformedCharacterName);
-        controller.transformCount++;
+        //controller.transformCount++;
     }
 
     public bool IsTransformed(string name)
     {
         return charactersTransformedDictionary.ContainsKey(name) && charactersTransformedDictionary[name]; 
+    }
+
+    public int GetTransformedTotal()
+    {
+        int totalTransformed = 0;
+
+        for (int i = 0; i < transformableCharactersList.Count; i++)
+        {
+            if (charactersTransformedDictionary[transformableCharactersList[i].name])
+            {
+                totalTransformed++;
+            }
+        }
+
+        return totalTransformed;
     }
 
     public void LookAtCharacters()
