@@ -94,13 +94,13 @@ public class TextInput : MonoBehaviour
             }
             else if (sceneLoader.GetScene() == 2)
             {
-                if (userInput.ToLower() == "begin")
+                if (userInput.ToLower() != "begin")
                 {
-                    sceneLoader.LoadScene(3);
+                    displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n\n";
                 }
                 else
                 {
-                    displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
+                    sceneLoader.LoadScene(3);
                 }
             }
             else if (sceneLoader.GetScene() == 1 || sceneLoader.GetScene() == 3)

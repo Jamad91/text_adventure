@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: stick
   description: 
-  beingGivenDescription: The spirit hands you this rather small, but very pointed,
-    STICK. It was definitely way too small for him.
+  beingGivenDescription: 'The spirit hands you a wooden STICK. That''s pointed at
+    one end, and has what looks to be an Eight Ball at the other. Probably won''t
+    work in a car, but you can defintely point and poke with it! '
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: 

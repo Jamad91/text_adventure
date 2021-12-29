@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{73D32382-D329-1E8E-9DB3-1B3AF9A985F0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DataManagement/DataManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Input Action Scripts/Take.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameController.cs" Line="63" Column="107" />
-      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="327" Column="40" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="288" Column="51" />
+      <File FileName="Assets/Scripts/DataManagement/DataManager.cs" Line="194" Column="30" />
       <File FileName="Assets/Scripts/Input Action Scripts/Save.cs" Line="17" Column="24" />
-      <File FileName="Assets/Scripts/InteractableItems.cs" Line="31" Column="33" />
-      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/InteractableCharacters.cs" />
-      <File FileName="Assets/Scripts/DataManagement/DataPersistenceOnLoad.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/InteractableItems.cs" Line="107" Column="102" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Use.cs" />
+      <File FileName="Assets/Scripts/InteractableCharacters.cs" Line="112" Column="109" />
+      <File FileName="Assets/Scripts/DataManagement/DataPersistenceOnLoad.cs" />
+      <File FileName="Assets/Scripts/SceneLoader.cs" Line="34" Column="14" />
+      <File FileName="Assets/Scripts/TextInput.cs" Line="97" Column="42" />
+      <File FileName="Assets/Scripts/Input Action Scripts/Take.cs" Line="20" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,10 +18,10 @@
           <Node name="text_adventure" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="DataManagement" expanded="True">
-                  <Node name="DataManager.cs" selected="True" />
+                <Node name="DataManagement" expanded="True" />
+                <Node name="Input Action Scripts" expanded="True">
+                  <Node name="Take.cs" selected="True" />
                 </Node>
-                <Node name="Input Action Scripts" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -28,7 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="406e8038-23e8-4879-9442-f55c2c8af27a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b9f8e78f-aeb9-4bd6-9990-c89abba530c5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

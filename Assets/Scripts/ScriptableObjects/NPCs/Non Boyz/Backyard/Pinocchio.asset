@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b8bded02733477db54a88ee2b93bbb, type: 3}
+  m_Name: Pinocchio
+  m_EditorClassIdentifier: 
+  characterName: pinocchio
+  description: PINNOCHIO lays down on the ground. For an eternally youthful puppet,
+    he's pretty jaded
+  transformableCharacter: 0
+  transformedCharacterName: 
+  transformedDescription: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 0}
+  responses:
+    notHoldingGivenItemResponse: If I only I had some pixie dust, or, just, some
+      kind of dust! Then I can finally be a real boy!
+    beingGivenItemResponse: Finally some dust! You can have my lucky cigarette, I
+      hear these are bad for little boy lungs
+    isHoldingGivenItemResponse: I feel kinda funny
+    doesNotWantItemResponse: No, this won't help me become a real boy
+    transformedDoesNotWantItemResponse: 
+    itemToBeGiven: {fileID: 11400000, guid: 826e00613395f442c8381d228b5da85a, type: 2}
+    itemToGiveAway: {fileID: 11400000, guid: f7aa874cc265c4c25a1fc31d059dfd19, type: 2}

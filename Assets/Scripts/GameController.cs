@@ -214,7 +214,6 @@ public class GameController : MonoBehaviour
                     {
                         if (itemsList.Contains(characterInRoom.responses.itemToBeGiven.noun))
                         {
-
                             interactableCharacters.itemsCharsAreGiven.Add(characterInRoom.name, new Dictionary<InteractableObject, bool> { { characterInRoom.responses.itemToBeGiven, true } });
                         }
                         else

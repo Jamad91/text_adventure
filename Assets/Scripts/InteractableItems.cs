@@ -221,6 +221,7 @@ public class InteractableItems : MonoBehaviour
                         if (itemToBeGiven != null && itemToBeGiven.noun == item)
                         {
                             givingItemInteraction = itemToBeGiven.interactions[0];
+
                             controller.interactableCharacters.itemsCharsAreGiven[currentCharacter.name][itemToBeGiven] = true;
                             controller.pickedUpAndHolding[item] = false;
                             

@@ -96,8 +96,13 @@ public class InteractableCharacters : MonoBehaviour
     {
         bool holdingItem;
 
-        if (itemsCharsAreGiven.ContainsKey(characterSpokenTo.name) == true
-            && itemsCharsAreGiven[characterSpokenTo.name].ContainsKey(characterSpokenTo.responses.itemToBeGiven) == true)
+        List<string> keys = new List<string>(controller.pickedUpAndHolding.Keys);
+
+        if (itemsCharsAreGiven.ContainsKey(characterSpokenTo.name)
+            && itemsCharsAreGiven[characterSpokenTo.name].ContainsKey(characterSpokenTo.responses.itemToBeGiven)
+            && controller.pickedUpAndHolding.ContainsKey(characterSpokenTo.responses.itemToBeGiven.noun)
+            && !controller.pickedUpAndHolding[characterSpokenTo.responses.itemToBeGiven.noun]
+            )
         {
             holdingItem = itemsCharsAreGiven[characterSpokenTo.name][characterSpokenTo.responses.itemToBeGiven];
         } else
@@ -120,7 +125,6 @@ public class InteractableCharacters : MonoBehaviour
         charactersTransformedDictionary[character.name] = true;
         charactersInRoom.Remove(character.characterName);
         charactersInRoom.Add(character.transformedCharacterName);
-        //controller.transformCount++;
     }
 
     public bool IsTransformed(string name)

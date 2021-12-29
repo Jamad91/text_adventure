@@ -28,9 +28,8 @@ MonoBehaviour:
   responses:
     notHoldingGivenItemResponse: First no audience, and now no baton to conduct with!
       How do they expect me to do my job!
-    beingGivenItemResponse: 'Now I can conduct and protect myself from whack on the
-      head that isn''t giving it their all! Thank you. One more favor, could you
-      go hang this up somewhere? '
+    beingGivenItemResponse: 'Now I can conduct and poke people that fall asleep during
+      my shows! Thank you. One more favor, could you go hang this up somewhere? '
     isHoldingGivenItemResponse: Still nobody to conduct, am I at the wrong church?
     doesNotWantItemResponse: This is useless to me. Useless!
     transformedDoesNotWantItemResponse: 

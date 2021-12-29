@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: boxset
   description: 
-  beingGivenDescription: You're handed the BOXSET. It says it's the extended poverty
-    cut.
+  beingGivenDescription: You're handed the season two BOXSET of The Wire. It says
+    it's the extended poverty cut.
   interactions:
   - inputAction: {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
     textResponse: 
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: c27f63c2417fa4411abf13fab95a1128, type: 2}
-    textResponse: You never really got into this show; pretty slow in your opinion.
+    textResponse: You never really got into The Wire; pretty slow in your opinion
+      and too much about union bureaucracy.
     actionResponse: {fileID: 0}

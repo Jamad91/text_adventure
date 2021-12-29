@@ -28,7 +28,7 @@ MonoBehaviour:
   responses:
     notHoldingGivenItemResponse: I'm lonely. I need a pet. A stinky pet.
     beingGivenItemResponse: Oh hell yeah, the methane that comes off this bad boy
-      is no joke. Here, take this tiny umbrella, it's a little too small for me
+      is no joke. Here, take this branch from the stick shift tree.
     isHoldingGivenItemResponse: Who's a good cow? You are!
     doesNotWantItemResponse: This won't keep me company
     transformedDoesNotWantItemResponse: 

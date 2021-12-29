@@ -8243,6 +8243,16 @@ inline bool Dictionary_2_ContainsKey_m6AA8B173B91EA0F5CD11E98D8C0EC274E36980DD (
 {
 	return ((  bool (*) (Dictionary_2_tC032517C0EC15FFE69CF70DF443710A57816C3F7 *, InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 *, const RuntimeMethod*))Dictionary_2_ContainsKey_mBED865063DDDFF84201F60834B14B70FAEFC6A90_gshared)(__this, ___key0, method);
 }
+// System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::ContainsKey(!0)
+inline bool Dictionary_2_ContainsKey_mDC3AD2416E7463B12FC10AD8A6C816FECC11E003 (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C *, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_mBED865063DDDFF84201F60834B14B70FAEFC6A90_gshared)(__this, ___key0, method);
+}
+// !1 System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::get_Item(!0)
+inline bool Dictionary_2_get_Item_m3FC6EB738CC4A9E285D6330B2352769B37B32B20 (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * __this, String_t* ___key0, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C *, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_mA64D8887D1152D6C83ADB22C163DB0113C39C102_gshared)(__this, ___key0, method);
+}
 // !1 System.Collections.Generic.Dictionary`2<InteractableObject,System.Boolean>::get_Item(!0)
 inline bool Dictionary_2_get_Item_m4BF51CAA95E741710D3BC67E5DC62C6F4FFF240B (Dictionary_2_tC032517C0EC15FFE69CF70DF443710A57816C3F7 * __this, InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * ___key0, const RuntimeMethod* method)
 {
@@ -8257,16 +8267,6 @@ inline void Dictionary_2_set_Item_m80950D4BAC47AA3A0B7E50B2C2E0606342C9011D (Dic
 inline bool List_1_Remove_m31C26124B7BB19A0E5C12113701DDE5046272F70 (List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * __this, String_t* ___item0, const RuntimeMethod* method)
 {
 	return ((  bool (*) (List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 *, String_t*, const RuntimeMethod*))List_1_Remove_m753F7B4281CC4D02C07AE90726F51EF34B588DF7_gshared)(__this, ___item0, method);
-}
-// System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::ContainsKey(!0)
-inline bool Dictionary_2_ContainsKey_mDC3AD2416E7463B12FC10AD8A6C816FECC11E003 (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * __this, String_t* ___key0, const RuntimeMethod* method)
-{
-	return ((  bool (*) (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C *, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_mBED865063DDDFF84201F60834B14B70FAEFC6A90_gshared)(__this, ___key0, method);
-}
-// !1 System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::get_Item(!0)
-inline bool Dictionary_2_get_Item_m3FC6EB738CC4A9E285D6330B2352769B37B32B20 (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * __this, String_t* ___key0, const RuntimeMethod* method)
-{
-	return ((  bool (*) (Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C *, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_mA64D8887D1152D6C83ADB22C163DB0113C39C102_gshared)(__this, ___key0, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<InteractableObject,System.Boolean>>::.ctor()
 inline void Dictionary_2__ctor_m41D12EA8352B5F9F2FB0CE994458EA7014FFAA4B (Dictionary_2_t31D0AA708FCDC28F37E21E3EC08A973F0B552538 * __this, const RuntimeMethod* method)
@@ -8456,6 +8456,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextInput_InputComplete_m3CA5F0BBF8CE61E
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DataManager_SetLoadedFile_mEE2797A1E79D5DB6CF459D873ED439BA2E848729_inline (DataManager_t01518B3D49E16D1E80F0C7C9F0533427905EC1E2 * __this, bool ___value0, const RuntimeMethod* method);
 // System.Void GameController::Load()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameController_Load_mE8DD3AE8C86912790CDB530C118995AA46159691 (GameController_tB9A9FA594113443BE7F9A0B6EC8588EB5101D274 * __this, const RuntimeMethod* method);
+// System.Boolean System.String::op_Inequality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_mDDA2DDED3E7EF042987EB7180EE3E88105F0AAE2 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method);
 // System.Void UnityEngine.UI.InputField::ActivateInputField()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputField_ActivateInputField_m97B9F9C150E4463DE299D1F8BC046CCA826064D1 (InputField_tB41A2814F31A3E9373D443EDEBBB2856006324D0 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.UI.InputField::set_text(System.String)
@@ -11607,76 +11609,111 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InteractableCharacters_CharacterRes
 	}
 	bool V_0 = false;
 	{
-		// if (itemsCharsAreGiven.ContainsKey(characterSpokenTo.name) == true
-		//     && itemsCharsAreGiven[characterSpokenTo.name].ContainsKey(characterSpokenTo.responses.itemToBeGiven) == true)
-		Dictionary_2_t31D0AA708FCDC28F37E21E3EC08A973F0B552538 * L_0 = __this->get_itemsCharsAreGiven_10();
-		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_1 = ___characterSpokenTo0;
-		String_t* L_2 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_1, /*hidden argument*/NULL);
-		bool L_3 = Dictionary_2_ContainsKey_m6809209BCD7D2B21A750052EFCD948EB059EB700(L_0, L_2, /*hidden argument*/Dictionary_2_ContainsKey_m6809209BCD7D2B21A750052EFCD948EB059EB700_RuntimeMethod_var);
-		if (!L_3)
-		{
-			goto IL_005a;
-		}
-	}
-	{
+		// List<string> keys = new List<string>(controller.pickedUpAndHolding.Keys);
+		GameController_tB9A9FA594113443BE7F9A0B6EC8588EB5101D274 * L_0 = __this->get_controller_11();
+		Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * L_1 = L_0->get_pickedUpAndHolding_14();
+		KeyCollection_t1A5E6B675EFA5A7901D7B04966A914995A34ECFF * L_2 = Dictionary_2_get_Keys_mAF64A9A049196D0237B50183F1DBB70ADB9B059D(L_1, /*hidden argument*/Dictionary_2_get_Keys_mAF64A9A049196D0237B50183F1DBB70ADB9B059D_RuntimeMethod_var);
+		List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 * L_3 = (List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 *)il2cpp_codegen_object_new(List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3_il2cpp_TypeInfo_var);
+		List_1__ctor_m468E89F534D7F4463B96A099275295DF689B2323(L_3, L_2, /*hidden argument*/List_1__ctor_m468E89F534D7F4463B96A099275295DF689B2323_RuntimeMethod_var);
+		// if (itemsCharsAreGiven.ContainsKey(characterSpokenTo.name)
+		//     && itemsCharsAreGiven[characterSpokenTo.name].ContainsKey(characterSpokenTo.responses.itemToBeGiven)
+		//     && controller.pickedUpAndHolding.ContainsKey(characterSpokenTo.responses.itemToBeGiven.noun)
+		//     && !controller.pickedUpAndHolding[characterSpokenTo.responses.itemToBeGiven.noun]
+		//     )
 		Dictionary_2_t31D0AA708FCDC28F37E21E3EC08A973F0B552538 * L_4 = __this->get_itemsCharsAreGiven_10();
 		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_5 = ___characterSpokenTo0;
 		String_t* L_6 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_5, /*hidden argument*/NULL);
-		Dictionary_2_tC032517C0EC15FFE69CF70DF443710A57816C3F7 * L_7 = Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475(L_4, L_6, /*hidden argument*/Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475_RuntimeMethod_var);
-		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_8 = ___characterSpokenTo0;
-		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_9 = L_8->get_responses_10();
-		InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * L_10 = L_9->get_itemToBeGiven_5();
-		bool L_11 = Dictionary_2_ContainsKey_m6AA8B173B91EA0F5CD11E98D8C0EC274E36980DD(L_7, L_10, /*hidden argument*/Dictionary_2_ContainsKey_m6AA8B173B91EA0F5CD11E98D8C0EC274E36980DD_RuntimeMethod_var);
-		if (!L_11)
+		bool L_7 = Dictionary_2_ContainsKey_m6809209BCD7D2B21A750052EFCD948EB059EB700(L_4, L_6, /*hidden argument*/Dictionary_2_ContainsKey_m6809209BCD7D2B21A750052EFCD948EB059EB700_RuntimeMethod_var);
+		if (!L_7)
 		{
-			goto IL_005a;
+			goto IL_00b7;
+		}
+	}
+	{
+		Dictionary_2_t31D0AA708FCDC28F37E21E3EC08A973F0B552538 * L_8 = __this->get_itemsCharsAreGiven_10();
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_9 = ___characterSpokenTo0;
+		String_t* L_10 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_9, /*hidden argument*/NULL);
+		Dictionary_2_tC032517C0EC15FFE69CF70DF443710A57816C3F7 * L_11 = Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475(L_8, L_10, /*hidden argument*/Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475_RuntimeMethod_var);
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_12 = ___characterSpokenTo0;
+		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_13 = L_12->get_responses_10();
+		InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * L_14 = L_13->get_itemToBeGiven_5();
+		bool L_15 = Dictionary_2_ContainsKey_m6AA8B173B91EA0F5CD11E98D8C0EC274E36980DD(L_11, L_14, /*hidden argument*/Dictionary_2_ContainsKey_m6AA8B173B91EA0F5CD11E98D8C0EC274E36980DD_RuntimeMethod_var);
+		if (!L_15)
+		{
+			goto IL_00b7;
+		}
+	}
+	{
+		GameController_tB9A9FA594113443BE7F9A0B6EC8588EB5101D274 * L_16 = __this->get_controller_11();
+		Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * L_17 = L_16->get_pickedUpAndHolding_14();
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_18 = ___characterSpokenTo0;
+		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_19 = L_18->get_responses_10();
+		InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * L_20 = L_19->get_itemToBeGiven_5();
+		String_t* L_21 = L_20->get_noun_4();
+		bool L_22 = Dictionary_2_ContainsKey_mDC3AD2416E7463B12FC10AD8A6C816FECC11E003(L_17, L_21, /*hidden argument*/Dictionary_2_ContainsKey_mDC3AD2416E7463B12FC10AD8A6C816FECC11E003_RuntimeMethod_var);
+		if (!L_22)
+		{
+			goto IL_00b7;
+		}
+	}
+	{
+		GameController_tB9A9FA594113443BE7F9A0B6EC8588EB5101D274 * L_23 = __this->get_controller_11();
+		Dictionary_2_t99F1CF0D8EAD35142580D7CF6EC736C063B6190C * L_24 = L_23->get_pickedUpAndHolding_14();
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_25 = ___characterSpokenTo0;
+		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_26 = L_25->get_responses_10();
+		InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * L_27 = L_26->get_itemToBeGiven_5();
+		String_t* L_28 = L_27->get_noun_4();
+		bool L_29 = Dictionary_2_get_Item_m3FC6EB738CC4A9E285D6330B2352769B37B32B20(L_24, L_28, /*hidden argument*/Dictionary_2_get_Item_m3FC6EB738CC4A9E285D6330B2352769B37B32B20_RuntimeMethod_var);
+		if (L_29)
+		{
+			goto IL_00b7;
 		}
 	}
 	{
 		// holdingItem = itemsCharsAreGiven[characterSpokenTo.name][characterSpokenTo.responses.itemToBeGiven];
-		Dictionary_2_t31D0AA708FCDC28F37E21E3EC08A973F0B552538 * L_12 = __this->get_itemsCharsAreGiven_10();
-		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_13 = ___characterSpokenTo0;
-		String_t* L_14 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_13, /*hidden argument*/NULL);
-		Dictionary_2_tC032517C0EC15FFE69CF70DF443710A57816C3F7 * L_15 = Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475(L_12, L_14, /*hidden argument*/Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475_RuntimeMethod_var);
-		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_16 = ___characterSpokenTo0;
-		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_17 = L_16->get_responses_10();
-		InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * L_18 = L_17->get_itemToBeGiven_5();
-		bool L_19 = Dictionary_2_get_Item_m4BF51CAA95E741710D3BC67E5DC62C6F4FFF240B(L_15, L_18, /*hidden argument*/Dictionary_2_get_Item_m4BF51CAA95E741710D3BC67E5DC62C6F4FFF240B_RuntimeMethod_var);
-		V_0 = L_19;
+		Dictionary_2_t31D0AA708FCDC28F37E21E3EC08A973F0B552538 * L_30 = __this->get_itemsCharsAreGiven_10();
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_31 = ___characterSpokenTo0;
+		String_t* L_32 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_31, /*hidden argument*/NULL);
+		Dictionary_2_tC032517C0EC15FFE69CF70DF443710A57816C3F7 * L_33 = Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475(L_30, L_32, /*hidden argument*/Dictionary_2_get_Item_mA68C84242E56834E5C0AAA2AF8246A6670A6B475_RuntimeMethod_var);
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_34 = ___characterSpokenTo0;
+		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_35 = L_34->get_responses_10();
+		InteractableObject_t998A6D2A72D4DC75ADA7E32E02359D63524B5DC5 * L_36 = L_35->get_itemToBeGiven_5();
+		bool L_37 = Dictionary_2_get_Item_m4BF51CAA95E741710D3BC67E5DC62C6F4FFF240B(L_33, L_36, /*hidden argument*/Dictionary_2_get_Item_m4BF51CAA95E741710D3BC67E5DC62C6F4FFF240B_RuntimeMethod_var);
+		V_0 = L_37;
 		// } else
-		goto IL_005c;
+		goto IL_00b9;
 	}
 
-IL_005a:
+IL_00b7:
 	{
 		// holdingItem = false;
 		V_0 = (bool)0;
 	}
 
-IL_005c:
+IL_00b9:
 	{
 		// if (holdingItem != false)
-		bool L_20 = V_0;
-		if (!L_20)
+		bool L_38 = V_0;
+		if (!L_38)
 		{
-			goto IL_006b;
+			goto IL_00c8;
 		}
 	}
 	{
 		// return characterSpokenTo.responses.isHoldingGivenItemResponse;
-		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_21 = ___characterSpokenTo0;
-		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_22 = L_21->get_responses_10();
-		String_t* L_23 = L_22->get_isHoldingGivenItemResponse_2();
-		return L_23;
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_39 = ___characterSpokenTo0;
+		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_40 = L_39->get_responses_10();
+		String_t* L_41 = L_40->get_isHoldingGivenItemResponse_2();
+		return L_41;
 	}
 
-IL_006b:
+IL_00c8:
 	{
 		// return characterSpokenTo.responses.notHoldingGivenItemResponse;
-		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_24 = ___characterSpokenTo0;
-		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_25 = L_24->get_responses_10();
-		String_t* L_26 = L_25->get_notHoldingGivenItemResponse_0();
-		return L_26;
+		NPC_tC1B80DAFC03710A57E14A5AA80EED2CD89A35AE6 * L_42 = ___characterSpokenTo0;
+		Response_t664A95E85A830D15B1A001B0A4EB89E8C901A067 * L_43 = L_42->get_responses_10();
+		String_t* L_44 = L_43->get_notHoldingGivenItemResponse_0();
+		return L_44;
 	}
 }
 // System.Void InteractableCharacters::TransformCharacter(NPC)
@@ -15453,31 +15490,31 @@ IL_01dc:
 		}
 	}
 	{
-		// if (userInput.ToLower() == "begin")
+		// if (userInput.ToLower() != "begin")
 		String_t* L_75 = ___userInput0;
 		String_t* L_76 = String_ToLower_m7875A49FE166D0A68F3F6B6E70C0C056EBEFD31D(L_75, /*hidden argument*/NULL);
-		bool L_77 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_76, _stringLiteralB086A7963798C8C4E1D396E35AE217DDAB8069E0, /*hidden argument*/NULL);
+		bool L_77 = String_op_Inequality_mDDA2DDED3E7EF042987EB7180EE3E88105F0AAE2(L_76, _stringLiteralB086A7963798C8C4E1D396E35AE217DDAB8069E0, /*hidden argument*/NULL);
 		if (!L_77)
 		{
-			goto IL_0209;
+			goto IL_0218;
 		}
 	}
 	{
-		// sceneLoader.LoadScene(3);
-		SceneLoader_t3266812523B184D5AEDF27CA310452129C676B0D * L_78 = __this->get_sceneLoader_8();
-		SceneLoader_LoadScene_mE757D2B5CE716ECE35E1E4451259987245A13EC7(L_78, 3, /*hidden argument*/NULL);
+		// displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_78 = __this->get_displayText_4();
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_79 = L_78;
+		String_t* L_80 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_79);
+		String_t* L_81 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(L_80, _stringLiteralAEEF0CB00BAD9DFB5E2CCB7E40582F5EE34AE357, /*hidden argument*/NULL);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_79, L_81);
 		// }
 		return;
 	}
 
-IL_0209:
+IL_0218:
 	{
-		// displayText.text += "If you're already having a hard time spelling, this is going to be rough for you. Type \"BEGIN\" and hit ENTER.\n\n\n";
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_79 = __this->get_displayText_4();
-		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_80 = L_79;
-		String_t* L_81 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_80);
-		String_t* L_82 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(L_81, _stringLiteralAEEF0CB00BAD9DFB5E2CCB7E40582F5EE34AE357, /*hidden argument*/NULL);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_80, L_82);
+		// sceneLoader.LoadScene(3);
+		SceneLoader_t3266812523B184D5AEDF27CA310452129C676B0D * L_82 = __this->get_sceneLoader_8();
+		SceneLoader_LoadScene_mE757D2B5CE716ECE35E1E4451259987245A13EC7(L_82, 3, /*hidden argument*/NULL);
 		// }
 		return;
 	}
