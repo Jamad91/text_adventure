@@ -16,7 +16,7 @@ MonoBehaviour:
   roomName: conspiracy room
   exits:
   - keyString: east
-    exitDescription: To your EAST is the MEMBER'S ONLY ROOM.
+    exitDescription: To your EAST is the MEMBERS ONLY ROOM.
     valueRoom: {fileID: 11400000, guid: 4c3601eeb8a9746f3abe505d4140eecb, type: 2}
   - keyString: south
     exitDescription: Walk SOUTH to enter an OFFICE.

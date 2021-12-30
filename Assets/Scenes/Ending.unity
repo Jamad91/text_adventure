@@ -248,7 +248,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9bc314af8fc4344cea8434ec3e33b070, type: 2}
   - {fileID: 11400000, guid: f3e55db287fed4e66acf41cefbc03625, type: 2}
   - {fileID: 11400000, guid: 3dc2d6bdf2ba74a7faf8e07e6dabf830, type: 2}
-  transformCount: 0
   dataPersistenceOnLoad: {fileID: 0}
   startText: 
   roomNavigation: {fileID: 0}
@@ -346,7 +345,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a396bd2f04f094f1aae0635b52667f0f, type: 2}
   - {fileID: 11400000, guid: 1710148ca1de24dfa800eada76931749, type: 2}
   - {fileID: 11400000, guid: cc2d2d2c5927246a9828d484ad847ebf, type: 2}
-  hammer: {fileID: 11400000, guid: 07b3414f611bc4bd6a03cb50079459ea, type: 2}
+  sledgehammer: {fileID: 0}
   nounsInRoom: []
 --- !u!114 &429674497
 MonoBehaviour:
@@ -723,29 +722,32 @@ MonoBehaviour:
     it in. Moments pass and you hear a rumble. Your heart starts pounding and your
     race to get outside. As soon as you are, Heavy D emerges from the volcano, 12
     stories tall and made of radiation. He looks at you directly with a soul piercing
-    gaze and speaks.\n                                          \n\"Thank you for
-    freeing me and all of the Boyz. Without you, this day would be lost, but there
-    is hope once again. We shall stop Negativa D from summoning the Gobba Ghoul and
-    save the world, all thanks to your cunning brain and valiant effort. Consider
-    yourself a friend to Heavy D and the Boyz. Should you ever require our help,
-    we will be there. Until then.\"\n                                          \nWith
-    that he looks up at the sky and flys off. You look around and see all of the
-    Boyz are following suit. You feel a great sense of relief. Negativa D will not
-    win this day. You give yourself a moment to sit and appreciate what you were
-    able to do for the world before it hits you \"Wait, seriously, who the fuck is
-    Franklin P. Perdue?\"\n                                          \nTHE END            
-    \n                         \n                         \n                        
-    \n                         \n                         \n                        
-    \n                         \n                         \n                        
-    \n                         \n                         \n                        
-    \n                         \n                         \n                        
-    \n                         \n                         \n                        
-    \n                         \n                         \n   ___                        
-    ___               _           _     ___\n  / _ \\__ _ _ __ ___   ___    / __\\
-    __ ___  __ _| |_ ___  __| |   / __\\_   _ \n / /_\\/ _` | '_ ` _ \\ / _ \\  /
-    / | '__/ _ \\/ _` | __/ _ \\/ _` |  /__\\// | | |\n/ /_\\\\ (_| | | | | | | 
-    __/ / /__| | |  __/ (_| | ||  __/ (_| | / \\/  \\ |_| |\n\\____/\\__,_|_| |_|
-    |_|\\___| \\____/_|  \\___|\\__,_|\\__\\___|\\__,_| \\_____/\\__, |\n                                                                      
+    gaze and speaks.\n                                                                   
+    \n\"Thank you for freeing me and all of the Boyz. Without you, this day would
+    be lost, but there is hope once again. We shall stop Negativa D from summoning
+    the Gobba Ghoul and save the world, all thanks to your cunning brain and valiant
+    effort. Consider yourself a friend to Heavy D and the Boyz. Should you ever require
+    our help, we will be there. Until then.\"\n                                                                   
+    \nWith that he looks up at the sky and flys off. You look around and see all
+    of the Boyz are following suit. You feel a great sense of relief. Negativa D
+    will not win this day. You give yourself a moment to sit and appreciate what
+    you were able to do for the world before it hits you \"Wait, seriously, who the
+    fuck is Franklin P. Perdue?\"\n                                                                 
+    \nTHE END                                                  \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n                                              \n                                             
+    \n   ___                         ___               _           _     ___\n  /
+    _ \\__ _ _ __ ___   ___    / __\\ __ ___  __ _| |_ ___  __| |   / __\\_   _ \n
+    / /_\\/ _` | '_ ` _ \\ / _ \\  / / | '__/ _ \\/ _` | __/ _ \\/ _` |  /__\\//
+    | | |\n/ /_\\\\ (_| | | | | | |  __/ / /__| | |  __/ (_| | ||  __/ (_| | / \\/ 
+    \\ |_| |\n\\____/\\__,_|_| |_| |_|\\___| \\____/_|  \\___|\\__,_|\\__\\___|\\__,_|
+    \\_____/\\__, |\n                                                                      
     |___/                 \n         ___     ___                          \n  /\\ 
     /\\/   \\   / _ \\__ _ _ __ ___   ___  ___ \n / /_/ / /\\ /  / /_\\/ _` | '_
     ` _ \\ / _ \\/ __|\n/ __  / /_//  / /_\\\\ (_| | | | | | |  __/\\__ \\\n\\/ /_/___,'  
@@ -775,8 +777,8 @@ MonoBehaviour:
     \\/\\/  \\/ \n                                          \n                                         
     \n                                          \n _____ _                 _\n/__  
     \\ |__   __ _ _ __ | | __  _   _  ___  _   _ \n  / /\\/ '_ \\ / _` | '_ \\| |/
-    / | | | |/ _ \\| | | |\n / /  | | | | (_| | | | |   <  | |_| | (_) | |_| |\n\\/  
-    |_| |_|\\__,_|_| |_|_|\\_\\  \\__, |\\___/ \\__,_|\n                               
+    / | | | |/ _ \\| | | |\n / /  | | | | (_| | | | |   <  | |_| | (_) | |_| |\n
+    \\/   |_| |_|\\__,_|_| |_|_|\\_\\  \\__, |\\___/ \\__,_|\n                               
     |___/\n   ___              ___ _             _               _  _\n  / __\\__ 
     _ __    / _ \\ | __ _ _   _(_)_ __   __ _  / \\/ \\\n / _\\/ _ \\| '__|  / /_)/
     |/ _` | | | | | '_ \\ / _` |/  /  /\n/ / | (_) | |    / ___/| | (_| | |_| | |
@@ -829,7 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6340cfdc5844daaa984427586e30af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.02
+  delay: 0.008
   textFullyRendered: 0
 --- !u!1 &2131637317
 GameObject:

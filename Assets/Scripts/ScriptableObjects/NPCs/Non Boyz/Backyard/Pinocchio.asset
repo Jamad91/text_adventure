@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pinocchio
   m_EditorClassIdentifier: 
   characterName: pinocchio
-  description: PINNOCHIO lays down on the ground. For an eternally youthful puppet,
+  description: PINOCCHIO lays down on the ground. For an eternally youthful puppet,
     he's pretty jaded
   transformableCharacter: 0
   transformedCharacterName: 

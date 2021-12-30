@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Member
   m_EditorClassIdentifier: 
   characterName: member
-  description: Wow, she's definitely a MEMBER. So cool
+  description: Wow, there's an actual, genuine MEMBER here. She definitely belongs
+    here, no two ways about it. She's so cool!
   transformableCharacter: 0
   transformedCharacterName: 
   transformedDescription: 
